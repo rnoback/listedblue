@@ -1,0 +1,49 @@
+<article class="overlay overlay-info" data-id="privacystatement">
+    <div class="container">
+        <div class="overlay-content">
+            <a class="close-btn" href="#">Sluiten <span class="icon-close"></span></a>
+            <div class="dummy">
+                <h2>Wat zijn cookies?</h2>
+                <p class=""   >
+                    Cookies zijn kleine tekstbestanden die automatisch op je computer, tablet of mobiele telefoon worden opgeslagen bij je bezoek aan een website.
+                </p>
+            </div>
+            <div class="dummy">
+                <h2>Kun je via cookies achterhalen wie ik ben?</h2>
+                <p class=""   >
+                    Cookies onthouden in principe niet je naam, adres, leeftijd en andere persoonlijke gegevens. Behalve als je inlogt op Mijn SNS en persoonlijke gegevens op de website achterlaat.<br /><br />Lees meer over privacy bij SNS Bank in ons <a href="/web/file?uuid=36776d1e-adf2-4c8e-981d-e843929ddb4a&amp;owner=98c6dbb0-c763-4592-90ae-9bcd461de7c2" class="dummy" title="Privacy-en-cookiereglement.pdf">Privacy- en cookiereglement</a>.
+                </p>
+            </div>
+            <div class="dummy">
+                <h2>Zijn cookies veilig?</h2>
+                <p class=""   >
+                    Een cookie kan geen kwaad en heeft niets te maken met computervirussen of andere kwalijke zaken.
+                </p>
+            </div>
+            <div class="dummy">
+                <h2>Hoe lang worden cookies bewaard?</h2>
+                <p class=""   >
+                    We gebruiken tijdelijke cookies en cookies die langer op je computer blijven staan. Hoe lang een cookie op je computer blijft staan, hangt af van het soort cookie. Een tijdelijke cookie wordt automatisch verwijderd als je je browser afsluit.
+                </p>
+            </div>
+            <div class="dummy">
+                <h2>Maken cookies je computer trager?</h2>
+                <p class=""   >
+                    Nee, cookies kosten je computer geen extra geheugen en maken je computer niet trager.
+                </p>
+            </div>
+            <div class="dummy">
+                <h2>Wat gebeurt er als ik ‘Geen van deze cookies’ selecteer?</h2>
+                <p class=""   >
+                    Dan plaatsen we alleen de wettelijk toegestane cookies die nodig zijn om de website minimaal te laten functioneren. Je hebt toegang tot de website en je kunt inloggen op Mijn SNS. Je maakt alleen niet optimaal gebruik van de andere mogelijkheden van de website.
+                </p>
+            </div>
+            <div class="dummy">
+                <h2>Kan ik na mijn toestemming de cookie-instellingen wijzigen?</h2>
+                <p class=""   >
+                    Je kunt je eigen cookie-instellingen wijzigen wanneer jij dat wilt. Dit doe je via de link <a href="https://www.snsbank.nl/particulier/over-sns-bank/juridische-informatie/cookies-instellen.html" class="dummy" title="Cookies instellen">Cookies instellen</a>. Deze vind je onder elke pagina op de website.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>

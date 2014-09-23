@@ -1,0 +1,270 @@
+<div class="insure fullscreen" id="profile-4-insure">
+    <div class="container">
+
+        <h1>voordeliger<em>verzekeren</em></h1>
+        <ul class="meta-data">
+            <li class="date">Peildatum: xx-xx-2014</li>
+            <li>Profiel: Jonge Gezinnen (<a href="#" class="change">wijzig</a>)</li>
+            <li><a href="#" class="overlay-link" rel="more-info">Hoe is deze vergelijking gemaakt?</a></li>
+        </ul>
+        <article class="article" role="article">
+            <table class="product-compare foldedin">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <th class="sns"><img src="static/img/sns.png" width="85" height="23"></th>
+                        <th><img src="static/img/ing.png"></th>
+                        <th><img src="static/img/rabo.png"></th>
+                        <th><img src="static/img/abn.png"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td class="sns">
+                            <span class="type">Inboedelverzekering</span>
+                            <span class="amount"><strong>€ 93,96</strong></span>
+                        </td>
+                        <td>
+                            <span class="type">Inboedelverzekering</span>
+                            <span class="amount">€ 93,96</span>
+                        </td>
+                        <td>
+                            <span class="type">Inboedelverzekering</span>
+                            <span class="amount">€ 93,96</span>
+                        </td>
+                        <td>
+                            <span class="type">Inboedelverzekering</span>
+                            <span class="amount">€ 93,96</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Eigen risico/dekking</th>
+                        <td class="sns">
+                            € 150/€ 160.000
+                        </td>
+                        <td>
+                            € 150/€ 160.000
+                        </td>
+                        <td>
+                            € 150/€ 160.000
+                        </td>
+                        <td>
+                            € 150/€ 160.000
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Bijzonderheden</th>
+                        <td class="sns">
+                            n.v.t.
+                        </td>
+                        <td>
+                            n.v.t.
+                        </td>
+                        <td>
+                            n.v.t.
+                        </td>
+                        <td>
+                            n.v.t.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Korting</th>
+                        <td class="sns">
+                            n.v.t.
+                        </td>
+                        <td>
+                            10% korting i.c.m. betaalrekening
+                        </td>
+                        <td>
+                            n.v.t.
+                        </td>
+                        <td>
+                            n.v.t.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Productdetails</th>
+                        <td class="sns">
+                            <a href="#" class="view">Bekijk</a>
+                        </td>
+                        <td>
+                            <a href="#" class="view">Bekijk</a>
+                        </td>
+                        <td>
+                            <a href="#" class="view">Bekijk</a>
+                        </td>
+                        <td>
+                            <a href="#" class="view">Bekijk</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="sns">
+                            <span class="type">Reisverzekering</span>
+                            <span class="amount"><strong>€ 57,24</strong></span>
+                        </td>
+                        <td>
+                            <span class="type">Reisverzekering</span>
+                            <span class="amount">€ 57,24</span>
+                        </td>
+                        <td>
+                            <span class="type">Reisverzekering</span>
+                            <span class="amount">€ 57,24</span>
+                        </td>
+                        <td>
+                            <span class="type">Reisverzekering</span>
+                            <span class="amount">€ 57,24</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Eigen risico/dekking</th>
+                        <td class="sns">
+                            € 150/€ 160.000
+                        </td>
+                        <td>
+                            € 150/€ 160.000
+                        </td>
+                        <td>
+                            € 150/€ 160.000
+                        </td>
+                        <td>
+                            € 150/€ 160.000
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Productdetails</th>
+                        <td class="sns">
+                            <a href="#" class="view">Bekijk</a>
+                        </td>
+                        <td>
+                            <a href="#" class="view">Bekijk</a>
+                        </td>
+                        <td>
+                            <a href="#" class="view">Bekijk</a>
+                        </td>
+                        <td>
+                            <a href="#" class="view">Bekijk</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="sns">
+                            <span class="type">Aansprakelijkheid</span>
+                            <span class="amount"><strong>€ 48,00</strong></span>
+                        </td>
+                        <td>
+                            <span class="type">Aansprakelijkheid</span>
+                            <span class="amount">€ 48,00</span>
+                        </td>
+                        <td>
+                            <span class="type">Aansprakelijkheid</span>
+                            <span class="amount">€ 48,00</span>
+                        </td>
+                        <td>
+                            <span class="type">Aansprakelijkheid</span>
+                            <span class="amount">€ 48,00</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Eigen risico/dekking</th>
+                        <td class="sns">
+                            € 150/€ 160.000
+                        </td>
+                        <td>
+                            € 150/€ 160.000
+                        </td>
+                        <td>
+                            € 150/€ 160.000
+                        </td>
+                        <td>
+                            € 150/€ 160.000
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Productdetails</th>
+                        <td class="sns">
+                            <a href="#" class="view">Bekijk</a>
+                        </td>
+                        <td>
+                            <a href="#" class="view">Bekijk</a>
+                        </td>
+                        <td>
+                            <a href="#" class="view">Bekijk</a>
+                        </td>
+                        <td>
+                            <a href="#" class="view">Bekijk</a>
+                        </td>
+                    </tr>
+                    <tr class="discount-percent">
+                        <th>Pakketkorting bij 3 producten</th>
+                        <td class="sns">
+                            <span class="discount"><strong>4%</strong></span>
+                        </td>
+                        <td>
+                            <span class="discount">4%</span>
+                        </td>
+                        <td>
+                            <span class="discount">4%</span>
+                        </td>
+                        <td>
+                            <span class="discount">4%</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Polis+administratiekosten</th>
+                        <td class="sns">
+                            <span class="costs"><strong>€ 0,00</strong></span>
+                        </td>
+                        <td>
+                            <span class="costs">€ 0,00</span>
+                        </td>
+                        <td>
+                            <span class="costs">€ 0,00</span>
+                        </td>
+                        <td>
+                            <span class="costs">€ 0,00</span>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th><strong>Totale kosten per jaar incl. pakketkorting</strong><br>(op basis van maandpremie)</th>
+                        <td class="sns">
+                            <span class="total"><strong>€ 199,20</strong></span>
+                        </td>
+                        <td>
+                            <span class="total">€ 199,20</span>
+                        </td>
+                        <td>
+                            <span class="total">€ 199,20</span>
+                        </td>
+                        <td>
+                            <span class="total">€ 199,20</span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        <div class="collapse foldedin">
+            <a href="#" class="more read-more">Meer info</a>
+            <a href="#" class="less read-more">Minder info</a>
+        </div>
+
+            <div class="extra-info">
+                <span class="benefits">Je voordeel bij <strong>[Banknaam]</strong></span>
+                <span class="sum">
+                    <strong>€ 128,40</strong>
+                    <small>per jaar</small>
+                </span>
+                <a href="#" class="btn">Bereken je premie op snsbank.nl</a>
+                <a href="#" class="extra-link">Optionele link</a>
+            </div>
+
+            <div class="disclaimer">Het gekleurde bedrag is het maximale voordeel dat je kunt hebben. Dit bedrag is berekend door de premies te vergelijken voor een gemiddeld jong gezin. Jouw situatie kan natuurlijk anders zijn. Daarom kun je je eigen <a href="#">premie berekenen op snsbank.nl</a>.</div>
+            <div style="clear:both;"></div>
+            <a href="#page-footer" class="next-page">Vergelijk je totale voordeel<span class="icon-arrow-down"></span></a>
+
+        </article>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+<footer id="page-footer" class="footer fullscreen" role="contentinfo">
+    <div class="container">
+        <h1><em>Op een rij gezet</em>De totale opbrengsten per jaar, per bank</h1>
+        <table class="product-compare">
+            <thead>
+            <tr>
+                <td><img src="static/img/symbols.png"></td>
+                <th class="sns"><img src="static/img/sns-white.png" width="85" height="23"></th>
+                <th><img src="static/img/ing-white.png"></th>
+                <th><img src="static/img/rabo-white.png"></th>
+                <th><img src="static/img/abn-white.png"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="profile1">
+                <th>[profiel 1] Opbrengsten uit sparen minus de kosten voor je betaalrekening en verzekeringen</th>
+                <td>
+                    <span class="amount"><strong>€ 93,96</strong></span>
+                </td>
+                <td>
+                    <span class="amount">€ 93,96</span>
+                </td>
+                <td>
+                    <span class="amount">€ 93,96</span>
+                </td>
+                <td>
+                    <span class="amount">€ 93,96</span>
+                </td>
+            </tr>
+            <tr class="profile2">
+                <th>[profiel 2] Opbrengsten uit sparen minus de kosten voor je betaalrekening en verzekeringen</th>
+                <td>
+                    <span class="amount"><strong>€ 91,96</strong></span>
+                </td>
+                <td>
+                    <span class="amount">€ 91,96</span>
+                </td>
+                <td>
+                    <span class="amount">€ 91,96</span>
+                </td>
+                <td>
+                    <span class="amount">€ 91,96</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="total-profit">
+            <div class="profit-wrapper">
+                <div class="profit-sticker sticker-profile1">
+                    voordeel tot
+                    <span><strong>&euro;70<small>,59</small></strong></span>
+                    per jaar
+                </div>
+                <div class="profit-sticker sticker-profile2">
+                    voordeel tot
+                    <span><strong>&euro;40<small>,59</small></strong></span>
+                    per jaar
+                </div>
+                <div class="profit-label label-profile1">
+                    <span class="profit-bank">Bij &lt;Bank naam&gt;</span>
+                    als je alles bij één bank zou afsluiten
+                </div>
+                <div class="profit-label label-profile2">
+                    <span class="profit-bank">Bij &lt;Bank naam 2&gt;</span>
+                    als je alles bij één bank zou afsluiten
+                </div>
+            </div>
+        </div>
+        <p>Om een zo’n eerlijke mogelijke vergelijking te maken hebben, gebruiken we de optelsom van alle producten bij één Bank. Dit omdat je in sommige gevallen ook nog extra kortingen krijgt als bijvoorbeeld een betaalrekening met een verzekering combineert. Per product kan je voordeel bij SNS nog groter zijn. Voor jouw persoonlijke situatie...</p>
+        <div class="btns center">
+            <a href="#" class="btn">Telefonisch afsluiten:<br>030 1234567</a>
+            <a href="#" class="btn">Zoek een<br>SNS winkel</a>
+            <a href="#" class="btn">SNS<br>Overstapteam</a>
+        </div>
+    </div>
+
+    <div class="brandbar">
+            <div class="brandbar-container">
+                <a href="#" class="sns"><img src="static/img/sns-white.png"></a>
+                <div class="meta-data">
+                    <a href="#" class="conditions">Algemene voorwaarden</a>
+                    <span class="cooperators-title">Gegevens op basis van</span>
+                    <ul>
+                        <li class="MoneyView"><a href="#"><img src="static/img/moneyview.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</footer>

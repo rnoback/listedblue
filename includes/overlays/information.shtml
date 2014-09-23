@@ -1,0 +1,18 @@
+<article class="overlay overlay-info" data-id="more-info">
+    <div class="container">
+        <div class="overlay-content">
+            <a class="close-btn" href="#">Sluiten <span class="icon-close"></span></a>
+            <h1>Hoe is deze vergelijking gemaakt</h1>
+            <p>De vergelijking die je ziet, is gemaakt met de gegevens van Moneyview. Ze doen het volgende voor ons:</p>
+            <ul>
+                <li>Gegevens verzamelen over allerlei spaarrekeningen.</li>
+                <li>Spaarrekeningen van verschillende banken zoeken die het meest op elkaar lijken. Zo weet je zeker dat je hier een goede vergelijking ziet van ongeveer dezelfde spaarrekeningen.</li>
+                <li>Je voordeel berekenen. Dat doen ze dagelijks, zodat je altijd een up-to-date vergelijking ziet.</li>
+            </ul>
+            <p>Het gekleurde bedrag is het grootste verschil tussen onze spaarrekening en een spaarrekening bij een andere bank. Het is dus het maximale voordeel dat je kunt hebben.</p>
+            <p>
+                <span>Gegevens op basis van</span><img src="static/img/moneyview-color.png">
+            </p>
+        </div>
+    </div>
+</article>

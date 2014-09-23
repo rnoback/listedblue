@@ -1,0 +1,105 @@
+<header class="header fullscreen" role="banner">
+    <div class="background-wrap">
+        <div class="background profile1"></div>
+        <div class="background profile2"></div>
+        <div class="background profile3"></div>
+        <div class="background profile4"></div>
+        <div class="background profile5"></div>
+        <div class="background profile6"></div>
+        <div class="background profile7"></div>
+        <div class="background profile8"></div>
+    </div>
+    <div class="content-wrap">
+        <div class="brandbar">
+            <div class="brandbar-container">
+                <a href="#" class="sns"><img src="static/img/sns-white.png"></a>
+                <div class="cooperators">
+                    <span class="cooperators-title">Gegevens op basis van</span>
+                    <ul>
+                        <li class="MoneyView"><a href="#"><img src="static/img/moneyview.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <article>
+            <h1>Vergelijk je voordeel</h1>
+            <p>
+                We vinden het heel normaal om te laten zien hoeveel je betaalt voor je dagelijkse bankzaken.<br>
+                Dat doen we met de Voordeel Vergelijker. Vergelijk en kijk bij welke bank je voordeliger uit bent
+            </p>
+            <div class="sticker profile1">
+                bespaar tot<br><span>€ 201<small>,59</small></span><br>per jaar<a href="#page-footer" class="btn-details to-footer">detail</a>
+            </div>
+            <div class="sticker profile2">
+                bespaar tot<br><span>€ 202<small>,59</small></span><br>per jaar<a href="#page-footer" class="btn-details to-footer">detail</a>
+            </div>
+        </article>
+        <div class="nav-container">
+            <div class="profile-title">
+                <span class="choose">Kies:</span>
+                <a href="#" class="profile-choosen" data-profile="profile7">
+                    <span>Jong Gezin</span>
+                    <small></small>
+                    <span class="icon-arrow-down"></span>
+                </a>
+                <a href="#" class="icon-info-outline overlay-link" rel="more-info"></a>
+            </div>
+            <ul class="nav-categories">
+                <li class="save">
+                    <a href="#profile-4-save">Sparen</a>
+                </li>
+                <li class="pay">
+                    <a href="#profile-4-pay">Betalen</a>
+                </li>
+                <li class="insure">
+                    <a href="#profile-4-insure">Verzekeren</a>
+                </li>
+            </ul>
+            <nav class="nav" role="navigation">
+                <div class="nav-title">Maak een keuze...</div>
+                <ul>
+                    <li>
+                        <a href="#profile1" data-title="Alleenstaande" data-subtitle="jongere 18-25 jaar">Alleenstaande jongere 18-25 jaar</a>
+                        <a class="icon-info-outline overlay-link more-info" href="#" rel="profile1"></a>
+                    </li>
+                    <li>
+                        <a href="#profile2" data-title="Alleenstaande" data-subtitle="25-65 jaar">Alleenstaande 25-65 jaar</a>
+                        <a class="icon-info-outline overlay-link more-info" href="#" rel="profile2"></a>
+                    </li>
+                    <li>
+                        <a href="#profile3" data-title="Alleenstaande" data-subtitle="65+">Alleenstaande 65+</a>
+                        <a class="icon-info-outline overlay-link more-info" href="#" rel="profile3"></a>
+                    </li>
+                    <li>
+                        <a href="#profile4" data-title="Tweepersoonshuishoudens" data-subtitle="jongere 18-25 jaar">Tweepersoonshuishoudens jongere 18-25 jaar</a>
+                        <a class="icon-info-outline overlay-link more-info" href="#" rel="profile4"></a>
+                    </li>
+                    <li>
+                        <a href="#profile5" data-title="Tweepersoonshuishoudens" data-subtitle="25-65 jaar">Tweepersoonshuishoudens 25-65 jaar</a>
+                        <a class="icon-info-outline overlay-link more-info" href="#" rel="profile5"></a>
+                    </li>
+                    <li>
+                        <a href="#profile6" data-title="Tweepersoonshuishoudens" data-subtitle="65+">Tweepersoonshuishoudens 65+</a>
+                        <a class="icon-info-outline overlay-link more-info" href="#" rel="profile6"></a>
+                    </li>
+                    <li>
+                        <a href="#profile7" data-title="Jong Gezin" data-subtitle="">Jong Gezin</a>
+                        <a class="icon-info-outline overlay-link more-info" href="#" rel="profile7"></a>
+                    </li>
+                    <li>
+                        <a href="#profile8" data-title="Oud Gezin" data-subtitle="">Ouder Gezin</a>
+                        <a class="icon-info-outline overlay-link more-info" href="#" rel="profile8"></a>
+                    </li>
+                </ul>
+            </nav><!-- /navigation -->
+        </div>
+        <div style="clear:both;"></div>
+        
+        <div class="arrow-mask">
+            <a href="#" class="next-page"><span class="icon-arrow-down"></span></a>
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</header>

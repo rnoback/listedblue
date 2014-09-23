@@ -1,0 +1,82 @@
+<article class="overlay overlay-profile" data-id="profile1">
+    <div class="container">
+        <div class="overlay-content">
+            <a class="close-btn" href="#">Sluiten <span class="icon-close"></span></a>
+            <h1>Profile 1</h1>
+            <p class="intro">Om te bepalen hoe de financiën van een gemiddeld jong gezin eruit zien, hebben we naar onze eigen klanten gekeken. We hebben cijfers en gegevens verzameld over bijvoorbeeld het inkomen en de hoeveelheid spaargeld van een gemiddeld jong gezin. Jouw situatie kan natuurlijk anders zijn. Met de gegevens in de tabel hebben we berekend welk voordeel je bij SNS Bank kunt hebben.</p>
+
+            <table class="profile-overview">
+                <tr>
+                    <td>Aantal kinderen</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Gezinsinkomen netto p/maand</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>Aantal kinderen</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Aantal kinderen</td>
+                    <td>2</td>
+                </tr>
+            </table>
+            <table class="profile-overview">
+                <tr>
+                    <td>Aantal kinderen</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Gezinsinkomen netto p/maand</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>Aantal kinderen</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Aantal kinderen</td>
+                    <td>2</td>
+                </tr>
+            </table>
+            <table class="profile-overview">
+                <tr>
+                    <td>Aantal kinderen</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Gezinsinkomen netto p/maand</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>Aantal kinderen</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Aantal kinderen</td>
+                    <td>2</td>
+                </tr>
+            </table>
+            <table class="profile-overview">
+                <tr>
+                    <td>Aantal kinderen</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Gezinsinkomen netto p/maand</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>Aantal kinderen</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Aantal kinderen</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</article>

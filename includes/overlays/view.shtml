@@ -1,0 +1,100 @@
+<article class="overlay overlay-view" data-id="view">
+    <div class="container">
+        <div class="overlay-content">
+            <a class="close-btn" href="#">Sluiten <span class="icon-close"></span></a>
+            <table class="product-overview">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th class="sns profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8">
+                            <img src="static/img/sns.png" width="85" height="23">
+                        </th>
+                        <th class="profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8">
+                            <img src="static/img/ing.png">
+                        </th>
+                        <th class="profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8">
+                            <img src="static/img/rabo.png">
+                        </th>
+                        <th class="profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8">
+                            <img src="static/img/abn.png">
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <td class="sns profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8">
+                            <span><strong>SNS Internet Sparen</strong></span>
+                        </td>
+                        <td class="profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8">
+                            <span><strong>Oranjerekening</strong></span>
+                        </td>
+                        <td class="profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8">
+                            <span><strong>RABO Internet</strong></span>
+                        </td>
+                        <td class="profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8">
+                            <span><strong>Directpakket</strong></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="less-lineheight">Korte beschrijving</th>
+                        <td class="sns profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8">
+                            Standaard<br><br>
+                            Het product kent geen opvallende voorwaarden.
+                        </td>
+                        <td class="profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8">
+                            Standaard<br><br>
+                            Het product kent geen opvallende voorwaarden.
+                        </td>
+                        <td class="profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8">
+                            Standaard<br><br>
+                            Het product kent geen opvallende voorwaarden.
+                        </td>
+                        <td class="profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8">
+                            Standaard<br><br>
+                            Het product kent geen opvallende voorwaarden.
+                        </td>
+                    </tr>
+                    <tr class="empty">
+                        <th></th>
+                        <td class="profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8"></td>
+                        <td class="profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8"></td>
+                        <td class="profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8"></td>
+                        <td class="profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8"></td>
+                    </tr>
+                    <tr>
+                        <th class="less-lineheight">Depositogarantiestelsel</th>
+                        <td class="sns profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8">
+                            Nederlandse<br><br>
+                            De bank valt onder het Nederlandse depositogarantiestelsel.
+                        </td>
+                        <td class="profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8">
+                            Nederlandse<br><br>
+                            De bank valt onder het Nederlandse depositogarantiestelsel.
+                        </td>
+                        <td class="profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8">
+                            Nederlandse<br><br>
+                            De bank valt onder het Nederlandse depositogarantiestelsel.
+                        </td>
+                        <td class="profile1 profile2 profile3 profile4 profile5 profile6 profile7 profile8">
+                            Nederlandse<br><br>
+                            De bank valt onder het Nederlandse depositogarantiestelsel.
+
+                            <table cellpadding="3" cellspacing="3" border="0"><tr><td>
+                            </td></tr><tr><td>Tot en met Kredietlimiet</td><td>Effectieve rente op jaarbasis %
+                            </td></tr><tr><td>EUR 1.000</td><td>12,9
+                            </td></tr><tr><td>EUR 5.000</td><td>12,7
+                            </td></tr><tr><td>EUR 10.000</td><td>10,4
+                            </td></tr><tr><td>EUR 15.000</td><td>9,3
+                            </td></tr><tr><td>EUR 25.000</td><td>8,6
+                            </td></tr><tr><td>EUR 50.000</td><td>8,4
+                            </td></tr><tr><td>De peildatum is 19-06-2013.
+                            </td></tr></table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</article>
