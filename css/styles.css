@@ -1,0 +1,270 @@
+@import url("http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+/* line 5, ../../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.13/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.13/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.13/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.13/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.13/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.13/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.13/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.13/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.13/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 5, ../_source/scss/_base.scss */
+body {
+  font-family: Merriweather, serif;
+  font-size: 1.2rem;
+  line-height: 160%;
+  background: #eae3cb;
+  color: #0a2933;
+}
+
+/* line 13, ../_source/scss/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Bree Serif, serif;
+  font-weight: normal;
+  color: #475b62;
+  text-shadow: #fcf4dc, 1px, 1px;
+}
+
+/* line 20, ../_source/scss/_base.scss */
+h1 {
+  font-size: 2.2em;
+  color: #1f7f9e;
+  margin-bottom: .4rem;
+  border-bottom: 1px solid #819090;
+  padding-top: 10px;
+}
+
+/* line 27, ../_source/scss/_base.scss */
+h2 {
+  font-size: 1.5rem;
+  line-height: 100%;
+  margin: 20px 0 0 0;
+  color: #bd3613;
+}
+
+/* line 33, ../_source/scss/_base.scss */
+h3 {
+  font-size: 1.8rem;
+  line-height: 60%;
+  color: #bd3613;
+}
+
+/* line 39, ../_source/scss/_base.scss */
+a {
+  text-decoration: underline;
+  color: #536870;
+}
+/* line 42, ../_source/scss/_base.scss */
+a:hover {
+  color: orange;
+}
+
+/* line 47, ../_source/scss/_base.scss */
+p {
+  margin-bottom: 10px;
+}
+
+/* line 51, ../_source/scss/_base.scss */
+.small {
+  font-size: 1rem;
+  color: #2176c7;
+}
+
+/* line 16, ../_source/scss/_layout.scss */
+.layout {
+  padding: 3%;
+}
+/* line 20, ../_source/scss/_layout.scss */
+.layout .primairy {
+  margin-top: .2em;
+}
+/* line 26, ../_source/scss/_layout.scss */
+.layout .primairy #nextmeeting {
+  color: #eae3cb;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 0 20px 20px 20px;
+  background-color: #259286;
+}
+/* line 33, ../_source/scss/_layout.scss */
+.layout .primairy #nextmeeting h1 {
+  color: #16554e;
+  border: none;
+  text-shadow: none;
+  margin-bottom: 20px;
+}
+/* line 39, ../_source/scss/_layout.scss */
+.layout .primairy #nextmeeting a {
+  color: #0a2933;
+}
+
+/* line 51, ../_source/scss/_layout.scss */
+header img {
+  width: 95%;
+  margin: 2.5%;
+  max-width: 500px;
+  margin-bottom: 0;
+}
+
+/* line 61, ../_source/scss/_layout.scss */
+.navigation {
+  background: #175c73;
+}
+/* line 65, ../_source/scss/_layout.scss */
+.navigation ul.nav li i {
+  color: #f7b71a;
+  padding: 0 .5em 0 0;
+}
+/* line 69, ../_source/scss/_layout.scss */
+.navigation ul.nav li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #fcf4dc;
+}
+
+/* line 80, ../_source/scss/_layout.scss */
+footer {
+  color: #eae3cb;
+  background: #0d3340;
+  margin: 20px 0 0 0;
+  padding: 20px 0 100px 0;
+}
+
+/* line 4, ../_source/scss/_modules.scss */
+.speakers .artist {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 7, ../_source/scss/_modules.scss */
+.speakers .artist h3 {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #819090;
+  margin-bottom: 5px;
+}
+/* line 14, ../_source/scss/_modules.scss */
+.speakers .artist img {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 120px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 27, ../_source/scss/_modules.scss */
+#nextmeeting {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 31, ../_source/scss/_modules.scss */
+#nextmeeting img {
+  width: 30%;
+  max-width: 130px;
+  float: left;
+  margin: 0 3% 0 0;
+}
+
+/* line 41, ../_source/scss/_modules.scss */
+.socialmediaicons .title {
+  float: left;
+}
+/* line 44, ../_source/scss/_modules.scss */
+.socialmediaicons ul {
+  float: left;
+}
+/* line 46, ../_source/scss/_modules.scss */
+.socialmediaicons ul li {
+  display: inline-block;
+  margin: 0 0 0 5px;
+}
+/* line 49, ../_source/scss/_modules.scss */
+.socialmediaicons ul li img {
+  width: 30px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 58, ../_source/scss/_modules.scss */
+.pixgrid {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 61, ../_source/scss/_modules.scss */
+.pixgrid img {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  width: 30%;
+  max-width: 120px;
+}
+
+/*!
+ *  Listed Blue
+ *  style.scss
+ *	Copyright 2014 - Noback
+ *
+ *  Author      : Roel Noback | http://www.noback.com
+ *  Version     : 1.0
+ *
+ */

@@ -1,4 +1,4 @@
 css_dir = 'css'
-sass_dir = 'source/sass'
+sass_dir = '_source/scss'
 javascripts_dir = 'js'
-output_style = :compressed
+output_styles = :compressed

@@ -4,7 +4,8 @@ $column-width: 4em;
 $gutter-width: 1em;
 $grid-padding: $gutter-width;
 
-@include border-box-sizing;
+//@include border-box-sizing;
+
 
 $small: 30em;
 $medium: 47em;
@@ -13,17 +14,17 @@ $large: 75em;
 
 // Layout ----------------------------------
 .layout{
-	@include container;
+	//@include container;
 	padding: 3%;
 
 	.primairy{
 		margin-top: .2em;
 
-		@include at-breakpoint($medium){
-			@include span-columns(8,12);
+		//@include at-breakpoint($medium){
+		//	@include span-columns(8,12);
 
 			#nextmeeting{
-				@include border-radius(20px);
+			//	@include border-radius(20px);
 				color: $paleyellow;
 				margin-bottom: 10px;
 				margin-top: 10px;
@@ -39,7 +40,7 @@ $large: 75em;
 					color: $darkblue;
 				}
 			}
-		} // medium layout
+		//} // medium layout
 	} // primary
 }
 

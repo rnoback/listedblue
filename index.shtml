@@ -1,129 +1,76 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 9]> <html class="no-js lte-ie8" lang="nl-NL"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="nl-NL"> <!--<![endif]-->
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Roux meetups</title>
-	<link rel="stylesheet" href="_/css/styles.css">
+    <!--[if lt IE 9]>
+    <script src="static/js/lib/html5shiv.js"></script>
+    <script src="static/js/utilities.function.bind.js"></script>
+    <![endif]-->
+
+    <!--#include file="includes/head.shtml" -->
+
+    <title>SNS Bank - Vergelijk je voordeel.</title>
+    <meta name="description" content="">
 </head>
-<body>
-	<header>
-		<div class="hero">
-			<section class="layout">
-				<div class="branding">
-					<a href="index.html"><img src="images/logo.jpg" alt="my logo"></a>
-				</div><!-- branding -->
-			</section><!-- layout -->
-		</div><!-- hero -->
-			
-		<div class="navigation">
-			<section class="layout">
-				<ul class="nav">
-					<li><a href="#"><i class="fa fa-home"></i>Home</a></li>
-					<li><a href="#"><i class="fa fa-user"></i>Speakers</a></li>
-					<li><a href="#"><i class="fa fa-heart"></i>Sponsors</a></li>
-					<li><a href="#"><i class="fa fa-question-circle"></i>About us</a></li>
-					<li><a href="#"><i class="fa fa-contact"></i>Contact</a></li>
+<body class="profile7">
+    <!--[if lt IE 8]>
+        <p class=chromeframe><strong>Je hebt een verouderde browser!</strong> <a href="http://browsehappy.com/">Upgrade naar een betere browser</a> of
+        <a href="http://www.google.com/chromeframe/?redirect=true">installeer Google Chrome Frame</a> om deze website toch te kunnen bekijken.</p>
+    <![endif]-->
 
-				</ul>
-			</section><!-- layout -->
-		</div><!-- navigation -->
-	</header>
+    <div id="ipad-portrait">       
+        <img class="icon" src="static/img/ipad-portrait.png">
+        <h1>Draai je tablet om deze website optimaal te bekijken</h1>
+        <img class="logo" src="static/img/sns.png">
+    </div>
 
-	<div class="speakerslist">
-		<section class="layout">
-			<h1><i class="fa fa-calendar"></i>Speaking in the next meetings</h1>
-			<div class="speakers">
-				<article class="artist">
-					<h3>Title</h3>
-					<p><a href="#"><img src="images/person-dummy-tn.jpg" alt="photo of lorenzo_Garcia" class="speaker"></a></p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, aliquam, consectetur, est ipsum praesentium fugiat aspernatur dolor asperiores recusandae repellendus provident aut architecto magnam optio fuga earum saepe obcaecati quisquam?</p>
-				</article><!-- artist -->
-				<article class="artist">
-					<h3>Title</h3>
-					<p><a href="#"><img src="images/person-dummy-tn.jpg" alt="photo of Hillary_Goldwynn" class="speaker"></a></p>
-					<p>Nemo, vero atque fuga incidunt unde possimus ut perspiciatis enim doloribus corporis minus nulla voluptatum iure in animi consequuntur earum labore blanditiis velit non ipsa debitis optio itaque dolor laborum.</p>
-				</article><!-- artist -->
-				<article class="artist">
-					<h3>Title</h3>
-					<p><a href="#"><img src="images/person-dummy-tn.jpg" alt="photo of Riley_Rewington" class="speaker"></a></p>
-					<p>Perspiciatis, laudantium, dolorem, expedita, libero fugit quaerat tempore harum labore totam reprehenderit voluptatum similique delectus tenetur unde quo accusamus voluptatibus ipsum? Cum doloremque ratione quidem vel voluptate nobis ut quibusdam.</p>
-				</article><!-- artist -->
-			</div><!-- speakers -->
-		</section>
-	</div>
+    <section class="section" role="region">
 
-	<section class="layout">
-		<div class="primairy">
-			<article id="nextmeeting">
-				<h1><i class="icon-calendar"></i>Next Meeting</h1>
-				<a href="#"><img src="images/article-dummy-tn.jpg" alt="dummy"></a>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, facilis, rem, corporis, exercitationem neque placeat dolore excepturi velit porro unde accusamus fugit doloribus ipsa impedit <a href="#">suscipit adipisci</a> provident repellat laboriosam.</p>
-			</article><!-- nextmeeting -->
-			<article id="meeting2">
-				<h1><i class="icon-calendar"></i>Next Meeting</h1>
-				<a href="#"><img src="images/article-dummy-tn.jpg" alt="dummy"></a>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, facilis, rem, corporis, exercitationem neque placeat dolore excepturi velit porro unde accusamus fugit doloribus ipsa impedit <a href="#">suscipit adipisci</a> provident repellat laboriosam.</p>
-			</article><!-- meeting2 -->
-			<article id="meeting3">
-				<h1><i class="icon-calendar"></i>Next Meeting</h1>
-				<a href="#"><img src="images/article-dummy-tn.jpg" alt="dummy"></a>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, facilis, rem, corporis, exercitationem neque placeat dolore excepturi velit porro unde accusamus fugit doloribus ipsa impedit <a href="#">suscipit adipisci</a> provident repellat laboriosam.</p>
-			</article><!-- meeting3 -->
-		</div><!-- primairy -->
-		<aside class="secondary">
-			<article id="artistlist">
-				<h1>Artwork on Display</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, ipsa, possimus, cumque sapiente doloribus accusantium non libero maxime nobis fugit fugiat incidunt ipsum ullam distinctio repudiandae a accusamus totam officiis.</p>
-				<div class="pixgrid">
-					<img src="images/aside-dummy-tn.jpg" alt="dummy">
-					<img src="images/aside-dummy-tn.jpg" alt="dummy">
-					<img src="images/aside-dummy-tn.jpg" alt="dummy">
-					<img src="images/aside-dummy-tn.jpg" alt="dummy">
-					<img src="images/aside-dummy-tn.jpg" alt="dummy">
-					<img src="images/aside-dummy-tn.jpg" alt="dummy">
-					<img src="images/aside-dummy-tn.jpg" alt="dummy">
-					<img src="images/aside-dummy-tn.jpg" alt="dummy">
-					<img src="images/aside-dummy-tn.jpg" alt="dummy">
-					<img src="images/aside-dummy-tn.jpg" alt="dummy">
-				</div><!-- pixgrid -->
-			</article><!-- artistlist -->
-			<article id="mailinglist">
-				<h1>Artwork on Display</h1>
-				<p>Lorem de porem.</p>
-				
-					<form action="">
-						<input type="name" placeholder="Your Name">
-						<input type="email" placeholder="Your email">
-						<div>
-							<input type="submit" value="Subcribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-						</div>
-					</form>
-				
-			</article><!-- mailinglist -->
-			<article id="parking">
-				<h1>Artwork on Display</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, totam, consequuntur, laborum quo adipisci assumenda odio laboriosam <a href="#">perspiciatis</a> non tempora dolorem atque ipsam temporibus porro pariatur veritatis aperiam dolores? Corporis. ipsum dolor sit amet, consectetur adipisicing elit. Similique, incidunt, possimus, quos odit voluptate quasi nisi rerum dolores temporibus sint eligendi ratione mollitia dolore ut voluptatem necessitatibus vel ex consequatur.</p>
+        <!--#include file="includes/header.shtml" -->
 
-			</article><!-- parkimg -->
-		</aside><!-- secondary -->
-	</section><!-- layout -->
+        <div id="profile1" class="product-container">
+            <!--#include file="includes/product-save.shtml" -->
+            <!--#include file="includes/product-pay.shtml" -->
+            <!--#include file="includes/product-insure.shtml" -->
 
-	<footer>
-		<section class="layout">
-			<div class="socialmediaicons">
-				<span class="title">the title</span>
-				<ul>
-					<li><a href="http://twitter.com"><img src="images/socialmedia/twitter.png" alt="icon for twitter" class="icon"></a></li>
-					<li><a href="http://facebook.com"><img src="images/socialmedia/facebook.png" alt="icon for facebook" class="icon"></a></li>
-					<li><a href="http://linkedin.com"><img src="images/socialmedia/linkedin.png" alt="icon for linkedin" class="icon"></a></li>
-				</ul>
-			</div><!-- socialmediaicons -->
-		</section><!-- layout -->
-	</footer>
-	<script src="js/script.js"></script>
-	<script src="//localhost:35729/livereload.js"></script>
+
+        </div>
+        <div id="profile2" class="product-container">
+            <!--#include file="includes/product-save.shtml" -->
+            <!--#include file="includes/product-pay.shtml" -->
+            <!--#include file="includes/product-insure.shtml" -->
+        </div>
+
+
+    <!--#include file="includes/footer.shtml" -->
+
+
+        <!-- /container -->
+    </section>
+
+    <div class="cookie-opt-in bottom" style="">
+        <div class="background">
+            <div class="message">
+                <p>Om deze website goed te laten functioneren gebruiken wij cookies. <a href="http://www.snsbank.nl/web/file?uuid=bda545f4-01f8-472b-b3fb-58fec220ee47&amp;owner=028871ad-c027-4c4a-bc76-414f3405dc52" target="_blank">Bekijk ons cookiebeleid</a>.</p>
+            </div>
+            <button class="btn btn-action btn-mini">Akkoord</button>
+        </div>
+    </div>
+
+    <div class="overlay-container">
+        <!--#include file="includes/overlays/profile1.shtml" -->
+        <!--#include file="includes/overlays/profile2.shtml" -->
+        <!--#include file="includes/overlays/information.shtml" -->
+        <!--#include file="includes/overlays/view.shtml" -->
+        <!--#include file="includes/overlays/privacystatement.shtml" -->
+    </div>
+    <div class="tooltip">
+        <a class="close-btn" href="#"><span class="icon-close"></span></a>
+        <h3 class="tooltip-title">Lorem ipsum dolor sit ametff</h3>
+        <p class="tooltip-content"></p>
+    </div>
+
+    <!--#include file="includes/javascript.shtml" -->
 
 </body>
 </html>

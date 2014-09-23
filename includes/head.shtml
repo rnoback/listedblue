@@ -8,8 +8,7 @@
 <meta name="MobileOptimized" content="320" />
 <meta http-equiv="cleartype" content="on" />
 <link rel="icon" type="img/ico" href="favicon.ico">
-<link rel="stylesheet" href="static/css/style.css" />
-<link rel="stylesheet" href="static/css/cookie.css" />
+<link rel="stylesheet" href="css/styles.css" />
 
 
 <!--[if lt IE 9]>
