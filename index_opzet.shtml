@@ -6,6 +6,12 @@
     <meta name="description" content="">
 </head>
 <body>
-    
+    <!--[if lt IE 8]>
+        <p class=chromeframe><strong>Je hebt een verouderde browser!</strong> <a href="http://browsehappy.com/">Upgrade naar een betere browser</a> of
+        <a href="http://www.google.com/chromeframe/?redirect=true">installeer Google Chrome Frame</a> om deze website toch te kunnen bekijken.</p>
+    <![endif]-->
+    <div class="main">
+        <img src="/images/bg/home.jpg" class="bg home">
+    </div>
 </body>
 </html>

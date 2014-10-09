@@ -74,7 +74,7 @@ body {
   font-family: LB-baskerville-regular, serif;
   font-size: 1.2rem;
   line-height: 160%;
-  background: white;
+  background: #eeeeee;
   color: #0a2933;
 }
 
@@ -91,7 +91,7 @@ h1 {
   font-size: 2.2em;
   color: #1f7f9e;
   margin-bottom: .4rem;
-  border-bottom: 1px solid #819090;
+  border-bottom: 1px solid #eeeeee;
   padding-top: 10px;
 }
 
@@ -192,19 +192,26 @@ footer {
   padding: 20px 0 100px 0;
 }
 
-/* line 4, ../_source/scss/_modules.scss */
+/* line 3, ../_source/scss/_modules.scss */
+.main {
+  margin: 0 auto;
+  height: 896px;
+  width: 1152px;
+}
+
+/* line 12, ../_source/scss/_modules.scss */
 .speakers .artist {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 7, ../_source/scss/_modules.scss */
+/* line 15, ../_source/scss/_modules.scss */
 .speakers .artist h3 {
   padding-top: 10px;
   padding-bottom: 5px;
-  border-bottom: 1px dotted #819090;
+  border-bottom: 1px dotted #eeeeee;
   margin-bottom: 5px;
 }
-/* line 14, ../_source/scss/_modules.scss */
+/* line 22, ../_source/scss/_modules.scss */
 .speakers .artist img {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -215,12 +222,12 @@ footer {
   margin-bottom: 10px;
 }
 
-/* line 27, ../_source/scss/_modules.scss */
+/* line 35, ../_source/scss/_modules.scss */
 #nextmeeting {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 31, ../_source/scss/_modules.scss */
+/* line 39, ../_source/scss/_modules.scss */
 #nextmeeting img {
   width: 30%;
   max-width: 130px;
@@ -228,20 +235,20 @@ footer {
   margin: 0 3% 0 0;
 }
 
-/* line 41, ../_source/scss/_modules.scss */
+/* line 49, ../_source/scss/_modules.scss */
 .socialmediaicons .title {
   float: left;
 }
-/* line 44, ../_source/scss/_modules.scss */
+/* line 52, ../_source/scss/_modules.scss */
 .socialmediaicons ul {
   float: left;
 }
-/* line 46, ../_source/scss/_modules.scss */
+/* line 54, ../_source/scss/_modules.scss */
 .socialmediaicons ul li {
   display: inline-block;
   margin: 0 0 0 5px;
 }
-/* line 49, ../_source/scss/_modules.scss */
+/* line 57, ../_source/scss/_modules.scss */
 .socialmediaicons ul li img {
   width: 30px;
   -moz-border-radius: 5px;
@@ -249,12 +256,12 @@ footer {
   border-radius: 5px;
 }
 
-/* line 58, ../_source/scss/_modules.scss */
+/* line 66, ../_source/scss/_modules.scss */
 .pixgrid {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 61, ../_source/scss/_modules.scss */
+/* line 69, ../_source/scss/_modules.scss */
 .pixgrid img {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
