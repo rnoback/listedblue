@@ -1,7 +1,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-<meta name="author" content="Digitas LBi Netherlands" />
+<meta name="author" content="Noback" />
 
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="HandheldFriendly" content="True" />
@@ -11,9 +11,12 @@
 <link rel="stylesheet" href="css/styles.css" />
 
 
+
 <!--[if lt IE 9]>
-    <script src="static/js/vendor/modernizr.min.js"></script>
+	<script src="js/lib/html5shiv.min.js"></script>
+    <script src="js/vendor/modernizr.min.js"></script>
 <![endif]-->
+
 <!--[if lte IE 9]>
-	<link rel="stylesheet" href="static/css/ie.css" />
+	<link rel="stylesheet" href="css/ie.css" />
 <![endif]-->

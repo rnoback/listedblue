@@ -1,6 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather");
-@import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
-/* line 5, ../../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.13/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,67 +20,73 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.13/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.13/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.13/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.13/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.13/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.13/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.13/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.13/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+/* line 116, ../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 5, ../_source/scss/_base.scss */
+@font-face {
+  font-family: 'LB-baskerville-regular';
+  src: url("../font/baskerville-regular-webfont.eot");
+  src: url("../font/baskerville-regular-webfont.eot") format("embedded-opentype"), url("../font/baskerville-regular-webfont.woff") format("woff"), url("../font/baskerville-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+}
+/* line 1, ../_source/scss/_base.scss */
 body {
-  font-family: Merriweather, serif;
+  font-family: LB-baskerville-regular, serif;
   font-size: 1.2rem;
   line-height: 160%;
-  background: #eae3cb;
+  background: white;
   color: #0a2933;
 }
 
-/* line 13, ../_source/scss/_base.scss */
+/* line 9, ../_source/scss/_base.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: Bree Serif, serif;
+  font-family: Arial, serif;
   font-weight: normal;
-  color: #475b62;
+  color: #414141;
   text-shadow: #fcf4dc, 1px, 1px;
 }
 
-/* line 20, ../_source/scss/_base.scss */
+/* line 16, ../_source/scss/_base.scss */
 h1 {
   font-size: 2.2em;
   color: #1f7f9e;
@@ -91,7 +95,7 @@ h1 {
   padding-top: 10px;
 }
 
-/* line 27, ../_source/scss/_base.scss */
+/* line 23, ../_source/scss/_base.scss */
 h2 {
   font-size: 1.5rem;
   line-height: 100%;
@@ -99,32 +103,32 @@ h2 {
   color: #bd3613;
 }
 
-/* line 33, ../_source/scss/_base.scss */
+/* line 29, ../_source/scss/_base.scss */
 h3 {
   font-size: 1.8rem;
   line-height: 60%;
   color: #bd3613;
 }
 
-/* line 39, ../_source/scss/_base.scss */
+/* line 35, ../_source/scss/_base.scss */
 a {
   text-decoration: underline;
   color: #536870;
 }
-/* line 42, ../_source/scss/_base.scss */
+/* line 38, ../_source/scss/_base.scss */
 a:hover {
   color: orange;
 }
 
-/* line 47, ../_source/scss/_base.scss */
+/* line 43, ../_source/scss/_base.scss */
 p {
   margin-bottom: 10px;
 }
 
-/* line 51, ../_source/scss/_base.scss */
+/* line 47, ../_source/scss/_base.scss */
 .small {
   font-size: 1rem;
-  color: #2176c7;
+  color: #5ca2df;
 }
 
 /* line 16, ../_source/scss/_layout.scss */

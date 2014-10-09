@@ -1,9 +1,6 @@
 // colors
-
 $lightgray      : #819090;
-$gray           : #708284;
 $mediumgray     : #536870;
-$darkgray       : #475B62;
 $darkblue       : #0A2933;
 $darkerblue     : #042029;
 $paleryellow    : #FCF4DC;
@@ -13,11 +10,19 @@ $orange         : #BD3613;
 $red            : #D11C24;
 $pink           : #C61C6F;
 $purple         : #595AB7;
-$blue           : #2176C7;
 $cyan           : #259286;
 $green          : #738A05;
 
-$font-primary: Merriweather, serif;
-$font-secondary: Bree Serif, serif;
 
+$white  		: #ffffff;
+$black  		: #000000;
+$blue           : #5ca2df;
+$gray           : #707070;
+$darkgray       : #414141;
+
+//font
+$font-primary: LB-baskerville-regular, serif;
+$font-secondary: Arial, serif;
+
+//border
 $default-border-radius: 10px;
