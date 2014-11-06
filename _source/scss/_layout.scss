@@ -1,85 +1,46 @@
-// Susy setup ----------------------------
-$total-columns: 12;
-$column-width: 4em;
-$gutter-width: 1em;
-$grid-padding: $gutter-width;
-
-//@include border-box-sizing;
-
-
-$small: 30em;
-$medium: 47em;
-$large: 75em;
-
-
 // Layout ----------------------------------
-.layout{
-	//@include container;
-	padding: 3%;
 
-	.primairy{
-		margin-top: .2em;
+.main-wrap{
+	/* overflow: hidden; */
+}
+.product-box {
+	position:relative;
+}
 
-		//@include at-breakpoint($medium){
-		//	@include span-columns(8,12);
 
-			#nextmeeting{
-			//	@include border-radius(20px);
-				color: $paleyellow;
-				margin-bottom: 10px;
-				margin-top: 10px;
-				padding: 0 20px 20px 20px;
-				background-color: $cyan;	
-				h1{
-					color: darken($cyan, 15);
-					border: none;
-					text-shadow: none;
-					margin-bottom: 20px;
-				} 
-				a{
-					color: $darkblue;
-				}
-			}
-		//} // medium layout
-	} // primary
+.inner {
+	img{
+		width:100%;
+		height: auto;
+		display: block;
+	}
+	img.locked{
+		margin: 0 auto;
+		
+	}
+
+}
+
+.product-info-box{
+	height: 80px;
+	background: red;
 }
 
 
 // Header ----------------------------------
 
 header{
-	img{
-		width: 95%;
-		margin: 2.5%;
-		max-width: 500px;
-		margin-bottom: 0;
-	}
+	background: white;
+	height: 125px;
 }
 
 // Navigation -------------------------------
 
-.navigation{
-	background: lighten($darkblue, 15);
-	ul.nav{
-		li{
-			i{
-				color: lighten($yellow, 20);
-				padding: 0 .5em 0 0;
-			}
-			a{
-				display: block;
-				text-decoration: none;
-				padding: 5px 10px;
-				color: $paleryellow;
-			}
-		}
-	}//nav
-}
+
 
 // Footer -------------------------------
 footer{
-	color: $paleyellow;
-	background: lighten($darkblue, 3);
-	margin: 20px 0 0 0;
-	padding: 20px 0 100px 0;
+	background: white;
+	height: 80px;
+	
 }

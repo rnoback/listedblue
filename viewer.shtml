@@ -2,18 +2,27 @@
 <html>
 <head>
     <!--#include file="includes/head.shtml" -->
+    
     <title>Listed Blue</title>
     <meta name="description" content="">
 </head>
-<body>
+<body class="viewer">
     <!--[if lt IE 8]>
         <p class=chromeframe><strong>Je hebt een verouderde browser!</strong> <a href="http://browsehappy.com/">Upgrade naar een betere browser</a> of
         <a href="http://www.google.com/chromeframe/?redirect=true">installeer Google Chrome Frame</a> om deze website toch te kunnen bekijken.</p>
     <![endif]-->
-    <div class="main">
-        <img src="images/bg/home.jpg" class="bg home">
-
-
-    </div>
+    <div class="main-wrap">
+        <header><h1>LISTED BLUE</h1></header>
+        <div class="product-box">
+            <div class="inner">
+                <img src="images/visual1.jpg">
+            </div>
+        </div>
+        <div class="product-info-box">
+            <h2>Clay Ashtray</h2>
+        </div>
+        <footer>credits</footer>
+    </div><!-- end main-wrap -->
+    <!--#include file="includes/javascript.shtml" -->
 </body>
 </html>

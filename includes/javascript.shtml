@@ -1,49 +1,16 @@
-	
-<script src="static/js/lib/jquery.min.js"></script>
-<script src="static/js/lib/jquery.cookie.js"></script>
-<script src="static/js/lib/lbi.min.js"></script>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="js/vendor/jquery-2.1.1.js"></script>
 
-
-
-<!-- Separated core, component and class JS files -->
-
-<script type="text/javascript">
-    var staticdir = '/static';
-</script>
-<script type="text/javascript" src="static/js/external/s_code.js"></script>
-<!--Start of Omniture code Landingspagina: Please do not remove -->
-
-<!--<script language="JavaScript" type="text/javascript">-->
-
-    <!--s.un = "advsnsbanklive";-->
-    <!--s.pageName = "Particulier:LP boodschappenlijstje 2014";-->
-    <!--s.prop1="particulier";-->
-    <!--s.prop3="x";-->
-    <!--s.prop4="x";-->
-    <!--s.products=";Particulier|LP boodschappenlijstje 2014"-->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!--/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/-->
-    <!--var s_code = s.t();-->
-    <!--if (s_code) document.write(s_code)-->
 <!--</script>-->
 <script language="JavaScript" type="text/javascript">
     <!--
     if (navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
     //-->
 </script>
-<script type="text/javascript" src="static/js/external/analytics.js"></script>
 
-<script type="text/javascript" src="static/js/sns/component/Overlay.js"></script>
-<script type="text/javascript" src="static/js/sns/Main.js"></script>
+
+<script type="text/javascript" src="js/script.js"></script>
 
 <noscript>
-    <a href="http://www.omniture.com" title="Web Analytics">
-        <img src="https://swa.snsbank.nl/b/ss/advsnsbankprod/1/H.19.4--NS/0" height="1" width="1" border="0" alt="" />
-    </a>
 </noscript>
 
-<!--End of Omniture code: Please do not remove -->
