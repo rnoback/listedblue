@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: LB-baskerville-regular, serif;
   font-weight: normal;
   color: #414141;
-  text-shadow: #eeeeee, 1px, 1px;
+  /* @include text-shadow($lightgray, 1px, 1px); */
 }
 
 /* line 16, ../_source/scss/_base.scss */
@@ -97,7 +97,7 @@ h1 {
 h2 {
   font-size: 1.5rem;
   line-height: 100%;
-  margin: 20px 0 0 0;
+  /* margin: 20px 0 0 0; */
 }
 
 /* line 26, ../_source/scss/_base.scss */
@@ -131,42 +131,72 @@ p {
 /* line 3, ../_source/scss/_layout.scss */
 .main-wrap {
   /* overflow: hidden; */
-}
-
-/* line 6, ../_source/scss/_layout.scss */
-.product-box {
   position: relative;
 }
-
 /* line 12, ../_source/scss/_layout.scss */
-.inner img {
+.main-wrap .product-box .inner img {
   width: 100%;
   height: auto;
   display: block;
+  margin: 0 auto;
+  position: relative;
+  /* visibility: hidden; */
 }
-/* line 17, ../_source/scss/_layout.scss */
-.inner img.locked {
+/* line 26, ../_source/scss/_layout.scss */
+.main-wrap header {
+  background: white;
+  height: 125px;
+  width: 100%;
+}
+/* line 31, ../_source/scss/_layout.scss */
+.main-wrap header h1 {
+  width: inherit;
   margin: 0 auto;
 }
-
-/* line 24, ../_source/scss/_layout.scss */
-.product-info-box {
+/* line 42, ../_source/scss/_layout.scss */
+.main-wrap footer {
+  background: white;
+  height: 160px;
+}
+/* line 46, ../_source/scss/_layout.scss */
+.main-wrap footer .product-info-box {
   height: 80px;
   background: red;
 }
 
-/* line 32, ../_source/scss/_layout.scss */
-header {
-  background: white;
+/* line 58, ../_source/scss/_layout.scss */
+.main-wrap.is-portrait .product-box .inner img {
+  width: auto;
+  height: 100%;
+}
+/* line 66, ../_source/scss/_layout.scss */
+.main-wrap.is-portrait header {
   height: 125px;
+  position: absolute;
+  z-index: 10;
+  background: transparent;
+}
+/* line 71, ../_source/scss/_layout.scss */
+.main-wrap.is-portrait header h1 {
+  color: white;
+}
+/* line 81, ../_source/scss/_layout.scss */
+.main-wrap.is-portrait footer {
+  background: transparent;
+  height: 160px;
+  position: absolute;
+  bottom: 0;
+}
+/* line 88, ../_source/scss/_layout.scss */
+.main-wrap.is-portrait footer .product-info-box {
+  background: green;
 }
 
-/* line 42, ../_source/scss/_layout.scss */
-footer {
-  background: white;
-  height: 80px;
-}
-
+/*  @media all and (orientation:portrait) {
+	.product-info-box{
+		background: green;
+	}
+} */
 /*!
  *  Listed Blue
  *  style.scss

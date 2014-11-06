@@ -10,7 +10,7 @@ body{
 	font-family: $font-primary;
 	font-weight: normal;
 	color: $darkgray;
-	@include text-shadow($lightgray, 1px, 1px);
+	/* @include text-shadow($lightgray, 1px, 1px); */
 }
 
 h1{
@@ -21,7 +21,7 @@ h1{
 h2{
 	font-size: 1.5rem;
 	line-height: 100%;
-	margin: 20px 0 0 0;
+	/* margin: 20px 0 0 0; */
 }
 h3{
 	font-size: 1.8rem;
