@@ -72,7 +72,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 1, ../_source/scss/_base.scss */
 body {
   font-family: LB-baskerville-regular, serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 160%;
   background: blue;
   color: black;
@@ -83,57 +83,66 @@ h1, h2, h3, h4, h5, h6 {
   font-family: LB-baskerville-regular, serif;
   font-weight: normal;
   color: #414141;
+  line-height: 100%;
   /* @include text-shadow($lightgray, 1px, 1px); */
 }
 
-/* line 16, ../_source/scss/_base.scss */
+/* line 17, ../_source/scss/_base.scss */
 h1 {
-  font-size: 2.2em;
+  font-size: 2em;
   margin-bottom: .4rem;
-  padding-top: 10px;
 }
 
 /* line 21, ../_source/scss/_base.scss */
 h2 {
   font-size: 1.5rem;
-  line-height: 100%;
-  /* margin: 20px 0 0 0; */
+  margin-bottom: .25rem;
 }
 
-/* line 26, ../_source/scss/_base.scss */
+/* line 25, ../_source/scss/_base.scss */
 h3 {
   font-size: 1.8rem;
   line-height: 60%;
   color: #818181;
 }
 
-/* line 32, ../_source/scss/_base.scss */
+/* line 31, ../_source/scss/_base.scss */
 a {
   text-decoration: underline;
   color: #707070;
 }
-/* line 35, ../_source/scss/_base.scss */
+/* line 34, ../_source/scss/_base.scss */
 a:hover {
   color: orange;
 }
 
-/* line 40, ../_source/scss/_base.scss */
+/* line 39, ../_source/scss/_base.scss */
 p {
   margin-bottom: 10px;
 }
 
-/* line 44, ../_source/scss/_base.scss */
+/* line 43, ../_source/scss/_base.scss */
 .small {
   font-size: 1rem;
   color: #5ca2df;
 }
 
-/* line 3, ../_source/scss/_layout.scss */
+/* line 2, ../_source/scss/_layout.scss */
+.is-portrait {
+  overflow-y: hidden;
+}
+
+/* line 7, ../_source/scss/_layout.scss */
+.is-landscape {
+  overflow: hidden;
+}
+
+/* line 11, ../_source/scss/_layout.scss */
 .main-wrap {
   /* overflow: hidden; */
   position: relative;
 }
-/* line 12, ../_source/scss/_layout.scss */
+/* line 20, ../_source/scss/_layout.scss */
 .main-wrap .product-box .inner img {
   width: 100%;
   height: auto;
@@ -142,53 +151,65 @@ p {
   position: relative;
   /* visibility: hidden; */
 }
-/* line 26, ../_source/scss/_layout.scss */
+/* line 34, ../_source/scss/_layout.scss */
 .main-wrap header {
   background: white;
   height: 125px;
   width: 100%;
 }
-/* line 31, ../_source/scss/_layout.scss */
+/* line 40, ../_source/scss/_layout.scss */
 .main-wrap header h1 {
-  width: inherit;
-  margin: 0 auto;
+  position: relative;
+  width: auto;
+  text-align: center;
+  padding-top: 3.125rem;
 }
-/* line 42, ../_source/scss/_layout.scss */
+/* line 47, ../_source/scss/_layout.scss */
+.main-wrap header h1:after {
+  margin: -0.4rem 0 0 0.4rem;
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  background-image: url(../images/blue-dot.png);
+  width: 0.75rem;
+  height: 0.75rem;
+}
+/* line 63, ../_source/scss/_layout.scss */
 .main-wrap footer {
   background: white;
   height: 160px;
 }
-/* line 46, ../_source/scss/_layout.scss */
+/* line 67, ../_source/scss/_layout.scss */
 .main-wrap footer .product-info-box {
   height: 80px;
   background: red;
 }
 
-/* line 58, ../_source/scss/_layout.scss */
-.main-wrap.is-portrait .product-box .inner img {
+/* line 80, ../_source/scss/_layout.scss */
+.is-portrait .main-wrap .product-box .inner img {
   width: auto;
   height: 100%;
 }
-/* line 66, ../_source/scss/_layout.scss */
-.main-wrap.is-portrait header {
-  height: 125px;
+/* line 86, ../_source/scss/_layout.scss */
+.is-portrait .main-wrap header {
   position: absolute;
+  width: 1800px;
   z-index: 10;
   background: transparent;
 }
-/* line 71, ../_source/scss/_layout.scss */
-.main-wrap.is-portrait header h1 {
+/* line 92, ../_source/scss/_layout.scss */
+.is-portrait .main-wrap header h1 {
   color: white;
 }
-/* line 81, ../_source/scss/_layout.scss */
-.main-wrap.is-portrait footer {
+/* line 102, ../_source/scss/_layout.scss */
+.is-portrait .main-wrap footer {
   background: transparent;
   height: 160px;
   position: absolute;
   bottom: 0;
 }
-/* line 88, ../_source/scss/_layout.scss */
-.main-wrap.is-portrait footer .product-info-box {
+/* line 109, ../_source/scss/_layout.scss */
+.is-portrait .main-wrap footer .product-info-box {
   background: green;
 }
 

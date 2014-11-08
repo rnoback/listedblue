@@ -32,28 +32,31 @@ var settings;
         init: function() {
             //this.createCacheItems();
             this.isPortrait = false;
-
+            this.theBody = $('body');
+            this.theWindow = $(window);
             this.header = $('header');
             this.footer = $('footer');
             this.mainWrap = $('.main-wrap');
             this.mainVisual = $('.inner').find('img');
            
-            /*this.viewportWidth = $(window).outerWidth();
-            this.widthTotal = this.mainWrap.height();
-*/
-            this.viewportHeight = $(window).height();
+            this.applyOrientation();
+            this.viewportWidth = this.theWindow.outerWidth();
+            
+            this.viewportHeight = this.theWindow.outerHeight();
+
+            console.log("this.viewportHeight "+this.viewportHeight);
             this.heightTotal = this.mainWrap.height();
            
-
             this.productBox = $('.product-box');
             this.productInfoBox = $('.product-info-box');
-            this.restHeigth = this.header.innerHeight() + this.footer.height();
+            this.restHeigth = this.header.height() + this.footer.height();
 
 /*          console.log("this.header.height() "+ this.header.height());
             console.log("this.footer.height() " + this.footer.height());
             console.log("this.productInfoBox.height() " +  this.productInfoBox.height());*/
 
             this.productBoxHeight = this.viewportHeight - this.restHeigth;
+
 
 /*            console.log("heightTotal "+ this.heightTotal);
             console.log("viewportHeight " +  this.viewportHeight);
@@ -63,9 +66,9 @@ var settings;
             
             //setTimeout(this.resizeHandler.bind(this);
             // Portrait / landscape stuff
-            this.applyOrientation();
+            //this.applyOrientation();
 
-           /* $(window).on("orientationchange", function(){
+           /* this.theWindow.on("orientationchange", function(){
                 if(window.orientation == 0) // Portrait
                 {
                     console.log("You are now in portrait");
@@ -76,11 +79,19 @@ var settings;
                 }
             });
 */           
-           // setTimeout(this.setMainVisial, 500).bind(this);
-           // this.setMainVisial();
-            $(window).on('scroll', this.scrollHandler.bind(this));
-            $(window).on('resize', this.resizeHandler.bind(this));
+            
+            this.setMainVisial();
+            this.theWindow.on('scroll', this.scrollHandler.bind(this));
+            this.theWindow.on('resize', this.resizeHandler.bind(this));
+
+           
+            // 
+            /*this.theWindow.on("mousewheel", function() {
+                return false;
+            });*/
+            var timeout = setTimeout(this.resizeHandler.bind(this), 1);
         },
+
 
         setMainVisial: function(){
             if(!this.isPortrait){
@@ -100,40 +111,64 @@ var settings;
 
         applyOrientation: function () {
           if (window.innerHeight > window.innerWidth) {
-            console.log("You are now in portrait");
-            this.isPortrait = true;
-            this.mainWrap.addClass("is-portrait");
-            this.mainVisual.css('height', (this.viewportHeight)+'px');
-            this.mainVisual.css('width', 'auto');
-            //this.mainVisual.parent.css('left', '50%');
-
-            var scrollto = this.mainVisual.offset().left + (this.mainVisual.width() / 4);
-            console.log("this.mainVisual.width() "+this.mainVisual.width());
-            console.log("scrollto "+scrollto);
-
-
-            window.scrollTo(500,0);
-
+            this.setPortraitMode();
           } else {
-            console.log("You are now in landscape");
-            this.isPortrait = false;
-            this.mainWrap.removeClass("is-portrait");
+            this.setLandscapeMode();
           }
         },
 
+        setPortraitMode: function(){
+            console.log("You are now in portrait");
+
+            this.isPortrait = true;
+            this.theBody.addClass('is-portrait');
+            this.theBody.removeClass("is-landscape");
+            this.mainVisual.css('height', (this.viewportHeight)+'px');
+            this.mainVisual.css('width', 'auto');
+
+            //header
+            this.header.css('width', (this.mainVisual.width()));
+
+            // Center main visual 
+            var scrollTo = (this.mainVisual.width() - this.viewportWidth) / 2;
+
+
+            //console.log("scrollto "+scrollTo);
+           //console.log("this.viewportWidth "+this.viewportWidth);
+
+            // Check if centered visual fits into viewport
+            var diff = this.viewportWidth - scrollTo;
+            //console.log("diff "+diff);
+
+            window.scrollTo(scrollTo, 0);
+        },
+
+        setLandscapeMode: function(){
+            console.log("You are now in landscape");
+            this.isPortrait = false;
+            this.theBody.removeClass("is-portrait");
+            this.theBody.addClass("is-landscape");
+            this.mainVisual.css('width', '100%');
+            this.mainVisual.css('height', 'auto');
+            this.header.css('width', '100%');
+            window.scrollTo(0,0);
+        },
+
         scrollHandler:function(){
-           /* var pos = window.position();
-            var posLeft = pos.left;
-            console.log("posLeft "+posLeft);*/
+            /*var pos = this.theWindow.scrollLeft();
+            
+            console.log("posLeft "+pos);*/
         },
 
         resizeHandler: function() {
+            
 
             this.applyOrientation();
-            this.viewportHeight = $(window).outerHeight();
+            this.viewportHeight = this.theWindow.outerHeight();
+            this.viewportWidth = this.theWindow.outerWidth();
             this.heightTotal = this.mainWrap.height();
             this.productBoxHeight = this.viewportHeight - this.restHeigth;
-
+            console.log("this.viewportHeight "+this.viewportHeight);
             this.setMainVisial();
         }
     };

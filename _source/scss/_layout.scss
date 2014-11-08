@@ -1,4 +1,12 @@
 // Layout ----------------------------------
+.is-portrait{
+	//overflow:auto;
+	 overflow-y:hidden;
+}
+
+.is-landscape{
+	 overflow:hidden;
+}
 
 .main-wrap{
 	/* overflow: hidden; */
@@ -28,9 +36,22 @@
 		height: 125px;
 		width: 100%;
 
+
 		h1{
-			width: inherit;
-			margin: 0 auto;
+			position: relative;
+			width: auto;
+			text-align: center;
+			padding-top: 3.125rem;
+		}
+
+		h1:after{
+			margin: -0.4rem 0 0 0.4rem;
+			content:" ";
+			display: inline-block;
+			position: absolute;
+			background-image: url(../images/blue-dot.png);
+			width: 0.75rem;
+			height: 0.75rem;
 		}
 	}
 
@@ -50,45 +71,46 @@
 	}
 }
 
-.main-wrap.is-portrait{
-	
-	.product-box {
-		//left: -300px;
-		.inner {
-			img{
-				width: auto;
-				height: 100%;
-				
-				
+.is-portrait{
+	.main-wrap{
+		
+		.product-box {
+			//left: -300px;
+			.inner {
+				img{
+					width: auto;
+					height: 100%;
+				}
 			}
 		}
-	}
-	header{
-		height: 125px;
-		position: absolute;
-		z-index: 10;
-		background: transparent;
-		h1{
-			color: $white;
+		header{
+
+			position: absolute;
+			width: 1800px;
+			z-index: 10;
+			background: transparent;
+			h1{
+				color: $white;
+			}
 		}
-	}
 
-	// Navigation -------------------------------
-
+		// Navigation -------------------------------
 
 
-	// Footer -------------------------------
-	footer{
-		background: transparent;
-		height: 160px;
 
-		position: absolute;
-		bottom:0;
+		// Footer -------------------------------
+		footer{
+			background: transparent;
+			height: 160px;
 
-		.product-info-box{
-			background: green;
+			position: absolute;
+			bottom:0;
+
+			.product-info-box{
+				background: green;
+			}
+			
 		}
-		
 	}
 }
 
