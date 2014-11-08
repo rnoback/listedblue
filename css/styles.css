@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 17, ../_source/scss/_base.scss */
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
   margin-bottom: .4rem;
 }
 
@@ -118,7 +118,7 @@ a:hover {
 
 /* line 39, ../_source/scss/_base.scss */
 p {
-  margin-bottom: 10px;
+  margin-bottom: 0.75rem;
 }
 
 /* line 43, ../_source/scss/_base.scss */
@@ -154,17 +154,18 @@ p {
 /* line 34, ../_source/scss/_layout.scss */
 .main-wrap header {
   background: white;
-  height: 125px;
+  height: 7.813rem;
   width: 100%;
+  z-index: 10;
 }
-/* line 40, ../_source/scss/_layout.scss */
+/* line 41, ../_source/scss/_layout.scss */
 .main-wrap header h1 {
   position: relative;
   width: auto;
   text-align: center;
   padding-top: 3.125rem;
 }
-/* line 47, ../_source/scss/_layout.scss */
+/* line 48, ../_source/scss/_layout.scss */
 .main-wrap header h1:after {
   margin: -0.4rem 0 0 0.4rem;
   content: " ";
@@ -174,43 +175,48 @@ p {
   width: 0.75rem;
   height: 0.75rem;
 }
-/* line 63, ../_source/scss/_layout.scss */
+/* line 64, ../_source/scss/_layout.scss */
 .main-wrap footer {
   background: white;
-  height: 160px;
+  height: 11.25rem;
+  z-index: 10;
+  text-align: center;
 }
-/* line 67, ../_source/scss/_layout.scss */
+/* line 71, ../_source/scss/_layout.scss */
 .main-wrap footer .product-info-box {
-  height: 80px;
+  padding: 1.4rem 0;
+  height: 2.2rem;
   background: red;
+  text-align: center;
 }
 
-/* line 80, ../_source/scss/_layout.scss */
+/* line 86, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap .product-box .inner img {
   width: auto;
   height: 100%;
 }
-/* line 86, ../_source/scss/_layout.scss */
+/* line 92, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap header {
   position: absolute;
-  width: 1800px;
+  /* width: 1800px; */
   z-index: 10;
   background: transparent;
 }
-/* line 92, ../_source/scss/_layout.scss */
+/* line 98, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap header h1 {
   color: white;
 }
-/* line 102, ../_source/scss/_layout.scss */
+/* line 108, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap footer {
   background: transparent;
-  height: 160px;
   position: absolute;
   bottom: 0;
 }
-/* line 109, ../_source/scss/_layout.scss */
+/* line 115, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap footer .product-info-box {
-  background: green;
+  position: relative;
+  width: auto;
+  background: transparent;
 }
 
 /*  @media all and (orientation:portrait) {

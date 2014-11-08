@@ -31,6 +31,9 @@ var settings;
         // Main intialization...
         init: function() {
             //this.createCacheItems();
+
+           
+
             this.isPortrait = false;
             this.theBody = $('body');
             this.theWindow = $(window);
@@ -39,6 +42,10 @@ var settings;
             this.mainWrap = $('.main-wrap');
             this.mainVisual = $('.inner').find('img');
            
+
+            this.loadJSON();
+
+
             this.applyOrientation();
             this.viewportWidth = this.theWindow.outerWidth();
             
@@ -68,20 +75,13 @@ var settings;
             // Portrait / landscape stuff
             //this.applyOrientation();
 
-           /* this.theWindow.on("orientationchange", function(){
-                if(window.orientation == 0) // Portrait
-                {
-                    console.log("You are now in portrait");
-                }
-                else // Landscape
-                {
-                    console.log("You are now in landscape");
-                }
-            });
-*/           
+            // turn touch device
+            this.theWindow.on("orientationchange", this.onTurnScreen.bind(this));
+
+           
             
             this.setMainVisial();
-            this.theWindow.on('scroll', this.scrollHandler.bind(this));
+            //this.theWindow.on('scroll', this.scrollHandler.bind(this));
             this.theWindow.on('resize', this.resizeHandler.bind(this));
 
            
@@ -90,6 +90,35 @@ var settings;
                 return false;
             });*/
             var timeout = setTimeout(this.resizeHandler.bind(this), 1);
+        },
+
+        loadJSON: function(){
+            $.getJSON('json/data.json', function(info, textStatus) {
+                /*optional stuff to do after success */
+                console.log(info.full_name);
+                console.log(info.title);
+                var name = info.full_name;
+
+                $('.product-info-box').find('h2').text(info.title);
+
+                for (var i = 0; i <= info.links.length-1; i++){
+                   // console.log(i);
+                }
+                /*var output='';
+                for (var i = 0; i <= info.links.length-1; i++) {
+                    for (key in info.links[i]) {
+                        if (info.links[i].hasOwnProperty(key)) {
+                            output += '<li>' + 
+                            '<a href = "' + info.links[i][key] +
+                            '">' + key + '</a>';
+                            '</li>';
+                    }   
+                }
+            }*/
+            // /this.header.innerHTML = output;
+            }.bind(this));
+
+
         },
 
 
@@ -117,6 +146,18 @@ var settings;
           }
         },
 
+        onTurnScreen: function(){
+            if(window.orientation == 0) // Portrait
+            {
+                //alert("You are now in portrait");
+                //var timeout = setTimeout(this.resizeHandler.bind(this), 1);
+            }
+            else // Landscape
+            {
+                //alert("You are now in landscape");
+                //var timeout = setTimeout(this.resizeHandler.bind(this), 1);
+            }
+        },
         setPortraitMode: function(){
             console.log("You are now in portrait");
 
@@ -126,8 +167,9 @@ var settings;
             this.mainVisual.css('height', (this.viewportHeight)+'px');
             this.mainVisual.css('width', 'auto');
 
-            //header
             this.header.css('width', (this.mainVisual.width()));
+            this.footer.css('width', (this.mainVisual.width()));
+            
 
             // Center main visual 
             var scrollTo = (this.mainVisual.width() - this.viewportWidth) / 2;
@@ -150,13 +192,14 @@ var settings;
             this.theBody.addClass("is-landscape");
             this.mainVisual.css('width', '100%');
             this.mainVisual.css('height', 'auto');
+
             this.header.css('width', '100%');
+            this.footer.css('width', '100%');
             window.scrollTo(0,0);
         },
 
         scrollHandler:function(){
             /*var pos = this.theWindow.scrollLeft();
-            
             console.log("posLeft "+pos);*/
         },
 

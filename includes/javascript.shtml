@@ -12,6 +12,7 @@
 
 
 <script type="text/javascript" src="js/script.js"></script>
+<script src="//localhost:35729/livereload.js"></script>
 
 <noscript>
 </noscript>
