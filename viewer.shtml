@@ -15,14 +15,18 @@
         <header>
             <h1>LISTED BLUE</h1>
         </header>
-        <div class="product-box">
-            <div class="inner">
-                <img src="images/testbeeld.png">
+        <section class="product-wrap">
+            <div class="product">
+                <div class="product-visual">
+                    <div class="inner">
+                        <img src="images/testbeeld.png">
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
         
         <footer>
-            <div class="product-info-box">
+            <div class="product-info">
                 
                 <h2>Clay Ashtray</h2>
             </div>

@@ -13,10 +13,10 @@
 	position:relative;
 	
 
-	.product-box {
+	.product-visual {
 
 	
-		.inner {
+
 			img{
 				width:100%;
 				height: auto;
@@ -25,7 +25,8 @@
 				position: relative;
 				/* visibility: hidden; */
 			}
-		}
+		
+		
 	}
 
 
@@ -68,7 +69,7 @@
 		text-align: center;
 
 
-		.product-info-box{
+		.product-info{
 			padding: 1.4rem 0;
 			height: 2.2rem;
 			background: red;
@@ -80,14 +81,14 @@
 .is-portrait{
 	.main-wrap{
 		
-		.product-box {
+		.product-visual {
 			//left: -300px;
-			.inner {
+			
 				img{
 					width: auto;
 					height: 100%;
 				}
-			}
+			
 		}
 		header{
 
@@ -112,7 +113,7 @@
 			bottom:0;
 
 			
-			.product-info-box{
+			.product-info{
 				position: relative;
 				width: auto;
 				

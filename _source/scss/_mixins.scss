@@ -1,0 +1,29 @@
+// Compass
+// -------------------------
+@import "compass";
+
+
+// UTILITY MIXINS                                com
+// --------------------------------------------------
+
+// Rem fontsize
+// -------------------------
+@mixin font-size($sizeValue: 16){
+  font-size: $sizeValue + px;
+  font-size: ($sizeValue/16) + rem;
+}
+
+// Clearfix
+// -------------------------
+@mixin clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+    &:after {
+        clear: both;
+    }
+}

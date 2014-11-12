@@ -40,7 +40,7 @@ var settings;
             this.header = $('header');
             this.footer = $('footer');
             this.mainWrap = $('.main-wrap');
-            this.mainVisual = $('.inner').find('img');
+            this.mainVisual = $('.product-visual').find('img');
            
 
             this.loadJSON();
@@ -90,6 +90,12 @@ var settings;
                 return false;
             });*/
             var timeout = setTimeout(this.resizeHandler.bind(this), 1);
+
+             $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: false,             
+        directionNav: false
+      });
         },
 
         loadJSON: function(){

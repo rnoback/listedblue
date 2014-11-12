@@ -1,3 +1,12 @@
+/*!
+ *  Listed Blue
+ *  style.scss
+ *	Copyright 2014 - Noback
+ *
+ *  Author      : Roel Noback | http://www.noback.com
+ *  Version     : 1.0
+ *
+ */
 /* line 5, ../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -143,7 +152,7 @@ p {
   position: relative;
 }
 /* line 20, ../_source/scss/_layout.scss */
-.main-wrap .product-box .inner img {
+.main-wrap .product-visual img {
   width: 100%;
   height: auto;
   display: block;
@@ -151,21 +160,21 @@ p {
   position: relative;
   /* visibility: hidden; */
 }
-/* line 34, ../_source/scss/_layout.scss */
+/* line 35, ../_source/scss/_layout.scss */
 .main-wrap header {
   background: white;
   height: 7.813rem;
   width: 100%;
   z-index: 10;
 }
-/* line 41, ../_source/scss/_layout.scss */
+/* line 42, ../_source/scss/_layout.scss */
 .main-wrap header h1 {
   position: relative;
   width: auto;
   text-align: center;
   padding-top: 3.125rem;
 }
-/* line 48, ../_source/scss/_layout.scss */
+/* line 49, ../_source/scss/_layout.scss */
 .main-wrap header h1:after {
   margin: -0.4rem 0 0 0.4rem;
   content: " ";
@@ -175,45 +184,45 @@ p {
   width: 0.75rem;
   height: 0.75rem;
 }
-/* line 64, ../_source/scss/_layout.scss */
+/* line 65, ../_source/scss/_layout.scss */
 .main-wrap footer {
   background: white;
   height: 11.25rem;
   z-index: 10;
   text-align: center;
 }
-/* line 71, ../_source/scss/_layout.scss */
-.main-wrap footer .product-info-box {
+/* line 72, ../_source/scss/_layout.scss */
+.main-wrap footer .product-info {
   padding: 1.4rem 0;
   height: 2.2rem;
   background: red;
   text-align: center;
 }
 
-/* line 86, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap .product-box .inner img {
+/* line 87, ../_source/scss/_layout.scss */
+.is-portrait .main-wrap .product-visual img {
   width: auto;
   height: 100%;
 }
-/* line 92, ../_source/scss/_layout.scss */
+/* line 93, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap header {
   position: absolute;
   /* width: 1800px; */
   z-index: 10;
   background: transparent;
 }
-/* line 98, ../_source/scss/_layout.scss */
+/* line 99, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap header h1 {
   color: white;
 }
-/* line 108, ../_source/scss/_layout.scss */
+/* line 109, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap footer {
   background: transparent;
   position: absolute;
   bottom: 0;
 }
-/* line 115, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap footer .product-info-box {
+/* line 116, ../_source/scss/_layout.scss */
+.is-portrait .main-wrap footer .product-info {
   position: relative;
   width: auto;
   background: transparent;
@@ -224,12 +233,3 @@ p {
 		background: green;
 	}
 } */
-/*!
- *  Listed Blue
- *  style.scss
- *	Copyright 2014 - Noback
- *
- *  Author      : Roel Noback | http://www.noback.com
- *  Version     : 1.0
- *
- */
