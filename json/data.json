@@ -1,11 +1,10 @@
 {
-  "full_name" : "Stef Kolman",
-  "title" : "Business OWner",
-  "links" : [
-      { "blog"     : "http://iviewsource.com" },
-      { "facebook" : "http://facebook.com/iviewsource" },
-      { "podcast"  : "http://feeds.feedburner.com/authoredcontent" },
-      { "twitter"  : "http://twitter.com/planetoftheweb" },
-      { "youtube"  : "http://www.youtube.com/planetoftheweb" }
-    ]
+  "full_name" : "Listed Blue",
+  "credits" : "LB 2014",
+  "products" : {
+	  "product" : [
+	      { "name"     : "Ashtray" },
+	      { "visual" : "images/ashtray.jpg" }
+	    ]
+	}
 }

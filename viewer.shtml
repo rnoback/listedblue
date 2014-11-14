@@ -3,7 +3,7 @@
 <head>
     <!--#include file="includes/head.shtml" -->
     
-    <title>Listed Blue</title>
+    <title>ListedBlue</title>
     <meta name="description" content="">
 </head>
 <body class="viewer">
@@ -13,24 +13,101 @@
     <![endif]-->
     <div class="main-wrap">
         <header>
-            <h1>LISTED BLUE</h1>
+            <h1>LISTEDBLUE</h1>
         </header>
         <section class="product-wrap">
             <div class="product">
                 <div class="product-visual">
-                    <div class="inner">
-                        <img src="images/testbeeld.png">
-                    </div>
+                        <img class="" src="images/products/ashtray.jpg">
+                </div>
+                <div class="product-info">
+                    <h2>Clay Ashtray</h2>
+                </div>
+            </div><!-- End Product -->
+
+            <div class="product">
+                <div class="product-visual">
+                        <img class="" src="images/products/blatter.jpg">
+                </div>
+                <div class="product-info">
+                    <h2>Blatter</h2>
                 </div>
             </div>
+
+            <div class="product">
+                <div class="product-visual">
+                        <img class="" src="images/products/draco.jpg">
+                </div>
+                <div class="product-info">
+                    <h2>Draco</h2>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-visual">
+                        <img class="" src="images/products/fliertje.jpg">
+                </div>
+                <div class="product-info">
+                    <h2>Fliertje</h2>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-visual">
+                        <img class="" src="images/products/linen.jpg">
+                </div>
+                <div class="product-info">
+                    <h2>Linen</h2>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <div class="product-visual">
+                        <img class="" src="images/products/pekkawood.jpg">
+                </div>
+                <div class="product-info">
+                    <h2>Pekkawood</h2>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <div class="product-visual">
+                        <img class="" src="images/products/pukkelman.jpg">
+                </div>
+                <div class="product-info">
+                    <h2>Pukkelman</h2>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-visual">
+                        <img class="" src="images/products/rosie.jpg">
+                </div>
+                <div class="product-info">
+                    <h2>Rosie</h2>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-visual">
+                        <img class="" src="images/products/soapy.jpg">
+                </div>
+                <div class="product-info">
+                    <h2>Soapy</h2>
+                </div>
+            </div>
+            
+            <div class="product-navigation">
+                <a class="prev" href="#">prev</a>
+                <a class="next" href="#">next</a>
+            </div>
+
         </section>
         
         <footer>
-            <div class="product-info">
-                
-                <h2>Clay Ashtray</h2>
-            </div>
-        credits
+            <div class="credits">Terms Of Service | &copy; LISTED BLUE 2014</div>
         </footer>
     </div><!-- end main-wrap -->
     <!--#include file="includes/javascript.shtml" -->
