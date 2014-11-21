@@ -11,21 +11,27 @@
         <p class=chromeframe><strong>Je hebt een verouderde browser!</strong> <a href="http://browsehappy.com/">Upgrade naar een betere browser</a> of
         <a href="http://www.google.com/chromeframe/?redirect=true">installeer Google Chrome Frame</a> om deze website toch te kunnen bekijken.</p>
     <![endif]-->
+
+
+    
     <div class="main-wrap">
         <header>
             <h1>LISTEDBLUE</h1>
         </header>
         <section class="product-wrap">
+            <script id="product-template" type="text/x-handlebars-template">
+            {{#each this}}
             <div class="product">
                 <div class="product-visual">
-                        <img class="" src="images/products/ashtray.jpg">
+                    <img src="{{product_visual}}" alt="{{product_visual}}" />
                 </div>
                 <div class="product-info">
-                    <h2>Clay Ashtray</h2>
+                    <h2>{{product_name}}</h2>
                 </div>
             </div><!-- End Product -->
-
-            <div class="product">
+            {{/each}}
+            </script>
+            <!-- <div class="product">
                 <div class="product-visual">
                         <img class="" src="images/products/blatter.jpg">
                 </div>
@@ -97,19 +103,42 @@
                 <div class="product-info">
                     <h2>Soapy</h2>
                 </div>
-            </div>
+            </div> -->
             
+            
+        </section>
+        
+        <footer>
             <div class="product-navigation">
                 <a class="prev" href="#">prev</a>
                 <a class="next" href="#">next</a>
             </div>
 
-        </section>
-        
-        <footer>
             <div class="credits">Terms Of Service | &copy; LISTED BLUE 2014</div>
         </footer>
     </div><!-- end main-wrap -->
+
+
     <!--#include file="includes/javascript.shtml" -->
+    <script>
+    (function() {
+
+        var data = {
+
+            name:'Eastern Red Bat',
+            visual: '<img class="" src="images/products/blatter.jpg">'
+        }
+
+       // var template = Handlebars.compile( $('#template').html() );
+       // var temp = template(data);
+        //console.log(temp);
+
+       // $('.product-wrap').append( template(data) );
+
+
+        
+
+    })();
+    </script>
 </body>
 </html>

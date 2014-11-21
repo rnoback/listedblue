@@ -1,10 +1,9 @@
 {
   "full_name" : "Listed Blue",
   "credits" : "LB 2014",
-  "products" : {
-	  "product" : [
-	      { "name"     : "Ashtray" },
-	      { "visual" : "images/ashtray.jpg" }
-	    ]
-	}
+  "products" : [
+      	{ "product_id": 1 , "product_name": "Ashtray", "product_visual": "images/products/ashtray.jpg", "product_price": "865,00" },
+      	{ "product_id": 2 , "product_name": "Flierje", "product_visual": "images/products/fliertje.jpg" },
+      	{ "product_id": 2 , "product_name": "Flierje", "product_visual": "images/products/fliertje.jpg" }
+      	]
 }

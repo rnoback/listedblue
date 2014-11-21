@@ -29,11 +29,70 @@ var settings;
         },
 
         // Main intialization...
-        init: function() {
+        init: function( config ) {
             //this.createCacheItems();
 
-            this.loadJSON();
+            // load data
+            this.dataURL = 'json/data.json';
+            this.fetch();
 
+            this.template = config.template;
+            this.container = config.container;
+
+        },
+
+        pubSub: function(){
+            var o = $( {} );
+
+            $.each({
+                trigger: 'publish',
+                on: 'subscribe',
+                off: 'unsubscribe'
+            }, function( key, val ) {
+                jQuery[val] = function() {
+                    o[key].apply( o, arguments );
+                };
+            });
+        },
+
+        attachTemplate: function(){
+            console.log(this.products);
+             console.log("this.products.product_name " + this.products[0].product_name);
+
+            var template = Handlebars.compile( this.template );
+            var html = template( this.products);
+            console.log(html);
+
+            this.container.append( template( this.products ) );
+        },
+
+        fetch: function(){
+            var self = this;
+            $.getJSON(this.dataURL, function( data ) {
+                //console.log(data.products);
+                self.products = $.map(data.products, function( product ){
+
+                    return {
+                        product_id: product.product_id,
+                        product_name: product.product_name,
+                        product_visual: product.product_visual
+
+                    };
+
+
+                });
+
+                console.log(self.products);
+
+                self.attachTemplate();
+                 //this.setInterface();
+                 var timeout = setTimeout(self.setInterface.bind(self), 2000);
+               
+            });
+        },
+
+
+        setInterface:function(){
             this.isPortrait = false;
             this.theBody = $('body');
             this.theWindow = $(window);
@@ -110,9 +169,11 @@ var settings;
         toggleProduct: function(){
             if(this.oldProduct){
                 this.oldProduct.css('display','none');
+                //this.oldProduct.fadeOut();
             }
             this.curProduct.fadeIn('slow', function() {
                 if(this.oldProduct){
+                    // /this.oldProduct.fadeOut('slow');
                   //  this.oldProduct.css('display','none');
                 }
             });
@@ -240,40 +301,12 @@ var settings;
             this.heightTotal = this.mainWrap.height();
             this.productVisualHeight = this.viewportHeight - this.restHeigth;
             this.setMainVisial();
-        },
-
-
-
-        loadJSON: function(){
-            $.getJSON('json/data.json', function(info, textStatus) {
-                /*optional stuff to do after success */
-               /* console.log(info.full_name);
-                console.log(info.title);*/
-               // var name = info.full_name;
-
-                //$('.product-info').find('h2').text(info.title);
-
-                //for (var i = 0; i <= info.links.length-1; i++){
-                   // console.log(i);
-               // }
-                /*var output='';
-                for (var i = 0; i <= info.links.length-1; i++) {
-                    for (key in info.links[i]) {
-                        if (info.links[i].hasOwnProperty(key)) {
-                            output += '<li>' + 
-                            '<a href = "' + info.links[i][key] +
-                            '">' + key + '</a>';
-                            '</li>';
-                    }   
-                }
-            }*/
-            // /this.header.innerHTML = output;
-            }.bind(this));
-
-
         }
     };
     $(function() {
-        LISTEDBLUE.init();
+        LISTEDBLUE.init({
+            template: $('#product-template').html(),
+            container: $('.product-wrap')
+        });
     });
 }(window.jQuery));
