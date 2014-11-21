@@ -56,37 +56,30 @@ var settings;
         },
 
         attachTemplate: function(){
-            console.log(this.products);
-             console.log("this.products.product_name " + this.products[0].product_name);
 
             var template = Handlebars.compile( this.template );
             var html = template( this.products);
-            console.log(html);
-
-            this.container.append( template( this.products ) );
+            this.container.append( template ( this.products ) );
+            this.setInterface();
         },
 
         fetch: function(){
             var self = this;
             $.getJSON(this.dataURL, function( data ) {
-                //console.log(data.products);
-                self.products = $.map(data.products, function( product ){
+                self.products = data.products;
 
-                    return {
+                //filter valis data from JSON and store in new Array
+                //$.map(data.products, function( product ){
+                   /* return {
                         product_id: product.product_id,
                         product_name: product.product_name,
                         product_visual: product.product_visual
-
-                    };
-
-
-                });
-
-                console.log(self.products);
+                    };*/
+                //});
 
                 self.attachTemplate();
-                 //this.setInterface();
-                 var timeout = setTimeout(self.setInterface.bind(self), 2000);
+                 
+                 //var timeout = setTimeout(self.setInterface.bind(self), 250);
                
             });
         },
@@ -101,6 +94,12 @@ var settings;
             this.mainWrap = $('.main-wrap');
             this.productWrap = $('.product-wrap');
             this.productInfo = $('.product-info');
+
+            this.productNavigationWrap = $('.product-navigation');
+            this.btnNext = this.productNavigationWrap.find('.next');
+            this.btnPrev = this.productNavigationWrap.find('.prev');
+
+
             this.selectedProductIndex = 0;
 
             this.mainVisuals = $('.product-visual').find('img');
@@ -113,14 +112,14 @@ var settings;
             this.setProduct(this.selectedProductIndex);
             
             
-            /*this.productWrap.css("visibility","visible");*/   
+            /*this.productWrap.css("visibility","visible");*/
 
             /*var selector = ".p"+this.selectedProductIndex;
             console.log("selector "+selector);
             $(selector).css('display','block');*/
 
            
-            this.viewportWidth = this.theWindow.width();         
+            this.viewportWidth = this.theWindow.width();     
             this.viewportHeight = this.theWindow.outerHeight();
 
             this.heightTotal = this.mainWrap.height();
@@ -128,6 +127,8 @@ var settings;
             this.productVisual = $('.product-visual');
             this.productInfo = $('.product-info');
             this.restHeigth = this.footer.height() + this.productInfo.height();
+
+            console.log("restHeight " + this.restHeigth);
 
             this.productVisualHeight = this.viewportHeight - this.restHeigth;
 
@@ -149,8 +150,8 @@ var settings;
             var timeout = setTimeout(this.resizeHandler.bind(this), 100);
 
             // Events
-            $('.next').on('click', this.setNextProductIndex.bind(this));
-            $('.prev').on('click', this.setPrevProductIndex.bind(this));
+            this.btnNext.on('click', this.setNextProductIndex.bind(this));
+            this.btnPrev.on('click', this.setPrevProductIndex.bind(this));
         },
 
         getProduct: function(index){
@@ -159,6 +160,8 @@ var settings;
 
         setProduct: function(index){
             this.curProduct = $(this.AllProducts[index]);
+            this.curProduct.css('z-index',1);
+           // this.oldProduct.css('z-index',1);
             this.mainVisual = this.curProduct.find('img');
             this.toggleProduct();
             
@@ -169,12 +172,13 @@ var settings;
         toggleProduct: function(){
             if(this.oldProduct){
                 this.oldProduct.css('display','none');
-                //this.oldProduct.fadeOut();
+               // this.oldProduct.fadeOut();
             }
             this.curProduct.fadeIn('slow', function() {
                 if(this.oldProduct){
-                    // /this.oldProduct.fadeOut('slow');
+                   // this.oldProduct.fadeOut('slow');
                   //  this.oldProduct.css('display','none');
+                  //this.oldProduct.css('display','none');
                 }
             });
             var timeout = setTimeout(this.resizeHandler.bind(this), 1);
@@ -184,9 +188,9 @@ var settings;
         setNextProductIndex: function(e){
             e.preventDefault();
             this.oldProduct = this.curProduct;
-            if( this.selectedProductIndex < (this.maxProducts-1)){
+            if( this.selectedProductIndex < (this.maxProducts-1) ) {
                  this.selectedProductIndex++;
-            }else{
+            } else {
                  this.selectedProductIndex = 0;
             }
 
@@ -208,17 +212,22 @@ var settings;
 
         setMainVisial: function(){
             if(!this.isPortrait){
-                if( this.heightTotal >= this.viewportHeight){
+                if( this.heightTotal >= this.productVisualHeight){
                     
                     this.mainVisual.css('width', 'auto');
                     this.mainVisual.css('height', this.productVisualHeight+'px');
+
                    
                 }else {
                     this.mainVisual.css('width', '100%');
                     this.mainVisual.css('height', 'auto');
                 }
+                //this.productNavigationWrap.css('width',(this.mainVisual.width()/3));
+            }else{
+                //this.productNavigationWrap.css('width','100%');
             }
 
+            
             //this.mainVisual.css('visibility','visible');
         },
 
@@ -297,9 +306,17 @@ var settings;
             
             this.applyOrientation();
             this.viewportHeight = this.theWindow.outerHeight();
+
             this.viewportWidth = this.theWindow.outerWidth();
-            this.heightTotal = this.mainWrap.height();
+            this.heightTotal = this.mainVisual.height();
             this.productVisualHeight = this.viewportHeight - this.restHeigth;
+
+            console.log("this.viewportHeight "+this.viewportHeight);
+            console.log("this.restHeigth "+this.restHeigth);
+            console.log("this.productVisualHeight "+this.productVisualHeight);
+            console.log("this.heightTotal "+this.heightTotal);
+            
+            
             this.setMainVisial();
         }
     };

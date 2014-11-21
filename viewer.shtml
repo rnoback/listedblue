@@ -22,20 +22,33 @@
             <script id="product-template" type="text/x-handlebars-template">
             {{#each this}}
             <div class="product">
+                <div class="product-overlay">
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                </div>
                 <div class="product-visual">
                     <img src="{{product_visual}}" alt="{{product_visual}}" />
                 </div>
                 <div class="product-info">
-                    <h2>{{product_name}}</h2>
+                    
                     <div class="product-navigation">
                         <a class="prev" href="#">prev</a>
+                        <h2>{{product_name}}</h2>
                         <a class="next" href="#">next</a>
                     </div>
                 </div>
             </div><!-- End Product -->
             {{/each}}
             </script>
-            <!-- <div class="product">
+            <!-- 
+
+            <a class="prev" href="#">prev</a><a class="next" href="#">next</a>
+
+            <div class="product">
                 <div class="product-visual">
                         <img class="" src="images/products/blatter.jpg">
                 </div>
