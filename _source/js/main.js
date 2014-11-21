@@ -127,7 +127,7 @@ var settings;
            
             this.productVisual = $('.product-visual');
             this.productInfo = $('.product-info');
-            this.restHeigth = this.header.height() + this.footer.height() + this.productInfo.height();
+            this.restHeigth = this.footer.height() + this.productInfo.height();
 
             this.productVisualHeight = this.viewportHeight - this.restHeigth;
 

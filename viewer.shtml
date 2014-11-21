@@ -27,6 +27,10 @@
                 </div>
                 <div class="product-info">
                     <h2>{{product_name}}</h2>
+                    <div class="product-navigation">
+                        <a class="prev" href="#">prev</a>
+                        <a class="next" href="#">next</a>
+                    </div>
                 </div>
             </div><!-- End Product -->
             {{/each}}
@@ -109,11 +113,6 @@
         </section>
         
         <footer>
-            <div class="product-navigation">
-                <a class="prev" href="#">prev</a>
-                <a class="next" href="#">next</a>
-            </div>
-
             <div class="credits">Terms Of Service | &copy; LISTED BLUE 2014</div>
         </footer>
     </div><!-- end main-wrap -->

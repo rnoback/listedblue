@@ -2,8 +2,14 @@
   "full_name" : "Listed Blue",
   "credits" : "LB 2014",
   "products" : [
-      	{ "product_id": 1 , "product_name": "Ashtray", "product_visual": "images/products/ashtray.jpg", "product_price": "865,00" },
-      	{ "product_id": 2 , "product_name": "Flierje", "product_visual": "images/products/fliertje.jpg" },
-      	{ "product_id": 2 , "product_name": "Flierje", "product_visual": "images/products/fliertje.jpg" }
+      	{ "product_id": 1 , "product_name": "Eastern Red Bat", "product_visual": "images/products/eastern-red-bat.jpg" },
+      	{ "product_id": 2 , "product_name": "Silver Birch", "product_visual": "images/products/silver-birch.jpg" },
+      	{ "product_id": 3 , "product_name": "Vidler's Alpine", "product_visual": "images/products/vidlers-alpine.jpg" },
+      	{ "product_id": 4 , "product_name": "Propertius Duskywing", "product_visual": "images/products/propertius-duskywing.jpg" },
+      	{ "product_id": 5 , "product_name": "Margined White", "product_visual": "images/products/margined-white.jpg" },
+      	{ "product_id": 6 , "product_name": "Common Ringlet", "product_visual": "images/products/common-ringlet.jpg" },
+      	{ "product_id": 7 , "product_name": "Golden Willow", "product_visual": "images/products/golden-willow.jpg" },
+      	{ "product_id": 8 , "product_name": "Pendulous Sedge", "product_visual": "images/products/pendulous-sedge.jpg" },
+      	{ "product_id": 8 , "product_name": "Marsh Elder", "product_visual": "images/products/marsh-elder.jpg" }
       	]
 }
