@@ -17,12 +17,20 @@
     <div class="main-wrap">
         <header>
             <h1>LISTEDBLUE</h1>
+            <nav class="main-navigation"></nav>
+            <div class="overlay-navigation">
+                <a href="#" class="btnClose">close</a>
+            </div>
+            
         </header>
+
         <section class="product-wrap">
             <script id="product-template" type="text/x-handlebars-template">
             {{#each this}}
             <div class="product">
+
                 <div class="product-overlay">
+
                     <div class="column">
                     </div>
                     <div class="column">
@@ -30,11 +38,13 @@
                     <div class="column">
                     </div>
                 </div>
+
                 <div class="product-visual">
-                    <img src="{{product_visual}}" alt="{{product_visual}}" />
-                </div>
-                <div class="product-info">
                     
+                    <img class="visual" src="{{product_visual}}" alt="{{product_visual}}" />
+                </div>
+
+                <div class="product-info">   
                     <div class="product-navigation">
                         <a class="prev" href="#">prev</a>
                         <h2>{{product_name}}</h2>
@@ -44,85 +54,6 @@
             </div><!-- End Product -->
             {{/each}}
             </script>
-            <!-- 
-
-            <a class="prev" href="#">prev</a><a class="next" href="#">next</a>
-
-            <div class="product">
-                <div class="product-visual">
-                        <img class="" src="images/products/blatter.jpg">
-                </div>
-                <div class="product-info">
-                    <h2>Blatter</h2>
-                </div>
-            </div>
-
-            <div class="product">
-                <div class="product-visual">
-                        <img class="" src="images/products/draco.jpg">
-                </div>
-                <div class="product-info">
-                    <h2>Draco</h2>
-                </div>
-            </div>
-
-            <div class="product">
-                <div class="product-visual">
-                        <img class="" src="images/products/fliertje.jpg">
-                </div>
-                <div class="product-info">
-                    <h2>Fliertje</h2>
-                </div>
-            </div>
-
-            <div class="product">
-                <div class="product-visual">
-                        <img class="" src="images/products/linen.jpg">
-                </div>
-                <div class="product-info">
-                    <h2>Linen</h2>
-                </div>
-            </div>
-
-
-            <div class="product">
-                <div class="product-visual">
-                        <img class="" src="images/products/pekkawood.jpg">
-                </div>
-                <div class="product-info">
-                    <h2>Pekkawood</h2>
-                </div>
-            </div>
-
-
-            <div class="product">
-                <div class="product-visual">
-                        <img class="" src="images/products/pukkelman.jpg">
-                </div>
-                <div class="product-info">
-                    <h2>Pukkelman</h2>
-                </div>
-            </div>
-
-            <div class="product">
-                <div class="product-visual">
-                        <img class="" src="images/products/rosie.jpg">
-                </div>
-                <div class="product-info">
-                    <h2>Rosie</h2>
-                </div>
-            </div>
-
-            <div class="product">
-                <div class="product-visual">
-                        <img class="" src="images/products/soapy.jpg">
-                </div>
-                <div class="product-info">
-                    <h2>Soapy</h2>
-                </div>
-            </div> -->
-            
-            
         </section>
         
         <footer>

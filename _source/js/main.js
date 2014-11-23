@@ -93,31 +93,20 @@ var settings;
             this.footer = $('footer');
             this.mainWrap = $('.main-wrap');
             this.productWrap = $('.product-wrap');
+           
+            this.productOverlay = $('.product-overlay');
             this.productInfo = $('.product-info');
 
             this.productNavigationWrap = $('.product-navigation');
             this.btnNext = this.productNavigationWrap.find('.next');
             this.btnPrev = this.productNavigationWrap.find('.prev');
 
-
             this.selectedProductIndex = 0;
 
-            this.mainVisuals = $('.product-visual').find('img');
-
-            this.AllProducts = this.productWrap.find('.product');
-            this.AllProducts.css('display','none');
-
-            this.maxProducts = this.AllProducts.length;
+            this.allProducts = this.productWrap.find('.product').css('display','none');
+            this.maxProducts = this.allProducts.length;
 
             this.setProduct(this.selectedProductIndex);
-            
-            
-            /*this.productWrap.css("visibility","visible");*/
-
-            /*var selector = ".p"+this.selectedProductIndex;
-            console.log("selector "+selector);
-            $(selector).css('display','block');*/
-
            
             this.viewportWidth = this.theWindow.width();     
             this.viewportHeight = this.theWindow.outerHeight();
@@ -127,8 +116,6 @@ var settings;
             this.productVisual = $('.product-visual');
             this.productInfo = $('.product-info');
             this.restHeigth = this.footer.height() + this.productInfo.height();
-
-            console.log("restHeight " + this.restHeigth);
 
             this.productVisualHeight = this.viewportHeight - this.restHeigth;
 
@@ -147,40 +134,39 @@ var settings;
             /*this.theWindow.on("mousewheel", function() {
                 return false;
             });*/
-            var timeout = setTimeout(this.resizeHandler.bind(this), 100);
+
+            this.overlayCloseBtn = $('.overlay-navigation').find('.btnClose');
+            var timeout = setTimeout(this.resizeHandler.bind(this), 10);
 
             // Events
-            this.btnNext.on('click', this.setNextProductIndex.bind(this));
-            this.btnPrev.on('click', this.setPrevProductIndex.bind(this));
+            this.btnNext.on('click touchstart', this.setNextProductIndex.bind(this));
+            this.btnPrev.on('click touchstart', this.setPrevProductIndex.bind(this));
+
+            this.productVisual.on('click touchstart', this.openOverlay.bind(this));
+            this.overlayCloseBtn.on('click touchstart', this.closeOverlay.bind(this));
+
+             
         },
 
         getProduct: function(index){
-            return $(this.AllProducts[index]);
+            return $(this.allProducts[index]);
         },
 
         setProduct: function(index){
-            this.curProduct = $(this.AllProducts[index]);
+            this.curProduct = $(this.allProducts[index]);
             this.curProduct.css('z-index',1);
-           // this.oldProduct.css('z-index',1);
-            this.mainVisual = this.curProduct.find('img');
+            this.mainVisual = this.curProduct.find('.visual');
+
+            this.mainVisual.addClass('current');
             this.toggleProduct();
-            
-           // console.log(this.curProduct.find('img'));
         },
 
 
         toggleProduct: function(){
             if(this.oldProduct){
-                this.oldProduct.css('display','none');
-               // this.oldProduct.fadeOut();
+                this.oldProduct.fadeOut(100,'easeOutSine');
             }
-            this.curProduct.fadeIn('slow', function() {
-                if(this.oldProduct){
-                   // this.oldProduct.fadeOut('slow');
-                  //  this.oldProduct.css('display','none');
-                  //this.oldProduct.css('display','none');
-                }
-            });
+            this.curProduct.fadeIn(500,'easeOutSine');
             var timeout = setTimeout(this.resizeHandler.bind(this), 1);
         },
 
@@ -195,7 +181,7 @@ var settings;
             }
 
             this.setProduct(this.selectedProductIndex);
-            console.log("NEXT : " + this.selectedProductIndex);
+            //console.log("NEXT : " + this.selectedProductIndex);
         },
 
         setPrevProductIndex: function(e){
@@ -207,29 +193,65 @@ var settings;
                 this.selectedProductIndex = (this.maxProducts-1);
             }
             this.setProduct(this.selectedProductIndex);
-            console.log("PREV : " + this.selectedProductIndex);
+            //console.log("PREV : " + this.selectedProductIndex);
         },
 
         setMainVisial: function(){
             if(!this.isPortrait){
                 if( this.heightTotal >= this.productVisualHeight){
-                    
                     this.mainVisual.css('width', 'auto');
                     this.mainVisual.css('height', this.productVisualHeight+'px');
 
-                   
+                    this.footer.css('top' , this.productVisualHeight + this.restHeigth - this.footer.height());
+
                 }else {
                     this.mainVisual.css('width', '100%');
                     this.mainVisual.css('height', 'auto');
+
+                    this.footer.css('top' , this.heightTotal + this.restHeigth - this.footer.height());
                 }
                 //this.productNavigationWrap.css('width',(this.mainVisual.width()/3));
             }else{
                 //this.productNavigationWrap.css('width','100%');
+                this.footer.css('top' , this.heightTotal - this.footer.height());
             }
-
             
+            var self = this;
+            var timeout = setTimeout(function(){
+                self.footer.css('visibility','visible');
+            }, 1);
+
+            this.productOverlay.width( this.mainVisual.width() );
+            this.productOverlay.height( this.mainVisual.height() );
+
+            $('.overlay-navigation').width( this.mainVisual.width() );
+
+/*            this.preloader.width( this.mainVisual.width() );
+            this.preloader.height( this.mainVisual.height() );
+
+            this.preloader.find('.preloader-image').css('margin-top', (this.mainVisual.height()/2) );
+        */    
+            /*var self = this;
+            var iLoaded = 0;
+            consol.log(this.mainVisuals);
+            this.mainVisuals.each(function () {
+                $(this).bind("load", function() {
+                    iLoaded++;
+                    if(iLoaded == self.maxProducts) {
+                      this.preloader.hide();
+                    }
+               //$(this).attr('src', $(this).attr("src"));
+                });
+            });*/
+            
+            
+            /* var self = this;
+             this.allVisuals.on('load', function(){
+               // self.preloader.hide();
+             });*/
             //this.mainVisual.css('visibility','visible');
         },
+       
 
         applyOrientation: function () {
           if (window.innerHeight > window.innerWidth) {
@@ -267,18 +289,16 @@ var settings;
             this.productInfo.css('width', (this.mainVisual.width()));
             
 
+            //console.log( "scrollert " +window.scrollTo);
+
+
             // Center main visual 
             var scrollTo = (this.mainVisual.width() - this.viewportWidth) / 2;
 
 
-            console.log("this.mainVisual.width "+this.mainVisual.width());
+           /* console.log("this.mainVisual.width "+this.mainVisual.width());
             console.log("this.viewportWidth "+this.viewportWidth);
-            console.log("scrollto "+scrollTo);
-
-
-            // Check if centered visual fits into viewport
-            var diff = this.viewportWidth - scrollTo;
-            //console.log("diff "+diff);
+            console.log("scrollto "+scrollTo);*/
 
             window.scrollTo(scrollTo, 0);
         },
@@ -297,6 +317,19 @@ var settings;
             window.scrollTo(0,0);
         },
 
+        openOverlay:function(e){
+           
+          
+        this.overlayCloseBtn.css('display','block');
+            this.productOverlay.addClass('active');
+        },
+        closeOverlay:function(e){
+           
+            var target = $(e.target);
+            this.productOverlay.removeClass('active');
+            target.css('display','none');
+        },
+
         scrollHandler:function(){
             /*var pos = this.theWindow.scrollLeft();
             console.log("posLeft "+pos);*/
@@ -311,10 +344,12 @@ var settings;
             this.heightTotal = this.mainVisual.height();
             this.productVisualHeight = this.viewportHeight - this.restHeigth;
 
-            console.log("this.viewportHeight "+this.viewportHeight);
-            console.log("this.restHeigth "+this.restHeigth);
-            console.log("this.productVisualHeight "+this.productVisualHeight);
+            /*console.log("this.viewportHeight "+this.viewportHeight);
+            console.log("this.restHeigth "+this.restHeigth);*/
+            console.log("this.curProduct "+this.mainVisual.width());
             console.log("this.heightTotal "+this.heightTotal);
+
+           // console.log ("this.mainVisual W: "+ this.mainVisual.width());
             
             
             this.setMainVisial();

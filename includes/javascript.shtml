@@ -13,7 +13,13 @@
 
 
 
-<script type="text/javascript" src="js/vendor/handlebars-v2.0.0.js"></script>
+<script type="text/javascript" src="js/lib/handlebars-v2.0.0.js"></script>
+
+<!-- Added GreenSock Animation, drastically better animation performance -->
+<!-- <script src="js/lib/greensock/CSSPlugin.min.js"></script> -->
+<!-- <script src="js/lib/greensock/EasePack.min.js"></script>
+<script src="js/lib/greensock/TweenLite.min.js"></script> -->
+
 <script type="text/javascript" src="js/script.js"></script>
 
 <script src="//localhost:35729/livereload.js"></script>
