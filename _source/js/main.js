@@ -39,6 +39,11 @@ var settings;
             this.template = config.template;
             this.container = config.container;
 
+            this.pubSub();
+            $.subscribe('listedblue/data', function(e, data){
+                console.log(data);
+            });
+
         },
 
         pubSub: function(){
@@ -67,6 +72,8 @@ var settings;
             var self = this;
             $.getJSON(this.dataURL, function( data ) {
                 self.products = data.products;
+
+                $.publish('listedblue/data', data);
 
                 //filter valis data from JSON and store in new Array
                 //$.map(data.products, function( product ){
@@ -135,16 +142,15 @@ var settings;
                 return false;
             });*/
 
-            this.overlayCloseBtn = $('.overlay-navigation').find('.btnClose');
-            var timeout = setTimeout(this.resizeHandler.bind(this), 10);
+            this.overlayCloseBtn = $('.overlay-navigation').find('.btn-close');
+            var timeout = setTimeout(this.resizeHandler.bind(this), 100);
 
             // Events
             this.btnNext.on('click touchstart', this.setNextProductIndex.bind(this));
             this.btnPrev.on('click touchstart', this.setPrevProductIndex.bind(this));
 
-            this.productVisual.on('click touchstart', this.openOverlay.bind(this));
+            this.productVisual.find('img').on('click touchstart', this.openOverlay.bind(this));
             this.overlayCloseBtn.on('click touchstart', this.closeOverlay.bind(this));
-
              
         },
 

@@ -19,7 +19,14 @@
             <h1>LISTEDBLUE</h1>
             <nav class="main-navigation"></nav>
             <div class="overlay-navigation">
-                <a href="#" class="btnClose">close</a>
+                <ul class="main-navigation">
+                    <li>home</li>
+                    <li>products</li>
+                    <li>contact</li>
+                </ul>
+                <a href="#" class="btn-nav-toggle el-icon-lines"></a>
+                <a href="#" class="btn-close el-icon-remove"></a>
+
             </div>
             
         </header>
@@ -46,9 +53,9 @@
 
                 <div class="product-info">   
                     <div class="product-navigation">
-                        <a class="prev" href="#">prev</a>
+                        <a class="prev el-icon-chevron-left" href="#"></a>
                         <h2>{{product_name}}</h2>
-                        <a class="next" href="#">next</a>
+                        <a class="next el-icon-chevron-right" href="#"></a>
                     </div>
                 </div>
             </div><!-- End Product -->

@@ -4,6 +4,7 @@
 	 overflow-y:hidden;
 }
 
+
 .is-landscape{
 	 overflow:hidden;
 }
@@ -64,9 +65,10 @@
 		   
 
 			.product-visual {
-				cursor: pointer;
+				
 				img{
 					width:100%;
+					cursor: pointer;
 					height: auto;
 					display: block;
 					margin: 0 auto;
@@ -89,31 +91,35 @@
 				 	display: inline-block;
 					width: 365px;
 				 }
+
 				 .product-navigation{
 				 	width: 100%;
 				 	position: relative;
 				 	margin: 0 auto;
 
 				 	a{
-						background: url(../images/direction_nav.png) no-repeat 0 0;
-					    cursor: pointer;
-					    display: inline-block;
-					    height: 30px;
+				 		text-decoration: none;
+				 		font-size: 0.80rem;
+				 		padding: 1em;
+					//	background: url(../images/direction_nav.png) no-repeat 0 0;
+					 //   cursor: pointer;
+					 //   display: inline-block;
+					  //  height: 30px;
 					   // margin: -60px 0 0;
 					    //position: absolute;
-					    text-indent: -9999px;
-					  	bottom: 0;
+					   // text-indent: -9999px;
+					  //	bottom: 0;
 			/* 		    opacity: 1;
 					    -webkit-transition: all .3s ease; */
-					    width: 30px;
-					    z-index: 10;
+					   // width: 30px;
+					   // z-index: 10;
 					}
 					a.next{
-						background-position: 100% 0; 
-						right: 5px;
+						//background-position: 100% 0; 
+						//right: 5px;
 		    		}
 		    		a.prev{
-				    	left: 5px;
+				    	//left: 5px;
 				    }
 				}
 			}	
@@ -161,11 +167,23 @@
 			margin: 0 auto;
 			top:-43px;
 
-			a.btnClose{
+			.main-navigation{
+				display: none;
+			}
+			a.btn-close{
 				float:right;
 				margin-right: 20px;
 				display: none;
-
+				font-size: 1.6rem;
+				font-weight: lighter;
+				text-decoration: none;
+			}
+			a.btn-nav-toggle{
+				float:right;
+				margin-right: 20px;
+				font-size: 1.6rem;
+				font-weight: lighter;
+				text-decoration: none;
 			}
 		}
 
@@ -185,7 +203,7 @@
 			width: 0.75rem;
 			height: 0.75rem;
 			font-size: 3.4rem;
-			color:$blue;
+			color: $blue;
 		}
 	}
 
