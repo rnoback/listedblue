@@ -39,7 +39,7 @@
 			}	 */
 			.product-overlay{
 				position: absolute;
-				background: black;
+				
 
 				z-index: 11;
 				opacity: 0.5;
@@ -53,8 +53,9 @@
 			    .column{
 			    	width: 33.33334%;
 			    	height: inherit;
-			    	background:red;
+			    	background: black;
 			    	float: left;
+			    	color: $white;
 			    }
 
 			}
@@ -83,7 +84,7 @@
 							 */	
 				position: relative;
 				text-align: center;
-				height: 140px;
+				height: 85px;
 				@include font-size(24);
 
 				h2{

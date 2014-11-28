@@ -25,10 +25,8 @@
                     <li>contact</li>
                 </ul>
                 <a href="#" class="btn-nav-toggle el-icon-lines"></a>
-                <a href="#" class="btn-close el-icon-remove"></a>
-
+                <a href="#" class="btn-close el-icon-asterisk"></a>
             </div>
-            
         </header>
 
         <section class="product-wrap">
@@ -37,24 +35,29 @@
             <div class="product">
 
                 <div class="product-overlay">
-
+                     {{#each embodiment}}
                     <div class="column">
+                        <h2>{{../name}} ({{type}})</h2>
+                        <ul>
+                            {{#each this}}
+                             {{#unless embodiment/type}}
+                            <li class="p_{{@key}}">{{@key}}: {{this}}</li>
+                           {{/unless}}
+                            {{/each}}
+                        </ul>
                     </div>
-                    <div class="column">
-                    </div>
-                    <div class="column">
-                    </div>
+                     {{/each}}
                 </div>
 
                 <div class="product-visual">
                     
-                    <img class="visual" src="{{product_visual}}" alt="{{product_visual}}" />
+                    <img class="visual" src="{{visual}}" alt="{{name}}" />
                 </div>
 
                 <div class="product-info">   
                     <div class="product-navigation">
                         <a class="prev el-icon-chevron-left" href="#"></a>
-                        <h2>{{product_name}}</h2>
+                        <h2>{{name}} </h2>
                         <a class="next el-icon-chevron-right" href="#"></a>
                     </div>
                 </div>

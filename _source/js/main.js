@@ -170,9 +170,9 @@ var settings;
 
         toggleProduct: function(){
             if(this.oldProduct){
-                this.oldProduct.fadeOut(100,'easeOutSine');
+                this.oldProduct.fadeOut(1500,'easeOutSine');
             }
-            this.curProduct.fadeIn(500,'easeOutSine');
+            this.curProduct.fadeIn(1500,'easeOutSine');
             var timeout = setTimeout(this.resizeHandler.bind(this), 1);
         },
 
@@ -352,8 +352,8 @@ var settings;
 
             /*console.log("this.viewportHeight "+this.viewportHeight);
             console.log("this.restHeigth "+this.restHeigth);*/
-            console.log("this.curProduct "+this.mainVisual.width());
-            console.log("this.heightTotal "+this.heightTotal);
+           // console.log("this.curProduct "+this.mainVisual.width());
+            //console.log("this.heightTotal "+this.heightTotal);
 
            // console.log ("this.mainVisual W: "+ this.mainVisual.width());
             

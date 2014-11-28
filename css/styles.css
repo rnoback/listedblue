@@ -1726,7 +1726,6 @@ p {
 /* line 40, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-overlay {
   position: absolute;
-  background: black;
   z-index: 11;
   opacity: 0.5;
   left: 0;
@@ -1739,14 +1738,15 @@ p {
 .main-wrap .product-wrap .product .product-overlay .column {
   width: 33.33334%;
   height: inherit;
-  background: red;
+  background: black;
   float: left;
+  color: white;
 }
-/* line 61, ../_source/scss/_layout.scss */
+/* line 62, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-overlay.active {
   display: block;
 }
-/* line 69, ../_source/scss/_layout.scss */
+/* line 70, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-visual img {
   width: 100%;
   cursor: pointer;
@@ -1756,30 +1756,30 @@ p {
   position: relative;
   /* visibility: hidden; */
 }
-/* line 79, ../_source/scss/_layout.scss */
+/* line 80, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-info {
   /* padding: 1.4rem 0; */
   /* padding:20px 0;
   			 */
   position: relative;
   text-align: center;
-  height: 140px;
+  height: 85px;
   font-size: 24px;
   font-size: 1.5rem;
 }
-/* line 89, ../_source/scss/_layout.scss */
+/* line 90, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-info h2 {
   margin-top: 40px;
   display: inline-block;
   width: 365px;
 }
-/* line 95, ../_source/scss/_layout.scss */
+/* line 96, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-info .product-navigation {
   width: 100%;
   position: relative;
   margin: 0 auto;
 }
-/* line 100, ../_source/scss/_layout.scss */
+/* line 101, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-info .product-navigation a {
   text-decoration: none;
   font-size: 0.80rem;
@@ -1787,7 +1787,7 @@ p {
   /* 		    opacity: 1;
   		    -webkit-transition: all .3s ease; */
 }
-/* line 158, ../_source/scss/_layout.scss */
+/* line 159, ../_source/scss/_layout.scss */
 .main-wrap header {
   position: absolute;
   background: transparent;
@@ -1795,17 +1795,17 @@ p {
   width: 100%;
   z-index: 10;
 }
-/* line 165, ../_source/scss/_layout.scss */
+/* line 166, ../_source/scss/_layout.scss */
 .main-wrap header .overlay-navigation {
   position: relative;
   margin: 0 auto;
   top: -43px;
 }
-/* line 170, ../_source/scss/_layout.scss */
+/* line 171, ../_source/scss/_layout.scss */
 .main-wrap header .overlay-navigation .main-navigation {
   display: none;
 }
-/* line 173, ../_source/scss/_layout.scss */
+/* line 174, ../_source/scss/_layout.scss */
 .main-wrap header .overlay-navigation a.btn-close {
   float: right;
   margin-right: 20px;
@@ -1814,7 +1814,7 @@ p {
   font-weight: lighter;
   text-decoration: none;
 }
-/* line 181, ../_source/scss/_layout.scss */
+/* line 182, ../_source/scss/_layout.scss */
 .main-wrap header .overlay-navigation a.btn-nav-toggle {
   float: right;
   margin-right: 20px;
@@ -1822,14 +1822,14 @@ p {
   font-weight: lighter;
   text-decoration: none;
 }
-/* line 190, ../_source/scss/_layout.scss */
+/* line 191, ../_source/scss/_layout.scss */
 .main-wrap header h1 {
   position: relative;
   width: auto;
   text-align: center;
   padding-top: 3.125rem;
 }
-/* line 197, ../_source/scss/_layout.scss */
+/* line 198, ../_source/scss/_layout.scss */
 .main-wrap header h1:after {
   margin: -1rem 0 0 0.25rem;
   content: " \2022";
@@ -1840,7 +1840,7 @@ p {
   font-size: 3.4rem;
   color: #5ca2df;
 }
-/* line 215, ../_source/scss/_layout.scss */
+/* line 216, ../_source/scss/_layout.scss */
 .main-wrap footer {
   height: 35px;
   z-index: 10;
@@ -1848,26 +1848,26 @@ p {
   position: absolute;
   visibility: hidden;
 }
-/* line 222, ../_source/scss/_layout.scss */
+/* line 223, ../_source/scss/_layout.scss */
 .main-wrap footer .credits {
   /* margin-top: 1rem; */
   font-size: 12px;
   font-size: 0.75rem;
 }
 
-/* line 232, ../_source/scss/_layout.scss */
+/* line 233, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap .product-wrap .product {
   left: auto;
   right: auto;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 241, ../_source/scss/_layout.scss */
+/* line 242, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap .product-wrap .product .product-visual img {
   width: auto;
   height: 100%;
 }
-/* line 247, ../_source/scss/_layout.scss */
+/* line 248, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap .product-wrap .product .product-info {
   position: absolute;
   bottom: 20px;
@@ -1875,20 +1875,20 @@ p {
   background: transparent;
   text-align: center;
 }
-/* line 254, ../_source/scss/_layout.scss */
+/* line 255, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap .product-wrap .product .product-info h2 {
   font-size: 16px;
   font-size: 1rem;
   width: 200px;
   margin-top: 50px;
 }
-/* line 260, ../_source/scss/_layout.scss */
+/* line 261, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap .product-wrap .product .product-info .product-navigation {
   position: fixed;
   text-align: center;
   width: 100%;
 }
-/* line 264, ../_source/scss/_layout.scss */
+/* line 265, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap .product-wrap .product .product-info .product-navigation h2 {
   /* position: fixed;
   text-align: center;
@@ -1897,14 +1897,14 @@ p {
   display: block;
   margin-top:0; */
 }
-/* line 278, ../_source/scss/_layout.scss */
+/* line 279, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap header {
   position: absolute;
   /* width: 1800px; */
   z-index: 10;
   background: transparent;
 }
-/* line 284, ../_source/scss/_layout.scss */
+/* line 285, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap header h1 {
   position: fixed;
   text-align: center;
@@ -1914,7 +1914,7 @@ p {
   font-size: 24px;
   font-size: 1.5rem;
 }
-/* line 293, ../_source/scss/_layout.scss */
+/* line 294, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap header h1:after {
   margin: -1rem 0 0 0.25rem;
   width: 0.75rem;
@@ -1922,11 +1922,11 @@ p {
   font-size: 2.8rem;
   color: #5ca2df;
 }
-/* line 307, ../_source/scss/_layout.scss */
+/* line 308, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap footer {
   margin-top: -10px;
 }
-/* line 310, ../_source/scss/_layout.scss */
+/* line 311, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap footer .credits {
   position: fixed;
   width: 100%;
