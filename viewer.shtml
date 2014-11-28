@@ -41,7 +41,7 @@
                         <ul>
                             {{#each this}}
                              {{#unless embodiment/type}}
-                            <li class="p_{{@key}}">{{@key}}: {{this}}</li>
+                            <li class="p_{{@key}}"><span class="label">{{@key}}</span>: <span class="c_{{this}}">{{this}}</span></li>
                            {{/unless}}
                             {{/each}}
                         </ul>
@@ -67,7 +67,7 @@
         </section>
         
         <footer>
-            <div class="credits">Terms Of Service | &copy; LISTED BLUE 2014</div>
+            <!-- <div class="credits">Terms Of Service | &copy; LISTED BLUE 2014</div> -->
         </footer>
     </div><!-- end main-wrap -->
 
