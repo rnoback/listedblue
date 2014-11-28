@@ -1,6 +1,6 @@
 body{
 	font-family: $font-primary;
-	font-size: 1rem;
+	font-size: 100%;
 	line-height: 160%;
 	background: $white;
 	color: $extradarkgray;
@@ -15,7 +15,8 @@ body{
 }
 
 h1{
-	font-size: 1.875rem;
+	//font-size: 1.875rem;
+	font-size: 2.5vw;
 	margin-bottom: .4rem;
 }
 h2{

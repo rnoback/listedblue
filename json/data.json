@@ -2,53 +2,375 @@
   "full_name" : "Listed Blue",
   "credits" : "LB 2014",
   "products" : [
-        { "id": 7,
-        "name": "Golden Willow", 
-        "visual": "images/products/golden-willow.jpg", 
-        
-        "embodiment": [{
+        { 
+          "id": 7,
+          "name": "Golden Willow", 
+          "visual": "images/products/golden-willow.jpg", 
+          
+          "embodiment": [{
             "type": "object",
             "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
-        "material": "Special Wood from Japan black forest.",
-        "series": "Unique",
-        "weight": "0.277 gram",
-        "dimensions": "21 x 2 x 15 cm",
-        "date" : "1975",
-        "signed": "Tal Silverberg 15.6.2001.5467",
-        "shipping": "Ships in 10 days. Comes with brown gift box",
-        "price": "1445"
-          },{"type": "Image",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+            },
+            {
+            "type": "Image",
             "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
-        "material": "Special Wood from Japan black forest.",
-        "series": "Unique",
-        "weight": "0.277 gram",
-        "dimensions": "21 x 2 x 15 cm",
-        "date" : "1975",
-        "signed": "Tal Silverberg 15.6.2001.5467",
-        "shipping": "Ships in 10 days. Comes with brown gift box",
-        "price": "1445"},{
-          "type": "Download",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+            },
+            {
+            "type": "Download",
             "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
-        "material": "Special Wood from Japan black forest.",
-        "series": "Unique",
-        "weight": "0.277 gram",
-        "dimensions": "21 x 2 x 15 cm",
-        "date" : "1975",
-        "signed": "Tal Silverberg 15.6.2001.5467",
-        "shipping": "Ships in 10 days. Comes with brown gift box",
-        "price": "1445"
-        }]
-        
-
-        
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          }]
         },
-        { "id": 6 , "name": "Common Ringlet", "visual": "images/products/common-ringlet.jpg" },
-        { "id": 5 , "name": "Margined White", "visual": "images/products/margined-white.jpg" },
-        { "id": 4 , "name": "Propertius Duskywing", "visual": "images/products/propertius-duskywing.jpg" },
-        { "id": 1 , "name": "Eastern Red Bat", "visual": "images/products/eastern-red-bat.jpg" },
-        { "id": 3 , "name": "Vidler's Alpine", "visual": "images/products/vidlers-alpine.jpg" },
-        { "id": 2 , "name": "Silver Birch", "visual": "images/products/silver-birch.jpg" },
-        { "id": 9 , "name": "Marsh Elder", "visual": "images/products/marsh-elder.jpg" },
-        { "id": 8 , "name": "Pendulous Sedge", "visual": "images/products/pendulous-sedge.jpg" }
+
+        { 
+          "id": 6, 
+          "name": "Common Ringlet", 
+          "visual": "images/products/common-ringlet.jpg", 
+          "embodiment": [{
+            "type": "object",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          },
+          {
+            "type": "Image",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          },
+          {
+            "type": "Download",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          }]
+        },
+        { 
+          "id": 5,
+          "name": "Margined White", 
+          "visual": "images/products/margined-white.jpg",
+          "embodiment": [{
+            "type": "object",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          },
+          {
+            "type": "Image",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          },
+          {
+            "type": "Download",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          }]
+        },
+        { 
+          "id": 4,
+          "name": "Propertius Duskywing", 
+          "visual": "images/products/propertius-duskywing.jpg",
+          "embodiment": [{
+            "type": "object",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          },
+          {
+            "type": "Image",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          },
+          {
+            "type": "Download",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          }]
+        },
+        { 
+          "id": 1,
+          "name": "Eastern Red Bat", 
+          "visual": "images/products/eastern-red-bat.jpg",
+          "embodiment": [{
+            "type": "object",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          },
+          {
+            "type": "Image",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          },
+          {
+            "type": "Download",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          }]
+        },
+        { 
+          "id": 3,
+          "name": "Vidler's Alpine",
+          "visual": "images/products/vidlers-alpine.jpg",
+          "embodiment": [{
+            "type": "object",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          },
+          {
+            "type": "Image",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          },
+          {
+            "type": "Download",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          }]
+        },
+        { "id": 2,
+          "name": "Silver Birch",
+          "visual": "images/products/silver-birch.jpg",
+          "embodiment": [{
+            "type": "object",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          },
+          {
+            "type": "Image",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          },
+          {
+            "type": "Download",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          }] 
+        },
+        { 
+          "id": 9,
+          "name": "Marsh Elder",
+          "visual": "images/products/marsh-elder.jpg" ,
+          "embodiment": [{
+            "type": "object",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          },
+          {
+            "type": "Image",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          },
+          {
+            "type": "Download",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          }]
+        },
+        { 
+          "id": 8,
+          "name": "Pendulous Sedge", 
+          "visual": "images/products/pendulous-sedge.jpg",
+          "embodiment": [{
+            "type": "object",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          },
+          {
+            "type": "Image",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          },
+          {
+            "type": "Download",
+            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "material": "Special Wood from Japan black forest.",
+            "series": "Unique",
+            "weight": "0.277 gram",
+            "dimensions": "21 x 2 x 15 cm",
+            "date" : "1975",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "1445"
+          }] 
+        }
         ]
 }

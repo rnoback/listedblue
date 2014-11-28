@@ -37,14 +37,16 @@
                 <div class="product-overlay">
                      {{#each embodiment}}
                     <div class="column">
-                        <h2>{{../name}} ({{type}})</h2>
-                        <ul>
-                            {{#each this}}
-                             {{#unless embodiment/type}}
-                            <li class="p_{{@key}}"><span class="label">{{@key}}</span>: <span class="c_{{this}}">{{this}}</span></li>
-                           {{/unless}}
-                            {{/each}}
-                        </ul>
+                        <div class="column-content">
+                            <h2>{{../name}} ({{type}})</h2>
+                            <ul>
+                                {{#each this}}
+                                 {{#unless embodiment/type}}
+                                <li class="p_{{@key}}"><span class="label">{{@key}}</span>: <span class="c_{{this}}">{{this}}</span></li>
+                               {{/unless}}
+                                {{/each}}
+                            </ul>
+                        </div>
                     </div>
                      {{/each}}
                 </div>
@@ -56,9 +58,11 @@
 
                 <div class="product-info">   
                     <div class="product-navigation">
-                        <a class="prev el-icon-chevron-left" href="#"></a>
-                        <h2>{{name}} </h2>
-                        <a class="next el-icon-chevron-right" href="#"></a>
+                        <div class="product-inner">
+                            <a class="prev el-icon-chevron-left" href="#"></a>
+                            <h2>{{name}} </h2>
+                            <a class="next el-icon-chevron-right" href="#"></a>
+                        </div>
                     </div>
                 </div>
             </div><!-- End Product -->
@@ -66,9 +70,9 @@
             </script>
         </section>
         
-        <footer>
-            <!-- <div class="credits">Terms Of Service | &copy; LISTED BLUE 2014</div> -->
-        </footer>
+       <!--  <footer>
+            <div class="credits">Terms Of Service | &copy; LISTED BLUE 2014</div>
+        </footer> -->
     </div><!-- end main-wrap -->
 
 
