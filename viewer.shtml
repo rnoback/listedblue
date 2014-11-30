@@ -24,8 +24,8 @@
                     <li>products</li>
                     <li>contact</li>
                 </ul>
-                <a href="#" class="btn-nav-toggle el-icon-lines"></a>
-                <a href="#" class="btn-close el-icon-asterisk"></a>
+                <a href="#" class="btn-nav-toggle fa fa-bars"></a>
+                <a href="#" class="btn-close fa fa-times"></a>
             </div>
         </header>
 
@@ -59,9 +59,9 @@
                 <div class="product-info">   
                     <div class="product-navigation">
                         <div class="product-inner">
-                            <a class="prev el-icon-chevron-left" href="#"></a>
+                            <a class="prev fa fa-chevron-left" href="#"></a>
                             <h2>{{name}} </h2>
-                            <a class="next el-icon-chevron-right" href="#"></a>
+                            <a class="next fa fa-chevron-right" href="#"></a>
                         </div>
                     </div>
                 </div>

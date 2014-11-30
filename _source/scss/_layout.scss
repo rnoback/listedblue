@@ -39,47 +39,40 @@
 			}	 */
 			.product-overlay{
 				position: absolute;
-				
-
 				z-index: 11;
-				opacity: 0.5;
+				opacity: 0.75;
 				left:0;
 		    	right:0;
 			    margin-left:auto;
 			    margin-right:auto;
-
 			    display: none;
 
 			    .column{
 			    	width: 33.33334%;
 			    	height: inherit;
-			    	background: black;
+			    	background: $white;
 			    	float: left;
 			    	
 
 			    	.column-content{
-			    		color: $white;
+			    		color: $black;
 			    		padding: 120px 20px 20px 20px;
 			    		font-size: 100%;
 
 			    		h2{
-			    		color:$white;
+			    			color:$black;
 				    	}
 				    	.label{
 				    		text-transform: uppercase;
 				    	}
 			    	}
-
-			    	
 			    }
-
 			}
+
 			.product-overlay.active{
 		    	display: block;
 		    }
-
 		   
-
 			.product-visual {
 				
 				img{
@@ -99,10 +92,9 @@
 							 */	
 				position: relative;
 				text-align: center;
-				height: 55px;
+				height: 75px;
+				margin: 0 auto;
 				//@include font-size(24);
-				
-
 				
 
 				 .product-navigation{
@@ -110,19 +102,20 @@
 				 	position: relative;
 				 	
 				 	.product-inner{
-				 		padding: 20px 0;
+				 		//padding: 20px 0;
 				 		margin: 0 auto;
 				 		width: 33.3334%;
-				 		background: red;
+				 		padding-top: 23px;
 				 		
 				 		h2{
 							display: inline-block;
-							font-size: 1.75vw;
+							font-size: 1.65vw;
 						}
 					 	a{
 					 		text-decoration: none;
 					 		display: block;
 					 		font-size: 0.80rem;
+					 		margin-top: 4px;
 					 		
 						//	background: url(../images/direction_nav.png) no-repeat 0 0;
 						 //   cursor: pointer;
@@ -197,18 +190,17 @@
 				display: none;
 			}
 			a.btn-close{
-				float:right;
-				margin-right: 20px;
+				position: absolute;
+				right: 1.5%;
 				display: none;
 				font-size: 1.6rem;
 				font-weight: lighter;
 				text-decoration: none;
 			}
 			a.btn-nav-toggle{
-				float:right;
-				margin-right: 20px;
+				position: absolute;
+				right: 1.5%;
 				font-size: 1.6rem;
-				font-weight: lighter;
 				text-decoration: none;
 			}
 		}
