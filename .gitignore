@@ -36,3 +36,9 @@
 ehthumbs.db
 Thumbs.db
 *.sass-cache*
+
+#################
+## Directories
+#################
+
+node_modules/
