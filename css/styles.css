@@ -2905,29 +2905,31 @@ p {
 /* line 50, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-overlay .column {
   width: 33.33334%;
-  height: inherit;
   background: white;
   float: left;
 }
-/* line 57, ../_source/scss/_layout.scss */
+/* line 55, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-overlay .column .column-content {
   color: black;
-  padding: 120px 20px 20px 20px;
-  font-size: 100%;
+  padding: 30% 10% 10% 10%;
+  font-size: 0.9vw;
+  line-height: 2.5em;
 }
-/* line 62, ../_source/scss/_layout.scss */
+/* line 61, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-overlay .column .column-content h2 {
   color: black;
+  font-size: 1.4vw;
+  line-height: 3em;
 }
-/* line 65, ../_source/scss/_layout.scss */
+/* line 66, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-overlay .column .column-content .label {
   text-transform: uppercase;
 }
-/* line 72, ../_source/scss/_layout.scss */
+/* line 73, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-overlay.active {
   display: block;
 }
-/* line 78, ../_source/scss/_layout.scss */
+/* line 79, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-visual img {
   width: 100%;
   cursor: pointer;
@@ -2937,7 +2939,7 @@ p {
   position: relative;
   /* visibility: hidden; */
 }
-/* line 88, ../_source/scss/_layout.scss */
+/* line 89, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-info {
   /* padding: 1.4rem 0; */
   /* padding:20px 0;
@@ -2946,24 +2948,25 @@ p {
   text-align: center;
   height: 75px;
   margin: 0 auto;
+  z-index: 12;
 }
-/* line 100, ../_source/scss/_layout.scss */
+/* line 102, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-info .product-navigation {
   width: 100%;
   position: relative;
 }
-/* line 104, ../_source/scss/_layout.scss */
+/* line 106, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-info .product-navigation .product-inner {
   margin: 0 auto;
   width: 33.3334%;
   padding-top: 23px;
 }
-/* line 110, ../_source/scss/_layout.scss */
+/* line 112, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-info .product-navigation .product-inner h2 {
   display: inline-block;
   font-size: 1.65vw;
 }
-/* line 114, ../_source/scss/_layout.scss */
+/* line 116, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a {
   text-decoration: none;
   display: block;
@@ -2972,15 +2975,15 @@ p {
   /* 		    opacity: 1;
   		    -webkit-transition: all .3s ease; */
 }
-/* line 133, ../_source/scss/_layout.scss */
+/* line 135, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.next {
   float: right;
 }
-/* line 138, ../_source/scss/_layout.scss */
+/* line 140, ../_source/scss/_layout.scss */
 .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.prev {
   float: left;
 }
-/* line 177, ../_source/scss/_layout.scss */
+/* line 179, ../_source/scss/_layout.scss */
 .main-wrap header {
   position: absolute;
   background: transparent;
@@ -2988,33 +2991,32 @@ p {
   width: 100%;
   z-index: 10;
 }
-/* line 184, ../_source/scss/_layout.scss */
+/* line 186, ../_source/scss/_layout.scss */
 .main-wrap header .overlay-navigation {
   position: relative;
   margin: 0 auto;
   top: -43px;
 }
-/* line 189, ../_source/scss/_layout.scss */
+/* line 191, ../_source/scss/_layout.scss */
 .main-wrap header .overlay-navigation .main-navigation {
   display: none;
 }
-/* line 192, ../_source/scss/_layout.scss */
+/* line 194, ../_source/scss/_layout.scss */
 .main-wrap header .overlay-navigation a.btn-close {
   position: absolute;
   right: 1.5%;
   display: none;
   font-size: 1.6rem;
-  font-weight: lighter;
   text-decoration: none;
 }
-/* line 200, ../_source/scss/_layout.scss */
+/* line 201, ../_source/scss/_layout.scss */
 .main-wrap header .overlay-navigation a.btn-nav-toggle {
   position: absolute;
   right: 1.5%;
   font-size: 1.6rem;
   text-decoration: none;
 }
-/* line 208, ../_source/scss/_layout.scss */
+/* line 209, ../_source/scss/_layout.scss */
 .main-wrap header h1 {
   position: relative;
   width: auto;
@@ -3022,7 +3024,7 @@ p {
   padding-top: 3.125rem;
   color: #f90;
 }
-/* line 216, ../_source/scss/_layout.scss */
+/* line 217, ../_source/scss/_layout.scss */
 .main-wrap header h1:after {
   margin: -1rem 0 0 0.25rem;
   content: " \2022";
@@ -3033,7 +3035,7 @@ p {
   font-size: 3.4rem;
   color: #5ca2df;
 }
-/* line 234, ../_source/scss/_layout.scss */
+/* line 235, ../_source/scss/_layout.scss */
 .main-wrap footer {
   height: 35px;
   z-index: 10;
@@ -3041,26 +3043,38 @@ p {
   position: absolute;
   visibility: hidden;
 }
-/* line 241, ../_source/scss/_layout.scss */
+/* line 242, ../_source/scss/_layout.scss */
 .main-wrap footer .credits {
   /* margin-top: 1rem; */
   font-size: 12px;
   font-size: 0.75rem;
 }
 
-/* line 251, ../_source/scss/_layout.scss */
+/* line 252, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap .product-wrap .product {
   left: auto;
   right: auto;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 260, ../_source/scss/_layout.scss */
+/* line 265, ../_source/scss/_layout.scss */
+.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content {
+  color: black;
+  padding: 30% 15% 15% 15%;
+  font-size: 1.5vh;
+  line-height: 2.5em;
+}
+/* line 271, ../_source/scss/_layout.scss */
+.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content h2 {
+  font-size: 2.4vh;
+  line-height: 3em;
+}
+/* line 284, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap .product-wrap .product .product-visual img {
   width: auto;
   height: 100%;
 }
-/* line 266, ../_source/scss/_layout.scss */
+/* line 290, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap .product-wrap .product .product-info {
   position: absolute;
   bottom: 20px;
@@ -3068,36 +3082,56 @@ p {
   background: transparent;
   text-align: center;
 }
-/* line 273, ../_source/scss/_layout.scss */
+/* line 297, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap .product-wrap .product .product-info h2 {
   font-size: 16px;
   font-size: 1rem;
   width: 200px;
-  margin-top: 50px;
 }
-/* line 279, ../_source/scss/_layout.scss */
+/* line 303, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap .product-wrap .product .product-info .product-navigation {
   position: fixed;
   text-align: center;
   width: 100%;
 }
-/* line 283, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation h2 {
-  /* position: fixed;
-  text-align: center;
-  width: 100%;
-  padding-top: 2.125rem;
-  display: block;
-  margin-top:0; */
+/* line 308, ../_source/scss/_layout.scss */
+.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner {
+  width: auto;
 }
-/* line 297, ../_source/scss/_layout.scss */
+/* line 312, ../_source/scss/_layout.scss */
+.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner h2 {
+  font-size: 2.5vh;
+}
+/* line 318, ../_source/scss/_layout.scss */
+.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.next {
+  margin-right: 1rem;
+}
+/* line 321, ../_source/scss/_layout.scss */
+.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.prev {
+  margin-left: 1rem;
+}
+/* line 331, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap header {
   position: absolute;
   /* width: 1800px; */
   z-index: 10;
   background: transparent;
 }
-/* line 303, ../_source/scss/_layout.scss */
+/* line 344, ../_source/scss/_layout.scss */
+.is-portrait .main-wrap header .overlay-navigation a.btn-close {
+  position: fixed;
+  top: 30px;
+  right: 4%;
+  font-size: 1.4rem;
+}
+/* line 350, ../_source/scss/_layout.scss */
+.is-portrait .main-wrap header .overlay-navigation a.btn-nav-toggle {
+  position: fixed;
+  top: 30px;
+  right: 4%;
+  font-size: 1.4rem;
+}
+/* line 360, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap header h1 {
   position: fixed;
   text-align: center;
@@ -3107,7 +3141,7 @@ p {
   font-size: 24px;
   font-size: 1.5rem;
 }
-/* line 312, ../_source/scss/_layout.scss */
+/* line 369, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap header h1:after {
   margin: -1rem 0 0 0.25rem;
   width: 0.75rem;
@@ -3115,11 +3149,11 @@ p {
   font-size: 2.8rem;
   color: #5ca2df;
 }
-/* line 326, ../_source/scss/_layout.scss */
+/* line 383, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap footer {
   margin-top: -10px;
 }
-/* line 329, ../_source/scss/_layout.scss */
+/* line 386, ../_source/scss/_layout.scss */
 .is-portrait .main-wrap footer .credits {
   position: fixed;
   width: 100%;

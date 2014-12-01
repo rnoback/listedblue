@@ -49,18 +49,19 @@
 
 			    .column{
 			    	width: 33.33334%;
-			    	height: inherit;
 			    	background: $white;
 			    	float: left;
-			    	
 
 			    	.column-content{
 			    		color: $black;
-			    		padding: 120px 20px 20px 20px;
-			    		font-size: 100%;
+			    		padding: 30% 10% 10% 10%;
+			    		font-size: 0.9vw;
+			    		line-height: 2.5em;
 
 			    		h2{
 			    			color:$black;
+			    			font-size: 1.4vw;
+			    			line-height: 3em;
 				    	}
 				    	.label{
 				    		text-transform: uppercase;
@@ -94,6 +95,7 @@
 				text-align: center;
 				height: 75px;
 				margin: 0 auto;
+				z-index: 12;
 				//@include font-size(24);
 				
 
@@ -194,7 +196,6 @@
 				right: 1.5%;
 				display: none;
 				font-size: 1.6rem;
-				font-weight: lighter;
 				text-decoration: none;
 			}
 			a.btn-nav-toggle{
@@ -250,10 +251,33 @@
 		.product-wrap{
 			.product{
 				left:auto;
-		    right:auto;
-		    margin-left:auto;
-		    margin-right:auto;
+			    right:auto;
+			    margin-left:auto;
+			    margin-right:auto;
 		
+
+
+				.product-overlay{
+					
+				    .column{
+				    	
+
+				    	.column-content{
+				    		color: $black;
+				    		padding: 30% 15% 15% 15%;
+				    		font-size: 1.5vh;
+				    		line-height: 2.5em;
+
+				    		h2{
+				    			font-size: 2.4vh;
+				    			line-height: 3em;
+					    	}
+				    	}
+				    }
+				}
+
+
+
 				.product-visual {
 					//left: -300px;
 					
@@ -273,20 +297,30 @@
 					h2{
 						@include font-size(16);
 						width: 200px;
-						margin-top: 50px;
+						
 					}
 
 					.product-navigation{
 						position: fixed;
 						text-align: center;
 						width: 100%;
-						h2{
-						/* position: fixed;
-						text-align: center;
-						width: 100%;
-						padding-top: 2.125rem;
-						display: block;
-						margin-top:0; */
+
+						.product-inner{
+
+					 		width: auto;
+					 		
+					 		h2{
+								font-size: 2.5vh;
+							}
+						 	a{
+
+							}
+							a.next{
+								margin-right: 1rem;
+				    		}
+				    		a.prev{
+				    			margin-left: 1rem;
+						    }
 						}
 					}
 				}
@@ -300,6 +334,29 @@
 			/* width: 1800px; */
 			z-index: 10;
 			background: transparent;
+
+			.overlay-navigation{
+			
+
+				.main-navigation{
+					
+				}
+				a.btn-close{
+					position: fixed;
+					top: 30px;
+					right: 4%;
+					font-size: 1.4rem;
+				}
+				a.btn-nav-toggle{
+					position: fixed;
+					top: 30px;
+					right: 4%;
+					font-size: 1.4rem;
+				}
+			}
+
+
+
 			h1{
 				position: fixed;
 				text-align: center;

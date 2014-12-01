@@ -204,7 +204,14 @@ var settings;
         },
 
         setMainVisial: function(){
+
+            var visualWidth = this.mainVisual.width();
+            this.header.css('width', visualWidth);
+
             if(!this.isPortrait){
+                 
+                
+
                 if( this.heightTotal >= this.productVisualHeight){
                     this.mainVisual.css('width', 'auto');
                     this.mainVisual.css('height', this.productVisualHeight+'px');
@@ -223,16 +230,19 @@ var settings;
                 //this.footer.css('top' , this.heightTotal - this.footer.height());
             }
             
-            var visualWidth = this.mainVisual.width();
-
-            this.header.css('width', visualWidth);
+            visualWidth = this.mainVisual.width();
 
             this.productInfo.css('width', visualWidth);
 
             this.productOverlay.width( visualWidth );
-            this.productOverlay.height( visualWidth );
+            this.productOverlay.find('.column').height( visualWidth/2 );
+
+           // this.productOverlay.height( visualWidth );
+           
+           
 
             $('.overlay-navigation').width( visualWidth );
+
 
 /*            this.preloader.width( this.mainVisual.width() );
             this.preloader.height( this.mainVisual.height() );
@@ -289,6 +299,7 @@ var settings;
             this.theBody.removeClass("is-landscape");
             this.mainVisual.css('height', (this.viewportHeight)+'px');
             this.mainVisual.css('width', 'auto');
+           // this.mainNavToggle.position().right(this.viewportWidth);
 
             /*visualWidth = this.mainVisual.width();
 
