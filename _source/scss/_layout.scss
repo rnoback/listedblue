@@ -42,7 +42,7 @@
 				
 
 				z-index: 11;
-				opacity: 0.5;
+				opacity: 0.6;
 				left:0;
 		    	right:0;
 			    margin-left:auto;
@@ -53,17 +53,17 @@
 			    .column{
 			    	width: 33.33334%;
 			    	height: inherit;
-			    	background: black;
+			    	background: white;
 			    	float: left;
 			    	
 
 			    	.column-content{
-			    		color: $white;
+			    		color: $extradarkgray;
 			    		padding: 120px 20px 20px 20px;
 			    		font-size: 100%;
 
 			    		h2{
-			    		color:$white;
+			    		color:$extradarkgray;
 				    	}
 				    	.label{
 				    		text-transform: uppercase;
@@ -113,7 +113,7 @@
 				 		padding: 20px 0;
 				 		margin: 0 auto;
 				 		width: 33.3334%;
-				 		background: red;
+				 		
 				 		
 				 		h2{
 							display: inline-block;
@@ -123,6 +123,7 @@
 					 		text-decoration: none;
 					 		display: block;
 					 		font-size: 0.80rem;
+					 		color: $extradarkgray;
 					 		
 						//	background: url(../images/direction_nav.png) no-repeat 0 0;
 						 //   cursor: pointer;
@@ -141,10 +142,12 @@
 							//background-position: 100% 0; 
 							//right: 5px;
 							float:right;
+							padding: 6px 9px 0 0px;
 			    		}
 			    		a.prev{
 					    	//left: 5px;
 					    	float:left;
+					    	padding: 6px 0 0 9px;
 					    }
 					}
 				}
@@ -217,8 +220,8 @@
 			position: relative;
 			width: auto;
 			text-align: center;
-			padding-top: 3.125rem;
-			color: #f90;
+			padding-top: 1.5rem;
+			color: $extradarkgray;
 		}
 
 		h1:after{
@@ -314,7 +317,7 @@
 				width: 100%;
 				color: $extradarkgray;
 				padding-top: 2.125rem;
-				@include font-size(24);
+				@include font-size(18);
 
 			}
 			h1:after{
