@@ -97,7 +97,7 @@ var settings;
             this.theBody = $('body');
             this.theWindow = $(window);
             this.header = $('header');
-            this.footer = $('footer');
+            //this.footer = $('footer');
             this.mainWrap = $('.main-wrap');
             this.productWrap = $('.product-wrap');
            
@@ -122,7 +122,7 @@ var settings;
            
             this.productVisual = $('.product-visual');
             this.productInfo = $('.product-info');
-            this.restHeigth = this.footer.height() + this.productInfo.height();
+            this.restHeigth = this.productInfo.height();
 
             this.productVisualHeight = this.viewportHeight - this.restHeigth;
 
@@ -143,6 +143,7 @@ var settings;
             });*/
 
             this.overlayCloseBtn = $('.overlay-navigation').find('.btn-close');
+            this.mainNavToggle = $('.btn-nav-toggle');
             var timeout = setTimeout(this.resizeHandler.bind(this), 100);
 
             // Events
@@ -203,34 +204,45 @@ var settings;
         },
 
         setMainVisial: function(){
+
+            var visualWidth = this.mainVisual.width();
+            this.header.css('width', visualWidth);
+
             if(!this.isPortrait){
+                 
+                
+
                 if( this.heightTotal >= this.productVisualHeight){
                     this.mainVisual.css('width', 'auto');
                     this.mainVisual.css('height', this.productVisualHeight+'px');
 
-                    this.footer.css('top' , this.productVisualHeight + this.restHeigth - this.footer.height());
+                    //this.footer.css('top' , this.productVisualHeight + this.restHeigth - this.footer.height());
 
                 }else {
                     this.mainVisual.css('width', '100%');
                     this.mainVisual.css('height', 'auto');
 
-                    this.footer.css('top' , this.heightTotal + this.restHeigth - this.footer.height());
+                    //this.footer.css('top' , this.heightTotal + this.restHeigth - this.footer.height());
                 }
                 //this.productNavigationWrap.css('width',(this.mainVisual.width()/3));
             }else{
                 //this.productNavigationWrap.css('width','100%');
-                this.footer.css('top' , this.heightTotal - this.footer.height());
+                //this.footer.css('top' , this.heightTotal - this.footer.height());
             }
             
-            var self = this;
-            var timeout = setTimeout(function(){
-                self.footer.css('visibility','visible');
-            }, 1);
+            visualWidth = this.mainVisual.width();
 
-            this.productOverlay.width( this.mainVisual.width() );
-            this.productOverlay.height( this.mainVisual.height() );
+            this.productInfo.css('width', visualWidth);
 
-            $('.overlay-navigation').width( this.mainVisual.width() );
+            this.productOverlay.width( visualWidth );
+            this.productOverlay.find('.column').height( visualWidth/2 );
+
+           // this.productOverlay.height( visualWidth );
+           
+           
+
+            $('.overlay-navigation').width( visualWidth );
+
 
 /*            this.preloader.width( this.mainVisual.width() );
             this.preloader.height( this.mainVisual.height() );
@@ -287,12 +299,13 @@ var settings;
             this.theBody.removeClass("is-landscape");
             this.mainVisual.css('height', (this.viewportHeight)+'px');
             this.mainVisual.css('width', 'auto');
+           // this.mainNavToggle.position().right(this.viewportWidth);
 
-            this.header.css('width', (this.mainVisual.width()));
+            /*visualWidth = this.mainVisual.width();
 
-            this.footer.css('width', (this.mainVisual.width()));
+            this.header.css('width', visualWidth);
 
-            this.productInfo.css('width', (this.mainVisual.width()));
+            this.productInfo.css('width', visualWidth);*/
             
 
             //console.log( "scrollert " +window.scrollTo);
@@ -318,22 +331,23 @@ var settings;
             this.mainVisual.css('height', 'auto');
 
             this.header.css('width', '100%');
-            this.productInfo.css('width', '100%');
-            this.footer.css('width', '100%');
+            //this.productInfo.css('width', '100%');
+            //this.footer.css('width', '100%');
             window.scrollTo(0,0);
         },
 
         openOverlay:function(e){
            
-          
-        this.overlayCloseBtn.css('display','block');
+            this.overlayCloseBtn.css('display','block');
             this.productOverlay.addClass('active');
+            this.mainNavToggle.css('display','none');
         },
         closeOverlay:function(e){
            
             var target = $(e.target);
             this.productOverlay.removeClass('active');
             target.css('display','none');
+            this.mainNavToggle.css('display','block');
         },
 
         scrollHandler:function(){
