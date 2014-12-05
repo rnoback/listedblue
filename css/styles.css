@@ -2999,7 +2999,7 @@ p {
 .main-wrap .product-wrap .product .product-overlay {
   position: absolute;
   z-index: 11;
-  opacity: 0.6;
+  opacity: 0.7;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -3111,13 +3111,12 @@ p {
 /* line 187, ../_source/scss/_layout-landscape.scss */
 .main-wrap header .navigation-wrap .main-navigation {
   display: none;
-  background: #000000;
-  color: #ffffff;
+  background: #ffffff;
+  color: #0f0606;
   position: absolute;
   right: 0;
   top: -1.5rem;
   width: 33.333334%;
-  opacity: 0.6;
 }
 /* line 197, ../_source/scss/_layout-landscape.scss */
 .main-wrap header .navigation-wrap .main-navigation li.nav {
@@ -3125,7 +3124,7 @@ p {
 }
 /* line 200, ../_source/scss/_layout-landscape.scss */
 .main-wrap header .navigation-wrap .main-navigation > li.nav:first-child {
-  padding: 72px 40px 10px 40px;
+  padding: 80px 40px 10px 40px;
   color: #f90;
 }
 /* line 206, ../_source/scss/_layout-landscape.scss */
@@ -3142,8 +3141,9 @@ p {
   right: 1.5%;
   font-size: 1.6rem;
   text-decoration: none;
+  color: #0f0606;
 }
-/* line 221, ../_source/scss/_layout-landscape.scss */
+/* line 222, ../_source/scss/_layout-landscape.scss */
 .main-wrap header h1 {
   position: absolute;
   left: 0;
@@ -3151,10 +3151,11 @@ p {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  letter-spacing: 1px;
   height: 50px;
   color: #0f0606;
 }
-/* line 233, ../_source/scss/_layout-landscape.scss */
+/* line 234, ../_source/scss/_layout-landscape.scss */
 .main-wrap header h1:after {
   margin: -1rem 0 0 0.25rem;
   content: " \2022";
@@ -3165,7 +3166,7 @@ p {
   font-size: 3.4rem;
   color: #5ca2df;
 }
-/* line 251, ../_source/scss/_layout-landscape.scss */
+/* line 252, ../_source/scss/_layout-landscape.scss */
 .main-wrap footer {
   height: 35px;
   z-index: 10;
@@ -3173,7 +3174,7 @@ p {
   position: absolute;
   visibility: hidden;
 }
-/* line 258, ../_source/scss/_layout-landscape.scss */
+/* line 259, ../_source/scss/_layout-landscape.scss */
 .main-wrap footer .credits {
   /* margin-top: 1rem; */
   font-size: 12px;

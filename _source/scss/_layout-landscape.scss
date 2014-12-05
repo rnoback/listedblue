@@ -29,7 +29,7 @@
 			.product-overlay{
 				position: absolute;
 				z-index: 11;
-				opacity: 0.6;
+				opacity: 0.7;
 				left:0;
 		    	right:0;
 			    margin-left:auto;
@@ -186,19 +186,19 @@
 
 			.main-navigation{
 				display:none;
-				background: $black;
-				color: $white;
+				background: $white;
+				color: $extradarkgray;
 				position:absolute;
 				right: 0;
 				top: -1.5rem;
 				width: 33.333334%;
-				opacity: 0.6;
+				// opacity: 0.7;
 				
 				li.nav{
 					padding: 10px 40px;
 				}
 				>li.nav:first-child{
-					padding: 72px 40px 10px 40px;
+					padding: 80px 40px 10px 40px;
 					color:#f90;
 				}
 
@@ -215,6 +215,7 @@
 				right: 1.5%;
 				font-size: 1.6rem;
 				text-decoration: none;
+				color: $extradarkgray;
 			}
 		}
 
@@ -225,7 +226,7 @@
 		    margin-left:auto;
 		    margin-right:auto;
 			text-align: center;
-			
+			letter-spacing: 1px;
 			height: 50px;
 			color: $extradarkgray;
 		}
