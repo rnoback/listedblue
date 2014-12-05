@@ -35,6 +35,7 @@
 			    margin-left:auto;
 			    margin-right:auto;
 			    display: none;
+			    cursor:pointer;
 
 			    .column{
 			    	width: 33.33334%;
@@ -184,7 +185,7 @@
 			margin: 0 auto;
 
 			.main-navigation{
-				//display: none;
+				display:none;
 				background: $black;
 				color: $white;
 				position:absolute;

@@ -151,6 +151,9 @@ var settings;
 
             this.productVisual.find('img').on('click touchstart', this.openOverlay.bind(this));
             this.overlayCloseBtn.on('click touchstart', this.closeOverlay.bind(this));
+            this.productOverlay.on('click touchstart', this.closeOverlay.bind(this));
+
+            this.mainNavToggle.on('click touchstart', this.toggleNav.bind(this));
              
         },
 
@@ -204,8 +207,8 @@ var settings;
 
         setMainVisial: function(){
 
-            var visualWidth = this.mainVisual.width();
-            this.header.css('width', visualWidth);
+            this.visualWidth = this.mainVisual.width();
+            this.header.css('width', this.visualWidth);
 
             if(!this.isPortrait){
                  
@@ -229,18 +232,18 @@ var settings;
                 //this.footer.css('top' , this.heightTotal - this.footer.height());
             }
             
-            visualWidth = this.mainVisual.width();
+            this.visualWidth = this.mainVisual.width();
 
-            this.productInfo.css('width', visualWidth);
+            this.productInfo.css('width', this.visualWidth);
 
-            this.productOverlay.width( visualWidth );
-            this.productOverlay.find('.column').height( visualWidth/2 );
+            this.productOverlay.width( this.visualWidth );
+            this.productOverlay.find('.column').height( this.visualWidth/2 );
 
-           // this.productOverlay.height( visualWidth );
+           // this.productOverlay.height( this.visualWidth );
            
-           
+           $('.main-navigation').height(this.visualWidth/2);
 
-            $('.navigation-wrap').width( visualWidth );
+            $('.navigation-wrap').width( this.visualWidth );
 
 
 /*            this.preloader.width( this.mainVisual.width() );
@@ -337,16 +340,28 @@ var settings;
 
         openOverlay:function(e){
            
-            this.overlayCloseBtn.css('display','block');
+            this.overlayCloseBtn.show();
             this.productOverlay.addClass('active');
-            this.mainNavToggle.css('display','none');
+            this.mainNavToggle.hide();
+            $('.main-navigation').hide();
         },
         closeOverlay:function(e){
            
-            var target = $(e.target);
             this.productOverlay.removeClass('active');
-            target.css('display','none');
-            this.mainNavToggle.css('display','block');
+            this.overlayCloseBtn.hide();
+            this.mainNavToggle.show();
+        },
+        toggleNav:function(e){
+            var target = $(e.target);
+            var menu = target.siblings('.main-navigation');
+
+            if(menu.is(':visible')){
+                menu.hide();
+
+            }else{
+                menu.height(this.visualWidth/2);
+                menu.show();
+            }
         },
 
         scrollHandler:function(){
