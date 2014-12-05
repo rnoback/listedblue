@@ -193,11 +193,14 @@
 				top: -1.5rem;
 				width: 33.333334%;
 				opacity: 0.6;
-
-				>li{
+				
+				li.nav{
 					padding: 10px 40px;
 				}
-
+				>li.nav:first-child{
+					padding: 72px 40px 10px 40px;
+					color:#f90;
+				}
 
 			}
 			a.btn-close{

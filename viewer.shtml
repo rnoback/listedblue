@@ -19,9 +19,10 @@
             <h1>LISTEDBLUE</h1>
             <nav class="navigation-wrap">
                 <ul class="main-navigation">
-                    <li>home</li>
-                    <li>products</li>
-                    <li>contact</li>
+                    <li class="nav">current COLLECTION</li>
+                    <li class="nav">ABOUT</li>
+                    <li class="nav">CONTACT</li>
+                    <li class="nav">TERMS and CONDITIONS</li>
                 </ul>
                 <a href="#" class="btn-nav-toggle fa fa-bars"></a>
                 <a href="#" class="btn-close fa fa-times"></a>
