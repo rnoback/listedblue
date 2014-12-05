@@ -29,7 +29,7 @@ module.exports = function(grunt){
 				files:['*.shtml']
 			}, // html
 			sass:{
-				files:['_source/scss/*.scss'],
+				files:['_source/scss/*.scss', '_source/scss/font-awesome/**.scss'],
 				tasks: ['compass:dev']
 			} //sass
 		} //watch
