@@ -17,8 +17,7 @@
     <div class="main-wrap">
         <header>
             <h1>LISTEDBLUE</h1>
-            <nav class="main-navigation"></nav>
-            <div class="overlay-navigation">
+            <nav class="navigation-wrap">
                 <ul class="main-navigation">
                     <li>home</li>
                     <li>products</li>
@@ -26,7 +25,7 @@
                 </ul>
                 <a href="#" class="btn-nav-toggle fa fa-bars"></a>
                 <a href="#" class="btn-close fa fa-times"></a>
-            </div>
+            </nav>
         </header>
 
         <section class="product-wrap">

@@ -2897,14 +2897,14 @@ p {
   background: transparent;
 }
 /* line 100, ../_source/scss/_layout-portrait.scss */
-.is-portrait .main-wrap header .overlay-navigation a.btn-close {
+.is-portrait .main-wrap header .navigation-wrap a.btn-close {
   position: fixed;
   top: 30px;
   right: 4%;
   font-size: 1.4rem;
 }
 /* line 106, ../_source/scss/_layout-portrait.scss */
-.is-portrait .main-wrap header .overlay-navigation a.btn-nav-toggle {
+.is-portrait .main-wrap header .navigation-wrap a.btn-nav-toggle {
   position: fixed;
   top: 30px;
   right: 4%;
@@ -3101,41 +3101,54 @@ p {
   height: 7.813rem;
   width: 100%;
   z-index: 10;
+  padding-top: 1.5rem;
 }
-/* line 181, ../_source/scss/_layout-landscape.scss */
-.main-wrap header .overlay-navigation {
+/* line 182, ../_source/scss/_layout-landscape.scss */
+.main-wrap header .navigation-wrap {
   position: relative;
   margin: 0 auto;
-  top: -43px;
 }
 /* line 186, ../_source/scss/_layout-landscape.scss */
-.main-wrap header .overlay-navigation .main-navigation {
-  display: none;
-}
-/* line 189, ../_source/scss/_layout-landscape.scss */
-.main-wrap header .overlay-navigation a.btn-close {
+.main-wrap header .navigation-wrap .main-navigation {
+  background: black;
+  color: white;
   position: absolute;
-  right: 1.5%;
-  display: none;
-  font-size: 1.6rem;
-  text-decoration: none;
+  right: 0;
+  top: -1.5rem;
+  width: 33.333334%;
+  opacity: 0.6;
 }
 /* line 196, ../_source/scss/_layout-landscape.scss */
-.main-wrap header .overlay-navigation a.btn-nav-toggle {
+.main-wrap header .navigation-wrap .main-navigation > li {
+  padding: 10px 40px;
+}
+/* line 202, ../_source/scss/_layout-landscape.scss */
+.main-wrap header .navigation-wrap a.btn-close {
+  position: absolute;
+  right: 1.5%;
+  display: none;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+/* line 209, ../_source/scss/_layout-landscape.scss */
+.main-wrap header .navigation-wrap a.btn-nav-toggle {
   position: absolute;
   right: 1.5%;
   font-size: 1.6rem;
   text-decoration: none;
 }
-/* line 204, ../_source/scss/_layout-landscape.scss */
+/* line 217, ../_source/scss/_layout-landscape.scss */
 .main-wrap header h1 {
-  position: relative;
-  width: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  padding-top: 1.5rem;
+  height: 50px;
   color: #0f0606;
 }
-/* line 212, ../_source/scss/_layout-landscape.scss */
+/* line 229, ../_source/scss/_layout-landscape.scss */
 .main-wrap header h1:after {
   margin: -1rem 0 0 0.25rem;
   content: " \2022";
@@ -3146,7 +3159,7 @@ p {
   font-size: 3.4rem;
   color: #5ca2df;
 }
-/* line 230, ../_source/scss/_layout-landscape.scss */
+/* line 247, ../_source/scss/_layout-landscape.scss */
 .main-wrap footer {
   height: 35px;
   z-index: 10;
@@ -3154,7 +3167,7 @@ p {
   position: absolute;
   visibility: hidden;
 }
-/* line 237, ../_source/scss/_layout-landscape.scss */
+/* line 254, ../_source/scss/_layout-landscape.scss */
 .main-wrap footer .credits {
   /* margin-top: 1rem; */
   font-size: 12px;

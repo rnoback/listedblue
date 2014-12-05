@@ -177,14 +177,27 @@
 		height: 7.813rem;
 		width: 100%;
 		z-index: 10;
+		padding-top: 1.5rem;
 
-		.overlay-navigation{
+		.navigation-wrap{
 			position: relative;
 			margin: 0 auto;
-			top:-43px;
 
 			.main-navigation{
-				display: none;
+				//display: none;
+				background: $black;
+				color: $white;
+				position:absolute;
+				right: 0;
+				top: -1.5rem;
+				width: 33.333334%;
+				opacity: 0.6;
+
+				>li{
+					padding: 10px 40px;
+				}
+
+
 			}
 			a.btn-close{
 				position: absolute;
@@ -202,10 +215,14 @@
 		}
 
 		h1{
-			position: relative;
-			width: auto;
+			position: absolute;
+			left:0;
+	    	right:0;
+		    margin-left:auto;
+		    margin-right:auto;
 			text-align: center;
-			padding-top: 1.5rem;
+			
+			height: 50px;
 			color: $extradarkgray;
 		}
 

@@ -141,7 +141,7 @@ var settings;
                 return false;
             });*/
 
-            this.overlayCloseBtn = $('.overlay-navigation').find('.btn-close');
+            this.overlayCloseBtn = $('.navigation-wrap').find('.btn-close');
             this.mainNavToggle = $('.btn-nav-toggle');
             var timeout = setTimeout(this.resizeHandler.bind(this), 100);
 
@@ -240,7 +240,7 @@ var settings;
            
            
 
-            $('.overlay-navigation').width( visualWidth );
+            $('.navigation-wrap').width( visualWidth );
 
 
 /*            this.preloader.width( this.mainVisual.width() );
