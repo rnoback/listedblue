@@ -1,14 +1,3 @@
-// Layout ----------------------------------
-.is-portrait{
-	//overflow:auto;
-	 overflow-y:hidden;
-}
-
-
-.is-landscape{
-	 overflow:hidden;
-}
-
 .main-wrap{
 	
 	position:relative;
@@ -64,6 +53,10 @@
 				    	}
 				    	.label{
 				    		text-transform: uppercase;
+				    	}
+				    	.p_type{
+				    		display:none;
+				    		//background: red;
 				    	}
 			    	}
 			    }
@@ -247,158 +240,3 @@
 		}
 	}
 }
-
-.is-portrait{
-	.main-wrap{
-		.product-wrap{
-			.product{
-				left:auto;
-			    right:auto;
-			    margin-left:auto;
-			    margin-right:auto;
-		
-
-
-				.product-overlay{
-					
-				    .column{
-				    	
-
-				    	.column-content{
-				    		color: $black;
-				    		padding: 30% 15% 15% 15%;
-				    		font-size: 1.5vh;
-				    		line-height: 2.5em;
-
-				    		h2{
-				    			font-size: 2.4vh;
-				    			line-height: 3em;
-					    	}
-				    	}
-				    }
-				}
-
-
-
-				.product-visual {
-					//left: -300px;
-					
-						img{
-							width: auto;
-							height: 100%;
-						}
-					
-				}
-				.product-info{
-					position: absolute;
-					bottom: 20px;
-					z-index: 10;
-					background: transparent;
-					text-align: center;
-
-					h2{
-						@include font-size(16);
-						width: 200px;
-						
-					}
-
-					.product-navigation{
-						position: fixed;
-						text-align: center;
-						width: 100%;
-
-						.product-inner{
-
-					 		width: auto;
-					 		
-					 		h2{
-								font-size: 2.5vh;
-							}
-						 	a{
-
-							}
-							a.next{
-								margin-right: 1rem;
-				    		}
-				    		a.prev{
-				    			margin-left: 1rem;
-						    }
-						}
-					}
-				}
-			}
-		}
-		
-
-		header{
-
-			position: absolute;
-			/* width: 1800px; */
-			z-index: 10;
-			background: transparent;
-
-			.overlay-navigation{
-			
-
-				.main-navigation{
-					
-				}
-				a.btn-close{
-					position: fixed;
-					top: 30px;
-					right: 4%;
-					font-size: 1.4rem;
-				}
-				a.btn-nav-toggle{
-					position: fixed;
-					top: 30px;
-					right: 4%;
-					font-size: 1.4rem;
-				}
-			}
-
-
-
-			h1{
-				position: fixed;
-				text-align: center;
-				width: 100%;
-				color: $extradarkgray;
-				padding-top: 2.125rem;
-				@include font-size(18);
-
-			}
-			h1:after{
-				margin: -1rem 0 0 0.25rem;
-				width: 0.75rem;
-				height: 0.75rem;
-				font-size: 2.8rem;
-				color:$blue;
-			}
-		}
-
-		// Navigation -------------------------------
-
-
-
-		// Footer -------------------------------
-		footer{
-			margin-top: -10px;
-
-			.credits{
-				position: fixed;
-				width: 100%;
-				text-align: center; 
-				
-				@include font-size(10);
-			}
-
-		}
-	}
-}
-
-/*  @media all and (orientation:portrait) {
-	.product-info-box{
-		background: green;
-	}
-} */

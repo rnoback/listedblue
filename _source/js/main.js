@@ -43,7 +43,6 @@ var settings;
             $.subscribe('listedblue/data', function(e, data){
                 console.log(data);
             });
-
         },
 
         pubSub: function(){

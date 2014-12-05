@@ -2825,21 +2825,127 @@ p {
   color: #5ca2df;
 }
 
-/* line 2, ../_source/scss/_layout.scss */
+/* line 2, ../_source/scss/_layout-portrait.scss */
 .is-portrait {
   overflow-y: hidden;
 }
-
-/* line 8, ../_source/scss/_layout.scss */
-.is-landscape {
-  overflow: hidden;
+/* line 7, ../_source/scss/_layout-portrait.scss */
+.is-portrait .main-wrap .product-wrap .product {
+  left: auto;
+  right: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, ../_source/scss/_layout-portrait.scss */
+.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content {
+  color: black;
+  padding: 30% 15% 15% 15%;
+  font-size: 1.5vh;
+  line-height: 2.5em;
+}
+/* line 26, ../_source/scss/_layout-portrait.scss */
+.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content h2 {
+  font-size: 2.4vh;
+  line-height: 3em;
+}
+/* line 39, ../_source/scss/_layout-portrait.scss */
+.is-portrait .main-wrap .product-wrap .product .product-visual img {
+  width: auto;
+  height: 100%;
+}
+/* line 45, ../_source/scss/_layout-portrait.scss */
+.is-portrait .main-wrap .product-wrap .product .product-info {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  background: transparent;
+  text-align: center;
+}
+/* line 52, ../_source/scss/_layout-portrait.scss */
+.is-portrait .main-wrap .product-wrap .product .product-info h2 {
+  font-size: 16px;
+  font-size: 1rem;
+  width: 200px;
+}
+/* line 58, ../_source/scss/_layout-portrait.scss */
+.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+/* line 63, ../_source/scss/_layout-portrait.scss */
+.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner {
+  width: auto;
+}
+/* line 67, ../_source/scss/_layout-portrait.scss */
+.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner h2 {
+  font-size: 2.5vh;
+}
+/* line 73, ../_source/scss/_layout-portrait.scss */
+.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.next {
+  margin-right: 1rem;
+}
+/* line 76, ../_source/scss/_layout-portrait.scss */
+.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.prev {
+  margin-left: 1rem;
+}
+/* line 87, ../_source/scss/_layout-portrait.scss */
+.is-portrait .main-wrap header {
+  position: absolute;
+  /* width: 1800px; */
+  z-index: 10;
+  background: transparent;
+}
+/* line 100, ../_source/scss/_layout-portrait.scss */
+.is-portrait .main-wrap header .overlay-navigation a.btn-close {
+  position: fixed;
+  top: 30px;
+  right: 4%;
+  font-size: 1.4rem;
+}
+/* line 106, ../_source/scss/_layout-portrait.scss */
+.is-portrait .main-wrap header .overlay-navigation a.btn-nav-toggle {
+  position: fixed;
+  top: 30px;
+  right: 4%;
+  font-size: 1.4rem;
+}
+/* line 116, ../_source/scss/_layout-portrait.scss */
+.is-portrait .main-wrap header h1 {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  color: #0f0606;
+  padding-top: 2.125rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+/* line 125, ../_source/scss/_layout-portrait.scss */
+.is-portrait .main-wrap header h1:after {
+  margin: -1rem 0 0 0.25rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  font-size: 2.8rem;
+  color: #5ca2df;
+}
+/* line 137, ../_source/scss/_layout-portrait.scss */
+.is-portrait .main-wrap footer {
+  margin-top: -10px;
+}
+/* line 140, ../_source/scss/_layout-portrait.scss */
+.is-portrait .main-wrap footer .credits {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  font-size: 0.625rem;
 }
 
-/* line 12, ../_source/scss/_layout.scss */
+/* line 1, ../_source/scss/_layout-landscape.scss */
 .main-wrap {
   position: relative;
 }
-/* line 15, ../_source/scss/_layout.scss */
+/* line 4, ../_source/scss/_layout-landscape.scss */
 .main-wrap .product-wrap {
   position: relative;
   		/* .product-navigation a{
@@ -2867,7 +2973,7 @@ p {
   	    	left: 1rem;
   	    } */
 }
-/* line 18, ../_source/scss/_layout.scss */
+/* line 7, ../_source/scss/_layout-landscape.scss */
 .main-wrap .product-wrap .product {
   /* visibility: hidden; */
   position: absolute;
@@ -2890,7 +2996,7 @@ p {
   				}
   			}	 */
 }
-/* line 40, ../_source/scss/_layout.scss */
+/* line 29, ../_source/scss/_layout-landscape.scss */
 .main-wrap .product-wrap .product .product-overlay {
   position: absolute;
   z-index: 11;
@@ -2901,33 +3007,37 @@ p {
   margin-right: auto;
   display: none;
 }
-/* line 50, ../_source/scss/_layout.scss */
+/* line 39, ../_source/scss/_layout-landscape.scss */
 .main-wrap .product-wrap .product .product-overlay .column {
   width: 33.33334%;
   background: white;
   float: left;
 }
-/* line 55, ../_source/scss/_layout.scss */
+/* line 44, ../_source/scss/_layout-landscape.scss */
 .main-wrap .product-wrap .product .product-overlay .column .column-content {
   color: #0f0606;
   padding: 120px 20px 20px 20px;
   font-size: 100%;
 }
-/* line 60, ../_source/scss/_layout.scss */
+/* line 49, ../_source/scss/_layout-landscape.scss */
 .main-wrap .product-wrap .product .product-overlay .column .column-content h2 {
   color: black;
   font-size: 1.4vw;
   line-height: 3em;
 }
-/* line 65, ../_source/scss/_layout.scss */
+/* line 54, ../_source/scss/_layout-landscape.scss */
 .main-wrap .product-wrap .product .product-overlay .column .column-content .label {
   text-transform: uppercase;
 }
-/* line 72, ../_source/scss/_layout.scss */
+/* line 57, ../_source/scss/_layout-landscape.scss */
+.main-wrap .product-wrap .product .product-overlay .column .column-content .p_type {
+  display: none;
+}
+/* line 65, ../_source/scss/_layout-landscape.scss */
 .main-wrap .product-wrap .product .product-overlay.active {
   display: block;
 }
-/* line 78, ../_source/scss/_layout.scss */
+/* line 71, ../_source/scss/_layout-landscape.scss */
 .main-wrap .product-wrap .product .product-visual img {
   width: 100%;
   cursor: pointer;
@@ -2937,7 +3047,7 @@ p {
   position: relative;
   /* visibility: hidden; */
 }
-/* line 88, ../_source/scss/_layout.scss */
+/* line 81, ../_source/scss/_layout-landscape.scss */
 .main-wrap .product-wrap .product .product-info {
   /* padding: 1.4rem 0; */
   /* padding:20px 0;
@@ -2948,23 +3058,23 @@ p {
   margin: 0 auto;
   z-index: 12;
 }
-/* line 101, ../_source/scss/_layout.scss */
+/* line 94, ../_source/scss/_layout-landscape.scss */
 .main-wrap .product-wrap .product .product-info .product-navigation {
   width: 100%;
   position: relative;
 }
-/* line 105, ../_source/scss/_layout.scss */
+/* line 98, ../_source/scss/_layout-landscape.scss */
 .main-wrap .product-wrap .product .product-info .product-navigation .product-inner {
   margin: 0 auto;
   width: 33.3334%;
   padding-top: 23px;
 }
-/* line 111, ../_source/scss/_layout.scss */
+/* line 104, ../_source/scss/_layout-landscape.scss */
 .main-wrap .product-wrap .product .product-info .product-navigation .product-inner h2 {
   display: inline-block;
   font-size: 1.65vw;
 }
-/* line 115, ../_source/scss/_layout.scss */
+/* line 108, ../_source/scss/_layout-landscape.scss */
 .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a {
   text-decoration: none;
   display: block;
@@ -2974,17 +3084,17 @@ p {
   /* 		    opacity: 1;
   		    -webkit-transition: all .3s ease; */
 }
-/* line 135, ../_source/scss/_layout.scss */
+/* line 128, ../_source/scss/_layout-landscape.scss */
 .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.next {
   float: right;
   padding: 6px 9px 0 0px;
 }
-/* line 141, ../_source/scss/_layout.scss */
+/* line 134, ../_source/scss/_layout-landscape.scss */
 .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.prev {
   float: left;
   padding: 6px 0 0 9px;
 }
-/* line 181, ../_source/scss/_layout.scss */
+/* line 174, ../_source/scss/_layout-landscape.scss */
 .main-wrap header {
   position: absolute;
   background: transparent;
@@ -2992,17 +3102,17 @@ p {
   width: 100%;
   z-index: 10;
 }
-/* line 188, ../_source/scss/_layout.scss */
+/* line 181, ../_source/scss/_layout-landscape.scss */
 .main-wrap header .overlay-navigation {
   position: relative;
   margin: 0 auto;
   top: -43px;
 }
-/* line 193, ../_source/scss/_layout.scss */
+/* line 186, ../_source/scss/_layout-landscape.scss */
 .main-wrap header .overlay-navigation .main-navigation {
   display: none;
 }
-/* line 196, ../_source/scss/_layout.scss */
+/* line 189, ../_source/scss/_layout-landscape.scss */
 .main-wrap header .overlay-navigation a.btn-close {
   position: absolute;
   right: 1.5%;
@@ -3010,14 +3120,14 @@ p {
   font-size: 1.6rem;
   text-decoration: none;
 }
-/* line 203, ../_source/scss/_layout.scss */
+/* line 196, ../_source/scss/_layout-landscape.scss */
 .main-wrap header .overlay-navigation a.btn-nav-toggle {
   position: absolute;
   right: 1.5%;
   font-size: 1.6rem;
   text-decoration: none;
 }
-/* line 211, ../_source/scss/_layout.scss */
+/* line 204, ../_source/scss/_layout-landscape.scss */
 .main-wrap header h1 {
   position: relative;
   width: auto;
@@ -3025,7 +3135,7 @@ p {
   padding-top: 1.5rem;
   color: #0f0606;
 }
-/* line 219, ../_source/scss/_layout.scss */
+/* line 212, ../_source/scss/_layout-landscape.scss */
 .main-wrap header h1:after {
   margin: -1rem 0 0 0.25rem;
   content: " \2022";
@@ -3036,7 +3146,7 @@ p {
   font-size: 3.4rem;
   color: #5ca2df;
 }
-/* line 237, ../_source/scss/_layout.scss */
+/* line 230, ../_source/scss/_layout-landscape.scss */
 .main-wrap footer {
   height: 35px;
   z-index: 10;
@@ -3044,127 +3154,11 @@ p {
   position: absolute;
   visibility: hidden;
 }
-/* line 244, ../_source/scss/_layout.scss */
+/* line 237, ../_source/scss/_layout-landscape.scss */
 .main-wrap footer .credits {
   /* margin-top: 1rem; */
   font-size: 12px;
   font-size: 0.75rem;
 }
 
-/* line 254, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap .product-wrap .product {
-  left: auto;
-  right: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 267, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content {
-  color: black;
-  padding: 30% 15% 15% 15%;
-  font-size: 1.5vh;
-  line-height: 2.5em;
-}
-/* line 273, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content h2 {
-  font-size: 2.4vh;
-  line-height: 3em;
-}
-/* line 286, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap .product-wrap .product .product-visual img {
-  width: auto;
-  height: 100%;
-}
-/* line 292, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap .product-wrap .product .product-info {
-  position: absolute;
-  bottom: 20px;
-  z-index: 10;
-  background: transparent;
-  text-align: center;
-}
-/* line 299, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap .product-wrap .product .product-info h2 {
-  font-size: 16px;
-  font-size: 1rem;
-  width: 200px;
-}
-/* line 305, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation {
-  position: fixed;
-  text-align: center;
-  width: 100%;
-}
-/* line 310, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner {
-  width: auto;
-}
-/* line 314, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner h2 {
-  font-size: 2.5vh;
-}
-/* line 320, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.next {
-  margin-right: 1rem;
-}
-/* line 323, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.prev {
-  margin-left: 1rem;
-}
-/* line 333, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap header {
-  position: absolute;
-  /* width: 1800px; */
-  z-index: 10;
-  background: transparent;
-}
-/* line 346, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap header .overlay-navigation a.btn-close {
-  position: fixed;
-  top: 30px;
-  right: 4%;
-  font-size: 1.4rem;
-}
-/* line 352, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap header .overlay-navigation a.btn-nav-toggle {
-  position: fixed;
-  top: 30px;
-  right: 4%;
-  font-size: 1.4rem;
-}
-/* line 362, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap header h1 {
-  position: fixed;
-  text-align: center;
-  width: 100%;
-  color: #0f0606;
-  padding-top: 2.125rem;
-  font-size: 18px;
-  font-size: 1.125rem;
-}
-/* line 371, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap header h1:after {
-  margin: -1rem 0 0 0.25rem;
-  width: 0.75rem;
-  height: 0.75rem;
-  font-size: 2.8rem;
-  color: #5ca2df;
-}
-/* line 385, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap footer {
-  margin-top: -10px;
-}
-/* line 388, ../_source/scss/_layout.scss */
-.is-portrait .main-wrap footer .credits {
-  position: fixed;
-  width: 100%;
-  text-align: center;
-  font-size: 10px;
-  font-size: 0.625rem;
-}
-
-/*  @media all and (orientation:portrait) {
-	.product-info-box{
-		background: green;
-	}
-} */
+/*# sourceMappingURL=styles.css.map */

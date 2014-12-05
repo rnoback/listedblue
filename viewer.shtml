@@ -35,15 +35,13 @@
             <div class="product">
 
                 <div class="product-overlay">
-                     {{#each embodiment}}
+                    {{#each embodiment}}
                     <div class="column">
                         <div class="column-content">
                             <h2>{{../name}} ({{type}})</h2>
                             <ul>
-                                {{#each this}}
-                                 {{#unless embodiment/type}}
+                                {{#each this}}   
                                 <li class="p_{{@key}}"><span class="label">{{@key}}</span>: <span class="c_{{this}}">{{this}}</span></li>
-                               {{/unless}}
                                 {{/each}}
                             </ul>
                         </div>
