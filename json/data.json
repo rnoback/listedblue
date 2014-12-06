@@ -6,10 +6,11 @@
           "id": 7,
           "name": "Golden Willow", 
           "visual": "images/products/golden-willow.jpg", 
+          "textcolor": "dark",
           
           "embodiment": [{
             "type": "the Object",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old monk. It has special power when you touch it with a sword",
             "materials": "Special Wood from Japan black forest",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -49,10 +50,11 @@
         { 
           "id": 6, 
           "name": "Common Ringlet", 
-          "visual": "images/products/common-ringlet.jpg", 
+          "visual": "images/products/common-ringlet.jpg",
+          "textcolor": "dark", 
           "embodiment": [{
             "type": "object",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -64,7 +66,7 @@
           },
           {
             "type": "Image",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -76,7 +78,7 @@
           },
           {
             "type": "Download",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -91,9 +93,10 @@
           "id": 5,
           "name": "Margined White", 
           "visual": "images/products/margined-white.jpg",
+          "textcolor": "dark",
           "embodiment": [{
             "type": "object",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -105,7 +108,7 @@
           },
           {
             "type": "Image",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -117,7 +120,7 @@
           },
           {
             "type": "Download",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -132,9 +135,10 @@
           "id": 4,
           "name": "Propertius Duskywing", 
           "visual": "images/products/propertius-duskywing.jpg",
+          "textcolor": "dark",
           "embodiment": [{
             "type": "object",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -146,7 +150,7 @@
           },
           {
             "type": "Image",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -158,7 +162,7 @@
           },
           {
             "type": "Download",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -173,9 +177,10 @@
           "id": 1,
           "name": "Eastern Red Bat", 
           "visual": "images/products/eastern-red-bat.jpg",
+          "textcolor": "dark",
           "embodiment": [{
             "type": "object",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -187,7 +192,7 @@
           },
           {
             "type": "Image",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -199,7 +204,7 @@
           },
           {
             "type": "Download",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -214,9 +219,10 @@
           "id": 3,
           "name": "Vidler's Alpine",
           "visual": "images/products/vidlers-alpine.jpg",
+          "textcolor": "dark",
           "embodiment": [{
             "type": "object",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -228,7 +234,7 @@
           },
           {
             "type": "Image",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -240,7 +246,7 @@
           },
           {
             "type": "Download",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -254,9 +260,10 @@
         { "id": 2,
           "name": "Silver Birch",
           "visual": "images/products/silver-birch.jpg",
+          "textcolor": "light",
           "embodiment": [{
             "type": "object",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -268,7 +275,7 @@
           },
           {
             "type": "Image",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -280,7 +287,7 @@
           },
           {
             "type": "Download",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -294,10 +301,11 @@
         { 
           "id": 9,
           "name": "Marsh Elder",
-          "visual": "images/products/marsh-elder.jpg" ,
+          "visual": "images/products/marsh-elder.jpg",
+          "textcolor": "dark",
           "embodiment": [{
             "type": "object",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -309,7 +317,7 @@
           },
           {
             "type": "Image",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -321,7 +329,7 @@
           },
           {
             "type": "Download",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -336,9 +344,11 @@
           "id": 8,
           "name": "Pendulous Sedge", 
           "visual": "images/products/pendulous-sedge.jpg",
+          "textcolor": "dark",
+
           "embodiment": [{
             "type": "object",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -350,7 +360,7 @@
           },
           {
             "type": "Image",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -362,7 +372,7 @@
           },
           {
             "type": "Download",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword.",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword.",
             "material": "Special Wood from Japan black forest.",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -377,10 +387,11 @@
           "id": 10,
           "name": "Heterocodon", 
           "visual": "images/products/heterocodon.jpg", 
-          
+          "textcolor": "light",
+
           "embodiment": [{
             "type": "the Object",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword",
             "materials": "Special Wood from Japan black forest",
             "series": "Unique",
             "weight": "0.277 gram",
@@ -420,10 +431,11 @@
           "id": 11,
           "name": "Great Blue Heron", 
           "visual": "images/products/great-blue-heron.jpg", 
-          
+          "textcolor": "light",
+
           "embodiment": [{
             "type": "the Object",
-            "description": "This handmade crafted soap basket is beeing fabricated in Japan by an old ninja monk. It has special power when you touch it with a sword",
+            "description": "This handmade crafted soap basket has been fabricated in Japan by an old  monk. It has special power when you touch it with a sword",
             "materials": "Special Wood from Japan black forest",
             "series": "Unique",
             "weight": "0.277 gram",

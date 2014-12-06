@@ -42,3 +42,5 @@ Thumbs.db
 #################
 
 node_modules/
+css/styles.css
+css/styles.css.map

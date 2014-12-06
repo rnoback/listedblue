@@ -16,7 +16,7 @@
     
     <div class="main-wrap">
         <header>
-            <h1>LISTEDBLUE</h1>
+            <h1 class="site-header">LISTEDBLUE</h1>
             <nav class="navigation-wrap">
                 <ul class="main-navigation">
                     <li class="nav">current COLLECTION</li>
@@ -32,7 +32,7 @@
         <section class="product-wrap">
             <script id="product-template" type="text/x-handlebars-template">
             {{#each this}}
-            <div class="product">
+            <div class="product {{textcolor}}" >
 
                 <div class="product-overlay">
                     {{#each embodiment}}

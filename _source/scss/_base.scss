@@ -4,6 +4,13 @@ body{
 	line-height: 160%;
 	background: $white;
 	color: $extradarkgray;
+	.is-landscape{
+		overflow:hidden;
+	}	
+	.is-portrait{
+	 	overflow-y:hidden;
+	}
+	
 }
 
 #{headings()} {
@@ -42,4 +49,12 @@ p{
 .small{
 	font-size: 1rem;
 	color: $blue;
+}
+
+.textlight{
+	color:$white;
+}
+
+.textdark{
+	color:$extradarkgray;
 }
