@@ -33,17 +33,33 @@ var settings;
             //this.createCacheItems();
 
             // load data
+            var self = this;
             this.dataURL = 'json/data.json';
             this.fetch();
 
             this.template = config.template;
             this.container = config.container;
+            this.colorArray = [];
+            var colorArray = [];
 
             this.pubSub();
+
             $.subscribe('listedblue/data', function(e, data){
                 console.log(data);
+
+               /* $.each( data.products, function( i, product ){
+                  console.log( "Index #" + i + ": " + product.textcolor );
+                  colorArray.push(product.textcolor);
+
+                });
+                 //console.log(colorArray);
+                 this.colorArray = colorArray;
+                 console.log(self.colorArray);*/
             });
+
+         
         },
+
 
         pubSub: function(){
             var o = $( {} );
@@ -74,6 +90,7 @@ var settings;
 
                 $.publish('listedblue/data', data);
 
+
                 //filter valis data from JSON and store in new Array
                 //$.map(data.products, function( product ){
                    /* return {
@@ -93,6 +110,7 @@ var settings;
 
         setInterface:function(){
             this.isPortrait = false;
+            this.colorArray = [];
             this.theBody = $('body');
             this.theWindow = $(window);
             this.header = $('header');
@@ -163,6 +181,32 @@ var settings;
 
         setProduct: function(index){
             this.curProduct = $(this.allProducts[index]);
+          
+            console.log( this.curProduct.hasClass('dark') );
+            
+            if( this.curProduct.hasClass('light') ) {
+
+                $('.site-header').addClass('textlight');
+                $('.site-header').removeClass('textdark');
+
+                $('.btn-nav-toggle').addClass('textlight');
+                $('.btn-nav-toggle').removeClass('textdark');
+
+                $('.btn-close').addClass('textlight');
+                $('.btn-close').removeClass('textdark');
+              
+                
+            }else{
+                $('.site-header').addClass('textdark');
+                $('.site-header').removeClass('textlight');
+
+                $('.btn-nav-toggle').addClass('textdark');
+                $('.btn-nav-toggle').removeClass('textlight');
+
+                $('.btn-close').addClass('textdark');
+                $('.btn-close').removeClass('textlight');
+
+            }
             this.curProduct.css('z-index',1);
             this.mainVisual = this.curProduct.find('.visual');
 
@@ -179,6 +223,9 @@ var settings;
             var timeout = setTimeout(this.resizeHandler.bind(this), 1);
         },
 
+        toggleProductColor: function(){
+
+        },
 
         setNextProductIndex: function(e){
             e.preventDefault();
