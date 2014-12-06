@@ -20,8 +20,8 @@
             <nav class="navigation-wrap">
                 <ul class="main-navigation">
                     <li class="nav">current COLLECTION</li>
-                    <li class="nav">ABOUT</li>
-                    <li class="nav">CONTACT</li>
+                    <li class="nav">ABOUT ListedBlue</li>
+                    <li class="nav">CONTACT us</li>
                     <li class="nav">TERMS and CONDITIONS</li>
                 </ul>
                 <a href="#" class="btn-nav-toggle fa fa-bars"></a>
