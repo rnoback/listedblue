@@ -4,13 +4,6 @@ body{
 	line-height: 160%;
 	background: $white;
 	color: $extradarkgray;
-	.is-landscape{
-		overflow:hidden;
-	}	
-	.is-portrait{
-	 	overflow-y:hidden;
-	}
-	
 }
 
 #{headings()} {
