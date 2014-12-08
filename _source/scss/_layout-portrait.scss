@@ -9,13 +9,9 @@
 			    right:auto;
 			    margin-left:auto;
 			    margin-right:auto;
-		
-
 
 				.product-overlay{
-					
 				    .column{
-				    	
 
 				    	.column-content{
 				    		color: $black;
@@ -31,15 +27,12 @@
 				    }
 				}
 
-
-
 				.product-visual {
-					//left: -300px;
 					
-						img{
-							width: auto;
-							height: 100%;
-						}
+					img{
+						width: auto;
+						height: 100%;
+					}
 					
 				}
 				.product-info{
@@ -117,7 +110,6 @@
 				position: fixed;
 				text-align: center;
 				width: 100%;
-				color: $extradarkgray;
 				padding-top: 2.125rem;
 				@include font-size(18);
 

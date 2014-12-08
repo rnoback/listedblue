@@ -181,8 +181,6 @@ var settings;
 
         setProduct: function(index){
             this.curProduct = $(this.allProducts[index]);
-          
-            console.log( this.curProduct.hasClass('dark') );
             
             if( this.curProduct.hasClass('light') ) {
 
@@ -194,8 +192,14 @@ var settings;
 
                 $('.btn-close').addClass('textlight');
                 $('.btn-close').removeClass('textdark');
-              
-                
+                if(this.isPortrait){
+                    this.btnNext.addClass('textlight');
+                    this.btnNext.removeClass('textdark');
+                    this.btnPrev.addClass('textlight');
+                    this.btnPrev.removeClass('textdark');
+                    $('.product-inner').find('h2').addClass('textlight');
+                    $('.product-inner').find('h2').removeClass('textdark');
+                }
             }else{
                 $('.site-header').addClass('textdark');
                 $('.site-header').removeClass('textlight');
@@ -205,6 +209,15 @@ var settings;
 
                 $('.btn-close').addClass('textdark');
                 $('.btn-close').removeClass('textlight');
+
+                if(this.isPortrait){
+                    this.btnNext.addClass('textdark');
+                    this.btnNext.removeClass('textlight');
+                    this.btnPrev.addClass('textdark');
+                    this.btnPrev.removeClass('textlight');
+                    $('.product-inner').find('h2').addClass('textdark');
+                    $('.product-inner').find('h2').removeClass('textlight');
+                }
 
             }
             this.curProduct.css('z-index',1);
