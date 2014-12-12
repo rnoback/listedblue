@@ -308,9 +308,7 @@ var settings;
            
             this.mainNav.height(this.visualWidth/2);
 
-
-
-            this.mainNav.width( this.visualWidth );
+            //this.mainNav.width( this.visualWidth );
 
 
 /*            this.preloader.width( this.mainVisual.width() );
@@ -418,7 +416,7 @@ var settings;
             this.productOverlay.addClass('active');
             this.mainNavToggle.hide();
             //this.mainNav.hide();
-            TweenLite.to(this.mainNav, 0.3, {right:'-100%',  ease:Expo.easeInOut});
+            TweenLite.to(this.mainNav, 0.3, {right:'-33.3333334%',  ease:Expo.easeInOut});
             this.mainNavIsVisible = false;
         },
         closeOverlay:function(e){
@@ -433,16 +431,16 @@ var settings;
             menu.height(this.visualWidth/2);
 
 
-            if(!this.mainNavIsVisible){
+            if(this.mainNavIsVisible){
                 //menu.hide();
                 console.log("go on");
-                TweenLite.to(menu, 0.6, {right:'-66.6666667%',  ease:Expo.easeInOut});
-                this.mainNavIsVisible = true;
+                TweenLite.to(menu, 0.6, {right:'-33.3333334%',  ease:Expo.easeInOut});
+                this.mainNavIsVisible = false;
 
             }else{
                 console.log("go OFF");
-                TweenLite.to(menu, 0.6, {right:'-100%',  ease:Expo.easeInOut});
-                this.mainNavIsVisible = false;
+                TweenLite.to(menu, 0.6, {right:'0',  ease:Expo.easeInOut});
+                this.mainNavIsVisible = true;
             }
         },
 

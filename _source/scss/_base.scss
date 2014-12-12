@@ -4,6 +4,7 @@ body{
 	line-height: 160%;
 	background: $white;
 	color: $extradarkgray;
+	overflow-x: hidden;
 }
 
 #{headings()} {
@@ -44,6 +45,7 @@ p{
 	color: $blue;
 }
 
+// Change product text color (JSON)
 .textlight{
 	color:$white;
 }

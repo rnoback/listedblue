@@ -19,7 +19,8 @@
             "signed": "Tal Silverberg 15.6.2001.5467 (on the verso)",
             "provenance": "Amsterdam thriftstore",
             "shipping": "Ships in 10 days. Comes with brown gift box",
-            "price": "On request"
+            "price": "On request",
+            "download_url": ""
             },
             {
             "type": "the Image",
@@ -31,7 +32,8 @@
             "date" : "October 12th, 2014",
             "signed": "ListedBlue (on the verso)",
             "shipping": "Ships within 10 days. Comes in a brown mail tube",
-            "price": "€1445"
+            "price": "€1445",
+            "download_url": ""
             },
             {
             "type": "the Download",
@@ -43,7 +45,8 @@
             "date" : "November 14th, 2014",
             "signed": "ListedBlue",
             "shipping": "FTP // HTTP download",
-            "price": "Free"
+            "price": "Free",
+            "download_url": "http://"
           }]
         },
 

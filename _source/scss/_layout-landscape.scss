@@ -14,7 +14,7 @@
 			.product-overlay{
 				position: absolute;
 				z-index: 11;
-				opacity: 0.7;
+				
 				left:0;
 		    	right:0;
 			    margin-left:auto;
@@ -22,15 +22,25 @@
 			    display: none;
 			    cursor:pointer;
 
+			    .bg{
+			    	position: absolute;
+			    	background: $white;
+			    	opacity: 0.7;
+			    	width: inherit;
+			    	height: inherit; 
+			    }
+
 			    .column{
 			    	width: 33.33334%;
-			    	background: $white;
+			    	
 			    	float: left;
 
 			    	.column-content{
+			    		position: relative;
 			    		color: $extradarkgray;
-			    		padding: 120px 20px 20px 20px;
-			    		font-size: 100%;
+			    		padding: 120px 40px 20px 40px;
+			    		font-size: 1vw;
+			    		height: 70%;
 
 			    		h2{
 			    			color:$black;
@@ -40,8 +50,24 @@
 				    	.label{
 				    		text-transform: uppercase;
 				    	}
-				    	.p_type{
+				    	.p_type, .p_download_url{
+				    		
 				    		display:none;
+				    	}
+
+				    	.btn_p{
+				    		position:absolute;
+				    		padding: 5px;
+				    		bottom: 0;
+				    		background: $gray;
+				    		color: $white;
+				    		text-transform: uppercase;
+				    	}
+				    	.btn_gray_email{
+				    		
+				    	}
+				    	.object.btn_gray_download{
+
 				    	}
 			    	}
 			    }

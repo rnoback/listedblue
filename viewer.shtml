@@ -35,15 +35,22 @@
             <div class="product {{textcolor}}" >
 
                 <div class="product-overlay">
+
                     {{#each embodiment}}
                     <div class="column">
+                        <div class="bg"></div>
                         <div class="column-content">
                             <h2><span class='header-name'>{{../name}}</span> <span class='header-type'>({{type}})</span></h2>
                             <ul>
                                 {{#each this}}   
-                                <li class="p_{{@key}}"><span class="label">{{@key}}</span>: <span class="c_{{this}}">{{this}}</span></li>
+                                <li class="p_{{@key}}"><span class="label">{{@key}}</span>: <span class="content">{{this}}</span></li>
                                 {{/each}}
                             </ul>
+                            {{#if download_url}}
+                                <a href="{{download_url}}" class="btn_p btn_gray_donwload {{type}}">Download</a>
+                            {{else}}
+                                <a href="mailto:hello@listedblue.com?subject=Enquiry: {{../name}} / {{type}}" class="btn_p btn_gray_email {{type}}">Email Enquiry</a>
+                            {{/if}}
                         </div>
                     </div>
                      {{/each}}
