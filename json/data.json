@@ -431,7 +431,7 @@
           "id": 11,
           "name": "Great Blue Heron", 
           "visual": "images/products/great-blue-heron.jpg", 
-          "textcolor": "light",
+          "textcolor": "dark",
 
           "embodiment": [{
             "type": "the Object",

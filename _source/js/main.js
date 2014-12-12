@@ -56,8 +56,6 @@ var settings;
                  this.colorArray = colorArray;
                  console.log(self.colorArray);*/
             });
-
-         
         },
 
 
@@ -110,6 +108,7 @@ var settings;
 
         setInterface:function(){
             this.isPortrait = false;
+            this.mainNavIsVisible = false;
             this.colorArray = [];
             this.theBody = $('body');
             this.theWindow = $(window);
@@ -124,6 +123,8 @@ var settings;
             this.productNavigationWrap = $('.product-navigation');
             this.btnNext = this.productNavigationWrap.find('.next');
             this.btnPrev = this.productNavigationWrap.find('.prev');
+
+            this.mainNav = $('.main-navigation');
 
             this.selectedProductIndex = 0;
 
@@ -182,14 +183,23 @@ var settings;
         setProduct: function(index){
             this.curProduct = $(this.allProducts[index]);
             
-            if( this.curProduct.hasClass('light') ) {
+            this.setTextColor();
+            
+            this.curProduct.css('z-index',1);
+            this.mainVisual = this.curProduct.find('.visual');
 
+            this.mainVisual.addClass('current');
+            this.toggleProduct();
+        },
+
+
+        setTextColor: function(){
+            
+            if ( this.curProduct.hasClass('light') ) {
                 $('.site-header').addClass('textlight');
                 $('.site-header').removeClass('textdark');
-
                 $('.btn-nav-toggle').addClass('textlight');
                 $('.btn-nav-toggle').removeClass('textdark');
-
                 $('.btn-close').addClass('textlight');
                 $('.btn-close').removeClass('textdark');
                 if(this.isPortrait){
@@ -199,18 +209,7 @@ var settings;
                     this.btnPrev.removeClass('textdark');
                     $('.product-inner').find('h2').addClass('textlight');
                     $('.product-inner').find('h2').removeClass('textdark');
-                }
-            }else{
-                $('.site-header').addClass('textdark');
-                $('.site-header').removeClass('textlight');
-
-                $('.btn-nav-toggle').addClass('textdark');
-                $('.btn-nav-toggle').removeClass('textlight');
-
-                $('.btn-close').addClass('textdark');
-                $('.btn-close').removeClass('textlight');
-
-                if(this.isPortrait){
+                }else{
                     this.btnNext.addClass('textdark');
                     this.btnNext.removeClass('textlight');
                     this.btnPrev.addClass('textdark');
@@ -218,26 +217,37 @@ var settings;
                     $('.product-inner').find('h2').addClass('textdark');
                     $('.product-inner').find('h2').removeClass('textlight');
                 }
-
+            } else {
+                $('.site-header').addClass('textdark');
+                $('.site-header').removeClass('textlight');
+                $('.btn-nav-toggle').addClass('textdark');
+                $('.btn-nav-toggle').removeClass('textlight');
+                $('.btn-close').addClass('textdark');
+                $('.btn-close').removeClass('textlight');
+                if(this.isPortrait) {
+                    this.btnNext.addClass('textdark');
+                    this.btnNext.removeClass('textlight');
+                    this.btnPrev.addClass('textdark');
+                    this.btnPrev.removeClass('textlight');
+                    $('.product-inner').find('h2').addClass('textdark');
+                    $('.product-inner').find('h2').removeClass('textlight');
+                }else{
+                     this.btnNext.addClass('textdark');
+                    this.btnNext.removeClass('textlight');
+                    this.btnPrev.addClass('textdark');
+                    this.btnPrev.removeClass('textlight');
+                    $('.product-inner').find('h2').addClass('textdark');
+                    $('.product-inner').find('h2').removeClass('textlight');
+                }
             }
-            this.curProduct.css('z-index',1);
-            this.mainVisual = this.curProduct.find('.visual');
-
-            this.mainVisual.addClass('current');
-            this.toggleProduct();
         },
-
 
         toggleProduct: function(){
             if(this.oldProduct){
-                this.oldProduct.fadeOut(1500,'easeOutSine');
+                this.oldProduct.fadeOut(1000,'easeOutSine');
             }
-            this.curProduct.fadeIn(1500,'easeOutSine');
+            this.curProduct.fadeIn(1000,'easeOutSine');
             var timeout = setTimeout(this.resizeHandler.bind(this), 1);
-        },
-
-        toggleProductColor: function(){
-
         },
 
         setNextProductIndex: function(e){
@@ -248,9 +258,7 @@ var settings;
             } else {
                  this.selectedProductIndex = 0;
             }
-
             this.setProduct(this.selectedProductIndex);
-            //console.log("NEXT : " + this.selectedProductIndex);
         },
 
         setPrevProductIndex: function(e){
@@ -262,7 +270,6 @@ var settings;
                 this.selectedProductIndex = (this.maxProducts-1);
             }
             this.setProduct(this.selectedProductIndex);
-            //console.log("PREV : " + this.selectedProductIndex);
         },
 
         setMainVisial: function(){
@@ -272,8 +279,6 @@ var settings;
 
             if(!this.isPortrait){
                  
-                
-
                 if( this.heightTotal >= this.productVisualHeight){
                     this.mainVisual.css('width', 'auto');
                     this.mainVisual.css('height', this.productVisualHeight+'px');
@@ -301,9 +306,11 @@ var settings;
 
            // this.productOverlay.height( this.visualWidth );
            
-           $('.main-navigation').height(this.visualWidth/2);
+            this.mainNav.height(this.visualWidth/2);
 
-            $('.navigation-wrap').width( this.visualWidth );
+
+
+            this.mainNav.width( this.visualWidth );
 
 
 /*            this.preloader.width( this.mainVisual.width() );
@@ -361,6 +368,9 @@ var settings;
             this.theBody.removeClass("is-landscape");
             this.mainVisual.css('height', (this.viewportHeight)+'px');
             this.mainVisual.css('width', 'auto');
+
+            this.setTextColor();
+
            // this.mainNavToggle.position().right(this.viewportWidth);
 
             /*visualWidth = this.mainVisual.width();
@@ -391,6 +401,10 @@ var settings;
             this.theBody.addClass("is-landscape");
             this.mainVisual.css('width', '100%');
             this.mainVisual.css('height', 'auto');
+            this.setTextColor();
+            this.mainNav.height(this.visualWidth/2);
+
+            console.log("landcs");
 
             this.header.css('width', '100%');
             //this.productInfo.css('width', '100%');
@@ -403,7 +417,9 @@ var settings;
             this.overlayCloseBtn.show();
             this.productOverlay.addClass('active');
             this.mainNavToggle.hide();
-            $('.main-navigation').hide();
+            //this.mainNav.hide();
+            TweenLite.to(this.mainNav, 0.3, {right:'-100%',  ease:Expo.easeInOut});
+            this.mainNavIsVisible = false;
         },
         closeOverlay:function(e){
            
@@ -414,13 +430,19 @@ var settings;
         toggleNav:function(e){
             var target = $(e.target);
             var menu = target.siblings('.main-navigation');
+            menu.height(this.visualWidth/2);
 
-            if(menu.is(':visible')){
-                menu.hide();
+
+            if(!this.mainNavIsVisible){
+                //menu.hide();
+                console.log("go on");
+                TweenLite.to(menu, 0.6, {right:'-66.6666667%',  ease:Expo.easeInOut});
+                this.mainNavIsVisible = true;
 
             }else{
-                menu.height(this.visualWidth/2);
-                menu.show();
+                console.log("go OFF");
+                TweenLite.to(menu, 0.6, {right:'-100%',  ease:Expo.easeInOut});
+                this.mainNavIsVisible = false;
             }
         },
 
@@ -437,6 +459,7 @@ var settings;
             this.viewportWidth = this.theWindow.outerWidth();
             this.heightTotal = this.mainVisual.height();
             this.productVisualHeight = this.viewportHeight - this.restHeigth;
+
 
             /*console.log("this.viewportHeight "+this.viewportHeight);
             console.log("this.restHeigth "+this.restHeigth);*/
