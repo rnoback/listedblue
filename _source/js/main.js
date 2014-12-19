@@ -170,11 +170,11 @@ var settings;
             this.btnNext.on('click touchstart', this.setNextProductIndex.bind(this));
             this.btnPrev.on('click touchstart', this.setPrevProductIndex.bind(this));
 
-            this.productVisual.find('img').on('click touchstart', this.openOverlay.bind(this));
+            this.productVisual.find('img').on('click', this.openOverlay.bind(this));
             this.overlayCloseBtn.on('click', this.closeOverlay.bind(this));
             this.productOverlay.on('click', this.closeOverlay.bind(this));
 
-            this.mainNavToggle.on('click touchstart', this.toggleNav.bind(this));
+            this.mainNavToggle.on('click', this.toggleNav.bind(this));
              
         },
 
