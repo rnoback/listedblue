@@ -142,6 +142,8 @@ var settings;
             this.productInfo = $('.product-info');
             this.restHeigth = this.productInfo.height();
 
+            this.navHeight = this.mainNav.height();
+
             this.productVisualHeight = this.viewportHeight - this.restHeigth;
 
             //setTimeout(this.resizeHandler.bind(this);
@@ -169,8 +171,8 @@ var settings;
             this.btnPrev.on('click touchstart', this.setPrevProductIndex.bind(this));
 
             this.productVisual.find('img').on('click touchstart', this.openOverlay.bind(this));
-            this.overlayCloseBtn.on('click touchstart', this.closeOverlay.bind(this));
-            this.productOverlay.on('click touchstart', this.closeOverlay.bind(this));
+            this.overlayCloseBtn.on('click', this.closeOverlay.bind(this));
+            this.productOverlay.on('click', this.closeOverlay.bind(this));
 
             this.mainNavToggle.on('click touchstart', this.toggleNav.bind(this));
              
@@ -275,7 +277,6 @@ var settings;
         setMainVisial: function(){
 
             this.visualWidth = this.mainVisual.width();
-            this.header.css('width', this.visualWidth);
 
             if(!this.isPortrait){
                  
@@ -298,6 +299,7 @@ var settings;
             }
             
             this.visualWidth = this.mainVisual.width();
+            this.header.css('width', this.visualWidth);
 
             this.productInfo.css('width', this.visualWidth);
 
@@ -306,8 +308,9 @@ var settings;
 
            // this.productOverlay.height( this.visualWidth );
            
-            this.mainNav.height(this.visualWidth/2);
-
+           if(!this.isPortrait){
+               // this.mainNav.height(this.visualWidth/2);
+            }
             //this.mainNav.width( this.visualWidth );
 
 
@@ -366,6 +369,7 @@ var settings;
             this.theBody.removeClass("is-landscape");
             this.mainVisual.css('height', (this.viewportHeight)+'px');
             this.mainVisual.css('width', 'auto');
+            this.mainNav.height(this.navHeight);
 
             this.setTextColor();
 
@@ -402,9 +406,10 @@ var settings;
             this.setTextColor();
             this.mainNav.height(this.visualWidth/2);
 
-            console.log("landcs");
 
-            this.header.css('width', '100%');
+
+            //this.header.width('100%');
+
             //this.productInfo.css('width', '100%');
             //this.footer.css('width', '100%');
             window.scrollTo(0,0);
@@ -415,9 +420,12 @@ var settings;
             this.overlayCloseBtn.show();
             this.productOverlay.addClass('active');
             this.mainNavToggle.hide();
-            //this.mainNav.hide();
-            TweenLite.to(this.mainNav, 0.3, {right:'-33.3333334%',  ease:Expo.easeInOut});
+            this.mainNav.hide();
+            if(!this.isPortrait){
+                //TweenLite.to(this.mainNav, 0.3, {right:'-33.3333334%',  ease:Expo.easeInOut});
+            }
             this.mainNavIsVisible = false;
+            console.log("this.isPortrait "+this.isPortrait);
         },
         closeOverlay:function(e){
            
@@ -428,19 +436,33 @@ var settings;
         toggleNav:function(e){
             var target = $(e.target);
             var menu = target.siblings('.main-navigation');
-            menu.height(this.visualWidth/2);
+            
 
 
             if(this.mainNavIsVisible){
-                //menu.hide();
-                console.log("go on");
+               // menu.hide();
+/*                console.log("go on");
                 TweenLite.to(menu, 0.6, {right:'-33.3333334%',  ease:Expo.easeInOut});
-                this.mainNavIsVisible = false;
+                this.mainNavIsVisible = false;*/
 
             }else{
-                console.log("go OFF");
+                //menu.show();
+/*                console.log("go OFF");
                 TweenLite.to(menu, 0.6, {right:'0',  ease:Expo.easeInOut});
-                this.mainNavIsVisible = true;
+                this.mainNavIsVisible = true;*/
+            }
+            if(menu.is(':visible')){
+                menu.hide();
+
+            }else{
+                //menu.height(this.visualWidth/2);
+                menu.show();
+                if(this.isPortrait){
+                    menu.height(this.navHeight);
+                   
+                }else{
+                    menu.height(this.visualWidth/2);
+                }
             }
         },
 

@@ -18,6 +18,7 @@ body{
 h1{
 	//font-size: 1.875rem;
 	font-size: 2.1vw;
+	/* font-size: 2.1vh; */
 }
 h2{
 	font-size: 1.5rem;
@@ -43,13 +44,4 @@ p{
 .small{
 	font-size: 1rem;
 	color: $blue;
-}
-
-// Change product text color (JSON)
-.textlight{
-	color:$white;
-}
-
-.textdark{
-	color:$extradarkgray;
 }

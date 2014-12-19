@@ -1,6 +1,7 @@
 
 .is-portrait{
-	 overflow-y:hidden;
+	overflow: auto;
+	overflow-y: hidden;
 	 
 	.main-wrap{
 		.product-wrap{
@@ -23,6 +24,10 @@
 				    			font-size: 2.4vh;
 				    			line-height: 3em;
 					    	}
+
+					    	.btn_p{
+					    		bottom: 100px;
+				    		}
 				    	}
 				    }
 				}
@@ -89,6 +94,7 @@
 
 				.main-navigation{
 					display:none;
+					right: 33.33334%;
 				}
 				a.btn-close{
 					position: fixed;
