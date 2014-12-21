@@ -133,21 +133,5 @@
 				color:$blue;
 			}
 		}
-
-
-
-		// Footer -------------------------------
-		footer{
-			margin-top: -10px;
-
-			.credits{
-				position: fixed;
-				width: 100%;
-				text-align: center; 
-				
-				@include font-size(10);
-			}
-
-		}
 	}
 }

@@ -2,18 +2,26 @@ body{
 	font-family: $font-primary;
 	font-size: 100%;
 	line-height: 160%;
-	background: $white;
-	color: $extradarkgray;
+	background: $darkgray;
+	color: $black;
 	overflow-x: hidden;
 }
 
 #{headings()} {
 	font-family: $font-primary;
 	font-weight: normal;
-	color: $extradarkgray;
+	font-size: 1.4rem;
+	color: $black;
+	
 	line-height: 100%;
 	/* @include text-shadow($lightgray, 1px, 1px); */
 }
+
+body.products{
+	background: $white;
+	color: $extradarkgray;
+}
+
 
 h1{
 	//font-size: 1.875rem;

@@ -74,10 +74,12 @@ var settings;
         },
 
         attachTemplate: function(){
-
-            var template = Handlebars.compile( this.template );
-            var html = template( this.products);
-            this.container.append( template ( this.products ) );
+            if(this.template){
+                var template = Handlebars.compile( this.template );
+                var html = template( this.products);
+                this.container.append( template ( this.products ) );
+                
+            }
             this.setInterface();
         },
 
@@ -110,7 +112,7 @@ var settings;
             this.isPortrait = false;
             this.mainNavIsVisible = false;
             this.colorArray = [];
-            this.theBody = $('body');
+            this.theBody = $('body.products');
             this.theWindow = $(window);
             this.header = $('header');
             //this.footer = $('footer');
