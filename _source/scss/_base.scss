@@ -33,7 +33,7 @@ h2{
 	margin-bottom: .25rem;
 }
 h3{
-	font-size: 1.8rem;
+	font-size: 1.2rem;
 	line-height: 60%;
 }
 
@@ -43,6 +43,11 @@ a{
 	&:hover{
 		color: $blue;
 	}
+}
+
+input{
+	font-family: $font-primary;
+	font-size: 0.75rem;
 }
 
 p{
