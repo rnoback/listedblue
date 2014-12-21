@@ -1,40 +1,51 @@
-.main-wrap{
-	.main-inner{
-		margin: 0 auto;
-		max-width: 1680px;
-		padding: 0 150px;
+.content-page{
+	.main-wrap{
 
 		header{
-			position: relative;
-		}
-		.content-wrap{
-			@include clearfix();
-			h2.page-title{
-				text-align: center;
-			}
-			.column{
-				max-width: 620px;
-				width: 48%;
-				float:left;
-				p{
-					text-align: justify;
+
+			.navigation-wrap {
+				.main-navigation{
+
+					width: 33.333334%;
+
 				}
 			}
-			.column.first{
-				padding-right: 4%;
-			}
-			.fullwidth{
-				clear: both;
-				text-align: center;
-			}
 		}
-		footer{
-			@include clearfix();
-			background: $blue;
-			.column{
-				width: 33%;
+		.main-inner{
+			margin: 0 auto;
+			max-width: 1680px;
+			padding: 0 150px;
 
-				float: left;
+			
+			.content-wrap{
+				@include clearfix();
+				h2.page-title{
+					text-align: center;
+				}
+				.column{
+					max-width: 620px;
+					width: 48%;
+					float:left;
+					p{
+						text-align: justify;
+					}
+				}
+				.column.first{
+					padding-right: 4%;
+				}
+				.fullwidth{
+					clear: both;
+					text-align: center;
+				}
+			}
+			footer{
+				@include clearfix();
+				background: $blue;
+				.column{
+					width: 33%;
+
+					float: left;
+				}
 			}
 		}
 	}

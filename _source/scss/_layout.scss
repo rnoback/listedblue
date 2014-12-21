@@ -1,77 +1,78 @@
-.main-wrap{
-
-	header{
-		h1.site-header{
-			padding-top: 1.5rem;
-			font-size: 1.7rem;
-		}
-
-		.navigation-wrap {
-			.main-navigation{
-				margin-top: 20px;
-				width: 100%;
-			}
-		}
-	}
-	.main-inner{
-		padding: 0 20px;
+.content-page{
+	.main-wrap{
 
 		header{
 			position: relative;
-		}
-		.content-wrap{
-			h2.page-title{
-				text-align: center;
-			}
-			.column{
-				max-width: auto;
-				float:none;
-				margin: 20px 0; 
-				h3.content-title{
-					margin: 10px 0;
-				}
-				p{
-					text-align: justify;
-				}
-			}
-			.column.first{
-				padding-right: 4%;
-			}
-			.fullwidth{
-				clear: both;
-				text-align: center;
-			}
-		}
-		footer{
-			padding: 20px;
-			font-size: 0.75rem;
-			line-height: 1.2;
-			a{
-				color: white;
-				&:hover{
-					text-decoration: none;
-				}
+
+			h1.site-header{
+				padding-top: 1.5rem;
+				font-size: 1.7rem;
 			}
 
+			.navigation-wrap {
+				.main-navigation{
+					background: $white;
+					width: 100%;
+				}
+			}
+		}
+		.main-inner{
+			padding: 0 20px;
 
-			background: $blue;
-			.column{
-				margin: 40px 0;
-				color: $white;
-				.nl-email{
-					padding: 2px 4px;
+			.content-wrap{
+				h2.page-title{
+					text-align: center;
 				}
-				.nl-submit{
-					background: $gray;
-					border: none;
+				.column{
+					max-width: auto;
+					float:none;
+					margin: 20px 0; 
+					h3.content-title{
+						margin: 10px 0;
+					}
+					p{
+						text-align: justify;
+					}
+				}
+				.column.first{
+					padding-right: 4%;
+				}
+				.fullwidth{
+					clear: both;
+					text-align: center;
+				}
+			}
+			footer{
+				padding: 20px;
+				font-size: 0.75rem;
+				line-height: 1.2;
+				a{
+					color: white;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+
+
+				background: $blue;
+				.column{
+					margin: 40px 0;
 					color: $white;
-					padding: 2px 10px;
+					.nl-email{
+						padding: 2px 4px;
+					}
+					.nl-submit{
+						background: $gray;
+						border: none;
+						color: $white;
+						padding: 2px 10px;
+					}
+					h3{
+						color: $white;
+						margin: 0 0 10px 0;
+					}
+					float: none;
 				}
-				h3{
-					color: $white;
-					margin: 0 0 10px 0;
-				}
-				float: none;
 			}
 		}
 	}

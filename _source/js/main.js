@@ -126,7 +126,7 @@ var settings;
             this.btnNext = this.productNavigationWrap.find('.next');
             this.btnPrev = this.productNavigationWrap.find('.prev');
 
-            this.mainNav = $('.main-navigation');
+            this.mainNav = $('.products').find('.main-navigation');
 
             this.selectedProductIndex = 0;
 
@@ -144,7 +144,9 @@ var settings;
             this.productInfo = $('.product-info');
             this.restHeigth = this.productInfo.height();
 
-            this.navHeight = this.mainNav.height();
+            if(!this.isPortrait){
+                this.navHeight = this.mainNav.height();
+            }
 
             this.productVisualHeight = this.viewportHeight - this.restHeigth;
 
@@ -371,7 +373,9 @@ var settings;
             this.theBody.removeClass("is-landscape");
             this.mainVisual.css('height', (this.viewportHeight)+'px');
             this.mainVisual.css('width', 'auto');
-            this.mainNav.height(this.navHeight);
+            if(this.navHeight > 0){
+                this.mainNav.height(this.navHeight);
+            }
 
             this.setTextColor();
 
@@ -460,10 +464,14 @@ var settings;
                 //menu.height(this.visualWidth/2);
                 menu.show();
                 if(this.isPortrait){
-                    menu.height(this.navHeight);
+                    if(this.navHeight > 0){
+                        menu.height(this.navHeight);
+                    }
                    
                 }else{
-                    menu.height(this.visualWidth/2);
+                    if(this.visualWidth > 0){
+                        menu.height(this.visualWidth/2);
+                    }
                 }
             }
         },
