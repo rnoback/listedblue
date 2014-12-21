@@ -40,7 +40,7 @@
 			    	.column-content{
 			    		position: relative;
 			    		color: $extradarkgray;
-			    		padding: 120px 40px 20px 40px;
+			    		padding: 5.8rem 40px 20px 40px;
 			    		font-size: 1vw;
 			    		height: 70%;
 
@@ -48,26 +48,40 @@
 			    			color:$black;
 			    			font-size: 1.4vw;
 			    			line-height: 3em;
+			    			text-overflow: ellipsis;
+							white-space: nowrap;
+							overflow: hidden;
 				    	}
 				    	.label{
 				    		text-transform: uppercase;
+				    	}
+				    	span.header-name {
+				    		font-size:2vw;
+				    	}	
+						span.header-type {
+				    		font-size:1vw;
 				    	}
 				    	.p_type, .p_download_url{
 				    		
 				    		display:none;
 				    	}
-
 				    	.btn_p{
 				    		position:absolute;
-				    		padding: 5px;
 				    		bottom: 0;
-				    		background: $gray;
-				    		color: $white;
+				    		color: $extradarkgray;
 				    		text-transform: uppercase;
 				    	}
 				    	.btn_gray_email{
 				    		
 				    	}
+				    	li.p_shipping {
+							position: absolute;
+							bottom: 4.6rem;
+						}
+						li.p_price {
+							position: absolute;
+							bottom: 3rem;
+						}
 				    	.object.btn_gray_download{
 
 				    	}
@@ -78,6 +92,7 @@
 			.product-overlay.active{
 		    	display: block;
 		    }
+
 		   
 			.product-visual {
 				
@@ -144,7 +159,7 @@
 	header{
 		position: absolute;
 		background: transparent;
-		height: 7.813rem;
+		height: 4.8rem;
 		width: 100%;
 		z-index: 10;
 		padding-top: 1.5rem;
