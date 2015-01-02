@@ -13,7 +13,7 @@
 		}
 		.main-inner{
 			margin: 0 auto;
-			max-width: 1680px;
+			max-width: 1280px;
 			padding: 0 150px;
 
 			
@@ -23,30 +23,34 @@
 					text-align: center;
 				}
 				.column{
-					max-width: 620px;
+					max-width: 800px;
 					width: 48%;
-					float:left;
+					
 					p{
 						text-align: justify;
 					}
 				}
 				.column.first{
-					padding-right: 4%;
+					float:left;
+				}
+				.column.last{
+					float:right;
 				}
 				.fullwidth{
 					clear: both;
 					text-align: center;
 				}
 			}
-			footer{
+		}
+		footer{
 				@include clearfix();
 				background: $blue;
 				.column{
-					width: 33%;
+					width: 31%;
+					margin-right: 2.3333334%;
 
 					float: left;
 				}
 			}
-		}
 	}
 }

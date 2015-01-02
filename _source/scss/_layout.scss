@@ -6,7 +6,6 @@
 
 			h1.site-header{
 				padding-top: 1.5rem;
-				font-size: 1.7rem;
 			}
 
 			.navigation-wrap {
@@ -22,6 +21,7 @@
 			.content-wrap{
 				h2.page-title{
 					text-align: center;
+					
 				}
 				.column{
 					max-width: auto;
@@ -29,6 +29,7 @@
 					margin: 20px 0; 
 					h3.content-title{
 						margin: 10px 0;
+						@include font-size(12);
 					}
 					p{
 						text-align: justify;
@@ -42,7 +43,8 @@
 					text-align: center;
 				}
 			}
-			footer{
+		}
+		footer{
 				padding: 20px;
 				font-size: 0.75rem;
 				line-height: 1.2;
@@ -72,6 +74,26 @@
 						margin: 0 0 10px 0;
 					}
 					float: none;
+				}
+			}
+		.product-wrap{
+			.product {
+				.product-info{
+
+					.product-navigation{
+						position: fixed;
+						text-align: center;
+						width: 100%;
+
+						.product-inner{
+
+					 		width: auto;
+					 		
+					 		h2{
+								font-size: 1rem;
+							}
+						}
+					}
 				}
 			}
 		}

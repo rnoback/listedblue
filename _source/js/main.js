@@ -145,7 +145,7 @@ var settings;
             this.restHeigth = this.productInfo.height();
 
             if(!this.isPortrait){
-                this.navHeight = this.mainNav.height();
+                this.navHeight = this.viewportHeight;
             }
 
             this.productVisualHeight = this.viewportHeight - this.restHeigth;
@@ -470,7 +470,7 @@ var settings;
                    
                 }else{
                     if(this.visualWidth > 0){
-                        menu.height(this.visualWidth/2);
+                        menu.height(this.navHeight);
                     }
                 }
             }

@@ -141,11 +141,29 @@
 						a.next{
 							float:right;
 							padding: 6px 9px;
+							-moz-transform: scale(-1, 1);
+							-webkit-transform: scale(-1, 1);
+							-o-transform: scale(-1, 1);
+							-ms-transform: scale(-1, 1);
+							transform: scale(-1, 1);
+							
+			    		}
+			    		a.next:after{
+			    			
+							font-family: "Ctrl-Alt-Social-Icons";
+							content: "\e017";
+							font-size: 2rem;
 			    		}
 			    		a.prev{
 					    	float:left;
 					    	padding: 6px 9px;
 					    }
+					    a.prev:after{
+			    			
+							font-family: "Ctrl-Alt-Social-Icons";
+							content: "\e017";
+							font-size: 2rem;
+			    		}
 					}
 				}
 			}	
@@ -206,12 +224,22 @@
 				text-decoration: none;
 				color: #2b2b2b;
 			}
+			a.btn-close:after{
+				font-family: "Ctrl-Alt-Social-Icons";
+				content: "\e01b";
+				font-size: 3rem;
+			}
 			a.btn-nav-toggle{
 				position: absolute;
 				right: 1.5%;
 				font-size: 1.6rem;
 				text-decoration: none;
 				color: #2b2b2b;
+			}
+			a.btn-nav-toggle:after{
+				font-family: "Ctrl-Alt-Social-Icons";
+				content: "\e01a";
+				font-size: 3rem;
 			}
 		}
 

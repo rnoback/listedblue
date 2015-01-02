@@ -10,3 +10,11 @@
          url('../font/baskerville-regular-webfont.ttf') format('truetype');
     font-weight: normal;
 } */
+@font-face {
+    font-family: 'Ctrl-Alt-Social-Icons';
+    src: url('../fonts/Ctrl-Alt-Social-Icons.eot');
+    src: url('../fonts/Ctrl-Alt-Social-Icons.eot') format('embedded-opentype'),
+         url('../fonts/Ctrl-Alt-Social-Icons.woff') format('woff'),
+         url('../fonts/Ctrl-Alt-Social-Icons.ttf') format('truetype');
+    font-weight: normal;
+}
