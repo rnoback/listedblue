@@ -45,56 +45,34 @@
 			}
 		}
 		footer{
-				padding: 20px;
-				font-size: 0.75rem;
-				line-height: 1.2;
-				a{
-					color: white;
-					&:hover{
-						text-decoration: none;
-					}
-				}
-
-
-				background: $blue;
-				.column{
-					margin: 40px 0;
-					color: $white;
-					.nl-email{
-						padding: 2px 4px;
-					}
-					.nl-submit{
-						background: $gray;
-						border: none;
-						color: $white;
-						padding: 2px 10px;
-					}
-					h3{
-						color: $white;
-						margin: 0 0 10px 0;
-					}
-					float: none;
+			padding: 20px;
+			font-size: 0.75rem;
+			line-height: 1.2;
+			a{
+				color: white;
+				&:hover{
+					text-decoration: none;
 				}
 			}
-		.product-wrap{
-			.product {
-				.product-info{
 
-					.product-navigation{
-						position: fixed;
-						text-align: center;
-						width: 100%;
-
-						.product-inner{
-
-					 		width: auto;
-					 		
-					 		h2{
-								font-size: 1rem;
-							}
-						}
-					}
+			background: $blue;
+			.column{
+				margin: 40px 0;
+				color: $white;
+				.nl-email{
+					padding: 2px 4px;
 				}
+				.nl-submit{
+					background: $gray;
+					border: none;
+					color: $white;
+					padding: 2px 10px;
+				}
+				h3{
+					color: $white;
+					margin: 0 0 10px 0;
+				}
+				float: none;
 			}
 		}
 	}

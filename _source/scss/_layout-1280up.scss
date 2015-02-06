@@ -57,6 +57,7 @@
 }
 
 
+
 // collection page
 .main-wrap {
 	.product-wrap {
@@ -65,7 +66,7 @@
 				.product-navigation {
 					.product-inner {
 					 	 h2{
-					 	 	@include font-size(18);
+					 	 	@include font-size(24);
 					 	}
 					}
 				}
@@ -73,4 +74,3 @@
 		}
 	}
 }
-
