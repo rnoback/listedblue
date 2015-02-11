@@ -1,0 +1,218 @@
+
+.is-portrait{
+	overflow: auto;
+	overflow-y: hidden;
+	 
+	.main-wrap{
+		.product-wrap{
+			.product{
+				left:auto;
+			    right:auto;
+			    margin-left:auto;
+			    margin-right:auto;
+
+				.product-overlay{
+				    .column{
+
+				    	.column-content{
+				    		padding: 20% 10% 15% 10%;
+				    		font-size: 100%;
+				    		line-height: 1.7rem;
+
+				    		h2{
+				    			font-size: 2.4vh;
+				    			line-height: 3em;
+					    	}
+				    		span.header-name {
+				    		font-size:1.125rem;
+					    	}	
+
+					    	.btn_p{
+					    		bottom: 150px;
+				    		}
+				    	}
+				    }
+				}
+
+				.product-visual {
+					
+					img{
+						width: auto;
+						height: 100%;
+					}
+					
+				}
+				.product-info{
+					position: absolute;
+					bottom: 20px;
+					z-index: 11;
+					background: transparent;
+					text-align: center;
+
+					h2{
+						@include font-size(16);
+						width: 200px;
+						
+					}
+
+					.product-navigation{
+						position: fixed;
+						text-align: center;
+						width: 100%;
+
+						.product-inner{
+							padding-top: 0;	
+					 		width: auto;
+					 		
+					 		h2{
+					 			font-size: 1.125rem;
+							}
+						 	a{
+
+							}
+							a.next{
+								padding: 6px 4rem;
+				    		}
+				    		a.prev{
+				    			padding: 6px 4rem;
+						    }
+						}
+					}
+				}
+			}
+		}
+
+		
+
+		header{
+			h1{
+				position: fixed;
+			}
+			h1:after{
+			}
+			.navigation-wrap{
+				.main-navigation{
+					display:none;
+					position: fixed;
+					left:0;
+				    right:0;
+				    margin-left:auto;
+				    margin-right:auto;
+					width: 100%;
+				}
+				a.btn-close{
+					position: fixed;
+				}
+				a.btn-nav-toggle{
+					position: fixed;
+				}
+			}
+
+
+
+
+		}
+	}
+}
+
+/** 
+ * iPad with portrait orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+	.landingContainer {
+		height: 1024px;
+	}
+	.main-inner{
+		padding: 0 29%;
+	}
+}
+
+/** 
+ * iPad with landscape orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+	.landingContainer {
+		height: 768px;
+	}
+  	.content-page.main-wrap.main-inner{
+		padding: 0 26%;
+	}
+}
+
+/**
+ * iPhone 5
+ * You can also target devices with aspect ratio.
+ */
+@media screen and (device-aspect-ratio: 40/71) {
+	.landingContainer {
+	height: 500px;
+  	}
+}
+
+/**
+ * iPhone 5 portrait
+ */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.prev {
+		padding: 6px 12px;
+	}
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.next {
+		padding: 6px 12px;
+	}
+	.main-wrap .product-wrap .product .product-info {
+		height: 62px;
+	}
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content {
+		padding: 74px 65px 22px 49px;
+		font-size: 82%;
+		line-height: 20px;
+	}
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content .btn_p {
+		bottom: 24px;
+	}
+	.is-portrait .main-wrap header h1 {
+		font-size: 18px;
+	}
+	.is-portrait .main-wrap header h1:after {
+		font-size: 38px;
+	}
+	.main-wrap header .navigation-wrap a.btn-nav-toggle:after, .main-wrap header .navigation-wrap a.btn-close:after {
+		font-size: 2.4rem;
+	}
+}
+
+/**
+ * iPhone 2-4S landscape
+ */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) { 
+	.landingContainer {
+	height: 320px;
+	}
+}
+
+/**
+ * iPhone 2-4S portrait
+ */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	.landingContainer {
+	height: 480px;
+	}
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.prev {
+		padding: 6px 12px;
+	}
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.next {
+		padding: 6px 12px;
+	}
+	.main-wrap .product-wrap .product .product-info {
+		height: 48px;
+	}
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content {
+		padding: 64px 32px 14px 30px;
+		font-size: 82%;
+		line-height: 16px;
+	}
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content .btn_p {
+		bottom: 28px;
+	}
+
+}
