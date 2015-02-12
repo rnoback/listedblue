@@ -1,74 +1,92 @@
-// content page
+/* SFG: changing landing body background to white */
+body.content-page.landing{
+}
+
+/* SFG: adding show / hide navheader ... we should incorporate this with <h1> header? */
+#navheader {
+	img {
+	}
+}
+
+/* SFG: adding header hero content: image & copy in landing page */
+.landingContainer { 
+	.logo {
+		img {
+		}
+	}
+}
+/* end SFG hero landing */
+
 .content-page{
 	.main-wrap{
-
 		header{
+			h1.site-header{
+			}
 
 			.navigation-wrap {
 				.main-navigation{
-
-					width: 33.333334%;
-
 				}
 			}
 		}
 		.main-inner{
-			margin: 0 auto;
-			max-width: 1280px;
-			padding: 0 150px;
-
-			
+			padding: 0 28%;
 			.content-wrap{
-				@include clearfix();
+				.fullwidth{
+				}
+				.collumn.wrapper{
+				}
+				li.list, ol.list {
+					img {
+					}
+				}
+
+				li.products.list {
+					text-align: left;
+				}
+				.two.collumn {
+					float:left;
+					width: 40%;
+				}
+				.two.collumn.right {
+					float: right;
+				}
+				.fullwidth > p {
+				}
+				p.testimonial {
+				}
+				p.testimonial.author {
+				}
+
 				h2.page-title{
-					text-align: center;
 				}
 				.column{
-					max-width: 800px;
-					width: 48%;
-					
+					h3.content-title{
+					}
 					p{
-						text-align: justify;
 					}
 				}
 				.column.first{
-					float:left;
-				}
-				.column.last{
-					float:right;
 				}
 				.fullwidth{
-					clear: both;
-					text-align: center;
 				}
 			}
 		}
 		footer{
 			@include clearfix();
 			background: $blue;
+			a{
+				&:hover{
+				}
+			}
 			.column{
 				width: 31%;
-				margin-right: 2.3333334%;
-
+				margin-right: 2.333334%;
 				float: left;
-			}
-		}
-	}
-}
-
-
-
-// collection page
-.main-wrap {
-	.product-wrap {
-		.product{
-			.product-info {
-				.product-navigation {
-					.product-inner {
-					 	 h2{
-					 	 	@include font-size(24);
-					 	}
-					}
+				.nl-email{
+				}
+				.nl-submit{
+				}
+				h3{
 				}
 			}
 		}

@@ -12,6 +12,8 @@
     <meta name="MobileOptimized" content="320" />
     <meta http-equiv="cleartype" content="on" />
     <script type="text/javascript" src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- SFG: importing jquery for headerbar hide/show, better done in js? -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="icon" type="img/ico" href="favicon.ico">
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -24,73 +26,87 @@
         <link rel="stylesheet" href="css/ie.css" />
     <![endif]-->
     
+<!-- SFG: adding some wonkie code to show/hide header element. Targetting
+header.landing so this behaviour doesnt conflict with other pages -->
+    <script>
+        $(window).scroll(function() {
+               if ($(this).scrollTop() > 200) {
+                   $('header.landing').fadeIn();
+               } else {
+                   $('header.landing').fadeOut();
+               }
+        });
+    </script>
+<!-- SFG: end navheader -->
+
     <title>ListedBlue</title>
     <meta name="description" content="">
 </head>
-<body class="content-page">
+<body class="content-page landing">
     <!--[if lt IE 8]>
         <p class=chromeframe><strong>Je hebt een verouderde browser!</strong> <a href="http://browsehappy.com/">Upgrade naar een betere browser</a> of
         <a href="http://www.google.com/chromeframe/?redirect=true">installeer Google Chrome Frame</a> om deze website toch te kunnen bekijken.</p>
     <![endif]-->
 
     <div class="main-wrap">
+        <header class="landing">
+            <h1 class="site-header">LISTEDBLUE</h1>
 
-<!-- SFG: we don't need this for now ... until site is live! no menu -->        
-            <!-- <header>
-                <h1 class="site-header">LISTEDBLUE</h1>
-                <nav class="navigation-wrap">
-                    <ul class="main-navigation">
-                        <li class="nav active"><a href="collection.html">current COLLECTION</a></li>
-                        <li class="nav"><a href="about.html">ABOUT ListedBlue</a></li>
-                        <li class="nav"><a href="contact.html">CONTACT us</a></li>
-                        <li class="nav"><a href="diclaimer.html">TERMS and CONDITIONS</a></li>
-                    </ul>
+<!-- SFG: we don't need a nav menu untill complete site is live 
+if correct the css styles have been set though ... revisit -->
+<!--                 <nav class="navigation-wrap">
+                        <ul class="main-navigation">
+                            <li class="nav active"><a href="collection.html">current COLLECTION</a></li>
+                            <li class="nav"><a href="about.html">ABOUT ListedBlue</a></li>
+                            <li class="nav"><a href="contact.html">CONTACT us</a></li>
+                            <li class="nav"><a href="diclaimer.html">TERMS and CONDITIONS</a></li>
+                        </ul>
                     <a href="#" class="btn-nav-toggle fa fa-bars"></a>
                     <a href="#" class="btn-close fa fa-times"></a>
-                </nav>
-            </header> -->
+                </nav> -->
+        </header>
 
-            <div id="container">
-                <div id="logo">
-                    <img src="images/bg/lb_logo+tagline.png">
-                    <p class="launch">Launching Spring 2015</p>
-                </div>
-            </div>            
+<!-- SFG: hero content landing page -->
+            <div class="landingContainer"> <!-- SFG: container for background image -->
+                <div class="logo"><img src="images/bg/lb_logo+tagline.png">
+                <p class="launch">Launching Spring 2015</p></div> <!-- SFG: logo placing -->
 
+            </div>
+<!-- SFG:end landing page hero content -->
             
             <div class="main-inner">
                 <section class="content-wrap">
                     <div class="fullwidth">
-                    <h2 class="paragraph-title">WE ARE</h2>
-                        <p>ListedBlue is an exclusive collection of meticulously sourced, hand-made, highly individual objects that have narrowly escaped human obliteration.</p>
+                    <h2 class="paragraph-title">WE PRESENT</h2>
+                        <p>ListedBlue, an exclusive collection of meticulously sourced, hand-made, highly individual objects that have narrowly escaped human obliteration.</p>
                         <p>
-                        The Collection invokes a renewed sensation of Value in a time when our product &amp; production ecosystems are about to disrupt ... indefinitely.</p>
+                        The Collection invokes a renewed sensation of value in a time when our product &amp; production ecosystems are about to disrupt ... indefinitely.</p>
                     </div>
                     <div class="fullwidth">
                     <h2 class="paragraph-title">WE OFFER</h2>
                         <p>
-                        As representatives of an era before creation became production, ListedBlue objects have never claimed any economical value. By offering 3 embodiments of each of the Collections’ pieces we offer identification &amp; contribution to this archaeological ethos.
+                        As representatives of an era before creation became production, ListedBlue objects have claimed neither economic nor monetary value. By offering 3 embodiments of each of the Collections’ pieces we offer identification &amp; contribution to this archaeological ethos.
                         </p>
                         <p> 
-                        Three embodiments include:
+                        Each piece in the collection is available in 3 distinct product embodiments:
                         <ol class="list">
                         <img src="images/assets/object.png" class="productoffer">
-                            <li class="list">the Object<br />the unique, hand-made piece</li>
-                        <img src="images/assets/image.png" class="productoffer">   
-                            <li class="list">the Image<br /> a series of 10 print showing three perspectives of the Object in 1:1 size</li>
+                            <li class="list">THE OBJECT<br />The unique, hand-made piece</li>
+                        <img src="images/assets/image_white.png" class="productoffer">   
+                            <li class="list">THE IMAGE<br /> 
+                            Portraying 3 of the objects' perspectives in 1:1 scale (series 10)</li>
                         <img src="images/assets/download.png" class="productoffer">                               
-                            <li class="list">the Download<br /> an infinitely - 3D printable - scan of the Object</li>
+                            <li class="list">THE DOWNLOAD<br /> Infinitely - 3D printable - scan of the Object</li>
                         </ol>
                         </p>
                         <p>
-                        Ordered through us each of our products ship with a ListedBlue certificate of authenticity. As per request we can provide Image framing &amp; 3D printing services.
+                        Ordered through us each of our products ship with a ListedBlue certificate of authenticity.<br />
+                        We provide print-framing &amp; 3D print services per request.
                         </p>
                     </div>
                     <div class="fullwidth">
                     <h2 class="paragraph-title">THE CURRENT COLLECTION</h2>
-                        <p>
-                        Named after species on BAP / Red &amp; Blue Lists; available at launch
-                        </p>
+                    <p></p>
                         <div class="collumn wrapper">
                         <div class="two collumn">
                             <ol>  
@@ -112,7 +128,7 @@
                         </div>
                     </div>
                     <div class="fullwidth">
-                    <h2 class="paragraph-title">THE PEOPLE SAY</h2>
+                    <h2 class="paragraph-title">WHAT PEOPLE SAY</h2>
                         <p class="testimonial">
                         “ListedBlue is a tasteful, timely interpretation of what used to be called Applied Arts.”
                         </p>

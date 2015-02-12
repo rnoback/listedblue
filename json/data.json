@@ -8,20 +8,7 @@
           "visual": "images/products/golden-willow.jpg", 
           "textcolor": "dark",
           
-          "embodiment": [{
-            "type": "the Object",
-            "description": "Fruit bowl, scratched & burned on underside, edges concaved",
-            "materials": "Red Cedar, slightly scratched and splintered",
-            "series": "Unique",
-            "weight": "1821 g",
-            "dimensions": "394 x 298 x 43 mm",
-            "date" : "Unknown",
-            "signed": "No",
-            "provenance": "Terre des Hommes, 's Hertogenbosch, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
-            "price": "On request",
-            "download_url": ""
-            },
+          "embodiment": [
             {
             "type": "the Image",
             "description": "Photo print / 3 perspectives",
@@ -33,6 +20,20 @@
             "signed": "ListedBlue N# (on the verso)",
             "shipping": "Ships within 10 days. Comes in a brown mail tube",
             "price": "€1445",
+            "download_url": ""
+            },
+            {
+            "type": "the Object",
+            "description": "Fruit bowl, scratched & burned on underside, edges concaved",
+            "materials": "Red Cedar, slightly scratched and splintered",
+            "series": "Unique",
+            "weight": "1821 g",
+            "dimensions": "394 x 298 x 43 mm",
+            "date" : "Unknown",
+            "signed": "No",
+            "provenance": "Terre des Hommes, 's Hertogenbosch, The Netherlands",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "On request",
             "download_url": ""
             },
             {
@@ -56,20 +57,7 @@
           "name": "Common Ringlet", 
           "visual": "images/products/common-ringlet.jpg",
           "textcolor": "dark", 
-          "embodiment": [{
-            "type": "the Object",
-            "description": "Talisman",
-            "material": "Red chamotte clay, cadmium yellow glaze",
-            "series": "Unique",
-            "weight": "1831 g",
-            "dimensions": "122 x 122 x 265 mm",
-            "date" : "ca. 1979",
-            "signed": "No",
-            "provenance": "Gewoon Goed, Schiedam, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
-            "price": "On request",
-            "download_url": ""
-          },
+          "embodiment": [
             {
             "type": "the Image",
             "description": "Photo print / 3 perspectives",
@@ -83,6 +71,20 @@
             "price": "€1445",
             "download_url": ""
             },
+            {
+            "type": "the Object",
+            "description": "Talisman",
+            "material": "Red chamotte clay, cadmium yellow glaze",
+            "series": "Unique",
+            "weight": "1831 g",
+            "dimensions": "122 x 122 x 265 mm",
+            "date" : "ca. 1979",
+            "signed": "No",
+            "provenance": "Gewoon Goed, Schiedam, The Netherlands",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "On request",
+            "download_url": ""
+          },
             {
             "type": "the Download",
             "description": "3D Scan",
@@ -103,20 +105,7 @@
           "name": "Margined White", 
           "visual": "images/products/margined-white.jpg",
           "textcolor": "dark",
-          "embodiment": [{
-            "type": "the Object",
-            "description": "Slight irregularity, decorative object (spittoon?)",
-            "material": "Pig bladder shaped / formed",
-            "series": "Unique",
-            "weight": "CHECK",
-            "dimensions": "CHECK",
-            "date" : "Unknown",
-            "signed": "No",
-            "provenance": "Dorkas, Rijssen, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
-            "price": "On request",
-            "download_url": ""
-          },
+          "embodiment": [
             {
             "type": "the Image",
             "description": "Photo print / 3 perspectives",
@@ -130,6 +119,20 @@
             "price": "€1445",
             "download_url": ""
             },
+            {
+            "type": "the Object",
+            "description": "Slight irregularity, decorative object (spittoon?)",
+            "material": "Pig bladder shaped / formed",
+            "series": "Unique",
+            "weight": "CHECK",
+            "dimensions": "CHECK",
+            "date" : "Unknown",
+            "signed": "No",
+            "provenance": "Dorkas, Rijssen, The Netherlands",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "On request",
+            "download_url": ""
+          },
             {
             "type": "the Download",
             "description": "3D Scan",
@@ -150,20 +153,7 @@
           "name": "Eastern Red Bat", 
           "visual": "images/products/eastern-red-bat.jpg",
           "textcolor": "dark",
-          "embodiment": [{
-            "type": "the Object",
-            "description": "Ashtray with screw imprint, hand finished",
-            "material": "Black fine chamotte clay, red glazed inside",
-            "series": "Unique",
-            "weight": "CHECK",
-            "dimensions": "CHECK",
-            "date" : "2001",
-            "signed": "Tal Silverberg 15.6.2001.5467",
-            "provenance": "De Lokatie, Amsterdam, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
-            "price": "On request",
-            "download_url": ""
-          },
+          "embodiment": [
             {
             "type": "the Image",
             "description": "Photo print / 3 perspectives",
@@ -177,6 +167,20 @@
             "price": "€1445",
             "download_url": ""
             },
+            {
+            "type": "the Object",
+            "description": "Ashtray with screw imprint, hand finished",
+            "material": "Black fine chamotte clay, red glazed inside",
+            "series": "Unique",
+            "weight": "CHECK",
+            "dimensions": "CHECK",
+            "date" : "2001",
+            "signed": "Tal Silverberg 15.6.2001.5467",
+            "provenance": "De Lokatie, Amsterdam, The Netherlands",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "On request",
+            "download_url": ""
+          },
             {
             "type": "the Download",
             "description": "3D Scan",
@@ -195,22 +199,9 @@
         { 
           "id": 3,
           "name": "Vidler's Alpine",
-          "visual": "images/products/vidlers-alpine_v2.jpg",
+          "visual": "images/products/vidlers-alpine.jpg",
           "textcolor": "dark",
-          "embodiment": [{
-            "type": "the Object",
-            "description": "Silk double-side embroidered table linen. Embroidery unfinished. Partly stained and discolored on folding's",
-            "material": "Raw linen, hand embroidered",
-            "series": "Unique",
-            "weight": "438 g",
-            "dimensions": "135 x 135 cm",
-            "date" : "Unknown",
-            "signed": "No",
-            "provenance": "2Swift, Arnhem, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
-            "price": "On request",
-            "download_url": ""
-          },
+          "embodiment": [
             {
             "type": "the Image",
             "description": "Photo print / 3 perspectives",
@@ -224,6 +215,20 @@
             "price": "€1445",
             "download_url": ""
             },
+            {
+            "type": "the Object",
+            "description": "Silk double-side embroidered table linen. Embroidery unfinished. Partly stained and discolored on folding's",
+            "material": "Raw linen, hand embroidered",
+            "series": "Unique",
+            "weight": "438 g",
+            "dimensions": "135 x 135 cm",
+            "date" : "Unknown",
+            "signed": "No",
+            "provenance": "2Swift, Arnhem, The Netherlands",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "On request",
+            "download_url": ""
+          },
             {
             "type": "the Download",
             "description": "3D Scan",
@@ -243,20 +248,7 @@
           "name": "Silver Birch",
           "visual": "images/products/silver-birch.jpg",
           "textcolor": "light",
-          "embodiment": [{
-            "type": "the Object",
-            "description": "Ashtray collector, opalescent, cigars maybe?",
-            "material": "Soap stone, lightly marbled",
-            "series": "Unique",
-            "weight": "808 g",
-            "dimensions": "198 x 119 x 33 mm",
-            "date" : "Unknown",
-            "signed": "No",
-            "provenance": "Dorkas, Nijverdal, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
-            "price": "On request",
-            "download_url": ""
-          },
+          "embodiment": [
             {
             "type": "the Image",
             "description": "Photo print / 3 perspectives",
@@ -270,6 +262,20 @@
             "price": "€1445",
             "download_url": ""
             },
+            {
+            "type": "the Object",
+            "description": "Ashtray collector, opalescent, cigars maybe?",
+            "material": "Soap stone, lightly marbled",
+            "series": "Unique",
+            "weight": "808 g",
+            "dimensions": "198 x 119 x 33 mm",
+            "date" : "Unknown",
+            "signed": "No",
+            "provenance": "Dorkas, Nijverdal, The Netherlands",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "On request",
+            "download_url": ""
+          },
             {
             "type": "the Download",
             "description": "3D Scan",
@@ -290,7 +296,21 @@
           "name": "Marsh Elder",
           "visual": "images/products/marsh-elder.jpg",
           "textcolor": "dark",
-          "embodiment": [{
+          "embodiment": [
+            {
+            "type": "the Image",
+            "description": "Photo print / 3 perspectives",
+            "materials": "Inktjetprint on Hahnemühle art paper",
+            "series": "10 (3 of 10 Sold)",
+            "weight": "CHECK",
+            "dimensions": "CHECK (incl white, not framed. Contact us for framing options)",
+            "date" : "October 12th, 2014",
+            "signed": "ListedBlue N# (on the verso)",
+            "shipping": "Ships within 10 days. Comes in a brown mail tube",
+            "price": "€1445",
+            "download_url": ""
+            },
+            {
             "type": "the Object",
             "description": "Festive vessel, acentric turned, hand brushed engobe adorned. Possible child's item",
             "material": "Dutch clay",
@@ -305,6 +325,27 @@
             "download_url": ""
           },
             {
+            "type": "the Download",
+            "description": "3D Scan",
+            "material": ".STL digital file",
+            "series": "Unlimited",
+            "size": "CHECK MB",
+            "faces/vertices": "CHECK (Not printed. Contact us for printing options)",
+            "date" : "November 14th, 2014",
+            "signed": "ListedBlue N# (imprint)",
+            "licence": "Creative Commons - Attribution - Share Alike",
+            "shipping": "FTP // HTTP download",
+            "price": "Free",
+            "download_url": "http://"
+          }]
+        },
+                { 
+          "id": 12,
+          "name": "Beach Groundsel", 
+          "visual": "images/products/beach-groundsel.jpg",
+          "textcolor": "dark",
+          "embodiment": [
+            {
             "type": "the Image",
             "description": "Photo print / 3 perspectives",
             "materials": "Inktjetprint on Hahnemühle art paper",
@@ -317,6 +358,20 @@
             "price": "€1445",
             "download_url": ""
             },
+            {
+            "type": "the Object",
+            "description": "Wooden cup",
+            "material": "Cedar single piece of wood",
+            "series": "Unique",
+            "weight": "194 g",
+            "dimensions": "148 x 103 x 82 mm",
+            "date" : "Unknown",
+            "signed": "JZ / SPAR /  S3A (on the verso)",
+            "provenance": "2Swift, Arnhem, The Netherlands",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "On request",
+            "download_url": ""
+          },
             {
             "type": "the Download",
             "description": "3D Scan",
@@ -337,21 +392,7 @@
           "name": "Pendulous Sedge", 
           "visual": "images/products/pendulous-sedge.jpg",
           "textcolor": "dark",
-
-          "embodiment": [{
-            "type": "the Object",
-            "description": "Wooden cup",
-            "material": "Cedar single piece of wood",
-            "series": "Unique",
-            "weight": "194 g",
-            "dimensions": "148 x 103 x 82 mm",
-            "date" : "Unknown",
-            "signed": "JZ / SPAR /  S3A (on the verso)",
-            "provenance": "2Swift, Arnhem, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
-            "price": "On request",
-            "download_url": ""
-          },
+          "embodiment": [
             {
             "type": "the Image",
             "description": "Photo print / 3 perspectives",
@@ -365,6 +406,20 @@
             "price": "€1445",
             "download_url": ""
             },
+            {
+            "type": "the Object",
+            "description": "Wooden cup",
+            "material": "Cedar single piece of wood",
+            "series": "Unique",
+            "weight": "194 g",
+            "dimensions": "148 x 103 x 82 mm",
+            "date" : "Unknown",
+            "signed": "JZ / SPAR /  S3A (on the verso)",
+            "provenance": "2Swift, Arnhem, The Netherlands",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "On request",
+            "download_url": ""
+          },
             {
             "type": "the Download",
             "description": "3D Scan",
@@ -385,20 +440,7 @@
           "name": "Great Blue Heron", 
           "visual": "images/products/great-blue-heron.jpg", 
           "textcolor": "dark",
-          "embodiment": [{
-            "type": "the Object",
-            "description": "Minilith, single stone, Queasy trapezoidal",
-            "materials": "Elemental blue stone, scratched slightly",
-            "series": "Unique",
-            "weight": "587 g",
-            "dimensions": "45 x 70 x 80 mm",
-            "date" : "ca. 1980",
-            "signed": "No",
-            "provenance": "Rataplan, Amsterdam, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
-            "price": "On request",
-            "download_url": ""
-            },
+          "embodiment": [
             {
             "type": "the Image",
             "description": "Photo print / 3 perspectives",
@@ -410,6 +452,20 @@
             "signed": "ListedBlue N# (on the verso)",
             "shipping": "Ships within 10 days. Comes in a brown mail tube",
             "price": "€1445",
+            "download_url": ""
+            },
+            {
+            "type": "the Object",
+            "description": "Minilith, single stone, Queasy trapezoidal",
+            "materials": "Elemental blue stone, scratched slightly",
+            "series": "Unique",
+            "weight": "587 g",
+            "dimensions": "45 x 70 x 80 mm",
+            "date" : "ca. 1980",
+            "signed": "No",
+            "provenance": "Rataplan, Amsterdam, The Netherlands",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "On request",
             "download_url": ""
             },
             {

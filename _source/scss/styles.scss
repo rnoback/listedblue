@@ -19,18 +19,19 @@
 
 
 //collection page
-@import "layout-landscape.scss";
-@import "layout-portrait.scss";
+@import "collection-landscape";
+@import "collection-portrait";
 
 // mobile first layout up to 768px wide
-@import "layout.scss";
+@import "layout";
 
 @media only screen and (min-width: 768px) {
 	@import "layout-768up";
-	@import "landing";
+	@import "collection-landscape-768up";
 }
 @media only screen and (min-width: 1280px) {
 	@import "layout-1280up";
+	@import "collection-landscape-1280up";
 }
 
 
