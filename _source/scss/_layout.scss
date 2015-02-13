@@ -73,6 +73,11 @@ body.content-page.landing{
 			letter-spacing: 1px;
 			color: $extradarkgray;
 			padding-top: 0.2rem;
+
+			a{
+				text-decoration: none;
+				color:$extradarkgray;
+			}
 		}
 
 		h1:after{
@@ -315,3 +320,5 @@ body.content-page.landing{
 	height: 480px;
 	}
 }
+
+

@@ -32,11 +32,19 @@
         <a href="http://www.google.com/chromeframe/?redirect=true">installeer Google Chrome Frame</a> om deze website toch te kunnen bekijken.</p>
     <![endif]-->
 
-
-    
     <div class="main-wrap">
+
+<!-- SFG: attempt to display 64px high header in iphone simulation 
+to mimique status and navigation bar UI -->
+    <div class="iphoneStatusNavBar"></div>
+<!-- SFG: end attempt -->
+
+<!-- SFG: adding overlay to display full screen productimage (no info/no menu) when device is in landscape orientation. Todo: create a list of devices that fall under these criteria (media queries) -->
+        <div class="landscapeOverlay"></div>
+<!-- end of landscapeOverlay -->
+
         <header>
-            <h1 class="site-header">LISTEDBLUE</h1>
+            <h1 class="site-header"><a href="index.html">LISTEDBLUE</a></h1>
             <nav class="navigation-wrap">
                 <ul class="main-navigation">
                     <li class="nav active"><a href="collection.html">current COLLECTION</a></li>
@@ -94,7 +102,6 @@
             {{/each}}
             </script>
         </section>
-        
        <!--  <footer>
             <div class="credits">Terms Of Service | &copy; LISTED BLUE 2014</div>
         </footer> -->

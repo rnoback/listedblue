@@ -1,0 +1,153 @@
+/**
+* This is the mobile device specific css
+*/
+
+/**
+ * VH and VW units can cause issues on iOS devices: http://caniuse.com/#feat=viewport-units
+ * 
+ * To overcome this, create media queries that target the width, height, and orientation of iOS devices. 
+ * It isn't optimal, but there is really no other way to solve the problem. In this example, I am fixing 
+ * the height of element `.foo` â€”which is a full width and height cover image.
+ *
+ * iOS Resolution Quick Reference: http://www.iosres.com/
+ */
+
+
+/** 
+ * iPad with portrait orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+	.landingContainer {
+		height: 1024px; // important as the landingpage has a VH specification
+	}
+	.main-inner{
+		padding: 0 29%;
+	}
+}
+
+/** 
+ * iPad with landscape orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+	.landingContainer {
+		height: 768px; // important as the landingpage has a VH specification
+	}
+  	.content-page.main-wrap.main-inner{
+		padding: 0 26%;
+	}
+}
+
+/**
+ * iPhone 2-4S landscape
+ */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) { 
+	.landingContainer {
+	height: 320px; // important as the landingpage has a VH specification
+	}
+}
+
+/**
+ * iPhone 2-4S portrait
+ */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	.landingContainer {
+	height: 480px; // important as the landingpage has a VH specification
+	}
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.prev {
+		padding: 6px 12px;
+	}
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.next {
+		padding: 6px 12px;
+	}
+	.main-wrap .product-wrap .product .product-info {
+		height: 48px;
+	}
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content {
+		padding: 64px 32px 14px 30px;
+		font-size: 82%;
+		line-height: 16px;
+	}
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content .btn_p {
+		bottom: 28px;
+	}
+
+}
+
+/**
+ * iPhone 5 landscape
+ */
+@media only screen and (min-device-width : 568px) and (max-device-width : 320px) and (orientation : landscape) {
+	.landingContainer {
+	height: 320px; // important as the landingpage has a VH specification
+  	}
+}
+/**
+ * iPhone 5 portrait
+ */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+	.landingContainer {
+	height: 568px; // important as the landingpage has a VH specification
+  	}
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.prev {
+		padding: 6px 12px;
+	}
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.next {
+		padding: 6px 12px;
+	}
+	.main-wrap .product-wrap .product .product-info {
+		height: 62px;
+	}
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content {
+		padding: 74px 65px 22px 49px;
+		font-size: 82%;
+		line-height: 20px;
+	}
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content .btn_p {
+		bottom: 24px;
+	}
+	.is-portrait .main-wrap header h1 {
+		font-size: 18px;
+	}
+	.is-portrait .main-wrap header h1:after {
+		font-size: 38px;
+	}
+	.main-wrap header .navigation-wrap a.btn-nav-toggle:after, .main-wrap header .navigation-wrap a.btn-close:after {
+		font-size: 2.4rem;
+	}
+}
+
+/**
+ * iPhone 6 landscape
+ */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) { 
+	.landingContainer {
+	height: 375px; // important as the landingpage has a VH specification
+  	}
+}
+
+/**
+ * iPhone 6 portrait
+ */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) { 
+	.landingContainer {
+	height: 667px; // important as the landingpage has a VH specification
+  	}
+}
+
+/**
+ * iPhone 6+ landscape
+ */
+@media only screen and (min-device-width : 540px) and (max-device-width : 960px) and (orientation : landscape) {
+	.landingContainer {
+	height: 540px; // important as the landingpage has a VH specification
+  	}
+}
+
+/**
+ * iPhone 6+ portrait
+ */
+@media only screen and (min-device-width : 540px) and (max-device-width : 960px) and (orientation : portrait) { 
+	.landingContainer {
+	height: 960px; // important as the landingpage has a VH specification
+  	}
+}

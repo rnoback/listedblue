@@ -4,6 +4,23 @@
 
 .main-wrap{
 	position:relative;
+
+/** overlay to show when target device is in landscape orientation
+* we do this through js or css media query?
+*/
+		.landscapeOverlay{
+			display: none;
+			width: 100vw;
+			height: 100vh;
+			background-color: #f90;
+			background: url("../images/products/golden-willow.jpg") no-repeat center center; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+/* end overlay */
+
 	.product-wrap{
 		position:relative;
 
@@ -80,8 +97,6 @@
 							margin-top: 1rem;
 						}
 						li.p_price {
-							/* position: absolute;
-							bottom: 3rem; */
 						}
 				    	.object.btn_gray_download{
 
@@ -205,6 +220,12 @@
 			height: 50px;
 			color: $extradarkgray;
 			padding-top: 0.2rem;
+
+			a{
+				text-decoration: none;
+				color:$extradarkgray;
+			}
+
 		}
 
 		h1:after{
