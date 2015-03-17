@@ -23,6 +23,62 @@
 	.main-inner{
 		padding: 0 29%;
 	}
+
+.content-page .main-wrap header .navigation-wrap .main-navigation {
+
+		display:none;
+		background: $white;
+		color: $extradarkgray;
+		position:absolute;
+		right: 0;
+		top: 54px;
+		width: 100%;
+		text-align: center;
+		opacity: 1;
+		
+		>li.nav:first-child{
+			padding: 24px 40px 10px 40px;
+		}
+	}	
+// the main info text body
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content {
+		font-size: 14px;
+		line-height: 28px;
+	}
+// product title h2, name only, not the embodiment type
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content h2 {
+		margin-bottom: 0px;
+		font-size: 24px;
+	}
+// product embodiment text
+	.main-wrap .product-wrap .product .product-overlay .column .column-content span.header-type {
+		font-size: 10px;
+		padding-left: 4px;	
+	}
+// product info label
+	.main-wrap .product-wrap .product .product-overlay .column .column-content .label {
+		font-size: 8px;
+	}
+// product info text ul
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content ul {
+	}
+// EMAIL ENQUIRY button, absolute positioning from bottom
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content .btn_p {
+		bottom: 80px;
+	}
+// product bottom nav bar, absolute position from bottom
+	.is-portrait .main-wrap .product-wrap .product .product-info {
+		bottom: 0px;
+		height: 62px;
+	}
+// product bottom nav prev / next buttons
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.prev, 
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.next {
+		padding: 6px 84px;
+	}
+// product title h2 in bottom nav
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner h2 {
+	}
 }
 
 /** 
@@ -38,45 +94,96 @@
 }
 
 /**
- * iPhone 2-4S landscape
+ * iPhone 2-3 we're not touching, neither landscape nor portrait
  */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) { 
+
+/**
+ * iPhone 4 landscape
+ */
+/* @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape)*/  
+@media only screen and (device-height : 480px) and (device-width : 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation : landscape) {
 	.landingContainer {
 	height: 320px; // important as the landingpage has a VH specification
 	}
 }
 
 /**
- * iPhone 2-4S portrait
+ * iPhone 4 portrait
  */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+@media only screen and (device-height : 480px) and (device-width : 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation : portrait) {
 	.landingContainer {
 	height: 480px; // important as the landingpage has a VH specification
 	}
-	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.prev {
-		padding: 6px 12px;
+
+// header with logo
+	.is-portrait .main-wrap header {
+		padding-top: 0.7rem;
 	}
+// header with logo size
+	.is-portrait .main-wrap header h1 {
+		font-size: 16px;
+	}
+// the pale blue dot
+	.is-portrait .main-wrap header h1:after {
+		margin: -10px 0 0 2px;
+		font-size: 2.0rem;
+	}
+// menu / close store button
+	.is-portrait	 .main-wrap header .navigation-wrap a.btn-close, 
+	.is-portrait .main-wrap header .navigation-wrap a.btn-nav-toggle {
+		right: 0px;
+	}
+// menu icon size
+	.is-portrait .main-wrap header .navigation-wrap a.btn-nav-toggle:after,
+	.is-portrait .main-wrap header .navigation-wrap a.btn-close:after {
+	font-size: 32px;
+	}	
+// the main info text body
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content {
+		padding: 38px 6px 16px 6px;
+		font-size: 10px;
+		line-height: 12px;
+	}
+// product title h2, name only, not the embodiment type
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content h2 {
+		margin-bottom: 0px;
+		font-size: 16px;
+	}
+// product embodiment text
+	.main-wrap .product-wrap .product .product-overlay .column .column-content span.header-type {
+		font-size: 10px;
+		padding-left: 4px;	
+	}
+// product info label
+	.main-wrap .product-wrap .product .product-overlay .column .column-content .label {
+		font-size: 8px;
+	}
+// product info text ul
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content ul {
+	}
+// EMAIL ENQUIRY button, absolute positioning from bottom
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content .btn_p {
+		bottom: 0px;
+	}
+// product bottom nav bar, absolute position from bottom
+	.is-portrait .main-wrap .product-wrap .product .product-info {
+		bottom: 0px;
+		height: 52px;
+	}
+// product bottom nav prev / next buttons
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.prev, 
 	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.next {
 		padding: 6px 12px;
 	}
-	.main-wrap .product-wrap .product .product-info {
-		height: 48px;
+// product title h2 in bottom nav
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner h2 {
 	}
-	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content {
-		padding: 64px 32px 14px 30px;
-		font-size: 82%;
-		line-height: 16px;
-	}
-	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content .btn_p {
-		bottom: 28px;
-	}
-
 }
 
 /**
  * iPhone 5 landscape
  */
-@media only screen and (min-device-width : 568px) and (max-device-width : 320px) and (orientation : landscape) {
+@media only screen and (device-height : 568px) and (device-width : 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation : landscape) {
 	.landingContainer {
 	height: 320px; // important as the landingpage has a VH specification
   	}
@@ -84,35 +191,71 @@
 /**
  * iPhone 5 portrait
  */
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+@media only screen and (device-height : 568px) and (device-width : 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation : portrait) {
 	.landingContainer {
 	height: 568px; // important as the landingpage has a VH specification
   	}
-	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.prev {
-		padding: 6px 12px;
+// header with logo
+	.is-portrait .main-wrap header {
+		padding-top: 0.7rem;
 	}
-	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.next {
-		padding: 6px 12px;
-	}
-	.main-wrap .product-wrap .product .product-info {
-		height: 62px;
-	}
-	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content {
-		padding: 74px 65px 22px 49px;
-		font-size: 82%;
-		line-height: 20px;
-	}
-	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content .btn_p {
-		bottom: 24px;
-	}
+// the logo type 
 	.is-portrait .main-wrap header h1 {
 		font-size: 18px;
 	}
+// the pale blue dot
 	.is-portrait .main-wrap header h1:after {
-		font-size: 38px;
+		margin: -10px 0 0 2px;
 	}
-	.main-wrap header .navigation-wrap a.btn-nav-toggle:after, .main-wrap header .navigation-wrap a.btn-close:after {
-		font-size: 2.4rem;
+// menu / close store button
+	.is-portrait .main-wrap header .navigation-wrap a.btn-close, 
+	.is-portrait .main-wrap header .navigation-wrap a.btn-nav-toggle {
+		right: 0px;
+	}
+// menu icon size
+	.is-portrait .main-wrap header .navigation-wrap a.btn-nav-toggle:after,
+	.is-portrait .main-wrap header .navigation-wrap a.btn-close:after {
+	font-size: 32px;
+	}	
+// the main info text body
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content {
+		padding: 43px 12px 16px 12px;
+		font-size: 10px;
+		line-height: 20px;
+		height: 74%;
+	}
+// product title h2, name only, not the embodiment type
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content h2 {
+		margin-bottom: 0px;
+	}
+// product embodiment text
+	.main-wrap .product-wrap .product .product-overlay .column .column-content span.header-type {
+		font-size: 10px;
+		padding-left: 4px;	
+	}
+// product info label
+	.main-wrap .product-wrap .product .product-overlay .column .column-content .label {
+		font-size: 8px;
+	}
+// product info text ul
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content ul {
+	}
+// EMAIL ENQUIRY button, absolute positioning from bottom
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content .btn_p {
+		bottom: 0px;
+	}
+// product bottom nav bar, absolute position from bottom
+	.is-portrait .main-wrap .product-wrap .product .product-info {
+		bottom: 0px;
+		height: 52px;
+	}
+// product bottom nav prev / next buttons
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.prev, 
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.next {
+		padding: 6px 0px;
+	}
+// product title h2 in bottom nav
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner h2 {
 	}
 }
 
@@ -128,11 +271,75 @@
 /**
  * iPhone 6 portrait
  */
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) { 
+@media only screen and (device-height : 667px) and (device-width : 375px) and (-webkit-min-device-pixel-ratio: 2) and (orientation : portrait) {
 	.landingContainer {
 	height: 667px; // important as the landingpage has a VH specification
   	}
-}
+// header with logo
+	.is-portrait .main-wrap header {
+		padding-top: 0.7rem;
+	}
+// the logo type 
+	.is-portrait .main-wrap header h1 {
+		font-size: 18px;
+		position: fixed;
+	}
+// the pale blue dot
+	.is-portrait .main-wrap header h1:after {
+		margin: -10px 0 0 2px;
+	}
+// menu / close store button
+	.is-portrait .main-wrap header .navigation-wrap a.btn-close, 
+	.is-portrait .main-wrap header .navigation-wrap a.btn-nav-toggle {
+		right: 0px;
+	}
+// menu icon size
+	.is-portrait .main-wrap header .navigation-wrap a.btn-nav-toggle:after,
+	.is-portrait .main-wrap header .navigation-wrap a.btn-close:after {
+	font-size: 32px;
+	}	
+// the main info text body
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content {
+		padding: 43px 12px 16px 12px;
+		font-size: 10px;
+		line-height: 20px;
+		height: 74%;
+	}
+// product title h2, name only, not the embodiment type
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content h2 {
+		margin-bottom: 0px;
+	}
+// product embodiment text
+	.main-wrap .product-wrap .product .product-overlay .column .column-content span.header-type {
+		font-size: 10px;
+		padding-left: 4px;	
+	}
+// product info label
+	.main-wrap .product-wrap .product .product-overlay .column .column-content .label {
+		font-size: 8px;
+	}
+// product info text ul
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content ul {
+	}
+// EMAIL ENQUIRY button, absolute positioning from bottom
+	.is-portrait .main-wrap .product-wrap .product .product-overlay .column .column-content .btn_p {
+		bottom: 0px;
+	}
+// product bottom nav bar, absolute position from bottom
+	.is-portrait .main-wrap .product-wrap .product .product-info {
+		bottom: 0px;
+		height: 52px;
+	}
+// product bottom nav prev / next buttons
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.prev, 
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner a.next {
+		padding: 6px 0px;
+	}
+// product title h2 in bottom nav
+	.is-portrait .main-wrap .product-wrap .product .product-info .product-navigation .product-inner h2 {
+	}
+}  	
+
 
 /**
  * iPhone 6+ landscape

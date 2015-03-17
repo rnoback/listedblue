@@ -1,3 +1,6 @@
+/*
+* SFG: These are the rules for collection.html in portrait mode
+*/
 
 .is-portrait{
 	overflow: auto;
@@ -5,10 +8,40 @@
 
 	.main-wrap{
 
-		.iphoneStatusNavBar{
-			height: 64px;
-			display: none;
-		}
+// Header ----------------------------------
+		header{
+			h1{
+				position: fixed;
+			}
+			h1:after{
+			}
+			.navigation-wrap{
+				.main-navigation{
+					display:none;
+					position: fixed;
+					left:0;
+				    right:0;
+				    margin-left:auto;
+				    margin-right:auto;
+					width: 100%;
+					text-align: center;
+					z-index: -1;
+					padding-top: -1.5rem;
+					opacity: 0.8;
+					>li.nav:first-child{
+						padding: 124px 40px 10px 40px;
+					}
+				}
+				a.btn-close{
+					position: fixed;
+				}
+				a.btn-nav-toggle{
+					position: fixed;
+				}
+			}
+		} /* end header */
+
+// Product ----------------------------------		
 		.product-wrap{
 			.product{
 				left:auto;
@@ -20,9 +53,9 @@
 				    .column{
 
 				    	.column-content{
-				    		padding: 20% 10% 15% 10%;
-				    		font-size: 100%;
-				    		line-height: 1.7rem;
+				    		padding: 16% 10% 15% 10%;
+				    		font-size: 80%;
+				    		line-height: calc(10vh / 3.4);
 
 				    		h2{
 				    			font-size: 2.4vh;
@@ -33,7 +66,7 @@
 					    	}	
 
 					    	.btn_p{
-					    		bottom: 150px;
+					    		bottom: 74px;
 				    		}
 				    	}
 				    }
@@ -49,14 +82,14 @@
 				}
 				.product-info{
 					position: absolute;
-					bottom: 20px;
+					bottom: 10px;
 					z-index: 11;
 					background: transparent;
 					text-align: center;
 
 					h2{
 						@include font-size(16);
-						width: 200px;
+						/* width: 200px; */
 						
 					}
 
@@ -76,46 +109,32 @@
 
 							}
 							a.next{
-								padding: 6px 4rem;
+								padding: 6px 2rem;
 				    		}
 				    		a.prev{
-				    			padding: 6px 4rem;
+				    			padding: 6px 2rem;
 						    }
 						}
-					}
-				}
+					} /* end .product-navigation */
+				} /* end .product-info */
+			} /* end .product */
+		} /* end .product-wrap */
+	} /* end .main-wrap */
+
+// Footer -------------------------------
+	footer{
+		.credits{
+			position: fixed;
+			bottom: 0;
+			text-align: center;
+			width: 100%;
+			font-size: 0.5rem;
+			color: $gray;
+			z-index: 1;
+			a {
+				color: $gray;
+				text-decoration: none;
 			}
 		}
-
-		
-
-		header{
-			h1{
-				position: fixed;
-			}
-			h1:after{
-			}
-			.navigation-wrap{
-				.main-navigation{
-					display:none;
-					position: fixed;
-					left:0;
-				    right:0;
-				    margin-left:auto;
-				    margin-right:auto;
-					width: 100%;
-				}
-				a.btn-close{
-					position: fixed;
-				}
-				a.btn-nav-toggle{
-					position: fixed;
-				}
-			}
-
-
-
-
-		}
-	}
-}
+	} /* end footer */
+} /* end .is-portrait */

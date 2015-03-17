@@ -1,193 +1,13 @@
+/*
+* These are the rules for collection.html in landscape mode
+*/
+
 .is-landscape{
 	overflow: hidden;
 }
 
 .main-wrap{
 	position:relative;
-
-/** overlay to show when target device is in landscape orientation
-* we do this through js or css media query?
-*/
-		.landscapeOverlay{
-			display: none;
-			width: 100vw;
-			height: 100vh;
-			background-color: #f90;
-			background: url("../images/products/golden-willow.jpg") no-repeat center center; 
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-		}
-/* end overlay */
-
-	.product-wrap{
-		position:relative;
-
-		.product{
-			/* visibility: hidden; */
-			position: absolute;
-			left:0;
-		    right:0;
-		    margin-left:auto;
-		    margin-right:auto;
-			
-			.product-overlay{
-				position: absolute;
-				z-index: 11;
-				
-				left:0;
-		    	right:0;
-			    margin-left:auto;
-			    margin-right:auto;
-			    display: none;
-			    cursor:pointer;
-
-			    .bg{
-			    	position: absolute;
-			    	background: $white;
-			    	opacity: 0.7;
-			    	width: inherit;
-			    	height: inherit; 
-			    }
-
-			    .column{
-			    	width: 33.33334%;
-			    	float: left;
-
-			    	.column-content{
-			    		position: relative;
-			    		color: $extradarkgray;
-			    		padding: 5.8rem 40px 20px 40px;
-			    		height: 70%;
-			    		font-size: 0.75rem;
-			    		line-height: 1.4rem;
-
-			    		h2{
-			    			color:$extradarkgray;
-			    			text-overflow: ellipsis;
-							white-space: nowrap;
-							overflow: hidden;
-				    	}
-				    	.label{
-				    		text-transform: uppercase;
-				    	}
-				    	span.header-name {
-				    		font-size:1rem;
-				    	}	
-						span.header-type {
-				    		font-size: 0.75rem;
-				    	}
-				    	.p_type, .p_download_url{
-				    		
-				    		display:none;
-				    	}
-				    	.btn_p{
-				    		position:absolute;
-				    		bottom: 0;
-				    		color: $extradarkgray;
-				    		text-transform: uppercase;
-				    	}
-				    	.btn_gray_email{
-				    		
-				    	}
-				    	li.p_shipping {
-							/* position: absolute;
-							bottom: 4.6rem; */
-							margin-top: 1rem;
-						}
-						li.p_price {
-						}
-				    	.object.btn_gray_download{
-
-				    	}
-			    	}
-			    }
-			}
-
-			.product-overlay.active{
-		    	display: block;
-		    }
-
-		   
-			.product-visual {
-				
-				img{
-					width:100%;
-					cursor: pointer;
-					height: auto;
-					display: block;
-					margin: 0 auto;
-					position: relative;
-					/* visibility: hidden; */
-				}
-			}
-			.product-info{
-
-				position: relative;
-				text-align: center;
-				height: 75px;
-				margin: 0 auto;
-				z-index: 12;
-				//@include font-size(24);
-				
-
-				 .product-navigation{
-				 	width: 100%;
-				 	position: relative;
-				 	
-				 	.product-inner{
-				 		//padding: 20px 0;
-				 		margin: 0 auto;
-				 		width: 33.3334%;
-				 		padding-top: 23px;
-				 		
-				 		h2{
-							display: inline-block;
-							font-size: 1.125rem;
-							padding-top: 0.3rem;
-						}
-					 	a{
-					 		text-decoration: none;
-					 		display: block;
-					 		font-size: 0.80rem;
-					 		color: $extradarkgray;
-					 		margin-top: 4px;
-						}
-						a.next{
-							float:right;
-							padding: 6px 2px;
-							-moz-transform: scale(-1, 1);
-							-webkit-transform: scale(-1, 1);
-							-o-transform: scale(-1, 1);
-							-ms-transform: scale(-1, 1);
-							transform: scale(-1, 1);
-							
-			    		}
-			    		a.next:after{
-			    			
-							font-family: "Ctrl-Alt-Social-Icons";
-							content: "\e017";
-							font-size: 2rem;
-			    		}
-			    		a.prev{
-					    	float:left;
-					    	padding: 6px 2px;
-					    }
-					    a.prev:after{
-			    			
-							font-family: "Ctrl-Alt-Social-Icons";
-							content: "\e017";
-							font-size: 2rem;
-			    		}
-					}
-				}
-			}	
-		}
-
-		
-	}
-
 
 // Header ----------------------------------
 /**
@@ -250,22 +70,22 @@
 				right: 0;
 				top: -1.5rem;
 				width: 33.333334%;
-				// opacity: 0.7;
+				opacity: 0.8;
 				
 				li.nav{
 					padding: 10px 40px;
 				}
 				>li.nav:first-child{
-					padding: 80px 40px 10px 40px;
+					padding: 104px 40px 10px 40px;
 				}
 				>li.nav:last-child{
 					padding: 10px 40px 80px 40px;
 				}
-
+				.active a {color:$gray;}
 			}
 			a.btn-close{
 				position: absolute;
-				right: 16px;
+				right: 6px;
 				display: none;
 				font-size: 1.4rem;
 				text-decoration: none;
@@ -278,7 +98,7 @@
 			}
 			a.btn-nav-toggle{
 				position: absolute;
-				right: 16px;
+				right: 6px;
 				font-size: 1.4rem;
 				text-decoration: none;
 				color: $extradarkgray;
@@ -288,13 +108,200 @@
 				content: "\e01a";
 				font-size: 3rem;
 			}
+		} /* end .navigation-wrap */
+	} /* end header */
+
+// Product ----------------------------------	
+
+	.product-wrap{
+		position:relative;
+
+		.product{
+			/* visibility: hidden; */
+			position: absolute;
+			left:0;
+		    right:0;
+		    margin-left:auto;
+		    margin-right:auto;
+			
+			.product-overlay{
+				position: absolute;
+				z-index: 11;
+				
+				left:0;
+		    	right:0;
+			    margin-left:auto;
+			    margin-right:auto;
+			    display: none;
+			    cursor:pointer;
+
+			    .bg{
+			    	position: absolute;
+			    	background: $white;
+			    	opacity: 0.7;
+			    	width: inherit;
+			    	height: inherit; 
+			    }
+
+			    .column{
+			    	width: 33.33334%;
+			    	float: left;
+
+			    	.column-content{
+			    		position: relative;
+			    		color: $extradarkgray;
+			    		padding: 6.2rem 40px 20px 40px;
+			    		height: 70%;
+			    		font-size: 0.75rem;
+			    		line-height: calc(10vw / 5);
+
+			    		h2{
+			    			color:$extradarkgray;
+			    			text-overflow: ellipsis;
+							white-space: nowrap;
+							overflow: hidden;
+				    	}
+				    	.label{
+				    		text-transform: uppercase;
+				    		font-size: 86%;
+				    	}
+				    	span.header-name {
+				    		font-size:1rem;
+				    	}	
+						span.header-type {
+				    		font-size: 0.75rem;
+				    	}
+				    	.p_type, .p_download_url{
+				    		
+				    		display:none;
+				    	}
+				    	.btn_p{
+				    		position: absolute;
+							bottom: 0;
+							color: $extradarkgray;
+							text-transform: uppercase;
+							border: 1px solid rgba(92, 162, 223, 1);
+							padding: 2px 12px 2px 12px;
+							text-decoration: none;
+							border-radius: 0px;
+
+							&:hover{
+								color: $gray;
+								border: 1px solid rgba(92, 162, 223, 0.6);
+							}
+				    	}
+				    	.btn_gray_email{
+				    		
+				    	}
+				    	li.p_shipping {
+							/* position: absolute;
+							bottom: 4.6rem; */
+							margin-top: 1rem;
+						}
+						li.p_price {
+						}
+				    	.object.btn_gray_download{
+
+				    	}
+			    	}
+			    }
+			}
+
+			.product-overlay.active{
+		    	display: block;
+		    }
+
+		   
+			.product-visual {
+				
+				img{
+					width:100%;
+					cursor: pointer;
+					height: auto;
+					display: block;
+					margin: 0 auto;
+					position: relative;
+					/* visibility: hidden; */
+				}
+			}
+			.product-info{
+
+				position: relative;
+				text-align: center;
+				height: 75px;
+				margin: 0 auto;
+				z-index: 12;
+				//@include font-size(24);
+				
+
+				.product-navigation{
+				 	width: 100%;
+				 	position: relative;
+				 	
+				 	.product-inner{
+				 		//padding: 20px 0;
+				 		margin: 0 auto;
+				 		width: 33.3334%;
+				 		padding-top: 23px;
+				 		
+				 		h2{
+							display: inline-block;
+							font-size: 1.125rem;
+							padding-top: 0.3rem;
+						}
+					 	a{
+					 		text-decoration: none;
+					 		display: block;
+					 		font-size: 0.80rem;
+					 		color: $extradarkgray;
+					 		margin-top: 4px;
+						}
+						a.next{
+							float:right;
+							padding: 6px 2px;
+							-moz-transform: scale(-1, 1);
+							-webkit-transform: scale(-1, 1);
+							-o-transform: scale(-1, 1);
+							-ms-transform: scale(-1, 1);
+							transform: scale(-1, 1);
+							
+			    		}
+			    		a.next:after{
+			    			
+							font-family: "Ctrl-Alt-Social-Icons";
+							content: "\e017";
+							font-size: 2rem;
+			    		}
+			    		a.prev{
+					    	float:left;
+					    	padding: 6px 2px;
+					    }
+					    a.prev:after{
+			    			
+							font-family: "Ctrl-Alt-Social-Icons";
+							content: "\e017";
+							font-size: 2rem;
+			    		}
+					} /* end .product-inner */
+				} /* end .product-navigation */
+			} /* end .product-info */	
+		} /* end .product */
+	} /* end .product-wrap */
+} /* end .main-wrap */
+
+// Footer -------------------------------
+	footer{
+		.credits{
+			position: fixed;
+			bottom: 0;
+			text-align: center;
+			width: 100%;
+			font-size: 0.5rem;
+			color: $gray;
+			z-index: 1;
+			a {
+				color: $gray;
+				text-decoration: none;
+			}
 		}
-	}
-
-	// Navigation -------------------------------
-
-
-
-	// Footer -------------------------------
-	
-}
+	} /* end footer */

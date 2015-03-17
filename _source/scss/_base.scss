@@ -4,6 +4,7 @@ body{
 	line-height: 160%;
 	background: $darkgray;
 	color: $black;
+	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
 }
 
@@ -39,7 +40,7 @@ h3{
 
 a{
 	text-decoration: underline;
-	color: $gray;
+	color: $extradarkgray;
 	&:hover{
 		color: $blue;
 	}

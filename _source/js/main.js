@@ -148,6 +148,7 @@ var settings;
             this.mainNavIsVisible = false;
             this.colorArray = [];
             this.theBody = $('body.products');
+            this.theContent = $('body.content-page'); // SFG: adding orientation class to content pages
             this.theWindow = $(window);
             this.header = $('header');
             //this.footer = $('footer');
@@ -162,6 +163,7 @@ var settings;
             this.btnPrev = this.productNavigationWrap.find('.prev');
 
             this.mainNav = $('.products').find('.main-navigation');
+            this.mainNavContent = $('.content-page').find('.main-navigation'); // SFG: adding 100% nav height content pages
 
             this.selectedProductIndex = 0;
 
@@ -445,7 +447,8 @@ var settings;
             this.mainVisual.css('width', '100%');
             this.mainVisual.css('height', 'auto');
             this.setTextColor();
-            this.mainNav.height(this.visualWidth/2);
+            this.mainNav.height(this.navHeight);
+            this.mainNavContent.height(this.navHeight); // SFG: adding 100% menu height in landscape -> content pages
 
 
 

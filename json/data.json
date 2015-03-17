@@ -482,6 +482,54 @@
             "price": "Free",
             "download_url": "http://"
           }]
+        },
+        { 
+          "id": 4,
+          "name": "Winged Floater", 
+          "visual": "images/products/winged-floater.jpg", 
+          "textcolor": "dark",
+          "embodiment": [
+            {
+            "type": "the Image",
+            "description": "Photo print / 3 perspectives",
+            "materials": "Inktjetprint on Hahnemühle art paper",
+            "series": "10 (3 of 10 Sold)",
+            "weight": "CHECK",
+            "dimensions": "CHECK (incl white, not framed. Contact us for framing options)",
+            "date" : "October 12th, 2014",
+            "signed": "ListedBlue N# (on the verso)",
+            "shipping": "Ships within 10 days. Comes in a brown mail tube",
+            "price": "€1445",
+            "download_url": ""
+            },
+            {
+            "type": "the Object",
+            "description": "Minilith, single stone, Queasy trapezoidal",
+            "materials": "Elemental blue stone, scratched slightly",
+            "series": "Unique",
+            "weight": "587 g",
+            "dimensions": "45 x 70 x 80 mm",
+            "date" : "ca. 1980",
+            "signed": "No",
+            "provenance": "Rataplan, Amsterdam, The Netherlands",
+            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "price": "On request",
+            "download_url": ""
+            },
+            {
+            "type": "the Download",
+            "description": "3D Scan",
+            "material": ".STL digital file",
+            "series": "Unlimited",
+            "size": "CHECK MB",
+            "faces/vertices": "CHECK (Not printed. Contact us for printing options)",
+            "date" : "November 14th, 2014",
+            "signed": "ListedBlue N# (imprint)",
+            "licence": "Creative Commons - Attribution - Share Alike",
+            "shipping": "FTP // HTTP download",
+            "price": "Free",
+            "download_url": "http://"
+          }]
         }
         ]
 }
