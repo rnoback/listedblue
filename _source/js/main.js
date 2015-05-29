@@ -112,6 +112,7 @@ var settings;
             this.mainNavIsVisible = false;
             this.colorArray = [];
             this.theBody = $('body.products');
+            this.theContent = $('body.content-page'); // SFG: adding orientation class to content pages
             this.theWindow = $(window);
             this.header = $('header');
             //this.footer = $('footer');
@@ -121,11 +122,14 @@ var settings;
             this.productOverlay = $('.product-overlay');
             this.productInfo = $('.product-info');
 
+            this.swipeIndicator = $('.swipe-indicator'); // SFG: adding swipe-indicator layer
+            
             this.productNavigationWrap = $('.product-navigation');
             this.btnNext = this.productNavigationWrap.find('.next');
             this.btnPrev = this.productNavigationWrap.find('.prev');
 
             this.mainNav = $('.products').find('.main-navigation');
+            this.mainNavContent = $('.content-page').find('.main-navigation'); // SFG: adding 100% nav height content pages
 
             this.selectedProductIndex = 0;
 
@@ -177,8 +181,9 @@ var settings;
             this.overlayCloseBtn.on('click', this.closeOverlay.bind(this));
             this.productOverlay.on('click', this.closeOverlay.bind(this));
 
-            this.mainNavToggle.on('click', this.toggleNav.bind(this));
-             
+            this.swipeIndicator.on('touchstart click', this.closeSwipeIndicator.bind(this)); // SFG: adding swipeIndicator overlay
+
+            this.mainNavToggle.on('click', this.toggleNav.bind(this));   
         },
 
         getProduct: function(index){
@@ -308,6 +313,7 @@ var settings;
 
             this.productOverlay.width( this.visualWidth );
             this.productOverlay.find('.column').height( this.visualWidth/2 );
+            this.productOverlay.find('.column-content > ul').css('line-height', ((this.visualWidth/2)/34) + 'px'); // SFG: adapting line-height to vertical height container div
 
            // this.productOverlay.height( this.visualWidth );
            
@@ -372,6 +378,10 @@ var settings;
             this.theBody.removeClass("is-landscape");
             this.mainVisual.css('height', (this.viewportHeight)+'px');
             this.mainVisual.css('width', 'auto');
+
+            this.swipeIndicator.css('height', (this.viewportHeight)+'px'); // SFG: .swipe-indicator height
+            this.swipeIndicator.css('width', (this.mainVisual.width())); // SFG: .swipe-indicator widht
+
             if(this.navHeight > 0){
                 this.mainNav.height(this.navHeight);
             }
@@ -391,14 +401,14 @@ var settings;
 
 
             // Center main visual 
-            var scrollTo = (this.mainVisual.width() - this.viewportWidth) / 2;
+            var scrollTo = Math.round((this.mainVisual.width() - this.viewportWidth) / 2); // SFG: rounded scrollTo (0 decimals)
 
-
-           /* console.log("this.mainVisual.width "+this.mainVisual.width());
+            window.scrollTo(scrollTo, 0);
+            
+/*          console.log("this.mainVisual.width "+this.mainVisual.width());
             console.log("this.viewportWidth "+this.viewportWidth);
             console.log("scrollto "+scrollTo);*/
 
-            window.scrollTo(scrollTo, 0);
         },
 
         setLandscapeMode: function(){
@@ -409,7 +419,8 @@ var settings;
             this.mainVisual.css('width', '100%');
             this.mainVisual.css('height', 'auto');
             this.setTextColor();
-            this.mainNav.height(this.visualWidth/2);
+            this.mainNav.height(this.navHeight);
+            this.mainNavContent.height(this.navHeight); // SFG: adding 100% menu height in landscape -> content pages
 
 
 
@@ -438,6 +449,14 @@ var settings;
             this.overlayCloseBtn.hide();
             this.mainNavToggle.show();
         },
+
+        // SFG: adding swipe indicator layer in portrait mode
+        closeSwipeIndicator:function(e){
+            this.swipeIndicator.addClass('inactive');
+            console.log("swipe indicator closed");
+        },
+        // end: swipe indicator layer
+
         toggleNav:function(e){
             var target = $(e.target);
             var menu = target.siblings('.main-navigation');
@@ -499,7 +518,8 @@ var settings;
             
             
             this.setMainVisial();
-        }
+        },
+
     };
     $(function() {
         LISTEDBLUE.init({
@@ -507,4 +527,7 @@ var settings;
             container: $('.product-wrap')
         });
     });
+    
 }(window.jQuery));
+
+

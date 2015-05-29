@@ -14,7 +14,7 @@
     <script type="text/javascript" src="js/vendor/modernizr-2.8.3.min.js"></script>
     <!-- SFG: importing jquery for headerbar hide/show, better done in js? -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <link rel="icon" type="img/ico" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/assets/favicon.ico">
     <link rel="stylesheet" href="css/styles.css" />
 
     <!--[if lt IE 9]>
@@ -31,9 +31,13 @@ header.landing so this behaviour doesnt conflict with other pages -->
     <script>
         $(window).scroll(function() {
                if ($(this).scrollTop() > 200) {
+                   /*$('h1.site-header.landing').css({"display": "block"});
+                   $('header.landing').css({"background-color": "#FFF"});*/
                    $('header.landing').fadeIn();
                } else {
-                   $('header.landing').fadeOut();
+                    /* $('h1.site-header.landing').css({"display": "none"});
+                    $('header.landing').css({"background-color": "transparent"}); */
+                    $('header.landing').fadeOut();
                }
         });
     </script>
@@ -50,20 +54,17 @@ header.landing so this behaviour doesnt conflict with other pages -->
 
     <div class="main-wrap">
         <header class="landing">
-            <h1 class="site-header">LISTEDBLUE</h1>
-
-<!-- SFG: we don't need a nav menu untill complete site is live 
-if correct the css styles have been set though ... revisit -->
-<!--                 <nav class="navigation-wrap">
+            <h1 class="site-header landing"><a href="index.html">LISTEDBLUE</a></h1>
+                 <nav class="navigation-wrap">
                         <ul class="main-navigation">
-                            <li class="nav active"><a href="collection.html">current COLLECTION</a></li>
+                            <li class="nav"><a href="collection.html">current COLLECTION</a></li>
                             <li class="nav"><a href="about.html">ABOUT ListedBlue</a></li>
                             <li class="nav"><a href="contact.html">CONTACT us</a></li>
-                            <li class="nav"><a href="diclaimer.html">TERMS and CONDITIONS</a></li>
+                            <li class="nav"><a href="tos.html">TERMS and CONDITIONS</a></li>
                         </ul>
                     <a href="#" class="btn-nav-toggle fa fa-bars"></a>
                     <a href="#" class="btn-close fa fa-times"></a>
-                </nav> -->
+                </nav>
         </header>
 
 <!-- SFG: hero content landing page -->
@@ -109,20 +110,20 @@ if correct the css styles have been set though ... revisit -->
                     <p></p>
                         <div class="collumn wrapper">
                         <div class="two collumn">
-                            <ol>  
-                                <li class="products list">Eastern Red Bat</li>
-                                <li class="products list">Golden Willow</li>
-                                <li class="products list">Common Ringlet</li>
-                                <li class="products list">Margined White</li>
-                                <li class="products list">Vidler's Alpine</li>
+                            <ol> 
+                                <li class="products list"><a href="#">Eastern Red Bat</a></li>
+                                <li class="products list"><a href="#">Golden Willow</a></li>
+                                <li class="products list"><a href="#">Common Ringlet</a></li>
+                                <li class="products list"><a href="#">Margined White</a></li>
+                                <li class="products list"><a href="#">Vidler's Alpine</a></li>
                             </ol>
                         </div>
                         <div class="two collumn right">
                             <ol>
-                                <li class="products list">Silver Birch</li>
-                                <li class="products list">Marsh Elder</li>
-                                <li class="products list">Pendulous Sedge</li>
-                                <li class="products list">Great Blue Heron</li>
+                                <li class="products list"><a href="#">Silver Birch</a></li>
+                                <li class="products list"><a href="#">Marsh Elder</a></li>
+                                <li class="products list"><a href="#">Pendulous Sedge</a></li>
+                                <li class="products list"><a href="#">Great Blue Heron</a></li>
                             </ol>
                         </div>
                         </div>
@@ -162,10 +163,10 @@ if correct the css styles have been set though ... revisit -->
                         <li>EMAIL: <a href="mailto:hello@listedblue.com">hello@listedblue.com</a></li>
                         <li>CALL: +31 6 11 33 59 15</li>
                         <li>&nbsp;</li>
-                        <li><a href="disclaimer.html">Terms Of Service</a></li>
+                        <li><a href="tos.html">TERMS and CONDITIONS</a></li>
                         <li><a href="disclaimer.html">Privacy Policy</a></li>
                         <li>&nbsp;</li>
-                        <li>&copy; ListedBlue 2015</li>
+                        <li>&copy; LISTEDBLUE 2015</li>
                     </ul>
 
                 </div>

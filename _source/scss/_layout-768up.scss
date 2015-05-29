@@ -26,11 +26,17 @@ body.content-page.landing{
 
 			.navigation-wrap {
 				.main-navigation{
+					width: 33.333334%;
+					text-align: left;
+					top: -1.5rem;
+					>li.nav:first-child{
+						padding: 104px 40px 10px 40px;
+					}
 				}
 			}
 		}
 		.main-inner{
-			padding: 0 24%;
+			padding: 96px 24% 4% 24%;
 			.content-wrap{
 				.fullwidth{
 				}

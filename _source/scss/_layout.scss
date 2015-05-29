@@ -1,5 +1,12 @@
+/*
+* SFG: These are the rules for the content pages (ai: all pages except collection.html)
+*/
+ 
+
+
+
 /* SFG: changing landing body background to white */
-body.content-page.landing{
+body.content-page{
 	background-color: #fff;
 	color: $extradarkgray;
 }
@@ -62,10 +69,25 @@ body.content-page.landing{
 		padding-top: 1.5rem;
 		left: 0;
 		right: 0;
+		top: 0;
 		margin-left: auto;
 		margin-right: auto;
 		display: none; // jquery to show/hide on scroll
-	    h1.site-header {
+	}
+	header{
+		position: fixed;
+		background: $white;
+		height: 3.4rem;
+		width: 100%;
+		z-index: 10;
+		padding-top: 1.5rem;
+		left: 0;
+		right: 0;
+		top: 0;
+		margin-left: auto;
+		margin-right: auto;
+
+	    h1.site-header.landing {
 	    }
 
 	    h1{
@@ -101,21 +123,23 @@ body.content-page.landing{
 				color: $extradarkgray;
 				position:absolute;
 				right: 0;
-				top: -1.5rem;
-				width: 33.333334%;
-				// opacity: 0.7;
+				top: 54px;
+				width: 100%;
+				text-align: center;
+				opacity: 1;
 				
 				li.nav{
 					padding: 10px 40px;
 				}
 				>li.nav:first-child{
-					padding: 80px 40px 10px 40px;
+					padding: 24px 40px 10px 40px;
 				}
 				>li.nav:last-child{
 					padding: 10px 40px 80px 40px;
 				}
-
+				.active a {color:$gray;}
 			}
+
 			a.btn-close{
 				position: fixed;
 				right: 16px;
@@ -146,7 +170,8 @@ body.content-page.landing{
 /* ! SFG: end header	 */
 
 		.main-inner{
-			padding: 0 20px;
+			padding: 96px 6% 0 6%;
+
 
 			.content-wrap{
 
@@ -215,7 +240,7 @@ body.content-page.landing{
 					}
 				}
 				.column.first{
-					padding-right: 4%;
+					Xpadding-right: 4%;
 				}
 				.fullwidth{
 					clear: both;
@@ -227,14 +252,13 @@ body.content-page.landing{
 			padding: 20px;
 			font-size: 0.75rem;
 			line-height: 1.2;
+			background: $blue;
 			a{
 				color: white;
 				&:hover{
 					text-decoration: none;
 				}
 			}
-
-			background: $blue;
 			.column{
 				margin: 40px 0;
 				color: $white;
@@ -258,67 +282,3 @@ body.content-page.landing{
 		}
 	}
 }
-
-/**
- * VH and VW units can cause issues on iOS devices: http://caniuse.com/#feat=viewport-units
- * 
- * To overcome this, create media queries that target the width, height, and orientation of iOS devices. 
- * It isn't optimal, but there is really no other way to solve the problem. In this example, I am fixing 
- * the height of element `.foo` â€”which is a full width and height cover image.
- *
- * iOS Resolution Quick Reference: http://www.iosres.com/
- */
-
-/** 
- * iPad with portrait orientation.
- */
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
-	.landingContainer {
-		height: 1024px;
-	}
-	.main-inner{
-		padding: 0 29%;
-	}
-}
-
-/** 
- * iPad with landscape orientation.
- */
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
-	.landingContainer {
-		height: 768px;
-	}
-  	.content-page.main-wrap.main-inner{
-		padding: 0 26%;
-	}
-}
-
-/**
- * iPhone 5
- * You can also target devices with aspect ratio.
- */
-@media screen and (device-aspect-ratio: 40/71) {
-	.landingContainer {
-	height: 500px;
-  	}
-}
-
-/**
- * iPhone 2-4S landscape
- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) { 
-	.landingContainer {
-	height: 320px;
-	}
-}
-
-/**
- * iPhone 2-4S portrait
- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
-	.landingContainer {
-	height: 480px;
-	}
-}
-
-

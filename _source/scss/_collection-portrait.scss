@@ -1,3 +1,6 @@
+/*
+* SFG: These are the rules for collection.html in portrait mode
+*/
 
 .is-portrait{
 	overflow: auto;
@@ -5,90 +8,36 @@
 
 	.main-wrap{
 
-		.iphoneStatusNavBar{
-			height: 64px;
-			display: none;
-		}
-		.product-wrap{
-			.product{
-				left:auto;
-			    right:auto;
-			    margin-left:auto;
-			    margin-right:auto;
-
-				.product-overlay{
-				    .column{
-
-				    	.column-content{
-				    		padding: 20% 10% 15% 10%;
-				    		font-size: 100%;
-				    		line-height: 1.7rem;
-
-				    		h2{
-				    			font-size: 2.4vh;
-				    			line-height: 3em;
-					    	}
-				    		span.header-name {
-				    		font-size:1.125rem;
-					    	}	
-
-					    	.btn_p{
-					    		bottom: 150px;
-				    		}
-				    	}
-				    }
-				}
-
-				.product-visual {
-					
-					img{
-						width: auto;
-						height: 100%;
-					}
-					
-				}
-				.product-info{
+				// SFG: adding swipe interaction layer
+				.swipe-indicator{
 					position: absolute;
-					bottom: 20px;
-					z-index: 11;
-					background: transparent;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					right: 0;
+					display: block;
 					text-align: center;
+					z-index: 2;
 
-					h2{
-						@include font-size(16);
-						width: 200px;
-						
+					img{
+						opacity: 0.8;
+						width: 60px;
+						height: 60px;
+						margin: 0;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						margin-left: -30px;
+						margin-top: -30px;
 					}
 
-					.product-navigation{
-						position: fixed;
-						text-align: center;
-						width: 100%;
-
-						.product-inner{
-							padding-top: 0;	
-					 		width: auto;
-					 		
-					 		h2{
-					 			font-size: 1.125rem;
-							}
-						 	a{
-
-							}
-							a.next{
-								padding: 6px 4rem;
-				    		}
-				    		a.prev{
-				    			padding: 6px 4rem;
-						    }
-						}
-					}
 				}
-			}
-		}
+				.inactive{
+					display: none;
+				}
+				// end swipte interaction layer
 
-		
-
+// Header ----------------------------------
 		header{
 			h1{
 				position: fixed;
@@ -104,6 +53,13 @@
 				    margin-left:auto;
 				    margin-right:auto;
 					width: 100%;
+					text-align: center;
+					z-index: -1;
+					padding-top: -1.5rem;
+					opacity: 0.8;
+					>li.nav:first-child{
+						padding: 124px 40px 10px 40px;
+					}
 				}
 				a.btn-close{
 					position: fixed;
@@ -112,10 +68,106 @@
 					position: fixed;
 				}
 			}
+		} /* end header */
 
+// Product ----------------------------------		
+		.product-wrap{
+			.product{
+				left:auto;
+			    right:auto;
+			    margin-left:auto;
+			    margin-right:auto;
 
+				.product-overlay{
+				    .column{
 
+				    	.column-content{
+				    		padding: 16% 10% 15% 10%;
+				    		font-size: 80%;
+				    		/* line-height: calc(10vh / 3.4); // SFG: obsolete, lineheight dynamic */
 
+				    		h2{
+				    			font-size: 2.4vh;
+				    			line-height: 3em;
+					    	}
+				    		span.header-name {
+				    		font-size:1.125rem;
+					    	}	
+
+					    	.btn_p{
+					    		bottom: 68px;
+				    		}
+				    	}
+				    }
+				}
+				.product-visual {
+					
+					img{
+						width: auto;
+						height: 100%;
+					}
+					
+				}
+				.product-info{
+					position: absolute;
+					bottom: 10px;
+					z-index: 11;
+					background: transparent;
+					text-align: center;
+
+					h2{
+						@include font-size(16);
+						/* width: 200px; */
+						
+					}
+
+					.product-navigation{
+						position: fixed;
+						text-align: center;
+						width: 100%;
+
+						.product-inner{
+							padding-top: 0;	
+					 		width: auto;
+
+					 		span.product-number{
+					 			padding-right: 20px;
+					 			font-size: 0.6rem;
+					 		}
+					 		
+					 		h2{
+					 			font-size: 1.125rem;
+							}
+						 	a{
+
+							}
+							a.next{
+								padding: 6px 2rem;
+				    		}
+				    		a.prev{
+				    			padding: 6px 2rem;
+						    }
+						}
+					} /* end .product-navigation */
+				} /* end .product-info */
+			} /* end .product */
+		} /* end .product-wrap */
+	} /* end .main-wrap */
+
+// Footer -------------------------------
+	footer{
+		.credits{
+			position: fixed;
+			bottom: 0;
+			text-align: center;
+			width: 100%;
+			font-size: 0.5rem;
+			color: $gray;
+			z-index: 1;
+			a {
+				color: $gray;
+				text-decoration: none;
+			}
 		}
-	}
-}
+	} /* end footer */
+} /* end .is-portrait */
