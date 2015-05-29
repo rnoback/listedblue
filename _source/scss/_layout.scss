@@ -60,20 +60,8 @@ body.content-page{
 * to the collection.css because its not imported
 */
 
-	header.landing{
-		position: fixed; // to keep the header on top
-		background: $white;
-		height: 3.4rem;
-		width: 100%;
-		z-index: 10;
-		padding-top: 1.5rem;
-		left: 0;
-		right: 0;
-		top: 0;
-		margin-left: auto;
-		margin-right: auto;
-		display: none; // jquery to show/hide on scroll
-	}
+
+	
 	header{
 		position: fixed;
 		background: $white;
@@ -87,8 +75,7 @@ body.content-page{
 		margin-left: auto;
 		margin-right: auto;
 
-	    h1.site-header.landing {
-	    }
+	    
 
 	    h1{
 			text-align: center;
@@ -167,7 +154,11 @@ body.content-page{
 			}
 		}
 	}
-/* ! SFG: end header	 */
+
+
+
+
+
 
 		.main-inner{
 			padding: 96px 6% 0 6%;
@@ -175,7 +166,6 @@ body.content-page{
 
 			.content-wrap{
 
-/* SFG: adding landing page below fold content  */
 				.fullwidth{
 					padding: 2.6rem 0 0 0;
 				}
@@ -280,5 +270,104 @@ body.content-page{
 				float: none;
 			}
 		}
+	}
+
+	.landing {
+
+		.sticky-header{
+			position:fixed;
+
+			background: $white;
+			height: 3.4rem;
+			width: 100%;	
+			padding-top: 1.5rem;
+			z-index: 10;
+			text-align: center;
+
+			display:none;
+
+		}
+
+		h1.site-header:after{
+			margin: -1rem 0 0 0.25rem;
+			content:" \2022";
+			display: inline-block;
+			position: absolute;
+			width: 0.75rem;
+			height: 0.75rem;
+			font-size: 2.6rem;
+			color: $blue;
+		
+		}
+		h1.site-header{
+			position:fixed;
+
+			background: $white;
+			height: 3.4rem;
+			width: 100%;	
+			padding-top: 1.5rem;
+			z-index: 10;
+			text-align: center;
+
+		}
+
+		h1.site-header:after{
+			margin: -1rem 0 0 0.25rem;
+			content:" \2022";
+			display: inline-block;
+			position: absolute;
+			width: 0.75rem;
+			height: 0.75rem;
+			font-size: 2.6rem;
+			color: $blue;
+		}
+
+		.navigation-wrap{
+			background: #fff;
+			position: fixed;
+			width: 100%;
+			z-index:20;
+			display:none;
+
+
+			
+			.main-navigation-landing{
+				
+				background: $white;
+				color: $extradarkgray;
+				position:absolute;
+				right: 0;
+				top: 54px;
+				width: 100%;
+				text-align: center;
+				opacity: 1;
+				
+				li.nav{
+					padding: 10px 40px;
+				}
+				>li.nav:first-child{
+					padding: 24px 40px 10px 40px;
+				}
+				>li.nav:last-child{
+					padding: 10px 40px 80px 40px;
+				}
+				.active a {color:$gray;}
+			}
+		}
+
+		a.btn-landing-nav-toggle{
+				position: fixed;
+				right: 16px;
+				font-size: 1.4rem;
+				text-decoration: none;
+				color: $extradarkgray;
+				z-index:30;
+			}
+			a.btn-landing-nav-toggle:after{
+				font-family: "Ctrl-Alt-Social-Icons";
+				content: "\e01a";
+				font-size: 3rem;
+			}
+
 	}
 }

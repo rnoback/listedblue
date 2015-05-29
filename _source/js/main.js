@@ -162,7 +162,7 @@ var settings;
            
             this.applyOrientation();
             this.setMainVisial();
-            //this.theWindow.on('scroll', this.scrollHandler.bind(this));
+            this.theWindow.on('scroll', this.scrollHandler.bind(this));
             this.theWindow.on('resize', this.resizeHandler.bind(this));
             // 
             /*this.theWindow.on("mousewheel", function() {
@@ -184,6 +184,8 @@ var settings;
             this.swipeIndicator.on('touchstart click', this.closeSwipeIndicator.bind(this)); // SFG: adding swipeIndicator overlay
 
             this.mainNavToggle.on('click', this.toggleNav.bind(this));   
+            $('.btn-landing-nav-toggle').on('click', this.toggleNavLanding.bind(this));
+            
         },
 
         getProduct: function(index){
@@ -494,9 +496,24 @@ var settings;
             }
         },
 
+        toggleNavLanding:function(e){
+            //var menu = target.siblings('.main-navigation-landing');
+            e.preventDefault();
+             if($(".landing .navigation-wrap").is(':visible')){
+                $(".navigation-wrap").hide();
+            }else{
+                $(".landing .navigation-wrap").show();
+            }
+
+        },
+            
         scrollHandler:function(){
-            /*var pos = this.theWindow.scrollLeft();
-            console.log("posLeft "+pos);*/
+            //console.log("test " + $(window).scrollTop());
+            if ( $(window).scrollTop() > 400) {
+                    $('.sticky-header').fadeIn();
+               } else {
+                    $('.sticky-header').fadeOut();
+               }
         },
 
         resizeHandler: function() {
