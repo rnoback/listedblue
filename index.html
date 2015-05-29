@@ -29,17 +29,17 @@
 <!-- SFG: adding some wonkie code to show/hide header element. Targetting
 header.landing so this behaviour doesnt conflict with other pages -->
     <script>
-        $(window).scroll(function() {
-               if ($(this).scrollTop() > 200) {
-                   /*$('h1.site-header.landing').css({"display": "block"});
-                   $('header.landing').css({"background-color": "#FFF"});*/
+       /* $(window).scroll(function() {
+               if ($(this).scrollTop() >400) {
+                 // $('h1.site-header.landing').css({"display": "block"});
+                   //$('header.landing').css({"background-color": "#FFF"});
                    $('header.landing').fadeIn();
                } else {
-                    /* $('h1.site-header.landing').css({"display": "none"});
-                    $('header.landing').css({"background-color": "transparent"}); */
+                    //$('h1.site-header.landing').css({"display": "none"});
+                    //$('header.landing').css({"background-color": "transparent"});
                     $('header.landing').fadeOut();
                }
-        });
+        });*/
     </script>
 <!-- SFG: end navheader -->
 
@@ -52,21 +52,22 @@ header.landing so this behaviour doesnt conflict with other pages -->
         <a href="http://www.google.com/chromeframe/?redirect=true">installeer Google Chrome Frame</a> om deze website toch te kunnen bekijken.</p>
     <![endif]-->
 
-    <div class="main-wrap">
-        <header class="landing">
-            <h1 class="site-header landing"><a href="index.html">LISTEDBLUE</a></h1>
-                 <nav class="navigation-wrap">
-                        <ul class="main-navigation">
-                            <li class="nav"><a href="collection.html">current COLLECTION</a></li>
-                            <li class="nav"><a href="about.html">ABOUT ListedBlue</a></li>
-                            <li class="nav"><a href="contact.html">CONTACT us</a></li>
-                            <li class="nav"><a href="tos.html">TERMS and CONDITIONS</a></li>
-                        </ul>
-                    <a href="#" class="btn-nav-toggle fa fa-bars"></a>
-                    <a href="#" class="btn-close fa fa-times"></a>
-                </nav>
-        </header>
+    <div class="main-wrap landing">
 
+        <h1 class="sticky-header"><a href="index.html">LISTEDBLUE</a></h1>
+
+
+        <nav class="navigation-wrap">
+            <h1 class="site-header"><a href="index.html">LISTEDBLUE</a></h1>
+            <ul class="main-navigation-landing">
+                <li class="nav"><a href="collection.html">current COLLECTION</a></li>
+                <li class="nav"><a href="about.html">ABOUT ListedBlue</a></li>
+                <li class="nav"><a href="contact.html">CONTACT us</a></li>
+                <li class="nav"><a href="tos.html">TERMS and CONDITIONS</a></li>
+            </ul>
+           
+        </nav>
+        <a href="#" class="btn-landing-nav-toggle"></a>
 <!-- SFG: hero content landing page -->
             <div class="landingContainer"> <!-- SFG: container for background image -->
                 <div class="logo"><img src="images/bg/lb_logo+tagline.png">
