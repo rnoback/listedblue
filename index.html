@@ -31,9 +31,13 @@ header.landing so this behaviour doesnt conflict with other pages -->
     <script>
         $(window).scroll(function() {
                if ($(this).scrollTop() > 200) {
+                   /*$('h1.site-header.landing').css({"display": "block"});
+                   $('header.landing').css({"background-color": "#FFF"});*/
                    $('header.landing').fadeIn();
                } else {
-                   $('header.landing').fadeOut();
+                    /* $('h1.site-header.landing').css({"display": "none"});
+                    $('header.landing').css({"background-color": "transparent"}); */
+                    $('header.landing').fadeOut();
                }
         });
     </script>
@@ -50,7 +54,7 @@ header.landing so this behaviour doesnt conflict with other pages -->
 
     <div class="main-wrap">
         <header class="landing">
-            <h1 class="site-header"><a href="index.html">LISTEDBLUE</a></h1>
+            <h1 class="site-header landing"><a href="index.html">LISTEDBLUE</a></h1>
                  <nav class="navigation-wrap">
                         <ul class="main-navigation">
                             <li class="nav"><a href="collection.html">current COLLECTION</a></li>
@@ -106,20 +110,20 @@ header.landing so this behaviour doesnt conflict with other pages -->
                     <p></p>
                         <div class="collumn wrapper">
                         <div class="two collumn">
-                            <ol>  
-                                <li class="products list">Eastern Red Bat</li>
-                                <li class="products list">Golden Willow</li>
-                                <li class="products list">Common Ringlet</li>
-                                <li class="products list">Margined White</li>
-                                <li class="products list">Vidler's Alpine</li>
+                            <ol> 
+                                <li class="products list"><a href="#">Eastern Red Bat</a></li>
+                                <li class="products list"><a href="#">Golden Willow</a></li>
+                                <li class="products list"><a href="#">Common Ringlet</a></li>
+                                <li class="products list"><a href="#">Margined White</a></li>
+                                <li class="products list"><a href="#">Vidler's Alpine</a></li>
                             </ol>
                         </div>
                         <div class="two collumn right">
                             <ol>
-                                <li class="products list">Silver Birch</li>
-                                <li class="products list">Marsh Elder</li>
-                                <li class="products list">Pendulous Sedge</li>
-                                <li class="products list">Great Blue Heron</li>
+                                <li class="products list"><a href="#">Silver Birch</a></li>
+                                <li class="products list"><a href="#">Marsh Elder</a></li>
+                                <li class="products list"><a href="#">Pendulous Sedge</a></li>
+                                <li class="products list"><a href="#">Great Blue Heron</a></li>
                             </ol>
                         </div>
                         </div>

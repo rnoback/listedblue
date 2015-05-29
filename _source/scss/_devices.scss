@@ -25,7 +25,6 @@
 	}
 
 .content-page .main-wrap header .navigation-wrap .main-navigation {
-
 		display:none;
 		background: $white;
 		color: $extradarkgray;
@@ -357,4 +356,17 @@
 	.landingContainer {
 	height: 960px; // important as the landingpage has a VH specification
   	}
+}
+
+/**
+* SFG: if touch device and orientation landscape; remove all elements except the product image & scale 100%
+*/
+@media only screen and (orientation : landscape) {
+	.touch header, .touch .product-info, .touch .swipe-indicator, .touch footer, .touch .column {
+		display: none;
+	}
+	.touch .product-visual img {
+		width: 100% !important;
+		height: 100% !important;
+	}
 }

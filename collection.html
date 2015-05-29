@@ -22,7 +22,7 @@
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="css/ie.css" />
     <![endif]-->
-    
+
     <title>ListedBlue</title>
     <meta name="description" content="">
 </head>
@@ -43,7 +43,7 @@
                     <li class="nav"><a href="contact.html">CONTACT us</a></li>
                     <li class="nav"><a href="tos.html">TERMS and CONDITIONS</a></li>
                 </ul>
-                <a href="#" class="btn-nav-toggle"></a>
+                <a href="#" class="btn-nav-toggle" title="Menu"></a>
                 <a href="#" class="btn-close"></a>
             </nav>
         </header>
@@ -51,9 +51,9 @@
         <section class="product-wrap">
             <script id="product-template" type="text/x-handlebars-template">
             {{#each this}}
-            <div class="product {{textcolor}}" >
+            <div class="product {{textcolor}}">
 
-                <div class="product-overlay">
+                <div class="product-overlay" title="Clear {{name}} details">
 
                     {{#each embodiment}}
                     <div class="column">
@@ -66,16 +66,16 @@
                                 {{/each}}
                             </ul>
                             {{#if download_url}}
-                                <a href="{{download_url}}" class="btn_p btn_gray_donwload {{type}}">Download</a>
+                                <a href="{{download_url}}" class="btn_p btn_gray_donwload {{type}}" title="Download">Download</a>
                             {{else}}
-                                <a href="mailto:hello@listedblue.com?subject=Enquiry: {{../../name}} / {{type}}" class="btn_p btn_gray_email {{type}}">Email Enquiry</a>
+                                <a href="mailto:hello@listedblue.com?subject=Enquiry: {{../../name}} / {{type}}" class="btn_p btn_gray_email {{type}}" title="Enquiry for {{type}}">Email Enquiry</a>
                             {{/if}}
                         </div>
                     </div>
                      {{/each}}
                 </div>
 
-                <div class="product-visual">
+                <div class="product-visual" title="Show {{name}} details">
                     
                     <img class="visual" src="{{visual}}" alt="{{name}}" />
                 </div>
@@ -83,26 +83,35 @@
                 <div class="product-info">   
                     <div class="product-navigation">
                         <div class="product-inner">
-                            <a class="prev" href="#"></a>
-                            <h2>{{name}}</h2>
-                            <a class="next" href="#"></a>
+                            <a class="prev" href="#" title="Previous collection item"></a>
+                            <h2><span class='product-number'># {{id}}</span>{{name}}
+                            <div id="productNumber"></div>
+
+                            </h2>
+                            <a class="next" href="#" title="Next collection item"></a>
                         </div>
                     </div>
                 </div>
             </div><!-- End Product -->
             {{/each}}
             </script>
+
         </section>
        <footer>
             <div class="credits"><a href="tos.html">TERMS and CONDITIONS</a> | &copy; LISTEDBLUE 2015</div>
         </footer>
+
+        <!-- SFG: adding swipe indicator layer -->
+        <div class="swipe-indicator">
+            <img src="images/assets/interact-icon.svg">
+        </div>
+        <!-- end interaction layer -->
+
     </div><!-- end main-wrap -->
 
     <script type="text/javascript" src="js/vendor/jquery-2.1.1.js"></script>
     <script type="text/javascript" src="js/vendor/jquery.easing.js"></script>
-
-
-
+   
     <script type="text/javascript" src="js/lib/handlebars-v2.0.0.js"></script>
 
     <!-- Added GreenSock Animation, drastically better animation performance -->
@@ -113,6 +122,42 @@
     <script type="text/javascript" src="js/script.js"></script>
 
     <script src="//localhost:35729/livereload.js"></script>
-   
+
+<script type="text/javascript">
+/*SFG: changing integer to roman numerals*/
+/*    function intToRoman(int) {
+
+    // create 2-dimensional array, each inner array containing 
+    // roman numeral representations of 1-9 in each respective 
+    // place (ones, tens, hundreds, etc...currently this handles
+    // integers from 1-3999, but could be easily extended)
+    var romanNumerals = [
+        ['', 'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix'], // ones
+        ['', 'x', 'xx', 'xxx', 'xl', 'l', 'lx', 'lxx', 'lxxx', 'xc'], // tens
+        ['', 'c', 'cc', 'ccc', 'cd', 'd', 'dc', 'dcc', 'dccc', 'cm'], // hundreds
+        ['', 'm', 'mm', 'mmm'] // thousands
+    ];
+
+    // split integer string into array and reverse array
+    var intArr = int.toString().split('').reverse(),
+        len = intArr.length,
+        romanNumeral = '',
+        i = len;
+
+    // starting with the highest place (for 3046, it would be the thousands 
+    // place, or 3), get the roman numeral representation for that place 
+    // and append it to the final roman numeral string
+    while (i--) {
+        romanNumeral += romanNumerals[ i ][ intArr[i] ];
+    }
+
+    return romanNumeral;
+
+}
+
+console.log( intToRoman(3046) ); // outputs mmmxlvi*/
+</script>
+
+
 </body>
 </html>

@@ -1,0 +1,50 @@
+<!-- SFG: this tests the hammer.js library for pan event handling (hide swipeincicator div)
+the software works as below, however in the LB markup the page scrolls left/right
+so no pan event is triggered -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hammer test</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- SFG: Added Hammer to allow better catching touch events (for swipeIndicator) -->
+    <script type="text/javascript" src="../js/lib/hammer-2.0.4.js"></script>	
+    <script type="text/javascript" src="../js/vendor/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="../js/vendor/jquery.easing.js"></script>
+
+
+
+<script type="text/javascript">
+$(window).load(function(){
+
+  var myElement = document.getElementById('myElement');
+
+  // create a simple instance
+  // by default, it only adds horizontal recognizers
+  var mc = new Hammer(myElement);
+
+  // let the pan gesture support all directions.
+  // this will block the vertical scrolling on a touch-device while on the element
+  mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+
+  // listen to events...
+  mc.on("panleft panright panup pandown tap press", function(ev) {
+      myElement.textContent = ev.type +" gesture detected.";
+  });
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div id="myElement" style = " background: silver;
+  height: 300px;
+  text-align: center;
+  font: 30px/300px Helvetica, Arial, sans-serif;"></div>
+
+</body>
+</html>
