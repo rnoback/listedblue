@@ -45,7 +45,7 @@ var settings;
             this.pubSub();
 
             $.subscribe('listedblue/data', function(e, data){
-                console.log(data.products);
+                console.log(data);
 
                 // sort on id
                 self.sortJSON(data.products, 'id');
@@ -61,6 +61,13 @@ var settings;
             });
         },
 
+        sortJSON:function(data, key){
+            return data.sort(function (a, b) {
+                var x = a[key];
+                var y = b[key];
+                return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+            });
+        },
 
         pubSub: function(){
             var o = $( {} );
@@ -86,58 +93,15 @@ var settings;
             this.setInterface();
         },
 
-        sortJSON:function(data, key){
-            return data.sort(function (a, b) {
-                var x = a[key];
-                var y = b[key];
-                return ((x < y) ? -1 : ((x > y) ? 1 : 0));
-            });
-        },
         fetch: function(){
 
             var self = this;
             $.getJSON(this.dataURL, function( data ) {
                 self.products = data.products;
 
-              
                 $.publish('listedblue/data', data);
-               
-               // $.map(data.products, function( product ) {
-                        
-
-                   /* product.sort(function(a, b) { 
-                        return  a.id - b.id ;
-                     });*/
-
-
-                      /// sum.push(product.id);
-
-
-                    
-               // });
-
-                //sum.sort(function(a, b){return a-b});
-               // console.log(sum);
-
-
-              /*  for (var item in data.products.product) {
-                    sum += data.products[ item ].id;
-                }*/
-                 
-                //console.log( sum ); // 3*/
-
-                //filter valis data from JSON and store in new Array
-                //$.map(data.products, function( product ){
-                   /* return {
-                        product_id: product.product_id,
-                        product_name: product.product_name,
-                        product_visual: product.product_visual
-                    };*/
-                //});
 
                 self.attachTemplate();
-                 
-                 //var timeout = setTimeout(self.setInterface.bind(self), 250);
                
             });
         },

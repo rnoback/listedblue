@@ -4,6 +4,7 @@
   "products" : [
         { 
           "id": 7,
+          "display_order": 10,
           "name": "Golden Willow", 
           "visual": "images/products/golden-willow.jpg", 
           "textcolor": "dark",
@@ -54,6 +55,7 @@
 
         { 
           "id": 6, 
+          "display_order": 9,
           "name": "Common Ringlet", 
           "visual": "images/products/common-ringlet.jpg",
           "textcolor": "dark", 
@@ -102,6 +104,7 @@
         },
         { 
           "id": 5,
+          "display_order": 8,
           "name": "Margined White", 
           "visual": "images/products/margined-white.jpg",
           "textcolor": "dark",
@@ -150,6 +153,7 @@
         },
         { 
           "id": 1,
+          "display_order": 7,
           "name": "Eastern Red Bat", 
           "visual": "images/products/eastern-red-bat.jpg",
           "textcolor": "dark",
@@ -198,6 +202,7 @@
         },
         { 
           "id": 3,
+          "display_order": 6,
           "name": "Vidler's Alpine",
           "visual": "images/products/vidlers-alpine.jpg",
           "textcolor": "dark",
@@ -244,7 +249,9 @@
             "download_url": "http://"
           }]
         },
-        { "id": 2,
+        { 
+            "id": 2,
+            "display_order": 5,
           "name": "Silver Birch",
           "visual": "images/products/silver-birch.jpg",
           "textcolor": "light",
@@ -293,6 +300,7 @@
         },
         { 
           "id": 9,
+          "display_order": 4,
           "name": "Marsh Elder",
           "visual": "images/products/marsh-elder.jpg",
           "textcolor": "dark",
@@ -341,6 +349,7 @@
         },
                 { 
           "id": 12,
+          "display_order": 3,
           "name": "Beach Groundsel", 
           "visual": "images/products/beach-groundsel.jpg",
           "textcolor": "dark",
@@ -389,6 +398,7 @@
         },
         { 
           "id": 8,
+          "display_order": 2,
           "name": "Pendulous Sedge", 
           "visual": "images/products/pendulous-sedge.jpg",
           "textcolor": "dark",
@@ -437,6 +447,7 @@
         },
         { 
           "id": 11,
+          "display_order": 1,
           "name": "Great Blue Heron", 
           "visual": "images/products/great-blue-heron.jpg", 
           "textcolor": "dark",
