@@ -499,10 +499,22 @@ var settings;
         toggleNavLanding:function(e){
             //var menu = target.siblings('.main-navigation-landing');
             e.preventDefault();
+             $(".landing .navigation-wrap").height(this.navHeight);
              if($(".landing .navigation-wrap").is(':visible')){
                 $(".navigation-wrap").hide();
             }else{
+                console.log("this.isPortrait "+ this.isPortrait);
                 $(".landing .navigation-wrap").show();
+               /* if(this.theWindow.width() < 768){
+
+                         $(".landing .navigation-wrap").height("auto");
+                    
+                   
+                }else{
+                    //if(this.navHeight > 0){
+                        $(".landing .navigation-wrap").height(this.navHeight);
+                    //  }
+                }*/
             }
 
         },
@@ -524,7 +536,7 @@ var settings;
             this.viewportWidth = this.theWindow.outerWidth();
             this.heightTotal = this.mainVisual.height();
             this.productVisualHeight = this.viewportHeight - this.restHeigth;
-
+            $(".landing .navigation-wrap").hide();
 
             /*console.log("this.viewportHeight "+this.viewportHeight);
             console.log("this.restHeigth "+this.restHeigth);*/

@@ -74,6 +74,9 @@ body.content-page.landing{
 				}
 			}
 		}
+
+		
+
 		footer{
 			background: $blue;
 			a{
@@ -90,5 +93,20 @@ body.content-page.landing{
 				}
 			}
 		}
+
+
 	}
+
+	.landing {
+			.navigation-wrap{
+				background: #fff;
+				position: fixed;
+				width: 33%;
+				right:0;
+				display:none;
+				.main-navigation-landing{
+					text-align: left;
+				}
+			}
+		}
 }
