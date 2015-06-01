@@ -4,6 +4,7 @@
   "products" : [
         { 
           "id": 7,
+          "display_order": 12,
           "romanid": "vii",
           "name": "Golden Willow", 
           "visual": "images/products/golden-willow.jpg", 
@@ -55,6 +56,7 @@
 
         { 
           "id": 6,
+          "display_order": 11,
           "romanid": "vi",
           "name": "Common Ringlet", 
           "visual": "images/products/common-ringlet.jpg",
@@ -104,6 +106,7 @@
         },
         { 
           "id": 5,
+          "display_order": 10,
           "romanid": "v",
           "name": "Margined White", 
           "visual": "images/products/margined-white.jpg",
@@ -153,6 +156,7 @@
         },
         { 
           "id": 1,
+          "display_order": 9,
           "romanid": "i",
           "name": "Eastern Red Bat", 
           "visual": "images/products/eastern-red-bat.jpg",
@@ -205,6 +209,7 @@
         },
         { 
           "id": 3,
+          "display_order": 8,
           "romanid": "iii",
           "name": "Vidler's Alpine",
           "visual": "images/products/vidlers-alpine.jpg",
@@ -254,6 +259,7 @@
         },
         {
             "id": 2,
+            "display_order": 7,
             "romanid": "ii",
           "name": "Silver Birch",
           "visual": "images/products/silver-birch.jpg",
@@ -303,6 +309,7 @@
         },
         { 
           "id": 9,
+          "display_order": 6,
           "romanid": "ix",
           "name": "Marsh Elder",
           "visual": "images/products/marsh-elder.jpg",
@@ -352,6 +359,7 @@
         },
                 { 
           "id": 12,
+          "display_order": 5,
           "romanid": "xii",
           "name": "Beach Groundsel", 
           "visual": "images/products/beach-groundsel.jpg",
@@ -401,6 +409,7 @@
         },
         { 
           "id": 8,
+          "display_order": 4,
           "romanid": "viii",
           "name": "Pendulous Sedge", 
           "visual": "images/products/pendulous-sedge.jpg",
@@ -450,6 +459,7 @@
         },
         { 
           "id": 11,
+          "display_order": 3,
           "romanid": "xi",
           "name": "Great Blue Heron", 
           "visual": "images/products/great-blue-heron.jpg", 
@@ -499,6 +509,7 @@
         },
         { 
           "id": 10,
+          "display_order": 2,
           "romanid": "x",
           "name": "Figure Of Eight ", 
           "visual": "images/products/figure-of-eight.jpg", 
@@ -548,6 +559,7 @@
         },
         { 
           "id": 13,
+          "display_order": 1,
           "romanid": "xiii",
           "name": "Dune Gentian", 
           "visual": "images/products/dune-gentian.jpg", 
@@ -597,6 +609,7 @@
         },
         { 
           "id": 15,
+          "display_order": 0,
           "romanid": "xv",
           "name": "an Eyebright", 
           "visual": "images/products/an-eyebright.jpg", 
