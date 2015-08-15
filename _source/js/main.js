@@ -601,6 +601,7 @@ var settings;
                }
         },
 
+
         resizeHandler: function() {
             
             this.applyOrientation();
