@@ -41,9 +41,9 @@ body.content-page{
 		text-align: center;
 		
 		img {
-			width: 100%;
+			/* width: 100%; */
 			height: auto;
-			margin-bottom: 2rem;
+			margin-bottom: 4rem;
 		}
 	}
 
@@ -80,16 +80,12 @@ body.content-page{
 	    h1{
 			text-align: center;
 			letter-spacing: 1px;
-			color: $extradarkgray;
-			padding-top: 0.2rem;
-
-			a{
-				text-decoration: none;
-				color:$extradarkgray;
-			}
+			// color: $extradarkgray; // duplicate rule
+			// padding-top: 0.2rem; // screws up vertical positioning 
 		}
 
-		h1:after{
+/* 		SFG: remove blue pale dot from header
+		h1:after{ 
 			margin: -1rem 0 0 0.25rem;
 			content:" \2022";
 			display: inline-block;
@@ -98,7 +94,7 @@ body.content-page{
 			height: 0.75rem;
 			font-size: 2.6rem;
 			color: $blue;
-		}
+		} */
 
 		.navigation-wrap{
 			position: relative;
@@ -138,19 +134,19 @@ body.content-page{
 			a.btn-close:after{
 				font-family: "Ctrl-Alt-Social-Icons";
 				content: "\e01b";
-				font-size: 3rem;
+				font-size: 2.4rem;
 			}
 			a.btn-nav-toggle{
 				position: fixed;
 				right: 16px;
-				font-size: 1.4rem;
+				font-size: 1.0rem;
 				text-decoration: none;
 				color: $extradarkgray;
 			}
 			a.btn-nav-toggle:after{
 				font-family: "Ctrl-Alt-Social-Icons";
 				content: "\e01a";
-				font-size: 3rem;
+				font-size: 2.4rem;
 			}
 		}
 	}
@@ -283,12 +279,28 @@ body.content-page{
 			padding-top: 1.5rem;
 			z-index: 10;
 			text-align: center;
-
 			display:none;
+			letter-spacing: 1px;
 
+			a {
+				text-decoration: none;
+  				color: #0f0606;
+			}
+
+/* SFG: remove pale blue dot from header */
+/* 			:after{
+				margin: -1rem 0 0 0.25rem;
+				content:" \2022";
+				display: inline-block;
+				position: absolute;
+				width: 0.75rem;
+				height: 0.75rem;
+				font-size: 2.6rem;
+				color: $blue;
+			} */
 		}
-
-		h1.site-header:after{
+/* SFG: remove pale blue dot from header in menu */
+/* 		h1.site-header:after{
 			margin: -1rem 0 0 0.25rem;
 			content:" \2022";
 			display: inline-block;
@@ -297,29 +309,20 @@ body.content-page{
 			height: 0.75rem;
 			font-size: 2.6rem;
 			color: $blue;
-		
-		}
+		} */
 		h1.site-header{
 			position:fixed;
-
 			background: $white;
 			height: 3.4rem;
 			width: 100%;	
 			padding-top: 1.5rem;
 			z-index: 10;
 			text-align: center;
+			letter-spacing: 1px;
 
-		}
-
-		h1.site-header:after{
-			margin: -1rem 0 0 0.25rem;
-			content:" \2022";
-			display: inline-block;
-			position: absolute;
-			width: 0.75rem;
-			height: 0.75rem;
-			font-size: 2.6rem;
-			color: $blue;
+			a:hover{
+				color: $extradarkgray;
+			}
 		}
 
 		.navigation-wrap{
@@ -357,11 +360,12 @@ body.content-page{
 
 		a.btn-landing-nav-toggle{
 				position: fixed;
-				right: 16px;
+				right: 6px;
 				font-size: 1.4rem;
 				text-decoration: none;
 				color: $extradarkgray;
 				z-index:30;
+				padding-top: 1.5rem;
 			}
 			a.btn-landing-nav-toggle:after{
 				font-family: "Ctrl-Alt-Social-Icons";
@@ -369,5 +373,11 @@ body.content-page{
 				font-size: 3rem;
 			}
 
+	}
+}
+
+@media all and (orientation: portrait) { 
+	.landingContainer .logo img {
+		width: 100%;
 	}
 }

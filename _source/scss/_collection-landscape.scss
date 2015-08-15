@@ -39,15 +39,18 @@
 			letter-spacing: 1px;
 			height: 50px;
 			color: $extradarkgray;
-			padding-top: 0.2rem;
+			// padding-top: 0.2rem; // screws up vertical positioning
 
 			a{
 				text-decoration: none;
 				color:$extradarkgray;
 			}
-
+			a.textlight{
+				color: #white !important;
+			}
 		}
 
+/* 	SFG: removing pale blue dot from header
 		h1:after{
 			margin: -1rem 0 0 0.25rem;
 			content:" \2022";
@@ -57,7 +60,7 @@
 			height: 0.75rem;
 			font-size: 2.6rem;
 			color: $blue;
-		}
+		} */
 		.navigation-wrap{
 			position: relative;
 			margin: 0 auto;
@@ -94,19 +97,19 @@
 			a.btn-close:after{
 				font-family: "Ctrl-Alt-Social-Icons";
 				content: "\e01b";
-				font-size: 3rem;
+				font-size: 2.4rem;
 			}
 			a.btn-nav-toggle{
 				position: absolute;
 				right: 6px;
-				font-size: 1.4rem;
+				font-size: 1.0rem;
 				text-decoration: none;
 				color: $extradarkgray;
 			}
 			a.btn-nav-toggle:after{
 				font-family: "Ctrl-Alt-Social-Icons";
 				content: "\e01a";
-				font-size: 3rem;
+				font-size: 2.4rem;
 			}
 		} /* end .navigation-wrap */
 	} /* end header */
@@ -251,9 +254,8 @@
 				 		padding-top: 23px;
 
 
-					 	span.product-number{
-					 		padding-right: 20px;
-					 		font-size: 0.8rem;
+					 	>h5.product-number{
+					 		font-size: 10px;
 					 	}
 				 		
 				 		h2{
