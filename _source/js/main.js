@@ -113,7 +113,6 @@ var settings;
             this.mainNavIsVisible = false;
             this.colorArray = [];
             this.theBody = $('body.products');
-            this.theContent = $('body.content-page'); // SFG: adding orientation class to content pages
             this.theWindow = $(window);
             this.header = $('header');
             //this.footer = $('footer');
@@ -123,6 +122,8 @@ var settings;
             this.productOverlay = $('.product-overlay');
             this.productInfo = $('.product-info');
 
+            this.heroWrapper = $('.hero-wrapper'); // SFG: adding rule for landingpage visual
+            this.heroVisual = $('.hero-visual'); // SFG: adding rule for hero image
             this.swipeIndicator = $('.swipe-indicator'); // SFG: adding swipe-indicator layer
             
             this.productNavigationWrap = $('.product-navigation');
@@ -454,6 +455,16 @@ var settings;
             this.mainVisual.css('height', (this.viewportHeight)+'px');
             this.mainVisual.css('width', 'auto');
 
+            /*SFG: adding heroWrapper rules*/
+            this.heroWrapper.addClass('is-portrait');
+            this.heroWrapper.removeClass('is-landscape');
+            this.heroWrapper.css('height', (this.viewportHeight)+'px');
+            this.heroWrapper.css('width', 'auto');
+            this.heroVisual.css('height', '100%');
+            this.heroVisual.css('width', '100%');
+            this.heroVisual.css('position', 'relative');
+            /*end landingVisual rule*/
+
             this.swipeIndicator.css('height', (this.viewportHeight)+'px'); // SFG: .swipe-indicator height
             this.swipeIndicator.css('width', (this.mainVisual.width())); // SFG: .swipe-indicator widht
 
@@ -497,6 +508,15 @@ var settings;
             this.mainNav.height(this.navHeight);
             this.mainNavContent.height(this.navHeight); // SFG: adding 100% menu height in landscape -> content pages
 
+            /*SFG: adding heroWrapper rules*/
+            this.heroWrapper.removeClass('is-portrait');
+            this.heroWrapper.addClass('is-landscap');
+            this.heroWrapper.css('width', (this.viewportWidth)+'px');
+            this.heroWrapper.css('width', '100%');
+            this.heroVisual.css('height', 'auto');
+            this.heroVisual.css('width', '100%');
+            this.heroVisual.css('position', 'relative');
+            /*end landingVisual rule*/
 
 
             //this.header.width('100%');

@@ -20,7 +20,7 @@
 		height: 3.4rem;
 		width: 100%;
 		z-index: 10;
-		padding-top: 1.5rem;
+		padding-top: 16px;
 		left: 0;
 		right: 0;
 		margin-left: auto;
@@ -48,7 +48,7 @@
 
 		}
 
-		h1:after{
+/* 		h1:after{
 			margin: -1rem 0 0 0.25rem;
 			content:" \2022";
 			display: inline-block;
@@ -57,7 +57,7 @@
 			height: 0.75rem;
 			font-size: 2.6rem;
 			color: $blue;
-		}
+		} */
 		.navigation-wrap{
 			position: relative;
 			margin: 0 auto;
@@ -250,11 +250,6 @@
 				 		width: 33.3334%;
 				 		padding-top: 23px;
 
-
-					 	span.product-number{
-					 		padding-right: 20px;
-					 		font-size: 0.8rem;
-					 	}
 				 		
 				 		h2{
 							display: inline-block;

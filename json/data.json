@@ -3,11 +3,11 @@
   "credits" : "LB 2014",
   "products" : [
         { 
-          "id": 7,
-          "romanid": "vii",
-          "name": "Golden Willow", 
-          "visual": "images/products/golden-willow.jpg", 
-          "textcolor": "dark",
+        "id": 7,
+        "display_order": 1,
+        "name": "Golden Willow", 
+        "visual": "images/products/golden-willow.jpg", 
+        "textcolor": "dark",
           
           "embodiment": [
             {
@@ -55,7 +55,7 @@
 
         { 
           "id": 6,
-          "romanid": "vi",
+          "display_order": 2,
           "name": "Common Ringlet", 
           "visual": "images/products/common-ringlet.jpg",
           "textcolor": "dark", 
@@ -104,7 +104,7 @@
         },
         { 
           "id": 5,
-          "romanid": "v",
+          "display_order": 3,
           "name": "Margined White", 
           "visual": "images/products/margined-white.jpg",
           "textcolor": "dark",
@@ -153,7 +153,7 @@
         },
         { 
           "id": 1,
-          "romanid": "i",
+          "display_order": 4,
           "name": "Eastern Red Bat", 
           "visual": "images/products/eastern-red-bat.jpg",
           "textcolor": "dark",
@@ -205,7 +205,7 @@
         },
         { 
           "id": 3,
-          "romanid": "iii",
+          "display_order": 5,
           "name": "Vidler's Alpine",
           "visual": "images/products/vidlers-alpine.jpg",
           "textcolor": "dark",
@@ -254,7 +254,7 @@
         },
         {
             "id": 2,
-            "romanid": "ii",
+            "display_order": 6,
           "name": "Silver Birch",
           "visual": "images/products/silver-birch.jpg",
           "textcolor": "light",
@@ -303,7 +303,7 @@
         },
         { 
           "id": 9,
-          "romanid": "ix",
+          "display_order": 7,
           "name": "Marsh Elder",
           "visual": "images/products/marsh-elder.jpg",
           "textcolor": "dark",
@@ -352,7 +352,7 @@
         },
                 { 
           "id": 12,
-          "romanid": "xii",
+          "display_order": 8,
           "name": "Beach Groundsel", 
           "visual": "images/products/beach-groundsel.jpg",
           "textcolor": "dark",
@@ -400,206 +400,10 @@
           }]
         },
         { 
-          "id": 8,
-          "romanid": "viii",
-          "name": "Pendulous Sedge", 
-          "visual": "images/products/pendulous-sedge.jpg",
-          "textcolor": "dark",
-          "embodiment": [
-            {
-            "type": "the Image",
-            "description": "Photo print / 3 perspectives",
-            "materials": "Inktjetprint on Hahnemühle art paper",
-            "series": "10 (3 of 10 Sold)",
-            "weight": "CHECK",
-            "dimensions": "CHECK (incl white, not framed. Contact us for framing options)",
-            "date" : "October 12th, 2014",
-            "signed": "ListedBlue N# (on the verso)",
-            "shipping": "Ships within 10 days. Comes in a brown mail tube",
-            "price": "€1445",
-            "download_url": ""
-            },
-            {
-            "type": "the Object",
-            "description": "Wooden cup",
-            "material": "Cedar single piece of wood",
-            "series": "Unique",
-            "weight": "194 g",
-            "dimensions": "148 x 103 x 82 mm",
-            "date" : "Unknown",
-            "signed": "JZ / SPAR /  S3A (on the verso)",
-            "provenance": "2Swift, Arnhem, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
-            "price": "On request",
-            "download_url": ""
-          },
-            {
-            "type": "the Download",
-            "description": "3D Scan",
-            "material": ".STL digital file",
-            "series": "Unlimited",
-            "size": "CHECK MB",
-            "faces/vertices": "CHECK (Not printed. Contact us for printing options)",
-            "date" : "November 14th, 2014",
-            "signed": "ListedBlue N# (imprint)",
-            "licence": "Creative Commons - Attribution - Share Alike",
-            "shipping": "FTP // HTTP download",
-            "price": "Free",
-            "download_url": "http://"
-          }]
-        },
-        { 
           "id": 11,
-          "romanid": "xi",
+          "display_order": 9,
           "name": "Great Blue Heron", 
           "visual": "images/products/great-blue-heron.jpg", 
-          "textcolor": "dark",
-          "embodiment": [
-            {
-            "type": "the Image",
-            "description": "Photo print / 3 perspectives",
-            "materials": "Inktjetprint on Hahnemühle art paper",
-            "series": "10 (3 of 10 Sold)",
-            "weight": "CHECK",
-            "dimensions": "CHECK (incl white, not framed. Contact us for framing options)",
-            "date" : "October 12th, 2014",
-            "signed": "ListedBlue N# (on the verso)",
-            "shipping": "Ships within 10 days. Comes in a brown mail tube",
-            "price": "€1445",
-            "download_url": ""
-            },
-            {
-            "type": "the Object",
-            "description": "Minilith, single stone, Queasy trapezoidal",
-            "materials": "Elemental blue stone, scratched slightly",
-            "series": "Unique",
-            "weight": "587 g",
-            "dimensions": "45 x 70 x 80 mm",
-            "date" : "ca. 1980",
-            "signed": "No",
-            "provenance": "Rataplan, Amsterdam, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
-            "price": "On request",
-            "download_url": ""
-            },
-            {
-            "type": "the Download",
-            "description": "3D Scan",
-            "material": ".STL digital file",
-            "series": "Unlimited",
-            "size": "CHECK MB",
-            "faces/vertices": "CHECK (Not printed. Contact us for printing options)",
-            "date" : "November 14th, 2014",
-            "signed": "ListedBlue N# (imprint)",
-            "licence": "Creative Commons - Attribution - Share Alike",
-            "shipping": "FTP // HTTP download",
-            "price": "Free",
-            "download_url": "http://"
-          }]
-        },
-        { 
-          "id": 10,
-          "romanid": "x",
-          "name": "Figure Of Eight ", 
-          "visual": "images/products/figure-of-eight.jpg", 
-          "textcolor": "dark",
-          "embodiment": [
-            {
-            "type": "the Image",
-            "description": "Photo print / 3 perspectives",
-            "materials": "Inktjetprint on Hahnemühle art paper",
-            "series": "10 (3 of 10 Sold)",
-            "weight": "CHECK",
-            "dimensions": "CHECK (incl white, not framed. Contact us for framing options)",
-            "date" : "October 12th, 2014",
-            "signed": "ListedBlue N# (on the verso)",
-            "shipping": "Ships within 10 days. Comes in a brown mail tube",
-            "price": "€1445",
-            "download_url": ""
-            },
-            {
-            "type": "the Object",
-            "description": "Minilith, single stone, Queasy trapezoidal",
-            "materials": "Elemental blue stone, scratched slightly",
-            "series": "Unique",
-            "weight": "587 g",
-            "dimensions": "45 x 70 x 80 mm",
-            "date" : "ca. 1980",
-            "signed": "No",
-            "provenance": "Rataplan, Amsterdam, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
-            "price": "On request",
-            "download_url": ""
-            },
-            {
-            "type": "the Download",
-            "description": "3D Scan",
-            "material": ".STL digital file",
-            "series": "Unlimited",
-            "size": "CHECK MB",
-            "faces/vertices": "CHECK (Not printed. Contact us for printing options)",
-            "date" : "November 14th, 2014",
-            "signed": "ListedBlue N# (imprint)",
-            "licence": "Creative Commons - Attribution - Share Alike",
-            "shipping": "FTP // HTTP download",
-            "price": "Free",
-            "download_url": "http://"
-          }]
-        },
-        { 
-          "id": 13,
-          "romanid": "xiii",
-          "name": "Dune Gentian", 
-          "visual": "images/products/dune-gentian.jpg", 
-          "textcolor": "dark",
-          "embodiment": [
-            {
-            "type": "the Image",
-            "description": "Photo print / 3 perspectives",
-            "materials": "Inktjetprint on Hahnemühle art paper",
-            "series": "10 (3 of 10 Sold)",
-            "weight": "CHECK",
-            "dimensions": "CHECK (incl white, not framed. Contact us for framing options)",
-            "date" : "October 12th, 2014",
-            "signed": "ListedBlue N# (on the verso)",
-            "shipping": "Ships within 10 days. Comes in a brown mail tube",
-            "price": "€1445",
-            "download_url": ""
-            },
-            {
-            "type": "the Object",
-            "description": "Minilith, single stone, Queasy trapezoidal",
-            "materials": "Elemental blue stone, scratched slightly",
-            "series": "Unique",
-            "weight": "587 g",
-            "dimensions": "45 x 70 x 80 mm",
-            "date" : "ca. 1980",
-            "signed": "No",
-            "provenance": "Rataplan, Amsterdam, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
-            "price": "On request",
-            "download_url": ""
-            },
-            {
-            "type": "the Download",
-            "description": "3D Scan",
-            "material": ".STL digital file",
-            "series": "Unlimited",
-            "size": "CHECK MB",
-            "faces/vertices": "CHECK (Not printed. Contact us for printing options)",
-            "date" : "November 14th, 2014",
-            "signed": "ListedBlue N# (imprint)",
-            "licence": "Creative Commons - Attribution - Share Alike",
-            "shipping": "FTP // HTTP download",
-            "price": "Free",
-            "download_url": "http://"
-          }]
-        },
-        { 
-          "id": 15,
-          "romanid": "xv",
-          "name": "an Eyebright", 
-          "visual": "images/products/an-eyebright.jpg", 
           "textcolor": "dark",
           "embodiment": [
             {
