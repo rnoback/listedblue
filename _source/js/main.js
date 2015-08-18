@@ -456,7 +456,7 @@ var settings;
             this.mainVisual.css('width', 'auto');
 
             /*SFG: adding heroWrapper rules*/
-            this.heroWrapper.addClass('is-portrait');
+            //this.heroWrapper.addClass('is-portrait');
             this.heroWrapper.removeClass('is-landscape');
             this.heroWrapper.css('height', (this.viewportHeight)+'px');
             this.heroWrapper.css('width', 'auto');
@@ -488,8 +488,8 @@ var settings;
 
             // Center main visual 
             var scrollTo = Math.round((this.mainVisual.width() - this.viewportWidth) / 2); // SFG: rounded scrollTo (0 decimals)
-
-            window.scrollTo(scrollTo, 0);
+            var yPos = $(window).scrollTop();
+            window.scrollTo(scrollTo, yPos);
             
 /*          console.log("this.mainVisual.width "+this.mainVisual.width());
             console.log("this.viewportWidth "+this.viewportWidth);
@@ -612,13 +612,13 @@ var settings;
 
         },
             
-        scrollHandler:function(){
-            //console.log("test " + $(window).scrollTop());
+        scrollHandler:function(e){
+          
             if ( $(window).scrollTop() > 400) {
-                    $('.sticky-header').fadeIn();
-               } else {
-                    $('.sticky-header').fadeOut();
-               }
+                $('.sticky-header').fadeIn();
+            } else {
+                $('.sticky-header').fadeOut();
+            }
         },
 
 
