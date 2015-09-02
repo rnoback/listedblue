@@ -256,8 +256,6 @@ var settings;
         },
 
 
-
-
         getProduct: function(index){
             return $(this.allProducts[index]);
         },
@@ -556,8 +554,7 @@ var settings;
             var target = $(e.target);
             var menu = target.siblings('.main-navigation');
             
-
-
+          
             if(this.mainNavIsVisible){
                // menu.hide();
 /*                console.log("go on");
@@ -576,14 +573,16 @@ var settings;
             }else{
                 //menu.height(this.visualWidth/2);
                 menu.show();
+                //Dirty bug fix, to strech white bg a little
+                var h = this.navHeight+=25;
                 if(this.isPortrait){
                     if(this.navHeight > 0){
-                        menu.height(this.navHeight);
+                        menu.height(h);
                     }
                    
                 }else{
                     if(this.visualWidth > 0){
-                        menu.height(this.navHeight);
+                        menu.height(h);
                     }
                 }
             }
