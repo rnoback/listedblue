@@ -4,7 +4,7 @@
   "products" : [
         { 
         "id": 7,
-        "display_order": 1,
+        "display_order": 2,
         "name": "Golden Willow", 
         "visual": "images/products/golden-willow.jpg", 
         "textcolor": "dark",
@@ -46,7 +46,7 @@
             "faces/vertices": "CHECK (Not printed. Contact us for printing options)",
             "date" : "November 14th, 2014",
             "signed": "ListedBlue N# (imprint)",
-            "licence": "Creative Commons - Attribution - Share Alike",
+            "licence": "CC Attribution-NonCommercial 4.0 International",
             "shipping": "FTP // HTTP download",
             "price": "Free",
             "download_url": "http://"
@@ -55,7 +55,7 @@
 
         { 
           "id": 6,
-          "display_order": 2,
+          "display_order": 8,
           "name": "Common Ringlet", 
           "visual": "images/products/common-ringlet.jpg",
           "textcolor": "dark", 
@@ -96,7 +96,7 @@
             "faces/vertices": "CHECK (Not printed. Contact us for printing options)",
             "date" : "November 14th, 2014",
             "signed": "ListedBlue N# (imprint)",
-            "licence": "Creative Commons - Attribution - Share Alike",
+            "licence": "CC Attribution-NonCommercial 4.0 International",
             "shipping": "FTP // HTTP download",
             "price": "Free",
             "download_url": "http://"
@@ -104,7 +104,7 @@
         },
         { 
           "id": 5,
-          "display_order": 3,
+          "display_order": 6,
           "name": "Margined White", 
           "visual": "images/products/margined-white.jpg",
           "textcolor": "dark",
@@ -145,7 +145,7 @@
             "faces/vertices": "CHECK (Not printed. Contact us for printing options)",
             "date" : "November 14th, 2014",
             "signed": "ListedBlue N# (imprint)",
-            "licence": "Creative Commons - Attribution - Share Alike",
+            "licence": "CC Attribution-NonCommercial 4.0 International",
             "shipping": "FTP // HTTP download",
             "price": "Free",
             "download_url": "http://"
@@ -153,7 +153,7 @@
         },
         { 
           "id": 1,
-          "display_order": 4,
+          "display_order": 1,
           "name": "Eastern Red Bat", 
           "visual": "images/products/eastern-red-bat.jpg",
           "textcolor": "dark",
@@ -196,7 +196,7 @@
             "faces/vertices": "CHECK",
             "date" : "November 14th, 2014",
             "signed": "ListedBlue N# (imprint)",
-            "licence": "Creative Commons - Attribution - Share Alike",
+            "licence": "CC Attribution-NonCommercial 4.0 International",
             "shipping": "FTP // HTTP download",
             "presentation": "Contact us for 3D printing options",
             "price": "Free",
@@ -205,7 +205,7 @@
         },
         { 
           "id": 3,
-          "display_order": 5,
+          "display_order": 4,
           "name": "Vidler's Alpine",
           "visual": "images/products/vidlers-alpine.jpg",
           "textcolor": "dark",
@@ -229,7 +229,7 @@
             "material": "Raw linen, hand embroidered",
             "series": "Unique",
             "weight": "438 g",
-            "dimensions": "675 x 675 x 24mm (l x w x h)",
+            "dimensions": "677 x 347 x 24mm (l x w x h)",
             "date" : "Unknown",
             "signed": "No",
             "provenance": "2Swift, Arnhem, The Netherlands",
@@ -246,7 +246,7 @@
             "faces/vertices": "CHECK (Not printed. Contact us for printing options)",
             "date" : "November 14th, 2014",
             "signed": "ListedBlue N# (imprint)",
-            "licence": "Creative Commons - Attribution - Share Alike",
+            "licence": "CC Attribution-NonCommercial 4.0 International",
             "shipping": "FTP // HTTP download",
             "price": "Free",
             "download_url": "http://"
@@ -254,7 +254,7 @@
         },
         {
             "id": 2,
-            "display_order": 6,
+            "display_order": 3,
           "name": "Silver Birch",
           "visual": "images/products/silver-birch.jpg",
           "textcolor": "light",
@@ -295,7 +295,7 @@
             "faces/vertices": "CHECK (Not printed. Contact us for printing options)",
             "date" : "November 14th, 2014",
             "signed": "ListedBlue N# (imprint)",
-            "licence": "Creative Commons - Attribution - Share Alike",
+            "licence": "CC Attribution-NonCommercial 4.0 International",
             "shipping": "FTP // HTTP download",
             "price": "Free",
             "download_url": "http://"
@@ -344,7 +344,7 @@
             "faces/vertices": "CHECK (Not printed. Contact us for printing options)",
             "date" : "November 14th, 2014",
             "signed": "ListedBlue N# (imprint)",
-            "licence": "Creative Commons - Attribution - Share Alike",
+            "licence": "CC Attribution-NonCommercial 4.0 International",
             "shipping": "FTP // HTTP download",
             "price": "Free",
             "download_url": "http://"
@@ -352,7 +352,7 @@
         },
                 { 
           "id": 12,
-          "display_order": 8,
+          "display_order": 9,
           "name": "Beach Groundsel", 
           "visual": "images/products/beach-groundsel.jpg",
           "textcolor": "dark",
@@ -393,7 +393,7 @@
             "faces/vertices": "CHECK (Not printed. Contact us for printing options)",
             "date" : "November 14th, 2014",
             "signed": "ListedBlue N# (imprint)",
-            "licence": "Creative Commons - Attribution - Share Alike",
+            "licence": "CC Attribution-NonCommercial 4.0 International",
             "shipping": "FTP // HTTP download",
             "price": "Free",
             "download_url": "http://"
@@ -401,7 +401,7 @@
         },
         { 
           "id": 11,
-          "display_order": 9,
+          "display_order": 5,
           "name": "Great Blue Heron", 
           "visual": "images/products/great-blue-heron.jpg", 
           "textcolor": "dark",
@@ -442,7 +442,7 @@
             "faces/vertices": "CHECK (Not printed. Contact us for printing options)",
             "date" : "November 14th, 2014",
             "signed": "ListedBlue N# (imprint)",
-            "licence": "Creative Commons - Attribution - Share Alike",
+            "licence": "CC Attribution-NonCommercial 4.0 International",
             "shipping": "FTP // HTTP download",
             "price": "Free",
             "download_url": "http://"

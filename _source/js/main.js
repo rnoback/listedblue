@@ -510,7 +510,7 @@ var settings;
 
             /*SFG: adding heroWrapper rules*/
             this.heroWrapper.removeClass('is-portrait');
-            this.heroWrapper.addClass('is-landscap');
+            this.heroWrapper.addClass('is-landscape');
             this.heroWrapper.css('width', (this.viewportWidth)+'px');
             this.heroWrapper.css('width', '100%');
             this.heroVisual.css('height', 'auto');
