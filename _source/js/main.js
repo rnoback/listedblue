@@ -138,8 +138,7 @@ var settings;
             this.allProducts = this.productWrap.find('.product').css('display','none');
             this.maxProducts = this.allProducts.length;
 
-            //this.setProduct(this.selectedProductIndex);
-
+            this.isProductPage = $('body').hasClass('products');
             var para = this.getURLParameter("p");
 
             if(para && para >= 0 && para < this.maxProducts-1){
@@ -148,8 +147,7 @@ var settings;
                 this.selectedProductIndex = 0;
             }
             this.setProduct(this.selectedProductIndex);
-
-           
+        
             this.viewportWidth = this.theWindow.width();     
             this.viewportHeight = this.theWindow.outerHeight();
 
@@ -246,11 +244,13 @@ var settings;
                     console.log(e);
                 }
             } else {
+                if(this.isProductPage){
                 var currURL = window.location.href;
-                if (currURL.indexOf("?") !== -1){
-                    window.history.replaceState('', '', currentURL.slice(0, - 1) + '&' + param + '=' + value);
-                } else {
-                    window.history.replaceState('', '', currentURL.slice(0, - 1) + '?' + param + '=' + value);
+                    if (currURL.indexOf("?") !== -1){
+                        window.history.replaceState('', '', currentURL.slice(0, - 1) + '&' + param + '=' + value);
+                    } else {
+                        window.history.replaceState('', '', currentURL.slice(0, - 1) + '?' + param + '=' + value);
+                    }
                 }
             }
         },
