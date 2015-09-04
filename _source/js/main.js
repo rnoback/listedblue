@@ -139,7 +139,7 @@ var settings;
             this.maxProducts = this.allProducts.length;
 
             this.isProductPage = $('body').hasClass('products');
-            
+
             var para = this.getURLParameter("p");
 
             if(para && para >= 0 && para < this.maxProducts-1){
@@ -434,19 +434,30 @@ var settings;
         },
 
         onTurnScreen: function(){
-            if(window.orientation == 0) // Portrait
+
+            //alert("viewportHeight" + this.viewportHeight);
+            //alert("viewportWidth" + this.viewportWidth);
+
+            if(this.theWindow.height() > this.theWindow.width()) // Portrait
             {
+               // window.location = location.href
+               window.location = location.href;
+                //this.setPortraitMode();
                 //alert("You are now in portrait");
                 //var timeout = setTimeout(this.resizeHandler.bind(this), 1);
             }
             else // Landscape
             {
+                window.location = location.href;
+                //this.setPortraitMode();
                 //alert("You are now in landscape");
                 //var timeout = setTimeout(this.resizeHandler.bind(this), 1);
             }
         },
         setPortraitMode: function(){
             console.log("You are now in portrait");
+
+             //alert("POTRAT");
 
             this.isPortrait = true;
             this.theBody.addClass('is-portrait');
@@ -498,6 +509,7 @@ var settings;
 
         setLandscapeMode: function(){
             console.log("You are now in landscape");
+
             this.isPortrait = false;
             this.theBody.removeClass("is-portrait");
             this.theBody.addClass("is-landscape");
