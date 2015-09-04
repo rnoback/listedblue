@@ -12,44 +12,42 @@
           "embodiment": [
             {
             "type": "the Image",
-            "description": "Photo print / 3 perspectives",
+            "description": "Photo tryptich. 3 perspectives of Golden Willow (the Object). 1:1 scale",
             "materials": "Inktjetprint on Hahnemühle art paper",
-            "series": "10 (3 of 10 Sold)",
-            "weight": "CHECK; IS THIS APPLICABLE?",
-            "dimensions": "1494 x 747mm (l x w). Contact us for framing options",
-            "date" : "October 12th, 2014",
-            "signed": "ListedBlue N# (on the verso)",
-            "shipping": "Ships within 10 days. Comes in a brown mail tube",
-            "price": "€1445",
+            "dimensions": "1494 x 747mm (l x w)",
+            "series": "Edition of 10 (3 of 10 Sold)",
+            "signed": "Artists' signatures (on the verso)",
+            "numbered": "# / of 10 (on the verso)",
+            "presentation": "Custom made, Walnut wooden frame",
+            "price": "€xxxx",
             "download_url": ""
             },
             {
             "type": "the Object",
             "description": "Fruit bowl, scratched & burned on underside, edges concaved",
             "materials": "Red Cedar, slightly scratched and splintered",
-            "series": "Unique",
-            "weight": "1821 g",
             "dimensions": "394 x 298 x 43mm (l x w x h)",
+            "weight": "1821 g",
+            "series": "Unique",
             "date" : "Unknown",
             "signed": "No",
             "provenance": "Terre des Hommes, 's Hertogenbosch, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "presentation": "Custom crafted Poplar wooden box",
             "price": "On request",
             "download_url": ""
             },
             {
             "type": "the Download",
-            "description": "3D Scan",
+            "description": "3D Scan of Golden Willow (the Object)",
             "material": ".STL digital file",
-            "series": "Unlimited",
             "size": "CHECK MB",
             "faces/vertices": "CHECK (Not printed. Contact us for printing options)",
-            "date" : "November 14th, 2014",
-            "signed": "ListedBlue N# (imprint)",
+            "series": "Unlimited",
+            "signed": "ListedBlue (imprint on the verso)",
             "licence": "CC Attribution-NonCommercial 4.0 International",
             "shipping": "FTP // HTTP download",
             "price": "Free",
-            "download_url": "http://"
+            "download_url": "downloads/golden-willow.stl"
           }]
         },
 
@@ -62,44 +60,42 @@
           "embodiment": [
             {
             "type": "the Image",
-            "description": "Photo print / 3 perspectives",
+            "description": "Photo tryptich. 3 perspectives of Common Ringlet (the Object). 1:1 scale",
             "materials": "Inktjetprint on Hahnemühle art paper",
-            "series": "10 (3 of 10 Sold)",
-            "weight": "CHECK; IS THIS APPLICABLE?",
-            "dimensions": "CHECK! (l x w). Contact us for framing options",
-            "date" : "October 12th, 2014",
-            "signed": "ListedBlue N# (on the verso)",
-            "shipping": "Ships within 10 days. Comes in a brown mail tube",
-            "price": "€1445",
+            "dimensions": "CHECK",
+            "series": "Edition of 10 (3 of 10 Sold)",
+            "signed": "Artists' signatures (on the verso)",
+            "numbered": "# / of 10 (on the verso)",
+            "presentation": "Custom made, Walnut wooden frame",
+            "price": "€xxxxx",
             "download_url": ""
             },
             {
             "type": "the Object",
             "description": "Talisman",
-            "material": "Red chamotte clay, cadmium yellow glaze",
-            "series": "Unique",
-            "weight": "1831 g",
+            "materials": "Red chamotte clay, cadmium yellow glaze",
             "dimensions": "122 x 122 x 265mm (l x w x h)",
+            "weight": "1831 g",
+            "series": "Unique",
             "date" : "ca. 1979",
             "signed": "No",
             "provenance": "Gewoon Goed, Schiedam, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "presentation": "Custom crafted Poplar wooden box",
             "price": "On request",
             "download_url": ""
-          },
+            },
             {
             "type": "the Download",
-            "description": "3D Scan",
+            "description": "3D Scan of Common Ringlet (the Object)",
             "material": ".STL digital file",
-            "series": "Unlimited",
             "size": "CHECK MB",
             "faces/vertices": "CHECK (Not printed. Contact us for printing options)",
-            "date" : "November 14th, 2014",
-            "signed": "ListedBlue N# (imprint)",
+            "series": "Unlimited",
+            "signed": "ListedBlue (imprint on the inside concave)",
             "licence": "CC Attribution-NonCommercial 4.0 International",
             "shipping": "FTP // HTTP download",
             "price": "Free",
-            "download_url": "http://"
+            "download_url": "downloads/common-ringlet.stl"
           }]
         },
         { 
@@ -111,44 +107,42 @@
           "embodiment": [
             {
             "type": "the Image",
-            "description": "Photo print / 3 perspectives",
+            "description": "Photo tryptich. 3 perspectives of Margined White (the Object). 1:1 scale",
             "materials": "Inktjetprint on Hahnemühle art paper",
-            "series": "10 (3 of 10 Sold)",
-            "weight": "CHECK; IS THIS APPLICABLE?",
-            "dimensions": "752 x 376mm (l x w). Contact us for framing options",
-            "date" : "October 12th, 2014",
-            "signed": "ListedBlue N# (on the verso)",
-            "shipping": "Ships within 10 days. Comes in a brown mail tube",
-            "price": "€1445",
+            "dimensions": "752 x 376mm (l x w)",
+            "series": "Edition of 10 (3 of 10 Sold)",
+            "signed": "Artists' signatures (on the verso)",
+            "numbered": "# / of 10 (on the verso)",
+            "presentation": "Custom made, Walnut wooden frame",
+            "price": "€xxxxx",
             "download_url": ""
             },
             {
             "type": "the Object",
             "description": "Slight irregularity, decorative object (spittoon?)",
-            "material": "Pig bladder shaped / formed",
-            "series": "Unique",
-            "weight": "400 g",
+            "materials": "Pig bladder shaped / formed",
             "dimensions": "174 x 176 x 204mm (l x w x h)",
+            "weight": "400 g",
+            "series": "Unique",
             "date" : "Unknown",
             "signed": "No",
             "provenance": "Dorkas, Rijssen, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "presentation": "Custom crafted Poplar wooden box",
             "price": "On request",
             "download_url": ""
-          },
+            },
             {
             "type": "the Download",
-            "description": "3D Scan",
+            "description": "3D Scan of Margined White (the Object)",
             "material": ".STL digital file",
-            "series": "Unlimited",
             "size": "CHECK MB",
             "faces/vertices": "CHECK (Not printed. Contact us for printing options)",
-            "date" : "November 14th, 2014",
-            "signed": "ListedBlue N# (imprint)",
+            "series": "Unlimited",
+            "signed": "ListedBlue (imprint on the inside concave)",
             "licence": "CC Attribution-NonCommercial 4.0 International",
             "shipping": "FTP // HTTP download",
             "price": "Free",
-            "download_url": "http://"
+            "download_url": "downloads/margined-white.stl"
           }]
         },
         { 
@@ -182,7 +176,7 @@
             "date" : "2001",
             "signed": "Tal Silverberg 15.6.2001.5467",
             "provenance": "De Lokatie, Amsterdam, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "shipping": "Ships in a in a custom craft Poplar wooden box",
             "presentation": "Contact us for display options",
             "price": "On request",
             "download_url": ""
@@ -233,7 +227,7 @@
             "date" : "Unknown",
             "signed": "No",
             "provenance": "2Swift, Arnhem, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "shipping": "Ships in a in a custom craft Poplar wooden box",
             "price": "On request",
             "download_url": ""
           },
@@ -282,7 +276,7 @@
             "date" : "Unknown",
             "signed": "No",
             "provenance": "Dorkas, Nijverdal, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "shipping": "Ships in a in a custom craft Poplar wooden box",
             "price": "On request",
             "download_url": ""
           },
@@ -331,7 +325,7 @@
             "date" : "ca. 1989",
             "signed": "NX (on the verso)",
             "provenance": "2Swift, Arnhem, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "shipping": "Ships in a in a custom craft Poplar wooden box",
             "price": "On request",
             "download_url": ""
           },
@@ -372,15 +366,15 @@
             },
             {
             "type": "the Object",
-            "description": "Wooden cup",
-            "material": "Cedar single piece of wood",
+            "description": "Imprint marks made by fabric. Moulded or carved? Relieved and satinned",
+            "material": "White river clay, possibly glazed. Gypsum imprint",
             "series": "Unique",
-            "weight": "194 g",
+            "weight": "475 g",
             "dimensions": "189 x 145 x 32mm (l x w x h)",
             "date" : "Unknown",
             "signed": "JZ / SPAR /  S3A (on the verso)",
             "provenance": "2Swift, Arnhem, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "shipping": "Ships in a in a custom craft Poplar wooden box",
             "price": "On request",
             "download_url": ""
           },
@@ -396,7 +390,7 @@
             "licence": "CC Attribution-NonCommercial 4.0 International",
             "shipping": "FTP // HTTP download",
             "price": "Free",
-            "download_url": "http://"
+            "download_url": "downloads/beach-groundsel.stl"
           }]
         },
         { 
@@ -429,7 +423,7 @@
             "date" : "ca. 1980",
             "signed": "No",
             "provenance": "Rataplan, Amsterdam, The Netherlands",
-            "shipping": "Ships in 10 days. Comes with brown gift box",
+            "shipping": "Ships in a in a custom craft Poplar wooden box",
             "price": "On request",
             "download_url": ""
             },
