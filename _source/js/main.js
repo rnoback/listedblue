@@ -139,6 +139,7 @@ var settings;
             this.maxProducts = this.allProducts.length;
 
             this.isProductPage = $('body').hasClass('products');
+            
             var para = this.getURLParameter("p");
 
             if(para && para >= 0 && para < this.maxProducts-1){
