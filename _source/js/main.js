@@ -455,9 +455,6 @@ var settings;
             }
         },
         setPortraitMode: function(){
-            console.log("You are now in portrait");
-
-             //alert("POTRAT");
 
             this.isPortrait = true;
             this.theBody.addClass('is-portrait');
@@ -467,14 +464,20 @@ var settings;
 
             /*SFG: adding heroWrapper rules*/
             //this.heroWrapper.addClass('is-portrait');
-            this.heroWrapper.removeClass('is-landscape');
+           /* this.heroWrapper.removeClass('is-landscape');
             this.heroWrapper.css('height', (this.viewportHeight)+'px');
             this.heroWrapper.css('width', 'auto');
             this.heroVisual.css('height', '100%');
             this.heroVisual.css('width', '100%');
-            this.heroVisual.css('position', 'relative');
+            this.heroVisual.css('position', 'relative');*/
             /*end landingVisual rule*/
 
+            this.heroVisual.css('height', (this.viewportHeight)+'px');
+            this.heroVisual.css('width', 'auto');
+            var w = this.heroVisual.width();
+            var heroLeftPos = -(Math.round((this.heroVisual.width() - $(window).width()) / 2));
+            this.heroVisual.css('left', heroLeftPos)
+            ;
             this.swipeIndicator.css('height', (this.viewportHeight)+'px'); // SFG: .swipe-indicator height
             this.swipeIndicator.css('width', (this.mainVisual.width())); // SFG: .swipe-indicator widht
 
@@ -497,7 +500,7 @@ var settings;
 
 
             // Center main visual 
-            var scrollTo = Math.round((this.mainVisual.width() - this.viewportWidth) / 2); // SFG: rounded scrollTo (0 decimals)
+            var scrollTo = Math.round((this.mainVisual.width() - $(window).width()) / 2); // SFG: rounded scrollTo (0 decimals)
             var yPos = $(window).scrollTop();
             window.scrollTo(scrollTo, yPos);
             
@@ -508,7 +511,6 @@ var settings;
         },
 
         setLandscapeMode: function(){
-            console.log("You are now in landscape");
 
             this.isPortrait = false;
             this.theBody.removeClass("is-portrait");
@@ -522,10 +524,9 @@ var settings;
             /*SFG: adding heroWrapper rules*/
             this.heroWrapper.removeClass('is-portrait');
             this.heroWrapper.addClass('is-landscape');
-            this.heroWrapper.css('width', (this.viewportWidth)+'px');
             this.heroWrapper.css('width', '100%');
             this.heroVisual.css('height', 'auto');
-            this.heroVisual.css('width', '100%');
+            this.heroVisual.css('left', 0);
             this.heroVisual.css('position', 'relative');
             /*end landingVisual rule*/
 
@@ -534,7 +535,8 @@ var settings;
 
             //this.productInfo.css('width', '100%');
             //this.footer.css('width', '100%');
-            window.scrollTo(0,0);
+             var yPos = $(window).scrollTop();
+            window.scrollTo(0,yPos);
         },
 
         openOverlay:function(e){
@@ -608,7 +610,6 @@ var settings;
              if($(".landing .navigation-wrap").is(':visible')){
                 $(".navigation-wrap").hide();
             }else{
-                console.log("this.isPortrait "+ this.isPortrait);
                 $(".landing .navigation-wrap").show();
                /* if(this.theWindow.width() < 768){
 
@@ -625,11 +626,18 @@ var settings;
         },
             
         scrollHandler:function(e){
-          
-            if ( $(window).scrollTop() > 400) {
-                $('.sticky-header').fadeIn();
-            } else {
-                $('.sticky-header').fadeOut();
+            if(this.isLandscape){
+                if ( $(window).scrollTop() > 400) {
+                    $('.sticky-header').fadeIn();
+                } else {
+                    $('.sticky-header').fadeOut();
+                }
+            }else{
+                if ( $(window).scrollTop() > 150) {
+                    $('.sticky-header').fadeIn();
+                } else {
+                    $('.sticky-header').fadeOut();
+                }
             }
         },
 
