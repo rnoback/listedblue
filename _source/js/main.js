@@ -462,18 +462,12 @@ var settings;
             this.mainVisual.css('height', (this.viewportHeight)+'px');
             this.mainVisual.css('width', 'auto');
 
-            /*SFG: adding heroWrapper rules*/
-            //this.heroWrapper.addClass('is-portrait');
-           /* this.heroWrapper.removeClass('is-landscape');
-            this.heroWrapper.css('height', (this.viewportHeight)+'px');
-            this.heroWrapper.css('width', 'auto');
-            this.heroVisual.css('height', '100%');
-            this.heroVisual.css('width', '100%');
-            this.heroVisual.css('position', 'relative');*/
-            /*end landingVisual rule*/
-
+            this.heroWrapper.addClass('is-portrait');
+            this.heroWrapper.removeClass('is-landscape');
+            
             this.heroVisual.css('height', (this.viewportHeight)+'px');
             this.heroVisual.css('width', 'auto');
+            this.heroVisual.css('position', 'absolute');
             var w = this.heroVisual.width();
             var heroLeftPos = -(Math.round((this.heroVisual.width() - $(window).width()) / 2));
             this.heroVisual.css('left', heroLeftPos)
@@ -521,14 +515,15 @@ var settings;
             this.mainNav.height(this.navHeight);
             this.mainNavContent.height(this.navHeight); // SFG: adding 100% menu height in landscape -> content pages
 
-            /*SFG: adding heroWrapper rules*/
+
+            this.heroVisual.css('width', '100%');
+            this.heroVisual.css('height', 'auto');
+            this.heroVisual.css('left', 'auto');
+            this.heroVisual.css('position', 'relative');
             this.heroWrapper.removeClass('is-portrait');
             this.heroWrapper.addClass('is-landscape');
-            this.heroWrapper.css('width', '100%');
-            this.heroVisual.css('height', 'auto');
-            this.heroVisual.css('left', 0);
-            this.heroVisual.css('position', 'relative');
             /*end landingVisual rule*/
+
 
 
             //this.header.width('100%');

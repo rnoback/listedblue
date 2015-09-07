@@ -12,7 +12,14 @@
 // Header ----------------------------------
 /**
 * same css chunck as layout.css albeit some changes
-*/
+*/.hero-wrapper{
+	height: 100%;
+		.hero-visual{
+			width: 100%;
+			height: auto;
+			//sibility:hidden;
+		}
+	}
 
 	header{
 		position: absolute;
@@ -47,6 +54,8 @@
 			}
 
 		}
+
+
 
 /* 		h1:after{
 			margin: -1rem 0 0 0.25rem;

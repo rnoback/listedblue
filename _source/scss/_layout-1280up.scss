@@ -19,6 +19,24 @@ body.content-page.landing{
 
 .content-page{
 	.main-wrap{
+
+		.hero-wrapper.is-landscape{
+			.logo {	
+				position: absolute;
+				left: 0px;
+				right: 0px;
+				top: 200px;
+
+				text-align: center;
+
+				img {
+					width: 30%;
+					margin-bottom: 3rem;
+				}
+				
+			}
+		}
+
 		header{
 			h1.site-header{
 			}
