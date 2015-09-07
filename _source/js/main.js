@@ -466,6 +466,8 @@ var settings;
             this.heroWrapper.removeClass('is-landscape');
             
             this.heroVisual.css('height', (this.viewportHeight)+'px');
+            $('.main-inner.content-box').css("top",(this.viewportHeight)+'px').css("position","relative");
+            $('.content-page .main-wrap footer').css("top",(this.viewportHeight)+'px').css("position","relative");
             this.heroVisual.css('width', 'auto');
             this.heroVisual.css('position', 'absolute');
             var w = this.heroVisual.width();
@@ -515,6 +517,8 @@ var settings;
             this.mainNav.height(this.navHeight);
             this.mainNavContent.height(this.navHeight); // SFG: adding 100% menu height in landscape -> content pages
 
+             $('.main-inner.content-box').css("top",0).css("position","static");
+            $('.content-page .main-wrap footer').css("top",0).css("position","static");
 
             this.heroVisual.css('width', '100%');
             this.heroVisual.css('height', 'auto');
