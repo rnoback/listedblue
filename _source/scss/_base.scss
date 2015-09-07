@@ -37,6 +37,10 @@ h3{
 	@include font-size(16);
 	line-height: 60%;
 }
+h4{
+	@include font-size(12);
+	line-height: 60%;
+}
 
 a{
 	text-decoration: none;
