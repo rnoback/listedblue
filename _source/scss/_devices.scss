@@ -110,6 +110,17 @@
  * iPhone 4 portrait
  */
 @media only screen and (device-height : 480px) and (device-width : 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation : portrait) {
+	.content-page .main-wrap .hero-wrapper.is-portrait .logo img {
+		margin-bottom: 1.5rem;
+		width: 50%;
+	}
+	p.launch{
+		font-size: 0.7rem;
+		margin-bottom: 0.5rem;
+	}
+	.content-page .main-wrap .logo{
+		top: 100px;
+	}
 	.landingContainer {
 	height: 480px; // important as the landingpage has a VH specification
 	}
@@ -191,9 +202,17 @@
  * iPhone 5 portrait
  */
 @media only screen and (device-height : 568px) and (device-width : 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation : portrait) {
+	p.launch{
+		font-size: 0.7rem;
+		margin-bottom: 0.5rem;
+	}
+	.content-page .main-wrap .logo{
+		top: 130px;
+	}
 	.landingContainer {
 	height: 568px; // important as the landingpage has a VH specification
   	}
+
 // header with logo
 	.is-portrait .main-wrap header {
 		padding-top: 0.7rem;
