@@ -9,7 +9,13 @@ body.content-page{
 	color: $extradarkgray;
 }
 
-/* SFG: adding header hero content: image & copy in landing page */
+
+/* end SFG hero landing */
+
+.content-page{
+	.main-wrap{
+		overflow-x: hidden; 
+		/* SFG: adding header hero content: image & copy in landing page */
 
 	.logo {	
 		position: absolute;
@@ -17,18 +23,37 @@ body.content-page{
 		right: 0px;
 		top: 4%;
 		text-align: center;
+		visibility: hidden;
 
 			img {
 				width: 30%;
 				margin-bottom: 3rem;
 			}
-	}
+		}
 
-/* end SFG hero landing */
+		.hero-wrapper.is-portrait{
+			.logo {	
+				visibility: visible;
+				img {
+					width: 40%;
+				}
+			}
+		}
+		.hero-wrapper.is-landscape{
+			.logo {	
+				visibility: visible;
+				position: absolute;
+				left: 0px;
+				right: 0px;
+				top: 100px;
+				text-align: center;
 
-.content-page{
-	.main-wrap{
-
+				img {
+					width: 30%;
+					margin-bottom: 3rem;
+				}
+			}
+		}
 // Header ----------------------------------
 /** 
 * SFG: not all of this is must have for the content pages,
