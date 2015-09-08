@@ -470,6 +470,7 @@ var settings;
             $('.content-page .main-wrap footer').css("top",(this.viewportHeight)+'px').css("position","relative");
             this.heroVisual.css('width', 'auto');
             this.heroVisual.css('position', 'absolute');
+
             var w = this.heroVisual.width();
             var heroLeftPos = -(Math.round((this.heroVisual.width() - $(window).width()) / 2));
             this.heroVisual.css('left', heroLeftPos)
