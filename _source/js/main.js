@@ -466,10 +466,9 @@ var settings;
             this.heroWrapper.removeClass('is-landscape');
             
             this.heroVisual.css('height', (this.viewportHeight)+'px');
-            $('.main-inner.content-box').css("top",(this.viewportHeight)+'px').css("position","relative");
-            $('.content-page .main-wrap footer').css("top",(this.viewportHeight)+'px').css("position","relative");
-            this.heroVisual.css('width', 'auto');
-            this.heroVisual.css('position', 'absolute');
+           // $('.main-inner.content-box').css("top",(this.viewportHeight)+'px').css("position","relative");
+           // $('.content-page .main-wrap footer').css("top",(this.viewportHeight)+'px').css("position","relative");
+            this.heroVisual.css('width', 'auto').css('position', 'relative');
 
             var w = this.heroVisual.width();
             var heroLeftPos = -(Math.round((this.heroVisual.width() - $(window).width()) / 2));

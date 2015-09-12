@@ -32,10 +32,11 @@ body.content-page{
 		}
 
 		.hero-wrapper.is-portrait{
+			    overflow-x: hidden;
 			.logo {	
 				visibility: visible;
 				img {
-					width: 40%;
+					//width: 40%;
 				}
 			}
 		}
