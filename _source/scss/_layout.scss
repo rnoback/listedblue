@@ -374,3 +374,24 @@ body.content-page{
 
 	}
 }
+
+.catalogue-wrapper{width:100%;margin-top: 42px;}
+.item-wrapper{padding-bottom: 24px;}
+table.photo{float:left; width: 19%;}
+table.text{float:left;width: 70%;margin-left: 9%;}
+td{text-align: center;}
+td > img{width:100%;}
+th.hide-label{color:#fff;}
+.text th{text-align: center;font-size: 0.8rem;}
+td.type{text-align: left;font-size: 0.8rem;}
+td.data{font-size: 0.6rem;}
+.clear{clear:both;}
+
+
+@media all and (orientation: portrait) {
+    table.photo{width: 100%;float:none;}
+    table.text{width:100%;float:none;margin-left: 0;}
+    td > img{width:320px;}
+    th.hide-label{color:#0f0606;}
+    td.catalogue-title{padding-bottom: 14px;}
+}
