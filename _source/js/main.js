@@ -142,7 +142,7 @@ var settings;
 
             var para = this.getURLParameter("p");
 
-            if(para && para >= 0 && para < this.maxProducts-1){
+            if(para && para >= 0 && para < this.maxProducts){
                 this.selectedProductIndex = parseInt(para);
             }else{
                 this.selectedProductIndex = 0;
