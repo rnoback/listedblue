@@ -8,14 +8,28 @@ body.content-page{
 	background-color: #fff;
 	color: $extradarkgray;
 }
-
-
 /* end SFG hero landing */
+
+body.content-page.contact{
+	background-color: #5ca2df;
+
+		.main-wrap .main-inner .content-wrap{text-align:center;color:#fff;}
+		.main-wrap .main-inner .content-wrap .column{margin: 20% 0;}
+		.main-wrap header{background-color:#5ca2df;}
+		.main-wrap header h1 a {text-decoration: none;color: #FFF;}
+		.main-wrap .main-inner .content-wrap h2.page-title{color:#fff;}
+		h3{color:#fff;}
+		.main-wrap .main-inner .content-wrap .column p{text-align: center;}
+		.main-wrap .main-inner .content-wrap .column a{color:#fff;}
+		.main-wrap header .navigation-wrap .main-navigation{background-color: #5ca2df;}
+		li.nav a{color:$white;}
+		.main-wrap header .navigation-wrap a.btn-nav-toggle{color:$white;}
+}
+
 
 .content-page{
 	.main-wrap{
 		overflow-x: hidden; 
-		/* SFG: adding header hero content: image & copy in landing page */
 
 	.logo {	
 		position: absolute;
@@ -121,7 +135,7 @@ body.content-page{
 					padding: 10px 40px;
 				}
 				>li.nav:first-child{
-					padding: 24px 40px 10px 40px;
+					padding: 18px 40px 10px 40px;
 				}
 				>li.nav:last-child{
 					padding: 10px 40px 80px 40px;
@@ -131,7 +145,7 @@ body.content-page{
 
 			a.btn-close{
 				position: fixed;
-				right: 16px;
+				right: 6px;
 				display: none;
 				font-size: 1.4rem;
 				text-decoration: none;
@@ -144,7 +158,7 @@ body.content-page{
 			}
 			a.btn-nav-toggle{
 				position: fixed;
-				right: 16px;
+				right: 6px;
 				font-size: 1.4rem;
 				text-decoration: none;
 				color: $extradarkgray;
@@ -220,9 +234,8 @@ body.content-page{
 					
 				}
 				.column{
-					max-width: auto;
 					float:none;
-					margin: 20px 0; 
+					margin: 26px 0; 
 					h3.content-title{
 						margin: 10px 0;
 						@include font-size(12);
@@ -232,7 +245,7 @@ body.content-page{
 					}
 				}
 				.column.first{
-					Xpadding-right: 4%;
+					
 				}
 				.fullwidth{
 					clear: both;
@@ -285,9 +298,12 @@ body.content-page{
 			padding-top: 1.5rem;
 			z-index: 10;
 			text-align: center;
-
 			display:none;
 
+				a
+				{text-decoration: none;
+    			color: #0f0606;
+    		}
 		}
 
 /* 		h1.site-header:after{
@@ -303,11 +319,11 @@ body.content-page{
 		} */
 		h1.site-header{
 			position:fixed;
-
+			letter-spacing: 1px;
 			background: $white;
 			height: 3.4rem;
 			width: 100%;	
-			padding-top: 1.5rem;
+			padding-top: 27px;
 			z-index: 10;
 			text-align: center;
 
@@ -348,7 +364,7 @@ body.content-page{
 					padding: 10px 40px;
 				}
 				>li.nav:first-child{
-					padding: 24px 40px 10px 40px;
+					padding: 34px 40px 10px 40px;
 				}
 				>li.nav:last-child{
 					padding: 10px 40px 80px 40px;
@@ -360,7 +376,7 @@ body.content-page{
 		a.btn-landing-nav-toggle{
 				position: fixed;
 				right: 6px;
-				top: 16px;
+				top: 1.5rem;
 				font-size: 1.4rem;
 				text-decoration: none;
 				color: $extradarkgray;
@@ -375,10 +391,10 @@ body.content-page{
 	}
 }
 
-.catalogue-wrapper{width:100%;margin-top: 42px;}
+.catalogue-wrapper{width:100%;margin-top: 26px;}
 .item-wrapper{padding-bottom: 24px;}
 table.photo{float:left; width: 19%;}
-table.text{float:left;width: 70%;margin-left: 9%;}
+table.text{float:left;width: 70%;margin-left: 10%;}
 td{text-align: center;}
 td > img{width:100%;}
 th.hide-label{color:#fff;}
@@ -391,7 +407,7 @@ td.data{font-size: 0.6rem;}
 @media all and (orientation: portrait) {
     table.photo{width: 100%;float:none;}
     table.text{width:100%;float:none;margin-left: 0;}
-    td > img{width:320px;}
+    td > img{width:300px;}
     th.hide-label{color:#0f0606;}
-    td.catalogue-title{padding-bottom: 14px;}
+    td.catalogue-title{padding-bottom: 14px;font-size:1.125rem;}
 }

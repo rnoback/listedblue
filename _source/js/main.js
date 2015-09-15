@@ -588,7 +588,7 @@ var settings;
                 //menu.height(this.visualWidth/2);
                 menu.show();
                 //Dirty bug fix, to strech white bg a little
-                var h = this.navHeight+=25;
+                var h = this.navHeight+=30; // SFG: added 5px (was 25) to stretch to full window height
                 if(this.isPortrait){
                     if(this.navHeight > 0){
                         menu.height(h);
