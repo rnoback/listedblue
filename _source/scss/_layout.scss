@@ -14,7 +14,7 @@ body.content-page.contact{
 	background-color: #5ca2df;
 
 		.main-wrap .main-inner .content-wrap{text-align:center;color:#fff;}
-		.main-wrap .main-inner .content-wrap .column{margin: 20% 0;}
+		.main-wrap .main-inner .content-wrap .column{margin: 17% 0;}
 		.main-wrap header{background-color:#5ca2df;}
 		.main-wrap header h1 a {text-decoration: none;color: #FFF;}
 		.main-wrap .main-inner .content-wrap h2.page-title{color:#fff;}
@@ -23,8 +23,10 @@ body.content-page.contact{
 		.main-wrap .main-inner .content-wrap .column a{color:#fff;}
 		.main-wrap header .navigation-wrap .main-navigation{background-color: #5ca2df;}
 		li.nav a{color:$white;}
-		.main-wrap header .navigation-wrap a.btn-nav-toggle{color:$white;}
+		.main-wrap header .navigation-wrap a.btn-nav-toggle{color:$white !important;}
 }
+
+.content-page .landing a.btn-landing-nav-toggle {color:#fff !important;}
 
 
 .content-page{
@@ -38,6 +40,7 @@ body.content-page.contact{
 		top: 180px;
 		text-align: center;
 		visibility: hidden;
+		color: #fff;
 
 			img {
 				width: 30%;
@@ -62,6 +65,7 @@ body.content-page.contact{
 				right: 0px;
 				top: 100px;
 				text-align: center;
+				color: #fff; // SFG: changing to white for Live
 
 				img {
 					width: 30%;
@@ -391,15 +395,17 @@ body.content-page.contact{
 	}
 }
 
+li.imprint{line-height:1.3rem;}
+
 .catalogue-wrapper{width:100%;margin-top: 26px;}
 .item-wrapper{padding-bottom: 24px;}
-table.photo{float:left; width: 19%;}
+table.photo{float:left; width: 19%;margin-top:2rem;}
 table.text{float:left;width: 70%;margin-left: 10%;}
 td{text-align: center;}
 td > img{width:100%;}
 th.hide-label{color:#fff;}
-.text th{text-align: center;font-size: 0.8rem;}
-td.type{text-align: left;font-size: 0.8rem;}
+.text th{text-align: center;text-transform: uppercase;font-size: 86%;}
+td.type{text-align: left;font-size: 0.6rem;}
 td.data{font-size: 0.6rem;}
 .clear{clear:both;}
 

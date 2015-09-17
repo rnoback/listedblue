@@ -185,6 +185,7 @@
 				    		display:none;
 				    	}
 				    	.btn_p{
+				    		display: none; // SFG: taking out the collection buttons
 				    		position: absolute;
 							bottom: -28px;
 							color: $extradarkgray;

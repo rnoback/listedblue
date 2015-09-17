@@ -3,7 +3,7 @@ body{
 	@include font-size(14);
 	line-height: 160%;
 	background: $darkgray;
-	color: $black;
+	color: $extradarkgray;
 	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
 }
@@ -11,7 +11,7 @@ body{
 #{headings()} {
 	font-family: $font-primary;
 	font-weight: normal;
-	color: $black;
+	color: $extradarkgray;
 	
 	line-height: 100%;
 	/* @include text-shadow($lightgray, 1px, 1px); */

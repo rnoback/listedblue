@@ -388,7 +388,7 @@ var settings;
 
             this.productOverlay.width( this.visualWidth );
             this.productOverlay.find('.column').height( this.visualWidth/2 );
-            this.productOverlay.find('.column-content > ul').css('line-height', ((this.visualWidth/2)/34) + 'px'); // SFG: adapting line-height to vertical height container div
+            this.productOverlay.find('.column-content > ul').css('line-height', ((this.visualWidth/2)/24) + 'px'); // SFG: adapting line-height to vertical height container div
 
            // this.productOverlay.height( this.visualWidth );
            
