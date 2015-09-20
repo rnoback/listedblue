@@ -198,6 +198,9 @@ var settings;
             $('.btn-landing-nav-toggle').on('click', this.toggleNavLanding.bind(this));
 
 
+            if( $('body').hasClass('landing')){
+                $('.btn-landing-nav-toggle').css("color","white");
+            }
            // this.changeUrlParam('p',1);
             
 
@@ -302,8 +305,12 @@ var settings;
             } else {
                 $('.site-header').addClass('textdark');
                 $('.site-header').removeClass('textlight');
-                $('.btn-nav-toggle').addClass('textdark');
-                $('.btn-nav-toggle').removeClass('textlight');
+                if( !$('body').hasClass('contact')){
+                    $('.btn-nav-toggle').addClass('textdark');
+                    $('.btn-nav-toggle').removeClass('textlight');
+                }else{
+                    $('.btn-nav-toggle').removeClass('textdark');
+                }
                 $('.btn-close').addClass('textdark');
                 $('.btn-close').removeClass('textlight');
                 if(this.isPortrait) {
@@ -628,14 +635,26 @@ var settings;
             if(this.isLandscape){
                 if ( $(window).scrollTop() > 400) {
                     $('.sticky-header').fadeIn();
+                    if( $('body').hasClass('landing') ){
+                        $('.btn-landing-nav-toggle').css("color","black");
+                    }
                 } else {
                     $('.sticky-header').fadeOut();
+                    if( $('body').hasClass('landing')){
+                        $('.btn-landing-nav-toggle').css("color","white");
+                    }
                 }
             }else{
                 if ( $(window).scrollTop() > 150) {
                     $('.sticky-header').fadeIn();
+                    if( $('body').hasClass('landing')){
+                        $('.btn-landing-nav-toggle').css("color","black");
+                    }
                 } else {
                     $('.sticky-header').fadeOut();
+                    if( $('body').hasClass('landing')){
+                        $('.btn-landing-nav-toggle').css("color","white");
+                    }
                 }
             }
         },
