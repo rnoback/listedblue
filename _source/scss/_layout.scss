@@ -1,7 +1,7 @@
 /*
 * SFG: These are the rules for the content pages (ai: all pages except collection.html)
 */
- 
+
 
 /* SFG: changing landing body background to white */
 body.content-page{
@@ -41,6 +41,7 @@ body.content-page.contact{
 		text-align: center;
 		visibility: hidden;
 		color: #fff;
+		z-index: 1;
 
 			img {
 				width: 30%;
@@ -53,7 +54,7 @@ body.content-page.contact{
 			.logo {	
 				visibility: visible;
 				img {
-					//width: 40%;
+					width: 44%;
 				}
 			}
 		}
@@ -394,6 +395,23 @@ body.content-page.contact{
 
 	}
 }
+
+// SFG: landingpage hero random image
+.hero-fade-in{
+      -webkit-animation: fade-in 2s ease;
+      -moz-animation: fade-in ease-in-out 2s both;
+      -ms-animation: fade-in ease-in-out 2s both;
+      -o-animation: fade-in ease-in-out 2s both;
+      animation: fade-in 2s ease;
+      visibility: visible;
+      -webkit-backface-visibility: hidden;
+    }
+
+    @-webkit-keyframes fade-in{0%{opacity:0;} 100%{opacity:1;}}
+    @-moz-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+    @-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+    @keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+
 
 li.imprint{line-height:1.3rem;}
 

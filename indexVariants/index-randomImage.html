@@ -50,13 +50,38 @@
         </nav>
         <a href="#" class="btn-landing-nav-toggle"></a>
 
-        <div class="hero-wrapper">
-        <div id="hero-load">   
-                <div class="logo">
-                    <img src="images/bg/lb_logo+tagline-inv.png">
-                </div>
-            </div>
-        </div>
+
+<!-- SFG: hacking in random image rotator landingpage for demo purposes -->
+<style>
+.fade-in{
+      -webkit-animation: fade-in 2s ease;
+      -moz-animation: fade-in ease-in-out 2s both;
+      -ms-animation: fade-in ease-in-out 2s both;
+      -o-animation: fade-in ease-in-out 2s both;
+      animation: fade-in 2s ease;
+      visibility: visible;
+      -webkit-backface-visibility: hidden;
+    }
+
+    @-webkit-keyframes fade-in{0%{opacity:0;} 100%{opacity:1;}}
+    @-moz-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+    @-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+    @keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+</style>
+
+<!-- SFG: sketchfab Margined White -->
+<div class="hero-wrapper">
+        <div id="hero-load">
+            <iframe width="640" height="480" src="https://sketchfab.com/models/73718145003f4812ad9323507629c6d0/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+
+    <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+        <a href="https://sketchfab.com/models/73718145003f4812ad9323507629c6d0?utm_source=oembed&utm_medium=embed&utm_campaign=73718145003f4812ad9323507629c6d0" target="_blank" style="font-weight: bold; color: #1CAAD9;">Margined-white</a>
+        by <a href="https://sketchfab.com/lickny2001?utm_source=oembed&utm_medium=embed&utm_campaign=73718145003f4812ad9323507629c6d0" target="_blank" style="font-weight: bold; color: #1CAAD9;">lickny2001</a>
+        on <a href="https://sketchfab.com?utm_source=oembed&utm_medium=embed&utm_campaign=73718145003f4812ad9323507629c6d0" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+    </p>
+    </div>
+</div>
+<!-- SFG: end sketchfab Margined White -->
 
             <div class="main-inner content-box">
                 <section class="content-wrap">
@@ -129,14 +154,10 @@
                         <p class="testimonial author">Cok de Rooy | Frozen Fountain, Amsterdam</p>
                         
                         <p class="testimonial">
-                        "ListedBlue brilliantly exposes the neoliberal ethos at play in much of the creative industries: turning junk into gold by using the image as a means of aesthetic propaganda. Playing on the increasingly ambivalent relationship between production (craftsmanship) and exchange (market), the project raises important questions as to the contemporary locus of value creation.""
+                        ListedBlue brilliantly exposes the neoliberal ethos at play in much of the creative industries: turning junk into gold by using the image as a means of aesthetic propaganda. Playing on the increasingly ambivalent relationship between production (craftsmanship) and exchange (market), the project raises important questions as to the contemporary locus of value creation.
                         </p>
                         <p class="testimonial author">Sebastian Olma | Director
                         Serendipity Lab, Amsterdam</p>
-
-                        <p class="testimonial">
-                        "A highly renewing point of view that counters image-based thinking."</p>
-                        <p class="testimonial author">Frank van der Stok | Curator / Editor, Amsterdam</p>
 
                 </section>
 
@@ -193,7 +214,14 @@
     <script type="text/javascript" src="js/vendor/jquery-2.1.1.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
-
+<!-- SFG: random hero images on landing page, for demo purposes. should put this in the main.js file -->
+<script>
+//Add your images, we'll set the path in the next step
+    var images = ['landing-1.jpg', 'landing-2.jpg', 'landing-3.jpg'];
+    
+//Build the img, then do a bit of maths to randomize load and append to a div. Add a touch off css to fade them badboys in all sexy like.
+    $('<img class="hero-visual fade-in" src="images/bg/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#hero-load');
+</script>
    
 </body>
 </html>

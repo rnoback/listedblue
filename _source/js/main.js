@@ -682,6 +682,15 @@ var settings;
         },
 
     };
+
+            /*SFG: landing page random image */
+            //Add your images, we'll set the path in the next step
+            var images = ['landing-1.jpg', 'landing-2.jpg', 'landing-3.jpg', 'landing-4.jpg'];
+    
+            //Build the img, then do a bit of maths to randomize load and append to a div. Add a touch off css to fade them badboys in all sexy like.
+            $('<img class="hero-visual hero-fade-in" src="images/bg/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#hero-load');
+
+
     $(function() {
         LISTEDBLUE.init({
             template: $('#product-template').html(),
